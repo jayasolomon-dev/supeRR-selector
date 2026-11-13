@@ -32,6 +32,14 @@ def generate_dashboard():
     samson_img = batters[1].get("image_b64", "")
     campher_img = batters[2].get("image_b64", "")
     
+    # Load official Rajasthan Royals crest logo
+    logo_file = base_dir / "assets" / "rr_logo_b64.txt"
+    if logo_file.exists():
+        with open(logo_file, "r", encoding="utf-8") as lf:
+            rr_logo_b64 = lf.read().strip()
+    else:
+        rr_logo_b64 = ""
+        
     players_json = json.dumps(data)
 
     html_template = """<!DOCTYPE html>
@@ -156,15 +164,47 @@ def generate_dashboard():
       cursor: pointer;
     }
 
+    .rr-official-crest-sidebar {
+      width: 68px;
+      height: auto;
+      max-height: 85px;
+      object-fit: contain;
+      filter: drop-shadow(0 4px 14px rgba(229, 9, 127, 0.45));
+      transition: transform 0.25s ease;
+    }
+
+    .rr-logo-container:hover .rr-official-crest-sidebar {
+      transform: scale(1.06);
+    }
+
+    .rr-official-crest-header {
+      height: 42px;
+      width: auto;
+      object-fit: contain;
+      margin-right: 12px;
+      cursor: pointer;
+      filter: drop-shadow(0 2px 8px rgba(229, 9, 127, 0.4));
+      transition: transform 0.2s ease;
+    }
+
+    .rr-official-crest-header:hover {
+      transform: scale(1.05);
+    }
+
+    .rr-official-crest-footer {
+      height: 24px;
+      width: auto;
+      object-fit: contain;
+      margin-right: 8px;
+      vertical-align: middle;
+      filter: drop-shadow(0 0 6px rgba(229, 9, 127, 0.35));
+    }
+
     .rr-crown-icon {
       font-size: 34px;
       color: var(--rr-pink);
       filter: drop-shadow(0 0 10px rgba(229, 9, 127, 0.6));
       transition: transform 0.25s ease;
-    }
-
-    .rr-logo-container:hover .rr-crown-icon {
-      transform: scale(1.08) rotate(-4deg);
     }
 
     .rr-brand-name {
@@ -2113,10 +2153,9 @@ def generate_dashboard():
        ========================================================================== -->
   <aside class="sidebar" id="app-sidebar">
     <div class="sidebar-header">
-      <div class="rr-logo-container" onclick="switchTab('overview')">
-        <i class="fa-solid fa-crown rr-crown-icon"></i>
-        <div class="rr-brand-name">RAJASTHAN ROYALS</div>
-        <div class="rr-brand-sub">SupeRR Selector</div>
+      <div class="rr-logo-container" onclick="switchTab('overview')" title="Go to Overview">
+        <img src="__RR_LOGO__" alt="Rajasthan Royals" class="rr-official-crest-sidebar">
+        <div class="rr-brand-sub" style="margin-top: 4px;">SupeRR Selector</div>
       </div>
     </div>
 
@@ -2171,6 +2210,8 @@ def generate_dashboard():
         <button class="sidebar-toggle-btn" onclick="toggleSidebar()" title="Toggle Sidebar">
           <i class="fa-solid fa-bars"></i>
         </button>
+
+        <img src="__RR_LOGO__" alt="Rajasthan Royals" class="rr-official-crest-header" onclick="switchTab('overview')" title="Go to Overview">
 
         <div class="header-titles">
           <div class="header-top-row">
@@ -3158,7 +3199,7 @@ def generate_dashboard():
 
           <div style="display: flex; align-items: center; justify-content: space-between; padding-top: 14px; border-top: 1px solid rgba(255, 255, 255, 0.08);">
             <div style="font-family: var(--font-script); font-size: 20px; color: #FF5EA6;">Pressure Makes Champions</div>
-            <i class="fa-solid fa-crown" style="font-size: 24px; color: var(--rr-pink);"></i>
+            <img src="__RR_LOGO__" alt="Rajasthan Royals Crest" style="height: 44px; width: auto; object-fit: contain; filter: drop-shadow(0 0 10px rgba(229,9,127,0.5));">
           </div>
         </div>
       </div>
@@ -3675,7 +3716,7 @@ def generate_dashboard():
     <!-- Bottom Footer Bar -->
     <footer class="dashboard-footer-bar">
       <div class="footer-left">
-        <i class="fa-solid fa-crown footer-crown"></i>
+        <img src="__RR_LOGO__" alt="Rajasthan Royals" class="rr-official-crest-footer">
         <span>Rajasthan Royals | SUPERR SELECTOR | Cricket Performance Intelligence | Season 2</span>
       </div>
       <div class="footer-right">
@@ -4692,6 +4733,7 @@ def generate_dashboard():
     html_template = html_template.replace("__MARSH_IMG__", marsh_img)
     html_template = html_template.replace("__SAMSON_IMG__", samson_img)
     html_template = html_template.replace("__CAMPHER_IMG__", campher_img)
+    html_template = html_template.replace("__RR_LOGO__", rr_logo_b64)
     html_template = html_template.replace("__PLAYERS_JSON__", players_json)
 
     # Write to target files

@@ -9,10 +9,14 @@ from pathlib import Path
 import streamlit as st
 import streamlit.components.v1 as components
 
-# Page Configuration
+# Base Directory & Logo Path
+base_dir = Path(__file__).resolve().parent
+logo_icon_path = base_dir / "assets" / "rr_official_logo.png"
+
+# Page Configuration with Official RR Crest Favicon
 st.set_page_config(
     page_title="Rajasthan Royals SUPERR SELECTOR Season 2",
-    page_icon="👑",
+    page_icon=str(logo_icon_path) if logo_icon_path.exists() else "👑",
     layout="wide",
     initial_sidebar_state="collapsed"
 )
@@ -51,7 +55,6 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Load the certified dark luxury dashboard
-base_dir = Path(__file__).resolve().parent
 html_file = base_dir / "index.html"
 if not html_file.exists():
     html_file = base_dir / "dashboard" / "index.html"
