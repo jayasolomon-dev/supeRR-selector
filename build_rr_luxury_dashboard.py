@@ -1,7 +1,11 @@
 # -*- coding: utf-8 -*-
 """
 Build Rajasthan Royals SUPERR SELECTOR Dashboard
-Ultra-Premium Senior UI/UX Dark Luxury Edition (Exact 7 Screenshots Replication)
+Ultra-Premium Senior UI/UX Edition:
+- Fluid Auto-Layout & 100% Fully Responsive (Mobile, Tablet, Laptop, 4K)
+- Bespoke Chart-Specific Animations (Horizontal Slide Cascade, Vertical Spring Bounce, Ripple Histogram, Sweeping Radial Donut)
+- Staggered Page & Card Entry Transitions on Every Tab Switch
+- Highest Ergonomic Chart Pairing for Every Cricket Performance Metric
 Outputs: index.html, dashboard/index.html, dashboard/superr_selector_dashboard.html
 """
 
@@ -50,7 +54,7 @@ def generate_dashboard():
 
   <style>
     /* ==========================================================================
-       SENIOR UI/UX DESIGN SYSTEM — RAJASTHAN ROYALS DARK LUXURY NEON EDITION
+       SENIOR UI/UX DESIGN SYSTEM — AUTO-LAYOUT & FLUID RESPONSIVE SYSTEM
        ========================================================================== */
     :root {
       --bg-canvas: #09061A;
@@ -85,6 +89,8 @@ def generate_dashboard():
       --radius-lg: 16px;
       --radius-xl: 22px;
       
+      --sidebar-width: 250px;
+      
       --font-main: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif;
       --font-script: 'Caveat', cursive, sans-serif;
     }
@@ -93,6 +99,11 @@ def generate_dashboard():
       box-sizing: border-box;
       margin: 0;
       padding: 0;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
     }
 
     body {
@@ -110,10 +121,10 @@ def generate_dashboard():
     }
 
     /* ==========================================================================
-       SIDEBAR NAVIGATION (EXACT SCREENSHOT LAYOUT)
+       SIDEBAR NAVIGATION (RESPONSIVE AUTO-LAYOUT)
        ========================================================================== */
     .sidebar {
-      width: 250px;
+      width: var(--sidebar-width);
       background: var(--bg-sidebar);
       border-right: 1px solid rgba(255, 255, 255, 0.08);
       height: 100vh;
@@ -124,15 +135,17 @@ def generate_dashboard():
       flex-direction: column;
       z-index: 100;
       box-shadow: 4px 0 24px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .sidebar-header {
-      padding: 24px 20px 18px 20px;
+      padding: clamp(16px, 2.5vh, 24px) 20px 18px 20px;
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
       border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      flex-shrink: 0;
     }
 
     .rr-logo-container {
@@ -147,6 +160,11 @@ def generate_dashboard():
       font-size: 34px;
       color: var(--rr-pink);
       filter: drop-shadow(0 0 10px rgba(229, 9, 127, 0.6));
+      transition: transform 0.25s ease;
+    }
+
+    .rr-logo-container:hover .rr-crown-icon {
+      transform: scale(1.08) rotate(-4deg);
     }
 
     .rr-brand-name {
@@ -198,12 +216,13 @@ def generate_dashboard():
       width: 20px;
       text-align: center;
       color: inherit;
-      transition: all 0.2s ease;
+      transition: transform 0.2s ease, color 0.2s ease;
     }
 
     .nav-item:hover {
       color: var(--text-white);
       background: rgba(255, 255, 255, 0.06);
+      transform: translateX(3px);
     }
 
     .nav-item.active {
@@ -219,12 +238,13 @@ def generate_dashboard():
     }
 
     .sidebar-footer {
-      padding: 20px 16px 20px 16px;
+      padding: 20px 16px;
       position: relative;
       background: linear-gradient(180deg, transparent 0%, rgba(10, 6, 26, 0.95) 100%);
       border-top: 1px solid rgba(255, 255, 255, 0.06);
       text-align: center;
       overflow: hidden;
+      flex-shrink: 0;
     }
 
     .sidebar-footer::before {
@@ -261,21 +281,24 @@ def generate_dashboard():
     }
 
     /* ==========================================================================
-       MAIN CONTENT WRAPPER & TOP BANNER
+       MAIN CONTENT AUTO-LAYOUT WRAPPER
        ========================================================================== */
     .main-wrapper {
-      margin-left: 250px;
+      margin-left: var(--sidebar-width);
       flex-grow: 1;
+      width: calc(100% - var(--sidebar-width));
       min-height: 100vh;
       display: flex;
       flex-direction: column;
       background: transparent;
       position: relative;
+      min-width: 0; /* Prevents flex children from blowing past container */
+      transition: margin-left 0.3s ease, width 0.3s ease;
     }
 
     /* Top Header Banner */
     .top-header-banner {
-      padding: 18px 36px;
+      padding: clamp(12px, 2vh, 18px) clamp(16px, 3vw, 36px);
       background: linear-gradient(90deg, #100B2E 0%, #171142 50%, #0E0927 100%);
       border-bottom: 1px solid rgba(139, 92, 246, 0.25);
       display: flex;
@@ -286,12 +309,34 @@ def generate_dashboard():
       z-index: 90;
       backdrop-filter: blur(16px);
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+      flex-wrap: wrap;
+      gap: 12px;
     }
 
     .header-left {
       display: flex;
       align-items: center;
       gap: 16px;
+      min-width: 0;
+    }
+
+    .sidebar-toggle-btn {
+      display: none; /* Shown on small screens */
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #FFFFFF;
+      width: 38px;
+      height: 38px;
+      border-radius: var(--radius-sm);
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 16px;
+      transition: all 0.2s ease;
+    }
+
+    .sidebar-toggle-btn:hover {
+      background: var(--rr-pink);
     }
 
     .header-titles {
@@ -313,7 +358,7 @@ def generate_dashboard():
     }
 
     .header-app-title {
-      font-size: 26px;
+      font-size: clamp(20px, 2.4vw, 26px);
       font-weight: 900;
       font-style: italic;
       color: var(--rr-hotpink);
@@ -335,33 +380,41 @@ def generate_dashboard():
 
     .header-divider {
       width: 1px;
-      height: 38px;
+      height: 36px;
       background: rgba(255, 255, 255, 0.15);
-      margin: 0 16px;
+      margin: 0 8px;
     }
 
     .header-page-context {
       display: flex;
       flex-direction: column;
+      min-width: 0;
     }
 
     .header-page-title {
-      font-size: 20px;
+      font-size: clamp(16px, 1.8vw, 20px);
       font-weight: 800;
       color: #FFFFFF;
       line-height: 1.2;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     .header-page-subtitle {
-      font-size: 13px;
+      font-size: 12.5px;
       color: var(--text-muted);
       font-weight: 500;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     .header-right {
       display: flex;
       align-items: center;
-      gap: 20px;
+      gap: 16px;
+      flex-shrink: 0;
     }
 
     .header-stadium-graphic {
@@ -375,53 +428,100 @@ def generate_dashboard():
     }
 
     .stadium-tagline {
-      font-size: 13px;
+      font-size: 12.5px;
       font-weight: 700;
       color: #FF75B5;
       letter-spacing: 0.5px;
     }
 
     /* ==========================================================================
-       VIEW CONTAINER & CARDS ARCHITECTURE
+       STAGGERED VIEW TRANSITION ANIMATIONS
        ========================================================================== */
     .view-content {
-      padding: 28px 36px 60px 36px;
+      padding: clamp(16px, 2.5vw, 32px) clamp(16px, 3vw, 36px) 60px clamp(16px, 3vw, 36px);
       flex-grow: 1;
-      display: none; /* Controlled via JS */
-      animation: fadeIn 0.25s ease-out forwards;
+      display: none;
+      min-width: 0;
+      opacity: 0;
+      transform: translateY(12px);
+      transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     .view-content.active {
       display: block;
+      opacity: 1;
+      transform: translateY(0);
+      animation: viewSlideIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
     }
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(6px); }
-      to { opacity: 1; transform: translateY(0); }
+    @keyframes viewSlideIn {
+      0% {
+        opacity: 0;
+        transform: translateY(14px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
-    /* Generic Card Glassmorphism */
+    /* Staggered card entrance on active tab */
+    .view-content.active .rr-card,
+    .view-content.active .overview-hero-card,
+    .view-content.active .kpi-mini-card,
+    .view-content.active .spotlight-card,
+    .view-content.active .intel-top-card,
+    .view-content.active .pressure-kpi-card,
+    .view-content.active .comp-player-card {
+      animation: cardStagger 0.45s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+
+    .view-content.active > div:nth-child(1) { animation-delay: 0.04s; }
+    .view-content.active > div:nth-child(2) { animation-delay: 0.09s; }
+    .view-content.active > div:nth-child(3) { animation-delay: 0.14s; }
+    .view-content.active > div:nth-child(4) { animation-delay: 0.19s; }
+
+    @keyframes cardStagger {
+      0% {
+        opacity: 0;
+        transform: translateY(18px) scale(0.985);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    /* ==========================================================================
+       CARD COMPONENT AUTO-LAYOUT & FLUID GRIDS
+       ========================================================================== */
     .rr-card {
       background: var(--bg-card);
       border: 1px solid var(--border-card);
       border-radius: var(--radius-lg);
-      padding: 20px;
+      padding: clamp(16px, 2vw, 22px);
       position: relative;
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
       backdrop-filter: blur(12px);
-      transition: all 0.25s ease;
+      transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.25s ease, box-shadow 0.25s ease;
+      min-width: 0;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
     }
 
     .rr-card:hover {
-      border-color: rgba(229, 9, 127, 0.4);
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 15px rgba(229, 9, 127, 0.12);
+      border-color: rgba(229, 9, 127, 0.45);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5), 0 0 20px rgba(229, 9, 127, 0.16);
     }
 
     .card-header-clean {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 16px;
+      margin-bottom: 14px;
+      flex-shrink: 0;
     }
 
     .card-title-group {
@@ -436,7 +536,7 @@ def generate_dashboard():
     }
 
     .card-title {
-      font-size: 16px;
+      font-size: clamp(14px, 1.4vw, 16px);
       font-weight: 800;
       color: #FFFFFF;
       letter-spacing: 0.2px;
@@ -448,62 +548,83 @@ def generate_dashboard():
       color: #FF5EA6;
       cursor: pointer;
       text-decoration: none;
-      transition: color 0.2s ease;
+      transition: color 0.2s ease, transform 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
     }
 
     .card-action-link:hover {
       color: #FFFFFF;
-      text-decoration: underline;
+      transform: translateX(3px);
+    }
+
+    .chart-container-fluid {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      min-height: 180px;
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     /* ==========================================================================
-       VIEW 1: OVERVIEW SCREEN
+       VIEW 1: OVERVIEW AUTO-LAYOUT
        ========================================================================== */
     .overview-hero-grid {
       display: grid;
-      grid-template-columns: 1.4fr 1fr 1fr 1fr 1fr;
-      gap: 18px;
-      margin-bottom: 22px;
+      grid-template-columns: minmax(300px, 1.4fr) repeat(4, minmax(130px, 1fr));
+      gap: 16px;
+      margin-bottom: 20px;
     }
 
     .overview-hero-card {
       background: linear-gradient(135deg, rgba(229, 9, 127, 0.25) 0%, rgba(20, 15, 48, 0.95) 100%);
       border: 1px solid rgba(229, 9, 127, 0.4);
       border-radius: var(--radius-lg);
-      padding: 20px 24px;
+      padding: 18px 22px;
       display: flex;
       align-items: center;
-      gap: 20px;
+      gap: 18px;
       position: relative;
       overflow: hidden;
       box-shadow: 0 8px 30px rgba(229, 9, 127, 0.2);
     }
 
     .hero-cutout-img {
-      height: 95px;
-      width: 95px;
+      height: 90px;
+      width: 90px;
       object-fit: cover;
       object-position: top;
       border-radius: 50%;
       border: 2px solid var(--rr-pink);
-      box-shadow: 0 0 15px rgba(229, 9, 127, 0.4);
+      box-shadow: 0 0 16px rgba(229, 9, 127, 0.45);
       background: #0A071E;
+      flex-shrink: 0;
+      transition: transform 0.3s ease;
+    }
+
+    .overview-hero-card:hover .hero-cutout-img {
+      transform: scale(1.05);
     }
 
     .hero-text-content h3 {
-      font-size: 13px;
+      font-size: 12px;
       font-weight: 600;
       color: var(--text-light);
       text-transform: uppercase;
       letter-spacing: 1px;
     }
     .hero-text-content h2 {
-      font-size: 20px;
+      font-size: clamp(18px, 2vw, 22px);
       font-weight: 900;
       font-style: italic;
       color: var(--rr-gold-light);
       letter-spacing: 0.5px;
       margin: 2px 0;
+      line-height: 1.1;
     }
     .hero-text-content p {
       font-size: 11.5px;
@@ -511,35 +632,40 @@ def generate_dashboard():
       font-weight: 500;
     }
 
-    /* Top KPI Mini Cards */
     .kpi-mini-card {
       background: var(--bg-card);
       border: 1px solid var(--border-card);
       border-radius: var(--radius-lg);
-      padding: 18px;
+      padding: 16px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
       position: relative;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .kpi-mini-card:hover {
+      transform: translateY(-2px);
+      border-color: rgba(229, 9, 127, 0.4);
     }
 
     .kpi-mini-icon {
       font-size: 22px;
       color: var(--rr-pink);
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
 
     .kpi-mini-label {
-      font-size: 12px;
+      font-size: 11.5px;
       font-weight: 600;
       color: var(--text-muted);
-      margin-bottom: 4px;
+      margin-bottom: 2px;
     }
 
     .kpi-mini-value {
-      font-size: 28px;
+      font-size: clamp(24px, 2.5vw, 30px);
       font-weight: 900;
       color: #FFFFFF;
       line-height: 1;
@@ -552,23 +678,28 @@ def generate_dashboard():
       font-weight: 500;
     }
 
-    /* Spotlight Double Cards */
     .overview-spotlights-grid {
       display: grid;
-      grid-template-columns: 1.2fr 1.2fr 1fr;
-      gap: 18px;
-      margin-bottom: 22px;
+      grid-template-columns: minmax(280px, 1.2fr) minmax(280px, 1.2fr) minmax(240px, 1fr);
+      gap: 16px;
+      margin-bottom: 20px;
     }
 
     .spotlight-card {
       background: var(--bg-card);
       border: 1px solid var(--border-card);
       border-radius: var(--radius-lg);
-      padding: 22px;
+      padding: 20px;
       display: flex;
       flex-direction: column;
       position: relative;
       overflow: hidden;
+      transition: transform 0.25s ease, border-color 0.25s ease;
+    }
+
+    .spotlight-card:hover {
+      transform: translateY(-2px);
+      border-color: rgba(229, 9, 127, 0.45);
     }
 
     .spotlight-header {
@@ -578,7 +709,7 @@ def generate_dashboard():
       font-size: 15px;
       font-weight: 800;
       color: #FFFFFF;
-      margin-bottom: 16px;
+      margin-bottom: 14px;
     }
 
     .spotlight-header .crown-badge {
@@ -586,18 +717,18 @@ def generate_dashboard():
       color: var(--rr-gold-light);
       padding: 4px 8px;
       border-radius: 8px;
-      font-size: 14px;
+      font-size: 13px;
     }
 
     .spotlight-body {
       display: flex;
       align-items: center;
-      gap: 20px;
+      gap: 18px;
     }
 
     .spotlight-player-img {
-      width: 100px;
-      height: 100px;
+      width: clamp(80px, 9vw, 95px);
+      height: clamp(80px, 9vw, 95px);
       border-radius: 50%;
       object-fit: cover;
       object-position: top;
@@ -605,13 +736,18 @@ def generate_dashboard():
       box-shadow: 0 0 20px rgba(229, 9, 127, 0.35);
       background: #09061A;
       flex-shrink: 0;
+      transition: transform 0.3s ease;
+    }
+
+    .spotlight-card:hover .spotlight-player-img {
+      transform: scale(1.06);
     }
 
     .spotlight-metrics {
       flex-grow: 1;
       display: flex;
       flex-direction: column;
-      gap: 6px;
+      gap: 5px;
     }
 
     .spotlight-ri-wrap {
@@ -621,26 +757,27 @@ def generate_dashboard():
     }
 
     .spotlight-ri {
-      font-size: 34px;
+      font-size: clamp(28px, 3.2vw, 36px);
       font-weight: 900;
       color: #FFFFFF;
       line-height: 1;
     }
 
     .spotlight-ri-label {
-      font-size: 12px;
+      font-size: 11.5px;
       color: var(--text-muted);
       font-weight: 600;
     }
 
     .spotlight-tags {
       display: flex;
-      gap: 12px;
+      flex-wrap: wrap;
+      gap: 10px;
       margin-top: 4px;
     }
 
     .spotlight-stat-tag {
-      font-size: 12px;
+      font-size: 11.5px;
       font-weight: 700;
     }
     .stat-tag-green { color: #10B981; }
@@ -659,18 +796,19 @@ def generate_dashboard():
       width: 100%;
     }
 
-    /* Squad Composition Donut */
     .donut-card-container {
       display: flex;
       align-items: center;
       justify-content: space-around;
       height: 100%;
+      gap: 12px;
     }
 
     .donut-chart-box {
       width: 130px;
       height: 130px;
       position: relative;
+      flex-shrink: 0;
     }
 
     .donut-center-badge {
@@ -699,14 +837,14 @@ def generate_dashboard():
     .donut-legend {
       display: flex;
       flex-direction: column;
-      gap: 12px;
+      gap: 10px;
     }
 
     .legend-item {
       display: flex;
       align-items: center;
       gap: 8px;
-      font-size: 13px;
+      font-size: 12.5px;
       font-weight: 600;
       color: var(--text-light);
     }
@@ -717,7 +855,6 @@ def generate_dashboard():
       border-radius: 50%;
     }
 
-    /* Overview Dual Tables with Mini Progress Bars */
     .overview-dual-tables {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -727,7 +864,7 @@ def generate_dashboard():
     .mini-rank-table {
       width: 100%;
       border-collapse: collapse;
-      margin-top: 8px;
+      margin-top: 6px;
     }
 
     .mini-rank-table th {
@@ -742,8 +879,8 @@ def generate_dashboard():
     }
 
     .mini-rank-table td {
-      padding: 10px;
-      font-size: 13px;
+      padding: 9px 10px;
+      font-size: 12.5px;
       font-weight: 600;
       color: var(--text-light);
       border-bottom: 1px solid rgba(255, 255, 255, 0.04);
@@ -757,7 +894,7 @@ def generate_dashboard():
       display: flex;
       align-items: center;
       gap: 10px;
-      width: 160px;
+      width: clamp(100px, 14vw, 160px);
     }
 
     .progress-track {
@@ -766,18 +903,25 @@ def generate_dashboard():
       background: rgba(255, 255, 255, 0.1);
       border-radius: 10px;
       overflow: hidden;
+      position: relative;
+    }
+
+    .progress-fill-pink,
+    .progress-fill-purple {
+      height: 100%;
+      border-radius: 10px;
+      width: 0%; /* Will animate in via JS */
+      transition: width 1.2s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     .progress-fill-pink {
-      height: 100%;
       background: linear-gradient(90deg, var(--rr-pink), #FF5EA6);
-      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(229, 9, 127, 0.5);
     }
 
     .progress-fill-purple {
-      height: 100%;
-      background: linear-gradient(90deg, #8B5CF6, #A855F7);
-      border-radius: 10px;
+      background: linear-gradient(90deg, #38BDF8, #8B5CF6);
+      box-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
     }
 
     .progress-val {
@@ -792,32 +936,38 @@ def generate_dashboard():
        ========================================================================== */
     .kpi-row-5 {
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
       gap: 16px;
-      margin-bottom: 22px;
+      margin-bottom: 20px;
     }
 
     .intel-top-card {
       background: var(--bg-card);
       border: 1px solid var(--border-card);
       border-radius: var(--radius-lg);
-      padding: 18px 20px;
+      padding: 16px 18px;
       display: flex;
       align-items: center;
-      gap: 16px;
+      gap: 14px;
       box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .intel-top-card:hover {
+      transform: translateY(-2px);
+      border-color: rgba(229, 9, 127, 0.4);
     }
 
     .intel-top-icon {
-      width: 48px;
-      height: 48px;
+      width: 44px;
+      height: 44px;
       border-radius: 12px;
       background: rgba(229, 9, 127, 0.12);
       border: 1px solid rgba(229, 9, 127, 0.3);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 20px;
+      font-size: 18px;
       color: var(--rr-pink);
       flex-shrink: 0;
     }
@@ -828,38 +978,48 @@ def generate_dashboard():
     .intel-top-data {
       display: flex;
       flex-direction: column;
+      min-width: 0;
     }
 
     .intel-top-label {
-      font-size: 11.5px;
+      font-size: 11px;
       font-weight: 600;
       color: var(--text-muted);
-      margin-bottom: 3px;
+      margin-bottom: 2px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     .intel-top-val {
-      font-size: 22px;
+      font-size: clamp(18px, 2vw, 22px);
       font-weight: 900;
       color: #FFFFFF;
       line-height: 1.1;
     }
 
     .intel-top-sub {
-      font-size: 11px;
+      font-size: 10.5px;
       font-weight: 600;
       color: var(--text-dim);
     }
 
     .mid-table-chart-grid {
       display: grid;
-      grid-template-columns: 1.2fr 1fr;
+      grid-template-columns: minmax(320px, 1.25fr) minmax(280px, 1fr);
       gap: 18px;
-      margin-bottom: 22px;
+      margin-bottom: 20px;
+    }
+
+    .clean-table-wrap {
+      width: 100%;
+      overflow-x: auto;
     }
 
     .clean-table {
       width: 100%;
       border-collapse: collapse;
+      min-width: 380px;
     }
 
     .clean-table th {
@@ -869,13 +1029,13 @@ def generate_dashboard():
       color: var(--text-dim);
       text-transform: uppercase;
       letter-spacing: 0.5px;
-      padding: 10px 12px;
+      padding: 9px 12px;
       border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     }
 
     .clean-table td {
-      padding: 10px 12px;
-      font-size: 13px;
+      padding: 9px 12px;
+      font-size: 12.5px;
       font-weight: 600;
       color: var(--text-light);
       border-bottom: 1px solid rgba(255, 255, 255, 0.04);
@@ -895,11 +1055,10 @@ def generate_dashboard():
       display: inline-block;
     }
 
-    /* Bottom 4-Card Grid for Intelligence */
     .intel-bottom-grid {
       display: grid;
-      grid-template-columns: 1.2fr 1fr 1fr 1.2fr;
-      gap: 18px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
     }
 
     .gauge-slider-container {
@@ -907,8 +1066,9 @@ def generate_dashboard():
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 15px 10px;
+      padding: 12px 10px;
       text-align: center;
+      height: 100%;
     }
 
     .gauge-big-num {
@@ -921,7 +1081,7 @@ def generate_dashboard():
     .gauge-subtext {
       font-size: 12px;
       color: var(--text-muted);
-      margin-bottom: 20px;
+      margin-bottom: 18px;
     }
 
     .gauge-track-wrap {
@@ -941,14 +1101,15 @@ def generate_dashboard():
     .gauge-thumb {
       position: absolute;
       top: 50%;
-      left: 65.4%;
+      left: 0%; /* Will animate to 65.4% via JS */
       transform: translate(-50%, -50%);
       width: 18px;
       height: 18px;
       background: #FFFFFF;
       border: 3px solid var(--rr-pink);
       border-radius: 50%;
-      box-shadow: 0 0 10px rgba(229, 9, 127, 0.8);
+      box-shadow: 0 0 12px rgba(229, 9, 127, 0.8);
+      transition: left 1.3s cubic-bezier(0.34, 1.56, 0.64, 1);
     }
 
     .gauge-labels {
@@ -966,28 +1127,30 @@ def generate_dashboard():
       display: flex;
       flex-direction: column;
       height: 100%;
+      justify-content: space-between;
     }
 
     .player-spotlight-header {
       display: flex;
       align-items: center;
-      gap: 16px;
-      margin-bottom: 12px;
+      gap: 14px;
+      margin-bottom: 10px;
     }
 
     .spotlight-avatar-lg {
-      width: 72px;
-      height: 72px;
+      width: 68px;
+      height: 68px;
       border-radius: 50%;
       object-fit: cover;
       object-position: top;
       border: 2px solid var(--rr-pink);
       box-shadow: 0 0 16px rgba(229, 9, 127, 0.4);
       background: #09061A;
+      flex-shrink: 0;
     }
 
     .spotlight-info-lg h4 {
-      font-size: 17px;
+      font-size: 16px;
       font-weight: 800;
       color: #FFFFFF;
       margin-bottom: 2px;
@@ -998,11 +1161,11 @@ def generate_dashboard():
       font-weight: 700;
       color: var(--rr-gold-light);
       display: inline-block;
-      margin-bottom: 3px;
+      margin-bottom: 2px;
     }
 
     .spotlight-ri-text {
-      font-size: 12.5px;
+      font-size: 12px;
       font-weight: 600;
       color: var(--text-light);
     }
@@ -1011,14 +1174,14 @@ def generate_dashboard():
       display: flex;
       flex-direction: column;
       gap: 6px;
-      margin: 8px 0 14px 0;
+      margin: 6px 0 12px 0;
     }
 
     .spotlight-bullet {
       display: flex;
       align-items: center;
       gap: 8px;
-      font-size: 12px;
+      font-size: 11.5px;
       font-weight: 600;
       color: var(--text-light);
     }
@@ -1034,17 +1197,17 @@ def generate_dashboard():
       border: none;
       padding: 9px 16px;
       border-radius: var(--radius-md);
-      font-size: 12.5px;
+      font-size: 12px;
       font-weight: 700;
       cursor: pointer;
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 8px;
-      margin-top: auto;
       transition: all 0.2s ease;
       box-shadow: 0 4px 14px rgba(229, 9, 127, 0.35);
       text-decoration: none;
+      width: 100%;
     }
 
     .view-profile-btn:hover {
@@ -1054,36 +1217,41 @@ def generate_dashboard():
     }
 
     /* ==========================================================================
-       VIEW 4: PRESSURE ANALYSIS SCREEN
+       VIEW 4: PRESSURE ANALYSIS
        ========================================================================== */
     .pressure-top-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
-      margin-bottom: 22px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-bottom: 20px;
     }
 
     .pressure-kpi-card {
       background: var(--bg-card);
       border: 1px solid var(--border-card);
       border-radius: var(--radius-lg);
-      padding: 20px 24px;
+      padding: 18px 20px;
       display: flex;
       align-items: center;
-      gap: 20px;
+      gap: 18px;
+      transition: transform 0.2s ease;
+    }
+
+    .pressure-kpi-card:hover {
+      transform: translateY(-2px);
     }
 
     .pressure-mid-3col {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 18px;
-      margin-bottom: 22px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+      margin-bottom: 20px;
     }
 
     .pressure-bottom-3col {
       display: grid;
-      grid-template-columns: 1.1fr 1fr 1.1fr;
-      gap: 18px;
+      grid-template-columns: minmax(280px, 1.1fr) minmax(260px, 1fr) minmax(280px, 1.1fr);
+      gap: 16px;
     }
 
     .kpi-indicator-table {
@@ -1092,8 +1260,8 @@ def generate_dashboard():
     }
 
     .kpi-indicator-table td {
-      padding: 12px 6px;
-      font-size: 13px;
+      padding: 11px 6px;
+      font-size: 12.5px;
       font-weight: 600;
       color: var(--text-light);
       border-bottom: 1px solid rgba(255, 255, 255, 0.05);
@@ -1101,7 +1269,7 @@ def generate_dashboard():
 
     .kpi-indicator-table td:last-child {
       text-align: right;
-      font-size: 15px;
+      font-size: 14.5px;
       font-weight: 800;
       color: #FFFFFF;
     }
@@ -1113,7 +1281,7 @@ def generate_dashboard():
     .pressure-insight-bullets {
       display: flex;
       flex-direction: column;
-      gap: 12px;
+      gap: 10px;
       padding: 4px 0;
     }
 
@@ -1121,48 +1289,52 @@ def generate_dashboard():
       display: flex;
       align-items: flex-start;
       gap: 10px;
-      font-size: 12.5px;
+      font-size: 12px;
       color: var(--text-light);
       line-height: 1.35;
     }
 
     .pressure-bullet-item i {
       color: #10B981;
-      font-size: 13px;
+      font-size: 12px;
       margin-top: 2px;
       flex-shrink: 0;
     }
 
     /* ==========================================================================
-       VIEW 5: PLAYER COMPARISON SCREEN
+       VIEW 5: PLAYER COMPARISON
        ========================================================================== */
     .comparison-controls-card {
       background: var(--bg-card);
       border: 1px solid var(--border-card);
       border-radius: var(--radius-lg);
-      padding: 16px 24px;
+      padding: 16px 20px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 20px;
-      margin-bottom: 22px;
+      gap: 16px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
     }
 
     .discipline-pills {
       display: flex;
-      gap: 10px;
+      gap: 8px;
     }
 
     .discipline-pill {
-      padding: 8px 18px;
+      padding: 8px 16px;
       border-radius: 30px;
-      font-size: 13px;
+      font-size: 12.5px;
       font-weight: 700;
       cursor: pointer;
       transition: all 0.2s ease;
       border: 1px solid rgba(255, 255, 255, 0.12);
       color: var(--text-muted);
       background: rgba(255, 255, 255, 0.04);
+      display: flex;
+      align-items: center;
+      gap: 8px;
     }
 
     .discipline-pill.active {
@@ -1175,22 +1347,21 @@ def generate_dashboard():
     .comparison-selects {
       display: flex;
       align-items: center;
-      gap: 14px;
-      flex-grow: 1;
-      justify-content: flex-end;
+      gap: 10px;
+      flex-wrap: wrap;
     }
 
     .player-select-dropdown {
       background: #0D0A24;
       border: 1px solid rgba(139, 92, 246, 0.35);
       color: #FFFFFF;
-      padding: 9px 14px;
+      padding: 8px 12px;
       border-radius: var(--radius-md);
-      font-size: 13px;
+      font-size: 12.5px;
       font-weight: 600;
       outline: none;
       cursor: pointer;
-      min-width: 170px;
+      min-width: 155px;
     }
 
     .player-select-dropdown:focus {
@@ -1202,9 +1373,9 @@ def generate_dashboard():
       background: linear-gradient(90deg, var(--rr-pink) 0%, #D81B60 100%);
       color: #FFFFFF;
       border: none;
-      padding: 9px 20px;
+      padding: 8px 18px;
       border-radius: var(--radius-md);
-      font-size: 13px;
+      font-size: 12.5px;
       font-weight: 700;
       cursor: pointer;
       display: flex;
@@ -1221,16 +1392,16 @@ def generate_dashboard():
 
     .comparison-cards-3col {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-      margin-bottom: 22px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+      margin-bottom: 20px;
     }
 
     .comp-player-card {
       background: var(--bg-card);
       border: 1px solid var(--border-card);
       border-radius: var(--radius-lg);
-      padding: 20px;
+      padding: 18px;
       position: relative;
       overflow: hidden;
     }
@@ -1238,62 +1409,68 @@ def generate_dashboard():
     .comp-card-top {
       display: flex;
       align-items: center;
-      gap: 16px;
-      margin-bottom: 16px;
+      gap: 14px;
+      margin-bottom: 14px;
     }
 
     .comp-card-avatar {
-      width: 76px;
-      height: 76px;
+      width: 72px;
+      height: 72px;
       border-radius: 50%;
       object-fit: cover;
       object-position: top;
       border: 3px solid var(--rr-pink);
-      box-shadow: 0 0 18px rgba(229, 9, 127, 0.35);
+      box-shadow: 0 0 16px rgba(229, 9, 127, 0.35);
       background: #09061A;
+      flex-shrink: 0;
     }
 
     .comp-card-meta {
       flex-grow: 1;
+      min-width: 0;
     }
 
     .comp-card-name {
-      font-size: 18px;
+      font-size: 17px;
       font-weight: 800;
       color: #FFFFFF;
       line-height: 1.2;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     .comp-card-role {
-      font-size: 12px;
+      font-size: 11.5px;
       color: var(--text-muted);
       margin-bottom: 4px;
     }
 
     .comp-rank-badge {
       display: inline-block;
-      padding: 2px 8px;
+      padding: 2px 7px;
       background: rgba(229, 9, 127, 0.2);
       border: 1px solid var(--rr-pink);
       color: #FF5EA6;
       border-radius: 6px;
-      font-size: 11px;
+      font-size: 10.5px;
       font-weight: 800;
     }
 
     .comp-card-ri-badge {
       text-align: right;
+      flex-shrink: 0;
     }
 
     .comp-card-ri-num {
-      font-size: 26px;
+      font-size: 24px;
       font-weight: 900;
       color: #FFFFFF;
       line-height: 1;
     }
 
     .comp-card-ri-label {
-      font-size: 10px;
+      font-size: 9.5px;
       color: var(--text-dim);
       font-weight: 600;
       text-transform: uppercase;
@@ -1302,9 +1479,9 @@ def generate_dashboard():
     .comp-stats-quad {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 8px;
+      gap: 6px;
       background: rgba(255, 255, 255, 0.03);
-      padding: 12px;
+      padding: 10px;
       border-radius: var(--radius-md);
       border: 1px solid rgba(255, 255, 255, 0.05);
       text-align: center;
@@ -1313,59 +1490,64 @@ def generate_dashboard():
     .comp-stat-item {
       display: flex;
       flex-direction: column;
-      gap: 3px;
+      gap: 2px;
     }
 
     .comp-stat-lbl {
-      font-size: 10px;
+      font-size: 9.5px;
       color: var(--text-muted);
       font-weight: 600;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     .comp-stat-val {
-      font-size: 15px;
+      font-size: 14px;
       font-weight: 800;
       color: #FFFFFF;
     }
 
     .comp-charts-3col {
       display: grid;
-      grid-template-columns: 1.2fr 1fr 1fr;
-      gap: 18px;
-      margin-bottom: 22px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+      margin-bottom: 20px;
     }
 
     .comp-summary-3col {
       display: grid;
-      grid-template-columns: 1fr 1.1fr 1fr;
-      gap: 18px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
     }
 
     .top-choice-card {
       background: linear-gradient(135deg, rgba(229, 9, 127, 0.2) 0%, rgba(20, 15, 48, 0.95) 100%);
       border: 1px solid rgba(229, 9, 127, 0.5);
       border-radius: var(--radius-lg);
-      padding: 20px;
+      padding: 18px;
       display: flex;
       align-items: center;
-      gap: 16px;
+      gap: 14px;
       position: relative;
       overflow: hidden;
       box-shadow: 0 0 25px rgba(229, 9, 127, 0.25);
     }
 
     .top-choice-trophy {
-      font-size: 32px;
+      font-size: 30px;
       color: var(--rr-gold-light);
       filter: drop-shadow(0 0 10px rgba(245, 158, 11, 0.6));
+      flex-shrink: 0;
     }
 
     .top-choice-details {
       flex-grow: 1;
+      min-width: 0;
     }
 
     .top-choice-lbl {
-      font-size: 11px;
+      font-size: 10.5px;
       font-weight: 700;
       color: var(--text-light);
       text-transform: uppercase;
@@ -1373,44 +1555,48 @@ def generate_dashboard():
     }
 
     .top-choice-name {
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 900;
       color: #FFFFFF;
       margin: 2px 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     .top-choice-ri {
-      font-size: 13px;
+      font-size: 12px;
       font-weight: 700;
       color: var(--rr-gold-light);
     }
 
     .top-choice-avatar {
-      width: 72px;
-      height: 72px;
+      width: 68px;
+      height: 68px;
       border-radius: 50%;
       object-fit: cover;
       object-position: top;
       border: 2px solid var(--rr-gold-light);
       box-shadow: 0 0 16px rgba(245, 158, 11, 0.4);
       background: #09061A;
+      flex-shrink: 0;
     }
 
     /* ==========================================================================
-       VIEW 6: PLAYER RANKINGS SCREEN
+       VIEW 6: PLAYER RANKINGS
        ========================================================================== */
     .rankings-dual-tables {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-      margin-bottom: 22px;
+      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+      gap: 18px;
+      margin-bottom: 20px;
     }
 
     .rankings-table-wrap {
       background: var(--bg-card);
       border: 1px solid var(--border-card);
       border-radius: var(--radius-lg);
-      padding: 20px;
+      padding: 18px;
       position: relative;
     }
 
@@ -1418,14 +1604,16 @@ def generate_dashboard():
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 14px;
+      margin-bottom: 12px;
+      gap: 10px;
+      flex-wrap: wrap;
     }
 
     .table-top-title {
       display: flex;
       align-items: center;
       gap: 10px;
-      font-size: 17px;
+      font-size: 16px;
       font-weight: 800;
       color: #FFFFFF;
     }
@@ -1434,9 +1622,9 @@ def generate_dashboard():
       background: rgba(255, 255, 255, 0.06);
       border: 1px solid rgba(255, 255, 255, 0.15);
       color: var(--text-light);
-      padding: 6px 14px;
+      padding: 6px 12px;
       border-radius: var(--radius-sm);
-      font-size: 12px;
+      font-size: 11.5px;
       font-weight: 700;
       cursor: pointer;
       display: flex;
@@ -1458,13 +1646,14 @@ def generate_dashboard():
     }
 
     .table-player-thumb {
-      width: 34px;
-      height: 34px;
+      width: 32px;
+      height: 32px;
       border-radius: 50%;
       object-fit: cover;
       object-position: top;
       background: #09061A;
       border: 1.5px solid var(--rr-pink);
+      flex-shrink: 0;
     }
 
     .core-pill-badge {
@@ -1475,12 +1664,13 @@ def generate_dashboard():
       font-weight: 700;
       padding: 2px 8px;
       border-radius: 12px;
+      white-space: nowrap;
     }
 
     .rankings-bottom-4col {
       display: grid;
-      grid-template-columns: 1.2fr 1fr 1fr 1.2fr;
-      gap: 18px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
     }
 
     .action-button-stack {
@@ -1495,9 +1685,9 @@ def generate_dashboard():
       background: rgba(255, 255, 255, 0.05);
       border: 1px solid rgba(255, 255, 255, 0.12);
       color: #FFFFFF;
-      padding: 12px 16px;
+      padding: 11px 14px;
       border-radius: var(--radius-md);
-      font-size: 13px;
+      font-size: 12.5px;
       font-weight: 700;
       cursor: pointer;
       display: flex;
@@ -1516,7 +1706,7 @@ def generate_dashboard():
       background: linear-gradient(135deg, rgba(20, 15, 48, 0.95) 0%, rgba(10, 6, 26, 0.95) 100%);
       border: 1px solid rgba(245, 158, 11, 0.35);
       border-radius: var(--radius-lg);
-      padding: 20px;
+      padding: 18px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -1527,14 +1717,14 @@ def generate_dashboard():
     }
 
     .rr-ready-banner .crown-lg {
-      font-size: 34px;
+      font-size: 32px;
       color: var(--rr-gold-light);
       margin-bottom: 6px;
       filter: drop-shadow(0 0 10px rgba(245, 158, 11, 0.5));
     }
 
     .rr-ready-banner h4 {
-      font-size: 16px;
+      font-size: 15px;
       font-weight: 900;
       color: #FFFFFF;
       letter-spacing: 0.5px;
@@ -1550,20 +1740,20 @@ def generate_dashboard():
     }
 
     /* ==========================================================================
-       VIEW 7: METHODOLOGY & VALIDATION SCREEN
+       VIEW 7: METHODOLOGY & VALIDATION
        ========================================================================== */
     .method-top-5col {
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
       gap: 16px;
-      margin-bottom: 22px;
+      margin-bottom: 20px;
     }
 
     .method-mid-2col {
       display: grid;
-      grid-template-columns: 1.1fr 1.4fr;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
       gap: 18px;
-      margin-bottom: 22px;
+      margin-bottom: 20px;
     }
 
     .pipeline-stepper {
@@ -1572,6 +1762,8 @@ def generate_dashboard():
       justify-content: space-between;
       height: 100%;
       padding: 10px 0;
+      gap: 6px;
+      overflow-x: auto;
     }
 
     .pipeline-step {
@@ -1579,48 +1771,55 @@ def generate_dashboard():
       flex-direction: column;
       align-items: center;
       text-align: center;
-      gap: 10px;
+      gap: 8px;
       flex: 1;
+      min-width: 65px;
     }
 
     .pipeline-icon-circle {
-      width: 52px;
-      height: 52px;
+      width: 48px;
+      height: 48px;
       border-radius: 50%;
       background: rgba(229, 9, 127, 0.15);
       border: 1.5px solid var(--rr-pink);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 20px;
+      font-size: 18px;
       color: var(--rr-pink);
       box-shadow: 0 0 15px rgba(229, 9, 127, 0.25);
+      transition: transform 0.25s ease;
+    }
+
+    .pipeline-step:hover .pipeline-icon-circle {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px rgba(229, 9, 127, 0.5);
     }
 
     .pipeline-title {
-      font-size: 11.5px;
+      font-size: 11px;
       font-weight: 700;
       color: var(--text-light);
       line-height: 1.2;
     }
 
     .pipeline-arrow {
-      font-size: 16px;
+      font-size: 14px;
       color: rgba(255, 255, 255, 0.2);
-      margin-bottom: 20px;
+      margin-bottom: 18px;
     }
 
     .method-row3-3col {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 18px;
-      margin-bottom: 22px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      margin-bottom: 20px;
     }
 
     .method-row4-4col {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      gap: 18px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
     }
 
     .rules-dual-box {
@@ -1630,7 +1829,7 @@ def generate_dashboard():
     }
 
     .rule-box-header {
-      font-size: 12px;
+      font-size: 11.5px;
       font-weight: 800;
       padding: 4px 10px;
       border-radius: 6px;
@@ -1661,11 +1860,11 @@ def generate_dashboard():
     }
 
     /* ==========================================================================
-       BOTTOM VERIFICATION FOOTER
+       BOTTOM FOOTER
        ========================================================================== */
     .dashboard-footer-bar {
       margin-top: auto;
-      padding: 16px 36px;
+      padding: 16px clamp(16px, 3vw, 36px);
       background: #080517;
       border-top: 1px solid rgba(255, 255, 255, 0.08);
       display: flex;
@@ -1673,6 +1872,8 @@ def generate_dashboard():
       justify-content: space-between;
       font-size: 12px;
       color: var(--text-dim);
+      flex-wrap: wrap;
+      gap: 10px;
     }
 
     .footer-left {
@@ -1701,16 +1902,84 @@ def generate_dashboard():
       box-shadow: 0 0 10px #10B981;
     }
 
+    /* ==========================================================================
+       MEDIA QUERIES (TRUE RESPONSIVENESS)
+       ========================================================================== */
+    @media (max-width: 1200px) {
+      .overview-hero-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .overview-hero-card {
+        grid-column: span 2;
+      }
+      .overview-spotlights-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .overview-spotlights-grid > div:last-child {
+        grid-column: span 2;
+      }
+      .overview-dual-tables {
+        grid-template-columns: 1fr;
+      }
+      .mid-table-chart-grid {
+        grid-template-columns: 1fr;
+      }
+      .pressure-bottom-3col {
+        grid-template-columns: 1fr 1fr;
+      }
+      .pressure-bottom-3col > div:last-child {
+        grid-column: span 2;
+      }
+    }
+
+    @media (max-width: 960px) {
+      :root {
+        --sidebar-width: 0px;
+      }
+      .sidebar {
+        transform: translateX(-100%);
+      }
+      .sidebar.open {
+        transform: translateX(0);
+        width: 250px;
+      }
+      .main-wrapper {
+        margin-left: 0;
+        width: 100%;
+      }
+      .sidebar-toggle-btn {
+        display: flex;
+      }
+      .overview-hero-grid {
+        grid-template-columns: 1fr;
+      }
+      .overview-hero-card {
+        grid-column: span 1;
+      }
+      .overview-spotlights-grid {
+        grid-template-columns: 1fr;
+      }
+      .overview-spotlights-grid > div:last-child {
+        grid-column: span 1;
+      }
+      .pressure-bottom-3col {
+        grid-template-columns: 1fr;
+      }
+      .pressure-bottom-3col > div:last-child {
+        grid-column: span 1;
+      }
+    }
+
     /* Scrollbar styling */
     ::-webkit-scrollbar {
-      width: 8px;
-      height: 8px;
+      width: 7px;
+      height: 7px;
     }
     ::-webkit-scrollbar-track {
       background: #09061A;
     }
     ::-webkit-scrollbar-thumb {
-      background: rgba(139, 92, 246, 0.3);
+      background: rgba(139, 92, 246, 0.35);
       border-radius: 4px;
     }
     ::-webkit-scrollbar-thumb:hover {
@@ -1723,7 +1992,7 @@ def generate_dashboard():
   <!-- ==========================================================================
        LEFT SIDEBAR NAVIGATION
        ========================================================================== -->
-  <aside class="sidebar">
+  <aside class="sidebar" id="app-sidebar">
     <div class="sidebar-header">
       <div class="rr-logo-container" onclick="switchTab('overview')">
         <i class="fa-solid fa-crown rr-crown-icon"></i>
@@ -1773,13 +2042,17 @@ def generate_dashboard():
   </aside>
 
   <!-- ==========================================================================
-       MAIN CONTENT WRAPPER
+       MAIN CONTENT AUTO-LAYOUT WRAPPER
        ========================================================================== -->
   <main class="main-wrapper">
 
     <!-- Top Sticky Header Banner -->
     <header class="top-header-banner">
       <div class="header-left">
+        <button class="sidebar-toggle-btn" onclick="toggleSidebar()" title="Toggle Sidebar">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
         <div class="header-titles">
           <div class="header-top-row">
             <span class="header-team-title">Rajasthan Royals</span>
@@ -1948,7 +2221,7 @@ def generate_dashboard():
                 <td><strong>Jason Holder</strong></td>
                 <td>
                   <div class="progress-bar-wrap">
-                    <div class="progress-track"><div class="progress-fill-pink" style="width: 84%;"></div></div>
+                    <div class="progress-track"><div class="progress-fill-pink" data-width="84%"></div></div>
                     <span class="progress-val">66.84</span>
                   </div>
                 </td>
@@ -1959,7 +2232,7 @@ def generate_dashboard():
                 <td><strong>Sanju Samson</strong></td>
                 <td>
                   <div class="progress-bar-wrap">
-                    <div class="progress-track"><div class="progress-fill-pink" style="width: 76%;"></div></div>
+                    <div class="progress-track"><div class="progress-fill-pink" data-width="76%"></div></div>
                     <span class="progress-val">60.46</span>
                   </div>
                 </td>
@@ -1970,7 +2243,7 @@ def generate_dashboard():
                 <td><strong>Curtis Campher</strong></td>
                 <td>
                   <div class="progress-bar-wrap">
-                    <div class="progress-track"><div class="progress-fill-pink" style="width: 74%;"></div></div>
+                    <div class="progress-track"><div class="progress-fill-pink" data-width="74%"></div></div>
                     <span class="progress-val">59.20</span>
                   </div>
                 </td>
@@ -1981,7 +2254,7 @@ def generate_dashboard():
                 <td><strong>Phil Salt</strong></td>
                 <td>
                   <div class="progress-bar-wrap">
-                    <div class="progress-track"><div class="progress-fill-pink" style="width: 73.5%;"></div></div>
+                    <div class="progress-track"><div class="progress-fill-pink" data-width="73.5%"></div></div>
                     <span class="progress-val">58.93</span>
                   </div>
                 </td>
@@ -1992,7 +2265,7 @@ def generate_dashboard():
                 <td><strong>David Willey</strong></td>
                 <td>
                   <div class="progress-bar-wrap">
-                    <div class="progress-track"><div class="progress-fill-pink" style="width: 73%;"></div></div>
+                    <div class="progress-track"><div class="progress-fill-pink" data-width="73%"></div></div>
                     <span class="progress-val">58.77</span>
                   </div>
                 </td>
@@ -2027,7 +2300,7 @@ def generate_dashboard():
                 <td><strong>Mitchell Marsh</strong></td>
                 <td>
                   <div class="progress-bar-wrap">
-                    <div class="progress-track"><div class="progress-fill-purple" style="width: 78%;"></div></div>
+                    <div class="progress-track"><div class="progress-fill-purple" data-width="78%"></div></div>
                     <span class="progress-val">61.86</span>
                   </div>
                 </td>
@@ -2038,7 +2311,7 @@ def generate_dashboard():
                 <td><strong>Haris Rauf</strong></td>
                 <td>
                   <div class="progress-bar-wrap">
-                    <div class="progress-track"><div class="progress-fill-purple" style="width: 77%;"></div></div>
+                    <div class="progress-track"><div class="progress-fill-purple" data-width="77%"></div></div>
                     <span class="progress-val">61.50</span>
                   </div>
                 </td>
@@ -2049,7 +2322,7 @@ def generate_dashboard():
                 <td><strong>Kartik Tyagi</strong></td>
                 <td>
                   <div class="progress-bar-wrap">
-                    <div class="progress-track"><div class="progress-fill-purple" style="width: 76.5%;"></div></div>
+                    <div class="progress-track"><div class="progress-fill-purple" data-width="76.5%"></div></div>
                     <span class="progress-val">61.28</span>
                   </div>
                 </td>
@@ -2060,7 +2333,7 @@ def generate_dashboard():
                 <td><strong>Vaibhav Arora</strong></td>
                 <td>
                   <div class="progress-bar-wrap">
-                    <div class="progress-track"><div class="progress-fill-purple" style="width: 75.5%;"></div></div>
+                    <div class="progress-track"><div class="progress-fill-purple" data-width="75.5%"></div></div>
                     <span class="progress-val">60.47</span>
                   </div>
                 </td>
@@ -2071,7 +2344,7 @@ def generate_dashboard():
                 <td><strong>Ravi Bishnoi</strong></td>
                 <td>
                   <div class="progress-bar-wrap">
-                    <div class="progress-track"><div class="progress-fill-purple" style="width: 74.5%;"></div></div>
+                    <div class="progress-track"><div class="progress-fill-purple" data-width="74.5%"></div></div>
                     <span class="progress-val">59.66</span>
                   </div>
                 </td>
@@ -2143,89 +2416,91 @@ def generate_dashboard():
             <a class="card-action-link" onclick="switchTab('rankings')">View All →</a>
           </div>
 
-          <table class="clean-table">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Player Name</th>
-                <th>Player ID</th>
-                <th>Reliability Index</th>
-                <th>Role</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td><strong>Jason Holder</strong></td>
-                <td>2633</td>
-                <td><strong style="color: #FF5EA6;">66.84</strong></td>
-                <td><span class="role-badge-table">Death Phase Finisher</span></td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td><strong>Sanju Samson</strong></td>
-                <td>2258</td>
-                <td><strong style="color: #FF5EA6;">60.46</strong></td>
-                <td><span class="role-badge-table">Top/Middle Order Accelerator</span></td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td><strong>Curtis Campher</strong></td>
-                <td>7094</td>
-                <td><strong style="color: #FF5EA6;">59.20</strong></td>
-                <td><span class="role-badge-table">Top/Middle Order Accelerator</span></td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td><strong>Phil Salt</strong></td>
-                <td>5553</td>
-                <td><strong style="color: #FF5EA6;">58.93</strong></td>
-                <td><span class="role-badge-table">Death Phase Finisher</span></td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td><strong>David Willey</strong></td>
-                <td>1219</td>
-                <td><strong style="color: #FF5EA6;">58.77</strong></td>
-                <td><span class="role-badge-table">Death Phase Finisher</span></td>
-              </tr>
-              <tr>
-                <td>6</td>
-                <td><strong>Dion Myers</strong></td>
-                <td>6664</td>
-                <td><strong style="color: #FF5EA6;">57.95</strong></td>
-                <td><span class="role-badge-table">Top/Middle Order Accelerator</span></td>
-              </tr>
-              <tr>
-                <td>7</td>
-                <td><strong>Shan Masood</strong></td>
-                <td>3097</td>
-                <td><strong style="color: #FF5EA6;">57.63</strong></td>
-                <td><span class="role-badge-table">Death Phase Finisher</span></td>
-              </tr>
-              <tr>
-                <td>8</td>
-                <td><strong>Dasun Shanaka</strong></td>
-                <td>2436</td>
-                <td><strong style="color: #FF5EA6;">57.35</strong></td>
-                <td><span class="role-badge-table">Death Phase Finisher</span></td>
-              </tr>
-              <tr>
-                <td>9</td>
-                <td><strong>Matthew Wade</strong></td>
-                <td>796</td>
-                <td><strong style="color: #FF5EA6;">57.02</strong></td>
-                <td><span class="role-badge-table">Death Phase Finisher</span></td>
-              </tr>
-              <tr>
-                <td>10</td>
-                <td><strong>Iftikhar Ahmed</strong></td>
-                <td>3056</td>
-                <td><strong style="color: #FF5EA6;">56.81</strong></td>
-                <td><span class="role-badge-table">Top/Middle Order Accelerator</span></td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="clean-table-wrap">
+            <table class="clean-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Player Name</th>
+                  <th>Player ID</th>
+                  <th>Reliability Index</th>
+                  <th>Role</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td><strong>Jason Holder</strong></td>
+                  <td>2633</td>
+                  <td><strong style="color: #FF5EA6;">66.84</strong></td>
+                  <td><span class="role-badge-table">Death Phase Finisher</span></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td><strong>Sanju Samson</strong></td>
+                  <td>2258</td>
+                  <td><strong style="color: #FF5EA6;">60.46</strong></td>
+                  <td><span class="role-badge-table">Top/Middle Order Accelerator</span></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td><strong>Curtis Campher</strong></td>
+                  <td>7094</td>
+                  <td><strong style="color: #FF5EA6;">59.20</strong></td>
+                  <td><span class="role-badge-table">Top/Middle Order Accelerator</span></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td><strong>Phil Salt</strong></td>
+                  <td>5553</td>
+                  <td><strong style="color: #FF5EA6;">58.93</strong></td>
+                  <td><span class="role-badge-table">Death Phase Finisher</span></td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td><strong>David Willey</strong></td>
+                  <td>1219</td>
+                  <td><strong style="color: #FF5EA6;">58.77</strong></td>
+                  <td><span class="role-badge-table">Death Phase Finisher</span></td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td><strong>Dion Myers</strong></td>
+                  <td>6664</td>
+                  <td><strong style="color: #FF5EA6;">57.95</strong></td>
+                  <td><span class="role-badge-table">Top/Middle Order Accelerator</span></td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td><strong>Shan Masood</strong></td>
+                  <td>3097</td>
+                  <td><strong style="color: #FF5EA6;">57.63</strong></td>
+                  <td><span class="role-badge-table">Death Phase Finisher</span></td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td><strong>Dasun Shanaka</strong></td>
+                  <td>2436</td>
+                  <td><strong style="color: #FF5EA6;">57.35</strong></td>
+                  <td><span class="role-badge-table">Death Phase Finisher</span></td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td><strong>Matthew Wade</strong></td>
+                  <td>796</td>
+                  <td><strong style="color: #FF5EA6;">57.02</strong></td>
+                  <td><span class="role-badge-table">Death Phase Finisher</span></td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td><strong>Iftikhar Ahmed</strong></td>
+                  <td>3056</td>
+                  <td><strong style="color: #FF5EA6;">56.81</strong></td>
+                  <td><span class="role-badge-table">Top/Middle Order Accelerator</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
 
         <div class="rr-card">
@@ -2235,7 +2510,7 @@ def generate_dashboard():
               <span class="card-title">Reliability Index — Top 10 Batters</span>
             </div>
           </div>
-          <div style="height: 380px;">
+          <div class="chart-container-fluid" style="height: 380px;">
             <canvas id="battersRIChart"></canvas>
           </div>
         </div>
@@ -2247,7 +2522,7 @@ def generate_dashboard():
           <div class="card-header-clean">
             <span class="card-title">Strike Rate Comparison</span>
           </div>
-          <div style="height: 180px;">
+          <div class="chart-container-fluid" style="height: 180px;">
             <canvas id="batterSRChart"></canvas>
           </div>
         </div>
@@ -2256,7 +2531,7 @@ def generate_dashboard():
           <div class="card-header-clean">
             <span class="card-title">Dot Ball & Dismissal Analysis</span>
           </div>
-          <div style="height: 180px; position: relative;">
+          <div class="chart-container-fluid" style="height: 180px;">
             <canvas id="batterDotChart"></canvas>
           </div>
         </div>
@@ -2273,7 +2548,7 @@ def generate_dashboard():
             <div class="gauge-subtext">Avg. Pressure Score</div>
             <div class="gauge-track-wrap">
               <div class="gauge-track"></div>
-              <div class="gauge-thumb"></div>
+              <div class="gauge-thumb" id="pressureGaugeThumb"></div>
             </div>
             <div class="gauge-labels">
               <span>Low</span>
@@ -2368,89 +2643,91 @@ def generate_dashboard():
             <a class="card-action-link" onclick="switchTab('rankings')">View All →</a>
           </div>
 
-          <table class="clean-table">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Player Name</th>
-                <th>Player ID</th>
-                <th>Reliability Index</th>
-                <th>Role</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td><strong>Mitchell Marsh</strong></td>
-                <td>818</td>
-                <td><strong style="color: #38BDF8;">61.86</strong></td>
-                <td><span class="role-badge-table">Death Wicket Enforcer</span></td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td><strong>Haris Rauf</strong></td>
-                <td>7364</td>
-                <td><strong style="color: #38BDF8;">61.50</strong></td>
-                <td><span class="role-badge-table">Death Wicket Enforcer</span></td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td><strong>Kartik Tyagi</strong></td>
-                <td>8530</td>
-                <td><strong style="color: #38BDF8;">61.28</strong></td>
-                <td><span class="role-badge-table">Death Wicket Enforcer</span></td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td><strong>Vaibhav Arora</strong></td>
-                <td>8746</td>
-                <td><strong style="color: #38BDF8;">60.47</strong></td>
-                <td><span class="role-badge-table">Death Wicket Enforcer</span></td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td><strong>Ravi Bishnoi</strong></td>
-                <td>7503</td>
-                <td><strong style="color: #38BDF8;">59.66</strong></td>
-                <td><span class="role-badge-table">Middle & Powerplay Restrictor</span></td>
-              </tr>
-              <tr>
-                <td>6</td>
-                <td><strong>Azmatullah Omarzai</strong></td>
-                <td>6676</td>
-                <td><strong style="color: #38BDF8;">59.18</strong></td>
-                <td><span class="role-badge-table">Death Wicket Enforcer</span></td>
-              </tr>
-              <tr>
-                <td>7</td>
-                <td><strong>Keshav Maharaj</strong></td>
-                <td>1944</td>
-                <td><strong style="color: #38BDF8;">58.96</strong></td>
-                <td><span class="role-badge-table">Middle & Powerplay Restrictor</span></td>
-              </tr>
-              <tr>
-                <td>8</td>
-                <td><strong>Corbin Bosch</strong></td>
-                <td>3629</td>
-                <td><strong style="color: #38BDF8;">58.90</strong></td>
-                <td><span class="role-badge-table">Death Wicket Enforcer</span></td>
-              </tr>
-              <tr>
-                <td>9</td>
-                <td><strong>Wanindu Hasaranga</strong></td>
-                <td>4900</td>
-                <td><strong style="color: #38BDF8;">58.81</strong></td>
-                <td><span class="role-badge-table">Middle & Powerplay Restrictor</span></td>
-              </tr>
-              <tr>
-                <td>10</td>
-                <td><strong>Sam Curran</strong></td>
-                <td>4409</td>
-                <td><strong style="color: #38BDF8;">58.22</strong></td>
-                <td><span class="role-badge-table">Death Wicket Enforcer</span></td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="clean-table-wrap">
+            <table class="clean-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Player Name</th>
+                  <th>Player ID</th>
+                  <th>Reliability Index</th>
+                  <th>Role</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td><strong>Mitchell Marsh</strong></td>
+                  <td>818</td>
+                  <td><strong style="color: #38BDF8;">61.86</strong></td>
+                  <td><span class="role-badge-table">Death Wicket Enforcer</span></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td><strong>Haris Rauf</strong></td>
+                  <td>7364</td>
+                  <td><strong style="color: #38BDF8;">61.50</strong></td>
+                  <td><span class="role-badge-table">Death Wicket Enforcer</span></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td><strong>Kartik Tyagi</strong></td>
+                  <td>8530</td>
+                  <td><strong style="color: #38BDF8;">61.28</strong></td>
+                  <td><span class="role-badge-table">Death Wicket Enforcer</span></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td><strong>Vaibhav Arora</strong></td>
+                  <td>8746</td>
+                  <td><strong style="color: #38BDF8;">60.47</strong></td>
+                  <td><span class="role-badge-table">Death Wicket Enforcer</span></td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td><strong>Ravi Bishnoi</strong></td>
+                  <td>7503</td>
+                  <td><strong style="color: #38BDF8;">59.66</strong></td>
+                  <td><span class="role-badge-table">Middle & Powerplay Restrictor</span></td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td><strong>Azmatullah Omarzai</strong></td>
+                  <td>6676</td>
+                  <td><strong style="color: #38BDF8;">59.18</strong></td>
+                  <td><span class="role-badge-table">Death Wicket Enforcer</span></td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td><strong>Keshav Maharaj</strong></td>
+                  <td>1944</td>
+                  <td><strong style="color: #38BDF8;">58.96</strong></td>
+                  <td><span class="role-badge-table">Middle & Powerplay Restrictor</span></td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td><strong>Corbin Bosch</strong></td>
+                  <td>3629</td>
+                  <td><strong style="color: #38BDF8;">58.90</strong></td>
+                  <td><span class="role-badge-table">Death Wicket Enforcer</span></td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td><strong>Wanindu Hasaranga</strong></td>
+                  <td>4900</td>
+                  <td><strong style="color: #38BDF8;">58.81</strong></td>
+                  <td><span class="role-badge-table">Middle & Powerplay Restrictor</span></td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td><strong>Sam Curran</strong></td>
+                  <td>4409</td>
+                  <td><strong style="color: #38BDF8;">58.22</strong></td>
+                  <td><span class="role-badge-table">Death Wicket Enforcer</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
 
         <div class="rr-card">
@@ -2460,32 +2737,32 @@ def generate_dashboard():
               <span class="card-title">Reliability Index — Top 10 Bowlers</span>
             </div>
           </div>
-          <div style="height: 380px;">
+          <div class="chart-container-fluid" style="height: 380px;">
             <canvas id="bowlersRIChart"></canvas>
           </div>
         </div>
       </div>
 
-      <!-- Bottom Row: 5 Cards -->
-      <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1.2fr; gap: 16px;">
+      <!-- Bottom Row: 5 Cards Grid -->
+      <div class="intel-bottom-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
         <div class="rr-card">
           <div class="card-header-clean"><span class="card-title" style="font-size: 13.5px;">Economy Analysis</span></div>
-          <div style="height: 170px;"><canvas id="bowlerEconChart"></canvas></div>
+          <div class="chart-container-fluid" style="height: 170px;"><canvas id="bowlerEconChart"></canvas></div>
         </div>
 
         <div class="rr-card">
           <div class="card-header-clean"><span class="card-title" style="font-size: 13.5px;">Wickets per Over</span></div>
-          <div style="height: 170px;"><canvas id="bowlerWPOChart"></canvas></div>
+          <div class="chart-container-fluid" style="height: 170px;"><canvas id="bowlerWPOChart"></canvas></div>
         </div>
 
         <div class="rr-card">
           <div class="card-header-clean"><span class="card-title" style="font-size: 13.5px;">Dot Ball & Boundary %</span></div>
-          <div style="height: 170px;"><canvas id="bowlerDotBoundaryChart"></canvas></div>
+          <div class="chart-container-fluid" style="height: 170px;"><canvas id="bowlerDotBoundaryChart"></canvas></div>
         </div>
 
         <div class="rr-card">
           <div class="card-header-clean"><span class="card-title" style="font-size: 13.5px;">Boundary Conceded %</span></div>
-          <div style="height: 170px;"><canvas id="bowlerBoundaryConcededChart"></canvas></div>
+          <div class="chart-container-fluid" style="height: 170px;"><canvas id="bowlerBoundaryConcededChart"></canvas></div>
         </div>
 
         <div class="rr-card">
@@ -2561,7 +2838,7 @@ def generate_dashboard():
           <div class="card-header-clean">
             <span class="card-title">Pressure Category Distribution</span>
           </div>
-          <div style="height: 250px; position: relative;">
+          <div class="chart-container-fluid" style="height: 250px;">
             <canvas id="pressureCategoryChart"></canvas>
             <div class="donut-center-badge">
               <div class="donut-center-num">837</div>
@@ -2574,7 +2851,7 @@ def generate_dashboard():
           <div class="card-header-clean">
             <span class="card-title">Pressure Score Distribution</span>
           </div>
-          <div style="height: 250px;">
+          <div class="chart-container-fluid" style="height: 250px;">
             <canvas id="pressureDistChart"></canvas>
           </div>
         </div>
@@ -2583,7 +2860,7 @@ def generate_dashboard():
           <div class="card-header-clean">
             <span class="card-title">Batting vs Bowling Pressure</span>
           </div>
-          <div style="height: 250px;">
+          <div class="chart-container-fluid" style="height: 250px;">
             <canvas id="pressureBatVsBowlChart"></canvas>
           </div>
         </div>
@@ -2595,7 +2872,7 @@ def generate_dashboard():
           <div class="card-header-clean">
             <span class="card-title">Innings Analysis</span>
           </div>
-          <div style="height: 220px;">
+          <div class="chart-container-fluid" style="height: 220px;">
             <canvas id="inningsAnalysisChart"></canvas>
           </div>
         </div>
@@ -2701,7 +2978,7 @@ def generate_dashboard():
           <div class="card-header-clean">
             <span class="card-title" id="comp-chart1-title">Strike Rate Comparison</span>
           </div>
-          <div style="height: 220px;">
+          <div class="chart-container-fluid" style="height: 220px;">
             <canvas id="compChart1"></canvas>
           </div>
         </div>
@@ -2710,7 +2987,7 @@ def generate_dashboard():
           <div class="card-header-clean">
             <span class="card-title">Dot Ball Percentage</span>
           </div>
-          <div style="height: 220px;">
+          <div class="chart-container-fluid" style="height: 220px;">
             <canvas id="compChart2"></canvas>
           </div>
         </div>
@@ -2719,7 +2996,7 @@ def generate_dashboard():
           <div class="card-header-clean">
             <span class="card-title" id="comp-chart3-title">Dismissal Rate</span>
           </div>
-          <div style="height: 220px;">
+          <div class="chart-container-fluid" style="height: 220px;">
             <canvas id="compChart3"></canvas>
           </div>
         </div>
@@ -2824,21 +3101,23 @@ def generate_dashboard():
             </button>
           </div>
 
-          <table class="clean-table" id="full-batters-table">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Player</th>
-                <th>Player ID</th>
-                <th>Strike Rate</th>
-                <th>Reliability</th>
-                <th>95% CI</th>
-              </tr>
-            </thead>
-            <tbody>
-              <!-- Injected by script -->
-            </tbody>
-          </table>
+          <div class="clean-table-wrap">
+            <table class="clean-table" id="full-batters-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Player</th>
+                  <th>Player ID</th>
+                  <th>Strike Rate</th>
+                  <th>Reliability</th>
+                  <th>95% CI</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Injected by script -->
+              </tbody>
+            </table>
+          </div>
         </div>
 
         <!-- Bowlers Table -->
@@ -2853,21 +3132,23 @@ def generate_dashboard():
             </button>
           </div>
 
-          <table class="clean-table" id="full-bowlers-table">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Player</th>
-                <th>Player ID</th>
-                <th>Economy</th>
-                <th>Reliability</th>
-                <th>95% CI</th>
-              </tr>
-            </thead>
-            <tbody>
-              <!-- Injected by script -->
-            </tbody>
-          </table>
+          <div class="clean-table-wrap">
+            <table class="clean-table" id="full-bowlers-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Player</th>
+                  <th>Player ID</th>
+                  <th>Economy</th>
+                  <th>Reliability</th>
+                  <th>95% CI</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Injected by script -->
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
 
@@ -2892,7 +3173,7 @@ def generate_dashboard():
           <div class="card-header-clean">
             <span class="card-title">Eligibility Breakdown</span>
           </div>
-          <div style="height: 180px; position: relative;">
+          <div class="chart-container-fluid" style="height: 180px;">
             <canvas id="eligibilityDonutChart"></canvas>
             <div class="donut-center-badge">
               <div class="donut-center-num">77.3%</div>
@@ -2972,7 +3253,7 @@ def generate_dashboard():
           <div class="intel-top-icon icon-blue"><i class="fa-solid fa-calendar-check"></i></div>
           <div class="intel-top-data">
             <span class="intel-top-label">Last Updated</span>
-            <span class="intel-top-val" style="font-size: 17px;">Nov 13, 2026</span>
+            <span class="intel-top-val" style="font-size: 16px;">Nov 13, 2026</span>
             <span class="intel-top-sub">14:30 IST</span>
           </div>
         </div>
@@ -2984,8 +3265,8 @@ def generate_dashboard():
           <div class="card-header-clean">
             <span class="card-title">Dataset Overview</span>
           </div>
-          <div style="display: flex; align-items: center; justify-content: space-between;">
-            <table class="kpi-indicator-table" style="width: 55%;">
+          <div style="display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap;">
+            <table class="kpi-indicator-table" style="flex: 1; min-width: 200px;">
               <tbody>
                 <tr><td>Total Matches Analyzed</td><td>837</td></tr>
                 <tr><td>Total Deliveries Analyzed</td><td>193,976</td></tr>
@@ -2994,10 +3275,10 @@ def generate_dashboard():
                 <tr><td>Qualified Bowlers</td><td>136</td></tr>
               </tbody>
             </table>
-            <div style="width: 40%; height: 170px; position: relative;">
+            <div style="width: 170px; height: 170px; position: relative; margin: 0 auto;">
               <canvas id="datasetOverviewDonut"></canvas>
               <div class="donut-center-badge">
-                <div class="donut-center-num" style="font-size: 16px;">193,976</div>
+                <div class="donut-center-num" style="font-size: 15px;">193,976</div>
                 <div class="donut-center-text">Deliveries</div>
               </div>
             </div>
@@ -3178,7 +3459,7 @@ def generate_dashboard():
   </main>
 
   <!-- ==========================================================================
-       CLIENT-SIDE SCRIPTS & CHART.JS ORCHESTRATION
+       BESPOKE ANIMATION ENGINE & CHART.JS ORCHESTRATION
        ========================================================================== -->
   <script>
     // Embedded Certified Player Data
@@ -3195,6 +3476,22 @@ def generate_dashboard():
       methodology: { title: "Methodology & Validation", subtitle: "Transparent. Reliable. Reproducible." }
     };
 
+    // Store Chart instances mapped by tab for re-triggering their custom animations
+    const chartRegistry = {
+      overview: [],
+      batting: [],
+      bowling: [],
+      pressure: [],
+      comparison: [],
+      rankings: [],
+      methodology: []
+    };
+
+    function toggleSidebar() {
+      const sb = document.getElementById('app-sidebar');
+      sb.classList.toggle('open');
+    }
+
     function switchTab(tabId) {
       document.querySelectorAll('.view-content').forEach(el => el.classList.remove('active'));
       document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
@@ -3202,7 +3499,14 @@ def generate_dashboard():
       const targetView = document.getElementById('view-' + tabId);
       const targetNav = document.getElementById('nav-' + tabId);
 
-      if (targetView) targetView.classList.add('active');
+      if (targetView) {
+        // Trigger CSS reflow for restart of CSS keyframe animations
+        targetView.style.animation = 'none';
+        void targetView.offsetWidth; // Trigger reflow
+        targetView.style.animation = '';
+        targetView.classList.add('active');
+      }
+
       if (targetNav) targetNav.classList.add('active');
 
       if (tabTitles[tabId]) {
@@ -3210,18 +3514,70 @@ def generate_dashboard():
         document.getElementById('page-subtitle-text').innerText = tabTitles[tabId].subtitle;
       }
 
+      // Close mobile sidebar if open
+      const sb = document.getElementById('app-sidebar');
+      if (sb && sb.classList.contains('open')) {
+        sb.classList.remove('open');
+      }
+
       window.scrollTo({ top: 0, behavior: 'smooth' });
-      window.dispatchEvent(new Event('resize'));
+
+      // Animate progress bars if on Overview
+      if (tabId === 'overview') {
+        animateOverviewProgressBars();
+      }
+
+      // Animate exposure gauge if on Batting
+      if (tabId === 'batting') {
+        animateExposureGauge();
+      }
+
+      // Re-trigger bespoke Chart.js animations for that tab!
+      if (chartRegistry[tabId] && chartRegistry[tabId].length > 0) {
+        setTimeout(() => {
+          chartRegistry[tabId].forEach(chart => {
+            if (chart) {
+              chart.reset();
+              chart.update();
+            }
+          });
+        }, 80);
+      }
     }
 
-    // Global Chart.js Defaults for Dark Luxury Look
+    function animateOverviewProgressBars() {
+      const bars = document.querySelectorAll('.progress-fill-pink, .progress-fill-purple');
+      bars.forEach(b => {
+        b.style.width = '0%';
+        const target = b.getAttribute('data-width') || '75%';
+        setTimeout(() => {
+          b.style.width = target;
+        }, 120);
+      });
+    }
+
+    function animateExposureGauge() {
+      const thumb = document.getElementById('pressureGaugeThumb');
+      if (thumb) {
+        thumb.style.left = '0%';
+        setTimeout(() => {
+          thumb.style.left = '65.4%';
+        }, 200);
+      }
+    }
+
+    // Global Chart.js Defaults
     Chart.defaults.color = '#94A3B8';
     Chart.defaults.font.family = "'Plus Jakarta Sans', 'Inter', sans-serif";
 
-    // 1. Squad Donut Chart (Overview)
+    // ==========================================================================
+    // CHART INITIALIZATION WITH BESPOKE SUITABLE ANIMATIONS
+    // ==========================================================================
+
+    // 1. Squad Donut Chart (Overview) -> Clockwise Sweep & Spring Zoom
     const ctxSquad = document.getElementById('squadDonutChart');
     if (ctxSquad) {
-      new Chart(ctxSquad, {
+      const squadChart = new Chart(ctxSquad, {
         type: 'doughnut',
         data: {
           labels: ['Batters', 'Bowlers'],
@@ -3229,11 +3585,17 @@ def generate_dashboard():
             data: [10, 10],
             backgroundColor: ['#E5097F', '#38BDF8'],
             borderWidth: 0,
-            hoverOffset: 4
+            hoverOffset: 6
           }]
         },
         options: {
           cutout: '76%',
+          animation: {
+            animateRotate: true,
+            animateScale: true,
+            duration: 1300,
+            easing: 'easeOutCirc'
+          },
           plugins: {
             legend: { display: false },
             tooltip: {
@@ -3246,15 +3608,16 @@ def generate_dashboard():
           maintainAspectRatio: false
         }
       });
+      chartRegistry.overview.push(squadChart);
     }
 
-    // 2. Batters RI Horizontal Bar Chart
+    // 2. Batters RI Horizontal Bar Chart -> Left-to-Right Cascading Slide
     const ctxBattersRI = document.getElementById('battersRIChart');
     if (ctxBattersRI) {
       const bNames = RR_DATA.batters.map(b => b.name);
       const bRIs = RR_DATA.batters.map(b => b.reliability_index);
 
-      new Chart(ctxBattersRI, {
+      const battersRIChart = new Chart(ctxBattersRI, {
         type: 'bar',
         data: {
           labels: bNames,
@@ -3277,6 +3640,14 @@ def generate_dashboard():
           indexAxis: 'y',
           responsive: true,
           maintainAspectRatio: false,
+          animation: {
+            x: {
+              type: 'number',
+              easing: 'easeOutQuart',
+              duration: 1200,
+              delay: (ctx) => ctx.dataIndex * 70
+            }
+          },
           scales: {
             x: {
               min: 0,
@@ -3299,12 +3670,13 @@ def generate_dashboard():
           }
         }
       });
+      chartRegistry.batting.push(battersRIChart);
     }
 
-    // 3. Batters Strike Rate Comparison Chart
+    // 3. Batters Strike Rate Comparison -> Staggered Bouncing Vertical Growth
     const ctxBatterSR = document.getElementById('batterSRChart');
     if (ctxBatterSR) {
-      new Chart(ctxBatterSR, {
+      const batterSRChart = new Chart(ctxBatterSR, {
         type: 'bar',
         data: {
           labels: ['Top 10 Avg', 'Tournament Avg'],
@@ -3326,6 +3698,14 @@ def generate_dashboard():
         options: {
           responsive: true,
           maintainAspectRatio: false,
+          animation: {
+            y: {
+              type: 'number',
+              easing: 'easeOutBack',
+              duration: 1000,
+              delay: (ctx) => (ctx.datasetIndex * 200) + (ctx.dataIndex * 80)
+            }
+          },
           scales: {
             x: { grid: { display: false }, ticks: { color: '#FFFFFF' } },
             y: { grid: { color: 'rgba(255, 255, 255, 0.05)' }, ticks: { color: '#94A3B8' } }
@@ -3335,12 +3715,13 @@ def generate_dashboard():
           }
         }
       });
+      chartRegistry.batting.push(batterSRChart);
     }
 
-    // 4. Dot Ball & Dismissal Donut
+    // 4. Dot Ball & Dismissal Donut -> Clockwise Sweep
     const ctxBatterDot = document.getElementById('batterDotChart');
     if (ctxBatterDot) {
-      new Chart(ctxBatterDot, {
+      const batterDotChart = new Chart(ctxBatterDot, {
         type: 'doughnut',
         data: {
           labels: ['Dot Balls', 'Dismissal'],
@@ -3354,20 +3735,27 @@ def generate_dashboard():
           cutout: '72%',
           responsive: true,
           maintainAspectRatio: false,
+          animation: {
+            animateRotate: true,
+            animateScale: true,
+            duration: 1200,
+            easing: 'easeOutCirc'
+          },
           plugins: {
             legend: { position: 'right', labels: { color: '#FFFFFF', boxWidth: 12 } }
           }
         }
       });
+      chartRegistry.batting.push(batterDotChart);
     }
 
-    // 5. Bowlers RI Horizontal Bar Chart
+    // 5. Bowlers RI Horizontal Bar Chart -> Left-to-Right Cascading Slide
     const ctxBowlersRI = document.getElementById('bowlersRIChart');
     if (ctxBowlersRI) {
       const bwNames = RR_DATA.bowlers.map(b => b.name);
       const bwRIs = RR_DATA.bowlers.map(b => b.reliability_index);
 
-      new Chart(ctxBowlersRI, {
+      const bowlersRIChart = new Chart(ctxBowlersRI, {
         type: 'bar',
         data: {
           labels: bwNames,
@@ -3390,6 +3778,14 @@ def generate_dashboard():
           indexAxis: 'y',
           responsive: true,
           maintainAspectRatio: false,
+          animation: {
+            x: {
+              type: 'number',
+              easing: 'easeOutQuart',
+              duration: 1200,
+              delay: (ctx) => ctx.dataIndex * 70
+            }
+          },
           scales: {
             x: {
               min: 0,
@@ -3407,12 +3803,13 @@ def generate_dashboard():
           }
         }
       });
+      chartRegistry.bowling.push(bowlersRIChart);
     }
 
-    // 6. Bowler Econ Chart
+    // 6. Bowler Econ Chart -> Staggered Bouncing Bars
     const ctxBowlerEcon = document.getElementById('bowlerEconChart');
     if (ctxBowlerEcon) {
-      new Chart(ctxBowlerEcon, {
+      const bowlerEconChart = new Chart(ctxBowlerEcon, {
         type: 'bar',
         data: {
           labels: ['Top 10', 'Tournament'],
@@ -3424,6 +3821,14 @@ def generate_dashboard():
         options: {
           responsive: true,
           maintainAspectRatio: false,
+          animation: {
+            y: {
+              type: 'number',
+              easing: 'easeOutBack',
+              duration: 900,
+              delay: (ctx) => (ctx.datasetIndex * 150) + (ctx.dataIndex * 80)
+            }
+          },
           scales: {
             x: { grid: { display: false }, ticks: { color: '#CBD5E1', font: { size: 10 } } },
             y: { grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#94A3B8', font: { size: 9 } } }
@@ -3431,12 +3836,13 @@ def generate_dashboard():
           plugins: { legend: { display: false } }
         }
       });
+      chartRegistry.bowling.push(bowlerEconChart);
     }
 
-    // 7. Bowler WPO Chart
+    // 7. Bowler WPO Chart -> Staggered Bouncing Bars
     const ctxBowlerWPO = document.getElementById('bowlerWPOChart');
     if (ctxBowlerWPO) {
-      new Chart(ctxBowlerWPO, {
+      const bowlerWPOChart = new Chart(ctxBowlerWPO, {
         type: 'bar',
         data: {
           labels: ['Top 10', 'Tournament'],
@@ -3448,6 +3854,14 @@ def generate_dashboard():
         options: {
           responsive: true,
           maintainAspectRatio: false,
+          animation: {
+            y: {
+              type: 'number',
+              easing: 'easeOutBack',
+              duration: 900,
+              delay: (ctx) => (ctx.datasetIndex * 150) + (ctx.dataIndex * 80)
+            }
+          },
           scales: {
             x: { grid: { display: false }, ticks: { color: '#CBD5E1', font: { size: 10 } } },
             y: { grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#94A3B8', font: { size: 9 } } }
@@ -3455,12 +3869,13 @@ def generate_dashboard():
           plugins: { legend: { display: false } }
         }
       });
+      chartRegistry.bowling.push(bowlerWPOChart);
     }
 
     // 8. Bowler Dot & Boundary Donut
     const ctxBowlerDotBound = document.getElementById('bowlerDotBoundaryChart');
     if (ctxBowlerDotBound) {
-      new Chart(ctxBowlerDotBound, {
+      const bowlerDotBoundChart = new Chart(ctxBowlerDotBound, {
         type: 'doughnut',
         data: {
           labels: ['Dot Balls', 'Boundary'],
@@ -3474,15 +3889,22 @@ def generate_dashboard():
           cutout: '70%',
           responsive: true,
           maintainAspectRatio: false,
+          animation: {
+            animateRotate: true,
+            animateScale: true,
+            duration: 1200,
+            easing: 'easeOutCirc'
+          },
           plugins: { legend: { display: false } }
         }
       });
+      chartRegistry.bowling.push(bowlerDotBoundChart);
     }
 
     // 9. Bowler Boundary Conceded Donut
     const ctxBowlerBoundConc = document.getElementById('bowlerBoundaryConcededChart');
     if (ctxBowlerBoundConc) {
-      new Chart(ctxBowlerBoundConc, {
+      const bowlerBoundConcChart = new Chart(ctxBowlerBoundConc, {
         type: 'doughnut',
         data: {
           labels: ['Others', 'Boundary'],
@@ -3496,15 +3918,22 @@ def generate_dashboard():
           cutout: '70%',
           responsive: true,
           maintainAspectRatio: false,
+          animation: {
+            animateRotate: true,
+            animateScale: true,
+            duration: 1200,
+            easing: 'easeOutCirc'
+          },
           plugins: { legend: { display: false } }
         }
       });
+      chartRegistry.bowling.push(bowlerBoundConcChart);
     }
 
     // 10. Pressure Category Donut Chart
     const ctxPressCat = document.getElementById('pressureCategoryChart');
     if (ctxPressCat) {
-      new Chart(ctxPressCat, {
+      const pressCatChart = new Chart(ctxPressCat, {
         type: 'doughnut',
         data: {
           labels: ['Low (0-40)', 'Moderate (40-65)', 'High (65-85)', 'Extreme (85-100)'],
@@ -3518,17 +3947,24 @@ def generate_dashboard():
           cutout: '72%',
           responsive: true,
           maintainAspectRatio: false,
+          animation: {
+            animateRotate: true,
+            animateScale: true,
+            duration: 1400,
+            easing: 'easeOutCirc'
+          },
           plugins: {
             legend: { position: 'right', labels: { color: '#FFFFFF', boxWidth: 10, font: { size: 10.5 } } }
           }
         }
       });
+      chartRegistry.pressure.push(pressCatChart);
     }
 
-    // 11. Pressure Score Distribution Bar Chart
+    // 11. Pressure Score Distribution Histogram -> Wave Ripple Cascade
     const ctxPressDist = document.getElementById('pressureDistChart');
     if (ctxPressDist) {
-      new Chart(ctxPressDist, {
+      const pressDistChart = new Chart(ctxPressDist, {
         type: 'bar',
         data: {
           labels: ['0-20', '20-40', '40-60', '60-80', '80-100'],
@@ -3541,6 +3977,14 @@ def generate_dashboard():
         options: {
           responsive: true,
           maintainAspectRatio: false,
+          animation: {
+            y: {
+              type: 'number',
+              easing: 'easeOutBounce',
+              duration: 1100,
+              delay: (ctx) => ctx.dataIndex * 120
+            }
+          },
           scales: {
             x: { grid: { display: false }, ticks: { color: '#FFFFFF' } },
             y: { grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#94A3B8' } }
@@ -3548,12 +3992,13 @@ def generate_dashboard():
           plugins: { legend: { display: false } }
         }
       });
+      chartRegistry.pressure.push(pressDistChart);
     }
 
     // 12. Batting vs Bowling Pressure Grouped Bar Chart
     const ctxBatVsBowl = document.getElementById('pressureBatVsBowlChart');
     if (ctxBatVsBowl) {
-      new Chart(ctxBatVsBowl, {
+      const batVsBowlChart = new Chart(ctxBatVsBowl, {
         type: 'bar',
         data: {
           labels: ['Avg. Pressure Score', 'High-Pressure Success %'],
@@ -3565,6 +4010,14 @@ def generate_dashboard():
         options: {
           responsive: true,
           maintainAspectRatio: false,
+          animation: {
+            y: {
+              type: 'number',
+              easing: 'easeOutBack',
+              duration: 1000,
+              delay: (ctx) => (ctx.datasetIndex * 200) + (ctx.dataIndex * 90)
+            }
+          },
           scales: {
             x: { grid: { display: false }, ticks: { color: '#FFFFFF' } },
             y: { grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#94A3B8' } }
@@ -3572,12 +4025,13 @@ def generate_dashboard():
           plugins: { legend: { position: 'top', labels: { color: '#FFFFFF' } } }
         }
       });
+      chartRegistry.pressure.push(batVsBowlChart);
     }
 
     // 13. Innings Analysis Chart
     const ctxInnings = document.getElementById('inningsAnalysisChart');
     if (ctxInnings) {
-      new Chart(ctxInnings, {
+      const inningsChart = new Chart(ctxInnings, {
         type: 'bar',
         data: {
           labels: ['Avg. Pressure', 'HP SR/Econ', 'Success Rate %'],
@@ -3589,6 +4043,14 @@ def generate_dashboard():
         options: {
           responsive: true,
           maintainAspectRatio: false,
+          animation: {
+            y: {
+              type: 'number',
+              easing: 'easeOutBack',
+              duration: 1000,
+              delay: (ctx) => (ctx.datasetIndex * 180) + (ctx.dataIndex * 80)
+            }
+          },
           scales: {
             x: { grid: { display: false }, ticks: { color: '#FFFFFF' } },
             y: { grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#94A3B8' } }
@@ -3596,12 +4058,13 @@ def generate_dashboard():
           plugins: { legend: { position: 'top', labels: { color: '#FFFFFF' } } }
         }
       });
+      chartRegistry.pressure.push(inningsChart);
     }
 
     // 14. Eligibility Breakdown Donut (Rankings)
     const ctxElig = document.getElementById('eligibilityDonutChart');
     if (ctxElig) {
-      new Chart(ctxElig, {
+      const eligChart = new Chart(ctxElig, {
         type: 'doughnut',
         data: {
           labels: ['Core (109)', 'Emerging (27)'],
@@ -3615,15 +4078,22 @@ def generate_dashboard():
           cutout: '72%',
           responsive: true,
           maintainAspectRatio: false,
+          animation: {
+            animateRotate: true,
+            animateScale: true,
+            duration: 1200,
+            easing: 'easeOutCirc'
+          },
           plugins: { legend: { display: false } }
         }
       });
+      chartRegistry.rankings.push(eligChart);
     }
 
     // 15. Dataset Overview Donut (Methodology)
     const ctxDataOver = document.getElementById('datasetOverviewDonut');
     if (ctxDataOver) {
-      new Chart(ctxDataOver, {
+      const dataOverChart = new Chart(ctxDataOver, {
         type: 'doughnut',
         data: {
           labels: ['Batting (52.3%)', 'Bowling (47.7%)'],
@@ -3637,9 +4107,16 @@ def generate_dashboard():
           cutout: '72%',
           responsive: true,
           maintainAspectRatio: false,
+          animation: {
+            animateRotate: true,
+            animateScale: true,
+            duration: 1200,
+            easing: 'easeOutCirc'
+          },
           plugins: { legend: { display: false } }
         }
       });
+      chartRegistry.methodology.push(dataOverChart);
     }
 
     // ==========================================================================
@@ -3730,7 +4207,6 @@ def generate_dashboard():
         </div>
       `).join('');
 
-      // Render Charts
       // Chart 1: Grouped Bar (High Pressure vs Normal)
       const ctx1 = document.getElementById('compChart1');
       if (compChart1Instance) compChart1Instance.destroy();
@@ -3756,6 +4232,14 @@ def generate_dashboard():
         options: {
           responsive: true,
           maintainAspectRatio: false,
+          animation: {
+            y: {
+              type: 'number',
+              easing: 'easeOutBack',
+              duration: 900,
+              delay: (ctx) => (ctx.datasetIndex * 180) + (ctx.dataIndex * 70)
+            }
+          },
           scales: {
             x: { grid: { display: false }, ticks: { color: '#FFFFFF' } },
             y: { grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#94A3B8' } }
@@ -3780,6 +4264,12 @@ def generate_dashboard():
         options: {
           responsive: true,
           maintainAspectRatio: false,
+          animation: {
+            animateRotate: true,
+            animateScale: true,
+            duration: 1100,
+            easing: 'easeOutCirc'
+          },
           plugins: {
             legend: { position: 'right', labels: { color: '#FFFFFF', boxWidth: 12 } }
           }
@@ -3803,6 +4293,14 @@ def generate_dashboard():
           indexAxis: 'y',
           responsive: true,
           maintainAspectRatio: false,
+          animation: {
+            x: {
+              type: 'number',
+              easing: 'easeOutQuart',
+              duration: 1000,
+              delay: (ctx) => ctx.dataIndex * 90
+            }
+          },
           scales: {
             x: { grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#94A3B8' } },
             y: { grid: { display: false }, ticks: { color: '#FFFFFF' } }
@@ -3810,6 +4308,8 @@ def generate_dashboard():
           plugins: { legend: { display: false } }
         }
       });
+
+      chartRegistry.comparison = [compChart1Instance, compChart2Instance, compChart3Instance];
 
       // Insights & Summary Update
       const bestPlayer = [...selected].sort((a,b) => b.reliability_index - a.reliability_index)[0];
@@ -3921,6 +4421,7 @@ def generate_dashboard():
       populateSelectOptions();
       updateComparison();
       populateRankingsTables();
+      animateOverviewProgressBars();
     });
   </script>
 </body>
@@ -3947,7 +4448,7 @@ def generate_dashboard():
         with open(t, "w", encoding="utf-8") as out_f:
             out_f.write(html_template)
             
-    print("Dashboard build complete successfully!")
+    print("Bespoke Animated & Auto-Layout Dashboard build complete successfully!")
 
 if __name__ == "__main__":
     generate_dashboard()
