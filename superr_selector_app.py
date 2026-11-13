@@ -50,26 +50,26 @@ st.markdown("""
 
     /* Backgrounds */
     .stApp {
-        background: #0A0E1A;
-        color: #FFFFFF;
+        background: #F8FAFC;
+        color: #0F172A;
     }
 
     /* Sidebar Styling */
     section[data-testid="stSidebar"] {
-        background-color: #0F1523;
-        border-right: 1px solid rgba(255, 255, 255, 0.08);
+        background-color: #FFFFFF;
+        border-right: 1px solid rgba(15, 23, 42, 0.08);
     }
 
     /* Header Banner */
     .rr-header-banner {
-        background: linear-gradient(135deg, rgba(229, 9, 127, 0.18) 0%, rgba(15, 21, 35, 0.85) 50%, rgba(0, 210, 255, 0.15) 100%);
+        background: linear-gradient(135deg, rgba(229, 9, 127, 0.18) 0%, #FFFFFF 50%, rgba(0, 210, 255, 0.15) 100%);
         border: 1px solid rgba(229, 9, 127, 0.35);
         border-radius: 16px;
         padding: 24px 28px;
         margin-bottom: 24px;
         position: relative;
         overflow: hidden;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+        box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
     }
     .rr-header-banner::before {
         content: "";
@@ -106,12 +106,12 @@ st.markdown("""
 
     /* Metric KPI Cards */
     .kpi-card {
-        background: #151C2C;
-        border: 1px solid rgba(255, 255, 255, 0.08);
+        background: #FFFFFF;
+        border: 1px solid rgba(15, 23, 42, 0.08);
         border-radius: 12px;
         padding: 16px 18px;
         transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+        box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
     }
     .kpi-card:hover {
         transform: translateY(-2px);
@@ -131,7 +131,7 @@ st.markdown("""
         font-size: 2.1rem;
         font-weight: 700;
         line-height: 1.1;
-        color: #FFFFFF;
+        color: #0F172A;
     }
     .kpi-subtitle {
         font-size: 0.74rem;
@@ -141,14 +141,14 @@ st.markdown("""
 
     /* Player Roster Cards (Visual Grid) */
     .player-roster-card {
-        background: linear-gradient(145deg, rgba(21, 28, 44, 0.95) 0%, rgba(15, 21, 35, 0.98) 100%);
-        border: 1px solid rgba(255, 255, 255, 0.08);
+        background: #FFFFFF;
+        border: 1px solid rgba(15, 23, 42, 0.09);
         border-radius: 14px;
         padding: 14px 12px;
         text-align: center;
         position: relative;
         transition: all 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
-        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+        box-shadow: 0 4px 16px rgba(15, 23, 42, 0.05);
         margin-bottom: 16px;
         backdrop-filter: blur(8px);
     }
@@ -201,7 +201,7 @@ st.markdown("""
         font-family: 'Rajdhani', sans-serif;
         font-size: 1.15rem;
         font-weight: 700;
-        color: #FFFFFF;
+        color: #0F172A;
         margin-bottom: 2px;
         white-space: nowrap;
         overflow: hidden;
@@ -213,8 +213,8 @@ st.markdown("""
         margin-bottom: 8px;
     }
     .card-score-pill {
-        background: rgba(255, 255, 255, 0.04);
-        border: 1px solid rgba(255, 255, 255, 0.08);
+        background: #F8FAFC;
+        border: 1px solid rgba(15, 23, 42, 0.08);
         border-radius: 8px;
         padding: 5px 10px;
         display: flex;
@@ -240,7 +240,7 @@ st.markdown("""
     .card-stat-row {
         display: flex;
         justify-content: space-around;
-        border-top: 1px solid rgba(255, 255, 255, 0.06);
+        border-top: 1px solid rgba(15, 23, 42, 0.06);
         padding-top: 6px;
         font-size: 0.75rem;
     }
@@ -251,7 +251,7 @@ st.markdown("""
         display: block;
     }
     .stat-val {
-        color: #CBD5E1;
+        color: #1E293B;
         font-size: 0.85rem;
         font-weight: 600;
     }
@@ -261,14 +261,14 @@ st.markdown("""
 
     /* Hero Spotlight Cards */
     .hero-spotlight {
-        background: linear-gradient(135deg, rgba(21, 28, 44, 0.95) 0%, rgba(15, 21, 35, 0.98) 100%);
-        border: 1px solid rgba(255, 255, 255, 0.1);
+        background: #FFFFFF;
+        border: 1px solid rgba(15, 23, 42, 0.09);
         border-radius: 16px;
         padding: 20px;
         display: flex;
         align-items: center;
         gap: 20px;
-        box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+        box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
         position: relative;
         overflow: hidden;
     }
@@ -284,7 +284,7 @@ st.markdown("""
         font-family: 'Rajdhani', sans-serif;
         font-size: 1.55rem;
         font-weight: 700;
-        color: #FFFFFF;
+        color: #0F172A;
         letter-spacing: 0.5px;
         margin-top: 18px;
         margin-bottom: 12px;
@@ -295,12 +295,12 @@ st.markdown("""
 
     /* Glass Container */
     .glass-box {
-        background: #151C2C;
-        border: 1px solid rgba(255, 255, 255, 0.08);
+        background: #FFFFFF;
+        border: 1px solid rgba(15, 23, 42, 0.08);
         border-radius: 14px;
         padding: 20px;
         margin-bottom: 20px;
-        box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+        box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
     }
 
     /* Footer */
@@ -402,13 +402,13 @@ def apply_rr_theme(fig, title: str = "", height: int = 400, x_title: str = "", y
     fig.update_layout(
         title=dict(
             text=f"<b>{title}</b>",
-            font=dict(size=14, color="#FFFFFF", family="Rajdhani, Inter, sans-serif"),
+            font=dict(size=14, color="#0F172A", family="Rajdhani, Inter, sans-serif"),
             x=0.01,
             y=0.96
         ),
         paper_bgcolor="rgba(0,0,0,0)",
         plot_bgcolor="rgba(0,0,0,0)",
-        font=dict(color="#CBD5E1", family="Inter, system-ui, sans-serif"),
+        font=dict(color="#334155", family="Inter, system-ui, sans-serif"),
         height=height,
         margin=dict(l=35, r=35, t=50, b=40),
         showlegend=show_legend,
@@ -418,20 +418,20 @@ def apply_rr_theme(fig, title: str = "", height: int = 400, x_title: str = "", y
             y=1.02,
             xanchor="right",
             x=1,
-            font=dict(size=11, color="#E2E8F0"),
+            font=dict(size=11, color="#1E293B"),
             bgcolor="rgba(0,0,0,0)"
         ),
         xaxis=dict(
             showgrid=True,
-            gridcolor="rgba(255,255,255,0.06)",
-            linecolor="rgba(255,255,255,0.12)",
+            gridcolor="rgba(15,23,42,0.06)",
+            linecolor="rgba(15,23,42,0.15)",
             tickfont=dict(color="#94A3B8"),
             title=dict(text=x_title, font=dict(color="#94A3B8", size=11))
         ),
         yaxis=dict(
             showgrid=True,
-            gridcolor="rgba(255,255,255,0.06)",
-            linecolor="rgba(255,255,255,0.12)",
+            gridcolor="rgba(15,23,42,0.06)",
+            linecolor="rgba(15,23,42,0.15)",
             tickfont=dict(color="#94A3B8"),
             title=dict(text=y_title, font=dict(color="#94A3B8", size=11))
         )
@@ -469,7 +469,7 @@ with st.sidebar:
     st.markdown("""
     <div style="padding: 10px 0 16px 0;">
         <span class="badge-pill badge-pink">RAJASTHAN ROYALS</span>
-        <h2 style="font-family: 'Rajdhani', sans-serif; font-size: 1.8rem; margin: 4px 0 2px 0; color: #FFFFFF;">
+        <h2 style="font-family: 'Rajdhani', sans-serif; font-size: 1.8rem; margin: 4px 0 2px 0; color: #0F172A;">
             ⚡ SUPERR SELECTOR
         </h2>
         <p style="font-size: 0.8rem; color: #94A3B8; margin: 0;">
@@ -514,7 +514,7 @@ if nav_selection == "1. Overview":
     st.markdown("""
     <div class="rr-header-banner">
         <span class="badge-pill badge-pink">EXECUTIVE INTELLIGENCE BRIEF</span>
-        <h1 style="font-family: 'Rajdhani', sans-serif; font-size: 2.3rem; margin: 6px 0 8px 0; color: #FFFFFF;">
+        <h1 style="font-family: 'Rajdhani', sans-serif; font-size: 2.3rem; margin: 6px 0 8px 0; color: #0F172A;">
             SUPERR SELECTOR — RAJASTHAN ROYALS SEASON 2
         </h1>
         <p style="font-size: 0.95rem; color: #CBD5E1; margin: 0; max-width: 950px; line-height: 1.5;">
@@ -583,7 +583,7 @@ if nav_selection == "1. Overview":
             </div>
             <div style="flex: 1;">
                 <span class="badge-pill badge-pink">#1 RANKED BATTER • ELITE</span>
-                <div style="font-family: 'Rajdhani', sans-serif; font-size: 1.6rem; font-weight: 700; color: #FFFFFF;">
+                <div style="font-family: 'Rajdhani', sans-serif; font-size: 1.6rem; font-weight: 700; color: #0F172A;">
                     Jason Holder
                 </div>
                 <div style="font-size: 0.78rem; color: #94A3B8; margin-bottom: 6px;">
@@ -616,7 +616,7 @@ if nav_selection == "1. Overview":
             </div>
             <div style="flex: 1;">
                 <span class="badge-pill badge-blue">#1 RANKED BOWLER • STRONG</span>
-                <div style="font-family: 'Rajdhani', sans-serif; font-size: 1.6rem; font-weight: 700; color: #FFFFFF;">
+                <div style="font-family: 'Rajdhani', sans-serif; font-size: 1.6rem; font-weight: 700; color: #0F172A;">
                     Mitchell Marsh
                 </div>
                 <div style="font-size: 0.78rem; color: #94A3B8; margin-bottom: 6px;">
@@ -754,7 +754,7 @@ elif nav_selection == "2. Batting Intelligence":
     st.markdown("""
     <div class="rr-header-banner">
         <span class="badge-pill badge-pink">BATTING RELIABILITY INTELLIGENCE</span>
-        <h1 style="font-family: 'Rajdhani', sans-serif; font-size: 2.2rem; margin: 4px 0 6px 0; color: #FFFFFF;">
+        <h1 style="font-family: 'Rajdhani', sans-serif; font-size: 2.2rem; margin: 4px 0 6px 0; color: #0F172A;">
             Top 10 Certified Batters Under Pressure
         </h1>
         <p style="font-size: 0.9rem; color: #CBD5E1; margin: 0;">
@@ -970,7 +970,7 @@ elif nav_selection == "2. Batting Intelligence":
         </div>
         <div style="flex: 1;">
             <div style="display: flex; justify-content: space-between; align-items: center;">
-                <h3 style="font-family: 'Rajdhani', sans-serif; font-size: 1.8rem; color: #FFFFFF; margin: 0;">{selected_batter_name}</h3>
+                <h3 style="font-family: 'Rajdhani', sans-serif; font-size: 1.8rem; color: #0F172A; margin: 0;">{selected_batter_name}</h3>
                 <span class="badge-pill badge-pink">Rank #{b_profile['rank']} • {b_profile['reliability_grade']}</span>
             </div>
             <div style="font-size: 0.85rem; color: #94A3B8; margin-top: 4px;">
@@ -1010,7 +1010,7 @@ elif nav_selection == "3. Bowling Intelligence":
     st.markdown("""
     <div class="rr-header-banner">
         <span class="badge-pill badge-blue">BOWLING RELIABILITY INTELLIGENCE</span>
-        <h1 style="font-family: 'Rajdhani', sans-serif; font-size: 2.2rem; margin: 4px 0 6px 0; color: #FFFFFF;">
+        <h1 style="font-family: 'Rajdhani', sans-serif; font-size: 2.2rem; margin: 4px 0 6px 0; color: #0F172A;">
             Top 10 Certified Bowlers Under Pressure
         </h1>
         <p style="font-size: 0.9rem; color: #CBD5E1; margin: 0;">
@@ -1231,7 +1231,7 @@ elif nav_selection == "3. Bowling Intelligence":
         </div>
         <div style="flex: 1;">
             <div style="display: flex; justify-content: space-between; align-items: center;">
-                <h3 style="font-family: 'Rajdhani', sans-serif; font-size: 1.8rem; color: #FFFFFF; margin: 0;">{selected_bowler_name}</h3>
+                <h3 style="font-family: 'Rajdhani', sans-serif; font-size: 1.8rem; color: #0F172A; margin: 0;">{selected_bowler_name}</h3>
                 <span class="badge-pill badge-blue">Rank #{bowl_profile['rank']} • {bowl_profile['reliability_grade']}</span>
             </div>
             <div style="font-size: 0.85rem; color: #94A3B8; margin-top: 4px;">
@@ -1271,7 +1271,7 @@ elif nav_selection == "4. Pressure Analysis":
     st.markdown("""
     <div class="rr-header-banner">
         <span class="badge-pill badge-gold">QUANTITATIVE PRESSURE FRAMEWORK</span>
-        <h1 style="font-family: 'Rajdhani', sans-serif; font-size: 2.2rem; margin: 4px 0 6px 0; color: #FFFFFF;">
+        <h1 style="font-family: 'Rajdhani', sans-serif; font-size: 2.2rem; margin: 4px 0 6px 0; color: #0F172A;">
             Delivery-Level Pressure Mechanics & Distribution
         </h1>
         <p style="font-size: 0.9rem; color: #CBD5E1; margin: 0;">
@@ -1384,7 +1384,7 @@ elif nav_selection == "4. Pressure Analysis":
     with p_c4:
         st.markdown("""
         <div class="glass-box" style="height: 380px; overflow-y: auto;">
-            <h4 style="font-family: 'Rajdhani', sans-serif; color: #FFFFFF; margin-top: 0;">🔬 Key Situational Pressure Indicators</h4>
+            <h4 style="font-family: 'Rajdhani', sans-serif; color: #0F172A; margin-top: 0;">🔬 Key Situational Pressure Indicators</h4>
             <div style="font-size: 0.85rem; color: #CBD5E1; line-height: 1.6;">
                 <b style="color: #FFB703;">1. Required Run Rate (RRR) Gradient:</b><br>
                 In second innings chases, pressure grows non-linearly with RRR escalation above the tournament par of 8.54 runs/over.<br><br>
@@ -1406,7 +1406,7 @@ elif nav_selection == "5. Player Comparison":
     st.markdown("""
     <div class="rr-header-banner">
         <span class="badge-pill badge-pink">HEAD-TO-HEAD TACTICAL COMPARISON</span>
-        <h1 style="font-family: 'Rajdhani', sans-serif; font-size: 2.2rem; margin: 4px 0 6px 0; color: #FFFFFF;">
+        <h1 style="font-family: 'Rajdhani', sans-serif; font-size: 2.2rem; margin: 4px 0 6px 0; color: #0F172A;">
             Multi-Player Scouting Benchmark Tool
         </h1>
         <p style="font-size: 0.9rem; color: #CBD5E1; margin: 0;">
@@ -1546,7 +1546,7 @@ elif nav_selection == "6. Player Rankings":
     st.markdown("""
     <div class="rr-header-banner">
         <span class="badge-pill badge-pink">CERTIFIED OFFICIAL RANKINGS</span>
-        <h1 style="font-family: 'Rajdhani', sans-serif; font-size: 2.2rem; margin: 4px 0 6px 0; color: #FFFFFF;">
+        <h1 style="font-family: 'Rajdhani', sans-serif; font-size: 2.2rem; margin: 4px 0 6px 0; color: #0F172A;">
             Full Squad Player Rankings & Data Export
         </h1>
         <p style="font-size: 0.9rem; color: #CBD5E1; margin: 0;">
@@ -1761,7 +1761,7 @@ elif nav_selection == "7. Methodology & Validation":
     st.markdown("""
     <div class="rr-header-banner">
         <span class="badge-pill badge-pink">SCIENTIFIC RIGOR & TRANSPARENCY</span>
-        <h1 style="font-family: 'Rajdhani', sans-serif; font-size: 2.2rem; margin: 4px 0 6px 0; color: #FFFFFF;">
+        <h1 style="font-family: 'Rajdhani', sans-serif; font-size: 2.2rem; margin: 4px 0 6px 0; color: #0F172A;">
             Methodology, Validation & Governance Disclosures
         </h1>
         <p style="font-size: 0.9rem; color: #CBD5E1; margin: 0;">
