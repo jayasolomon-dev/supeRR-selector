@@ -1,0 +1,59 @@
+{
+  "suite_name": "Task 06 Machine Learning Validation Suite",
+  "overall_status": "CERTIFIED_PASS",
+  "tests_passed": 8,
+  "total_tests": 8,
+  "results": {
+    "1_schema_integrity": {
+      "status": "PASS",
+      "total_files_verified": 17,
+      "missing_files": [],
+      "batter_rows": 824,
+      "bowler_rows": 596
+    },
+    "2_missing_value_handling": {
+      "status": "PASS",
+      "qualified_batter_predictor_nulls": 0,
+      "qualified_bowler_predictor_nulls": 0
+    },
+    "3_data_leakage_prevention": {
+      "status": "PASS",
+      "batter_predictor_quarantined_overlap": [],
+      "bowler_predictor_quarantined_overlap": [],
+      "batter_index_in_predictors": false,
+      "bowler_index_in_predictors": false,
+      "max_batter_predictor_target_corr": 0.412,
+      "max_bowler_predictor_target_corr": 0.485
+    },
+    "4_reproducibility": {
+      "status": "PASS",
+      "saved_ridge_rmse": 26.972,
+      "reproduced_ridge_rmse": 26.972,
+      "absolute_difference": 0.0
+    },
+    "5_model_stability": {
+      "status": "PASS",
+      "batting_ridge_cv_std": 4.698,
+      "bowling_ridge_cv_std": 0.44
+    },
+    "6_baseline_superiority": {
+      "status": "PASS",
+      "batting_rmse_improvement_vs_naive_pct": 33.37,
+      "bowling_rmse_improvement_vs_naive_pct": 52.18,
+      "batting_logistic_auc": 0.772,
+      "bowling_logistic_auc": 0.686
+    },
+    "7_clustering_integrity": {
+      "status": "PASS",
+      "batting_silhouette": 0.173,
+      "bowling_silhouette": 0.23,
+      "batting_min_cluster_size": 29,
+      "bowling_min_cluster_size": 32
+    },
+    "8_explainability_consistency": {
+      "status": "PASS",
+      "batting_mdi_sum": 1.0,
+      "bowling_mdi_sum": 1.0
+    }
+  }
+}

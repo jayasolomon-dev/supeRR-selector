@@ -1,0 +1,9 @@
+metric,old_value,new_value,change,explanation
+Total Deliveries,194014,194014,0,Delivery universe remains exact and unchanged
+Distinct Matches,837,837,0,Exact 367 IPL + 470 T20I matches
+Legal Deliveries (is_legal_ball == True),185975,185715,-260,256 in-scope other no-balls correctly reclassified from legal to illegal
+No-Ball Deliveries (is_noball == True),565,825,260,Expanded to include 256 in-scope other no-balls
+Batter Balls Faced (is_batter_ball == True),186540,186540,0,"Unchanged: no-balls still count as balls faced, wides excluded"
+Bowler Runs Conceded,270614,270826,212,"+256 from other penalties, -49 from ext2 secondary extras wrongly charged"
+CRR NaN Count (legal_balls_before == 0),0,1776,1776,Clean representation of undefined rate prior to first legal ball
+RRR NaN Count (Innings 2 balls_rem == 0),102080,102080,0,Replaces heuristic fallback with true undefined/infinite rate

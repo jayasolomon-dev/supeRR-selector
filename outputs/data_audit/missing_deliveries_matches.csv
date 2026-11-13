@@ -1,0 +1,17 @@
+match_id,comp_id,match_number,match_date,stage,venue_id,venue_country,home_team_id,home_team,away_team_id,away_team,home_team_captain_id,away_team_captain_id,toss_win_team_id,toss_opted,man_of_the_match,first_inn_revised_overs,second_inn_revised_overs,revised_target,knock_out,win_team_id,result,category,comp_name,season
+31281,2193,63,2024-05-13,League,49,India,3508,Gujarat Titans,8,Kolkata Knight Riders,,,,,0,,,,0,,Match Abandoned,IPL,IPL 2024,2024
+31284,2193,66,2024-05-16,League,10,India,242,Sunrisers Hyderabad,3508,Gujarat Titans,,,,,0,,,,0,,Match Abandoned,IPL,IPL 2024,2024
+31288,2193,70,2024-05-19,League,1241,India,3,Rajasthan Royals,8,Kolkata Knight Riders,2258.0,3647.0,8.0,Fielding,0,,,,0,,Match Abandoned,IPL,IPL 2024,2024
+32610,2354,1,2024-05-22,Others,33,United Kingdom,22,England,25,Pakistan,,,,,0,,,,0,,Match Abandoned,T20I,Pakistan in England T20I Series 2024,2024
+32612,2354,3,2024-05-28,Others,64,United Kingdom,22,England,25,Pakistan,,,,,0,,,,0,,Match Abandoned,T20I,Pakistan in England T20I Series 2024,2024
+32622,2398,3,2024-05-20,Others,122,Netherlands,23,Ireland,26,Scotland,,,,,0,,,,0,,Match Abandoned,T20I,Netherlands Tri-Nation T20I Series 2024,2024
+38797,2442,3,2024-12-14,League,78,South Africa,19,South Africa,25,Pakistan,,3024.0,,,0,,,,0,,Match Abandoned,T20I,Pakistan in South Africa T20I Series 2024,2024
+36564,2548,3,2024-09-15,League,9,United Kingdom,22,England,20,Australia,,,,,0,,,,0,,Match Abandoned,T20I,Australia in England T20I Series 2024,2024
+36210,2628,3,2025-09-14,League,30,United Kingdom,22,England,19,South Africa,,,,,0,,,,0,,Match Abandoned,T20I,South Africa in England T20I Series 2025,2025
+40761,2725,59,2025-05-17,League,2,India,5,Royal Challengers Bengaluru,8,Kolkata Knight Riders,,,,,0,,,,0,,Match Abandoned,IPL,IPL 2025,2025
+41502,2873,1,2025-06-12,Others,120,United Kingdom,23,Ireland,28,West Indies,,,,,0,,,,0,,Match Abandoned,T20I,West Indies in Ireland T20I Series 2025,2025
+41503,2873,2,2025-06-14,Others,120,United Kingdom,23,Ireland,28,West Indies,,,,,0,,,,0,,Match Abandoned,T20I,West Indies in Ireland T20I Series 2025,2025
+42030,2921,4,2025-12-17,Others,3272,India,18,India,19,South Africa,,,,,0,,,,0,,Match Abandoned,T20I,South Africa in India T20I Series 2025,2025
+46008,3174,2,2025-09-19,Others,143,Ireland,23,Ireland,22,England,,,,,0,,,,0,,Match Abandoned,T20I,England in Ireland T20I series 2025,2025
+48513,3317,2,2026-01-10,Others,60,Sri Lanka,27,Sri Lanka,25,Pakistan,,,,,0,,,,0,,Match Abandoned,T20I,Pakistan in Sri Lanka T20I Series 2026,2026
+50189,3433,2,2026-04-29,Others,90,Bangladesh,21,Bangladesh,17,New Zealand,,,,,0,,,,0,,Match Abandoned,T20I,New Zealand in Bangladesh T20I Series 2026,2026

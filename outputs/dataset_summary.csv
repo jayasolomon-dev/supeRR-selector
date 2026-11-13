@@ -1,0 +1,7 @@
+dataset_name,row_count,column_count,file_size_mb,duplicate_rows,total_cells,missing_cells,missing_cells_pct,primary_key_candidate
+ball_by_ball.csv,200999,33,39.17,0,6632967,766466,11.56,"match_id, innings, overid, over_ball_num"
+matches.csv,883,22,0.12,0,19426,2736,14.08,match_id
+competitions.csv,141,4,0.01,0,564,0,0.0,comp_id
+teams.csv,353,3,0.01,0,1059,0,0.0,"comp_id, team_id"
+playing_eleven.csv,28381,9,0.92,0,255429,26012,10.18,"match_id, team_id, player_id"
+competition_team_player_mapping.csv,6413,6,0.44,0,38478,0,0.0,"comp_id, team_id, player_id"

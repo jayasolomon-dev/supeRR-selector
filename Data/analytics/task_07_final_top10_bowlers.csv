@@ -1,0 +1,11 @@
+rank,bowler_id,bowler_name,bowling_type,pace_or_spin,eligibility_tier,bowler_reliability_index,raw_composite_z,reliability_grade,archetype_id,archetype_name,legal_balls_high,legal_balls_normal,effective_balls,matches_overall,economy_rate_high,diff_economy_rate,diff_wickets_per_over,diff_dot_pct,shrunk_diff_economy_rate,shrunk_diff_wickets_per_over,shrunk_diff_dot_pct,shrunk_economy_rate_high,ci_lower_95,ci_upper_95,ci_std_error
+1,818,Mitchell Marsh,Right-arm medium-fast,Pace,Qualified,61.86,1.186,High,1,Death Wicket Enforcer,32.0,39.0,35.2,19,10.5,-1.96,0.562,16.43,0.3,0.306,3.08,10.84,50.0,69.66,4.66
+2,7364,Haris Rauf,Right-arm Fast,Pace,Qualified,61.5,1.15,High,1,Death Wicket Enforcer,109.0,155.0,128.0,48,7.6,-2.08,0.064,-3.5,-1.12,0.053,-5.22,8.29,53.04,70.76,4.74
+3,8530,Kartik Tyagi,Right-arm medium-fast,Pace,Qualified,61.28,1.128,High,1,Death Wicket Enforcer,41.0,65.0,50.3,19,11.41,-2.44,0.293,11.33,-0.43,0.186,2.4,11.35,52.62,67.25,3.73
+4,8746,Vaibhav Arora,Right-arm Fast,Pace,Qualified,60.47,1.047,High,1,Death Wicket Enforcer,84.0,113.0,96.4,42,9.86,-0.55,0.342,0.01,0.28,0.262,-2.98,10.19,50.76,69.35,4.88
+5,7503,Ravi Bishnoi,Right-arm Leg-Break,Spin,Qualified,59.66,0.966,Moderate,2,Middle & Powerplay Restrictor,45.0,606.0,83.8,109,9.2,0.59,0.517,-4.46,1.21,0.382,-6.6,9.74,45.29,75.17,7.69
+6,6676,Azmatullah Omarzai,Right-arm medium-fast,Pace,Qualified,59.18,0.918,Moderate,1,Death Wicket Enforcer,59.0,195.0,90.6,65,8.75,-0.82,0.069,0.88,0.12,0.053,-2.47,9.37,44.55,68.84,5.82
+7,1944,Keshav Maharaj,Slow left-arm orthodox,Spin,Qualified,58.96,0.896,Moderate,2,Middle & Powerplay Restrictor,30.0,124.0,48.3,30,9.4,1.66,0.71,1.07,2.15,0.44,-4.16,10.11,48.05,69.82,5.62
+8,3629,Corbin Bosch,Right-arm fast-medium,Pace,Qualified,58.9,0.89,Moderate,1,Death Wicket Enforcer,63.0,77.0,69.3,19,7.52,-0.12,0.217,-2.46,0.81,0.153,-5.51,8.65,49.23,67.61,5.0
+9,4900,Wanindu Hasaranga,Right-arm Leg-Break,Spin,Qualified,58.81,0.881,Moderate,2,Middle & Powerplay Restrictor,143.0,377.0,207.4,91,6.8,-1.16,-0.189,-4.92,-0.64,-0.164,-5.89,7.36,52.52,65.99,3.33
+10,4409,Sam Curran,Left-arm medium-fast,Pace,Qualified,58.22,0.822,Moderate,1,Death Wicket Enforcer,127.0,178.0,148.2,73,10.91,0.02,0.101,2.39,0.51,0.085,-0.13,10.97,49.34,67.57,4.73

@@ -1,0 +1,142 @@
+comp_id,comp_name,match_format,season,category,match_count,delivery_count,team_count,status
+1358,IPL 2022,T20,2022,IPL,74,17909,10,Active with Matches
+1715,IPL 2023,T20,2023,IPL,74,17863,10,Active with Matches
+2193,IPL 2024,T20,2024,IPL,74,17103,10,Active with Matches
+2725,IPL 2025,T20,2025,IPL,75,17285,10,Active with Matches
+3298,IPL 2026,T20,2026,IPL,74,17527,10,Active with Matches
+2670,Mens T20 Emerging Teams Asia Cup 2024,T20,2024,Other,15,3519,8,Active with Matches
+3289,Asia Cup Rising Stars 2025,T20,2025,Other,15,3466,8,Active with Matches
+1543,Afghanistan in Ireland T20I Series 2022,T20I,2022,T20I,5,1017,2,Active with Matches
+1458,Afghanistan in Zimbabwe T20I Series 2022,T20I,2022,T20I,3,756,2,Active with Matches
+1551,Asia Cup T20 Qualifiers 2022,T20I,2022,T20I,6,1379,4,Active with Matches
+1584,Australia in India T20I Series 2022,T20I,2022,T20I,3,590,2,Active with Matches
+1435,Australia in Sri Lanka T20I Series 2022,T20I,2022,T20I,3,684,2,Active with Matches
+1601,Bangladesh in United Arab Emirates T20I Series 2022,T20I,2022,T20I,2,496,2,Active with Matches
+1452,Bangladesh in West Indies T20I Series 2022,T20I,2022,T20I,3,587,2,Active with Matches
+1523,Bangladesh in Zimbabwe T20I Series 2022,T20I,2022,T20I,3,736,2,Active with Matches
+1611,England in Australia T20I Series 2022,T20I,2022,T20I,3,609,2,Active with Matches
+1595,England in Pakistan T20I Series 2022,T20I,2022,T20I,7,1678,2,Active with Matches
+1331,England in West Indies T20I Series 2022,T20I,2022,T20I,5,1235,2,Active with Matches
+1494,India in England T20I Series 2022,T20I,2022,T20I,3,733,2,Active with Matches
+1474,India in Ireland T20I Series 2022,T20I,2022,T20I,2,399,2,Active with Matches
+1499,India in West Indies T20I Series 2022,T20I,2022,T20I,5,1212,2,Active with Matches
+1533,Mens Twenty20 Asia Cup 2022,T20I,2022,T20I,13,3071,6,Active with Matches
+1512,New Zealand in Ireland T20I Series 2022,T20I,2022,T20I,3,696,2,Active with Matches
+1534,New Zealand in Netherlands T20I Series 2022,T20I,2022,T20I,2,456,2,Active with Matches
+1537,New Zealand in West Indies T20I Series 2022,T20I,2022,T20I,3,740,4,Active with Matches
+1517,South Africa in England T20I Series 2022,T20I,2022,T20I,3,711,2,Active with Matches
+1439,South Africa in India T20I Series 2022,T20I,2022,T20I,5,972,2,Active with Matches
+1531,South Africa vs Ireland T20I Series 2022,T20I,2022,T20I,2,501,2,Active with Matches
+1345,Sri Lanka in Australia T20I Series 2022,T20I,2022,T20I,5,1201,2,Active with Matches
+1603,West Indies in Australia T20I Series 2022,T20I,2022,T20I,2,504,2,Active with Matches
+1335,West Indies in India T20I Series 2022,T20I,2022,T20I,3,755,2,Active with Matches
+1646,India in New Zealand T20I Series 2022/23,T20I,2022/23,T20I,2,420,2,Active with Matches
+1608,New Zealand T20I Tri Series 2022/23,T20I,2022/23,T20I,7,1682,3,Active with Matches
+1599,South Africa in India T20I Series 2022/23,T20I,2022/23,T20I,3,736,2,Active with Matches
+1885,Afghanistan in Bangladesh T20I Series 2023,T20I,2023,T20I,2,457,2,Active with Matches
+1792,Afghanistan v Pakistan T20I Series 2023,T20I,2023,T20I,3,714,2,Active with Matches
+2046,Australia in India T20I Series 2023,T20I,2023,T20I,5,1271,2,Active with Matches
+2000,Australia in South Africa T20I Series 2023,T20I,2023,T20I,3,668,2,Active with Matches
+2058,Bangladesh in New Zealand T20I Series 2023,T20I,2023,T20I,3,519,2,Active with Matches
+1742,England in Bangladesh T20I Series 2023,T20I,2023,T20I,3,723,2,Active with Matches
+2048,England in West Indies T20I Series 2023,T20I,2023,T20I,5,1192,2,Active with Matches
+1998,India in Ireland T20I Series 2023,T20I,2023,T20I,2,421,2,Active with Matches
+2047,India in South Africa T20I Series 2023,T20I,2023,T20I,2,418,2,Active with Matches
+1913,India in West Indies T20I Series 2023,T20I,2023,T20I,5,1195,2,Active with Matches
+1769,Ireland in Bangladesh T20I Series 2023,T20I,2023,T20I,3,593,2,Active with Matches
+1709,Ireland in Zimbabwe T20I Series 2023,T20I,2023,T20I,3,715,2,Active with Matches
+1999,New Zealand in England T20I Series 2023,T20I,2023,T20I,4,895,2,Active with Matches
+1700,New Zealand in India T20I Series 2023,T20I,2023,T20I,3,701,2,Active with Matches
+1799,New Zealand in Pakistan T20I Series 2023,T20I,2023,T20I,5,1082,2,Active with Matches
+1997,New Zealand in United Arab Emirates T20I Series 2023,T20I,2023,T20I,3,718,2,Active with Matches
+1698,Sri Lanka in India T20I Series 2023,T20I,2023,T20I,3,741,2,Active with Matches
+1719,Sri Lanka in New Zealand T20I Series 2023,T20I,2023,T20I,3,717,2,Active with Matches
+1718,West Indies in South Africa T20I Series 2023,T20I,2023,T20I,3,646,2,Active with Matches
+2188,Ireland in Zimbabwe T20I Series 2023/24,T20I,2023/24,T20I,3,739,2,Active with Matches
+2059,Afghanistan in India T20I Series 2024,T20I,2024,T20I,3,712,2,Active with Matches
+2267,Afghanistan in Sri Lanka T20I Series 2024,T20I,2024,T20I,3,727,2,Active with Matches
+2753,Afghanistan in Zimbabwe T20I Series 2024,T20I,2024,T20I,3,740,2,Active with Matches
+2269,Afghanistan v Ireland T20I Series 2024,T20I,2024,T20I,3,723,2,Active with Matches
+2548,Australia in England T20I Series 2024,T20I,2024,T20I,3,489,2,Active with Matches
+2062,Australia in New Zealand T20I Series 2024,T20I,2024,T20I,3,618,2,Active with Matches
+2561,Australia in Scotland T20I Series 2024,T20I,2024,T20I,3,635,2,Active with Matches
+2512,Bangladesh in India T20I Series 2024,T20I,2024,T20I,3,694,2,Active with Matches
+2457,Bangladesh in West Indies T20I Series 2024,T20I,2024,T20I,3,718,2,Active with Matches
+2455,England in West Indies T20I Series 2024,T20I,2024,T20I,5,973,2,Active with Matches
+2718,India in South Africa T20I Series 2024,T20I,2024,T20I,4,990,2,Active with Matches
+2542,India in Sri Lanka T20I Series 2024,T20I,2024,T20I,3,667,2,Active with Matches
+2372,India in Zimbabwe T20I Series 2024,T20I,2024,T20I,5,1193,2,Active with Matches
+2562,Ireland v South Africa T20I Series 2024,T20I,2024,T20I,2,497,2,Active with Matches
+2398,Netherlands Tri-Nation T20I Series 2024,T20I,2024,T20I,6,1191,3,Active with Matches
+2605,Netherlands Tri-Nation T20I Series [Aug 2024] 2024,T20I,2024,T20I,6,1306,3,Active with Matches
+2350,New Zealand in Pakistan T20I Series 2024,T20I,2024,T20I,5,943,2,Active with Matches
+2716,New Zealand in Sri Lanka T20I Series 2024,T20I,2024,T20I,2,485,2,Active with Matches
+2387,Pakistan in Australia T20I Series 2024,T20I,2024,T20I,3,520,2,Active with Matches
+2354,Pakistan in England T20I Series 2024,T20I,2024,T20I,4,461,2,Active with Matches
+2395,Pakistan in Ireland T20I series 2024,T20I,2024,T20I,3,713,2,Active with Matches
+2060,Pakistan in New Zealand T20I series 2024,T20I,2024,T20I,5,1200,2,Active with Matches
+2442,Pakistan in South Africa T20I Series 2024,T20I,2024,T20I,3,506,2,Active with Matches
+2722,Pakistan in Zimbabwe T20I Series 2024,T20I,2024,T20I,3,574,2,Active with Matches
+2453,South Africa in West Indies T20I Series 2024,T20I,2024,T20I,3,629,2,Active with Matches
+2452,South Africa in West Indies T20I Series [May 2024] 2024,T20I,2024,T20I,3,714,2,Active with Matches
+2305,Sri Lanka in Bangladesh T20I Series 2024,T20I,2024,T20I,3,751,2,Active with Matches
+2061,West Indies in Australia T20I Series 2024,T20I,2024,T20I,3,756,2,Active with Matches
+2692,West Indies in Sri Lanka T20I Series 2024,T20I,2024,T20I,3,705,2,Active with Matches
+2371,Zimbabwe in Bangladesh T20I Series 2024,T20I,2024,T20I,5,1198,2,Active with Matches
+2229,Zimbabwe in Sri Lanka T20I Series 2024,T20I,2024,T20I,3,644,2,Active with Matches
+2755,Sri Lanka in New Zealand T20I Series 2024/25,T20I,2024/25,T20I,3,754,2,Active with Matches
+3254,Afghanistan in Zimbabwe T20I Series 2025,T20I,2025,T20I,3,702,2,Active with Matches
+3228,Afghanistan v Bangladesh T20I Series 2025,T20I,2025,T20I,3,713,2,Active with Matches
+3133,Asia Cup 2025,T20I,2025,T20I,19,4437,8,Active with Matches
+3197,Australia in New Zealand T20I Series 2025,T20I,2025,T20I,3,477,2,Active with Matches
+2874,Australia in West Indies T20I Series 2025,T20I,2025,T20I,5,1185,2,Active with Matches
+2973,Bangladesh in Pakistan T20I Series 2025,T20I,2025,T20I,3,712,2,Active with Matches
+3020,Bangladesh in Sri Lanka T20I Series 2025,T20I,2025,T20I,3,675,2,Active with Matches
+2975,Bangladesh in United Arab Emirates T20I Series 2025,T20I,2025,T20I,3,752,2,Active with Matches
+2513,England in India T20I Series 2025,T20I,2025,T20I,5,1131,2,Active with Matches
+3174,England in Ireland T20I series 2025,T20I,2025,T20I,3,467,2,Active with Matches
+3226,England in New Zealand T20I Series 2025,T20I,2025,T20I,3,391,2,Active with Matches
+2915,India in Australia T20I Series 2025,T20I,2025,T20I,5,758,2,Active with Matches
+2940,India in Bangladesh T20I Series 2025,T20I,2025,T20I,0,0,2,Scheduled / No Matches
+3251,Ireland in Bangladesh T20I Series 2025,T20I,2025,T20I,3,705,2,Active with Matches
+2801,Ireland in Zimbabwe T20I Series 2025,T20I,2025,T20I,3,412,2,Active with Matches
+3190,Nepal v West Indies T20I Series 2025,T20I,2025,T20I,3,689,2,Active with Matches
+3163,Netherlands in Bangladesh T20I Series 2025,T20I,2025,T20I,3,516,2,Active with Matches
+3288,Pakistan T20I Tri-Series 2025,T20I,2025,T20I,7,1665,3,Active with Matches
+3074,Pakistan in Bangladesh T20I Series 2025,T20I,2025,T20I,3,690,2,Active with Matches
+2793,Pakistan in New Zealand T20I Series 2025,T20I,2025,T20I,5,1000,2,Active with Matches
+2875,Pakistan in West Indies T20I Series 2025,T20I,2025,T20I,3,763,2,Active with Matches
+2912,South Africa in Australia T20I Series 2025,T20I,2025,T20I,3,739,2,Active with Matches
+2628,South Africa in England T20I Series 2025,T20I,2025,T20I,3,312,2,Active with Matches
+2921,South Africa in India T20I Series 2025,T20I,2025,T20I,5,925,2,Active with Matches
+3223,South Africa in Pakistan T20I Series 2025,T20I,2025,T20I,3,693,2,Active with Matches
+3162,Sri Lanka in Zimbabwe T20I Series 2025,T20I,2025,T20I,3,679,2,Active with Matches
+3159,United Arab Emirates T20I Tri-Series 2025,T20I,2025,T20I,7,1721,3,Active with Matches
+3241,West Indies in Bangladesh T20I Series 2025,T20I,2025,T20I,3,722,2,Active with Matches
+2626,West Indies in England T20I Series 2025,T20I,2025,T20I,3,764,2,Active with Matches
+2873,West Indies in Ireland T20I Series 2025,T20I,2025,T20I,3,257,2,Active with Matches
+3282,West Indies in New Zealand T20I Series 2025,T20I,2025,T20I,5,1009,2,Active with Matches
+3405,Afghanistan v Sri Lanka T20I Series 2026,T20I,2026,T20I,0,0,2,Scheduled / No Matches
+3331,Afghanistan v West Indies T20I Series 2026,T20I,2026,T20I,3,742,2,Active with Matches
+3787,Afghanistan v Zimbabwe T20I Series 2026,T20I,2026,T20I,3,649,2,Active with Matches
+3713,Afghanistan vs India in India T20I Series 2026,T20I,2026,T20I,3,640,2,Active with Matches
+3482,Australia in Bangladesh T20I Series 2026,T20I,2026,T20I,3,669,2,Active with Matches
+3358,Australia in Pakistan T20I Series 2026,T20I,2026,T20I,3,694,2,Active with Matches
+3568,Bangladesh in Zimbabwe T20I Series 2026,T20I,2026,T20I,3,738,2,Active with Matches
+3334,England in Sri Lanka T20I Series 2026,T20I,2026,T20I,3,668,2,Active with Matches
+3126,India in England T20I Series 2026,T20I,2026,T20I,5,1032,2,Active with Matches
+3446,India in Ireland T20I Series 2026,T20I,2026,T20I,2,496,2,Active with Matches
+3739,India in Japan T20I Match 2026,T20I,2026,T20I,1,64,2,Active with Matches
+3690,India in New Zealand T20I Series 2026,T20I,2026,T20I,5,1209,2,Active with Matches
+3465,India in Zimbabwe T20I Series 2026,T20I,2026,T20I,3,710,2,Active with Matches
+3313,Ireland in United Arab Emirates T20I Series 2026,T20I,2026,T20I,2,494,2,Active with Matches
+3433,New Zealand in Bangladesh T20I Series 2026,T20I,2026,T20I,3,402,2,Active with Matches
+3329,New Zealand in India T20I Series 2026,T20I,2026,T20I,5,1148,2,Active with Matches
+3317,Pakistan in Sri Lanka T20I Series 2026,T20I,2026,T20I,3,376,2,Active with Matches
+3395,South Africa in New Zealand T20I Series 2026,T20I,2026,T20I,5,1134,2,Active with Matches
+3128,Sri Lanka in England T20I Series 2026,T20I,2026,T20I,3,632,2,Active with Matches
+3765,Sri Lanka in Pakistan T20I Series 2026,T20I,2026,T20I,3,718,2,Active with Matches
+3464,Sri Lanka in West Indies T20I Series 2026,T20I,2026,T20I,3,734,2,Active with Matches
+3473,United Arab Emirates in Nepal T20I Series 2026,T20I,2026,T20I,0,0,2,Scheduled / No Matches
+3450,West Indies in India T20I Series 2026,T20I,2026,T20I,5,1014,2,Active with Matches
+2906,West Indies in South Africa T20I Series 2026,T20I,2026,T20I,3,596,2,Active with Matches

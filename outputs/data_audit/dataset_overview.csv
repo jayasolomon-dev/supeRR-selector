@@ -1,0 +1,7 @@
+dataset_name,row_count,column_count,memory_mb,duplicate_rows,total_cells,missing_cells,missing_cells_pct
+ball_by_ball.csv,200999,33,69.49,0,6632967,766466,11.56
+matches.csv,883,22,0.22,0,19426,2736,14.08
+competitions.csv,141,4,0.01,0,564,0,0.0
+playing_eleven.csv,28381,9,3.21,0,255429,26012,10.18
+competition_team_player_mapping.csv,6413,6,0.64,0,38478,0,0.0
+teams.csv,353,3,0.01,0,1059,0,0.0

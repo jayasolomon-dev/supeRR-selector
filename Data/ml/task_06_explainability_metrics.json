@@ -1,0 +1,223 @@
+{
+  "batting_feature_importance": [
+    {
+      "feature": "boundary_ball_pct_overall",
+      "rf_mdi_reg": 0.17938668885653344,
+      "perm_importance_reg": 0.18131600376749196,
+      "ridge_coef": 8.983041447713873,
+      "logreg_coef": 0.6228290192503022
+    },
+    {
+      "feature": "dismissal_rate_per_100_overall",
+      "rf_mdi_reg": 0.15836018334285867,
+      "perm_importance_reg": 0.14064901037034175,
+      "ridge_coef": -5.818755912712185,
+      "logreg_coef": -0.5240848140099109
+    },
+    {
+      "feature": "strike_rate_overall",
+      "rf_mdi_reg": 0.12118617000731498,
+      "perm_importance_reg": 0.09888940938324178,
+      "ridge_coef": 9.876529122677915,
+      "logreg_coef": 0.9939655972730976
+    },
+    {
+      "feature": "balls_faced_overall",
+      "rf_mdi_reg": 0.10970001226483998,
+      "perm_importance_reg": 0.08983088611717545,
+      "ridge_coef": 3.4297258322403947,
+      "logreg_coef": 0.5787281014611869
+    },
+    {
+      "feature": "balls_faced_normal",
+      "rf_mdi_reg": 0.12385635002464597,
+      "perm_importance_reg": 0.06678911191885398,
+      "ridge_coef": 2.244359204534388,
+      "logreg_coef": -0.26818921675903135
+    },
+    {
+      "feature": "six_ratio_normal",
+      "rf_mdi_reg": 0.05798899167812233,
+      "perm_importance_reg": 0.06011467632293099,
+      "ridge_coef": -6.325637288052777,
+      "logreg_coef": -0.5942147052269046
+    },
+    {
+      "feature": "dot_pct_overall",
+      "rf_mdi_reg": 0.04902799443178943,
+      "perm_importance_reg": 0.0355848555113004,
+      "ridge_coef": 1.0641804507497683,
+      "logreg_coef": -0.1698851151049529
+    },
+    {
+      "feature": "boundary_ball_pct_normal",
+      "rf_mdi_reg": 0.04514334068891078,
+      "perm_importance_reg": 0.02675588059933808,
+      "ridge_coef": -3.05829345700434,
+      "logreg_coef": -0.17466658995072185
+    },
+    {
+      "feature": "dismissal_rate_per_100_normal",
+      "rf_mdi_reg": 0.03709527933292424,
+      "perm_importance_reg": 0.02221499339401336,
+      "ridge_coef": -1.5873259785830385,
+      "logreg_coef": 0.20195205223584958
+    },
+    {
+      "feature": "strike_rate_normal",
+      "rf_mdi_reg": 0.03362358419454835,
+      "perm_importance_reg": 0.020992017079548363,
+      "ridge_coef": -4.502743192375941,
+      "logreg_coef": -0.24918443317222297
+    },
+    {
+      "feature": "ipl_ball_share",
+      "rf_mdi_reg": 0.02908671250905618,
+      "perm_importance_reg": 0.01898509302695388,
+      "ridge_coef": -0.7690944995735743,
+      "logreg_coef": -0.07366643621917313
+    },
+    {
+      "feature": "dot_pct_normal",
+      "rf_mdi_reg": 0.02778775631915627,
+      "perm_importance_reg": 0.018356482954543417,
+      "ridge_coef": -0.9581865556477973,
+      "logreg_coef": -0.007326064900780154
+    },
+    {
+      "feature": "running_strike_rate_normal",
+      "rf_mdi_reg": 0.023581119089009873,
+      "perm_importance_reg": 0.01449972606272194,
+      "ridge_coef": -0.8939109796302084,
+      "logreg_coef": -0.322382747497106
+    },
+    {
+      "feature": "batting_hand_LHB",
+      "rf_mdi_reg": 0.0041758172602896475,
+      "perm_importance_reg": 0.0028989819719797637,
+      "ridge_coef": -4.286033366490991,
+      "logreg_coef": -0.25738276219633976
+    }
+  ],
+  "bowling_feature_importance": [
+    {
+      "feature": "boundary_conceded_pct_overall",
+      "rf_mdi_reg": 0.2941133588893774,
+      "perm_importance_reg": 0.5225265221130926,
+      "ridge_coef": 0.31622981855914073,
+      "logreg_coef": -0.5093089740562994
+    },
+    {
+      "feature": "boundary_conceded_pct_normal",
+      "rf_mdi_reg": 0.11904266729729318,
+      "perm_importance_reg": 0.13368697068936355,
+      "ridge_coef": -0.20844959532959842,
+      "logreg_coef": 0.13139137762884276
+    },
+    {
+      "feature": "economy_rate_overall",
+      "rf_mdi_reg": 0.15027556065415806,
+      "perm_importance_reg": 0.12381539842912134,
+      "ridge_coef": 0.6689820892980176,
+      "logreg_coef": -0.5086055842253462
+    },
+    {
+      "feature": "wickets_per_over_overall",
+      "rf_mdi_reg": 0.056379162837153246,
+      "perm_importance_reg": 0.045949364919237026,
+      "ridge_coef": -0.025335794577080798,
+      "logreg_coef": -0.09774021572369963
+    },
+    {
+      "feature": "extras_per_legal_ball_normal",
+      "rf_mdi_reg": 0.06535869072740594,
+      "perm_importance_reg": 0.03937344712769471,
+      "ridge_coef": -0.25733475422049984,
+      "logreg_coef": 0.6506249659021984
+    },
+    {
+      "feature": "dot_pct_normal",
+      "rf_mdi_reg": 0.036325093764463086,
+      "perm_importance_reg": 0.03366396318855339,
+      "ridge_coef": -0.46442408251288575,
+      "logreg_coef": 0.5180402484050223
+    },
+    {
+      "feature": "dot_pct_overall",
+      "rf_mdi_reg": 0.060981617554634195,
+      "perm_importance_reg": 0.03304360077824277,
+      "ridge_coef": 0.1285916396009737,
+      "logreg_coef": -0.3280459076448002
+    },
+    {
+      "feature": "economy_rate_normal",
+      "rf_mdi_reg": 0.05040491901539584,
+      "perm_importance_reg": 0.03125369421879991,
+      "ridge_coef": -0.321833200402504,
+      "logreg_coef": 0.126518942524503
+    },
+    {
+      "feature": "six_conceded_ratio_normal",
+      "rf_mdi_reg": 0.04554905326678701,
+      "perm_importance_reg": 0.02710538382204396,
+      "ridge_coef": 0.11555053580221235,
+      "logreg_coef": 0.050705441919961
+    },
+    {
+      "feature": "ipl_ball_share",
+      "rf_mdi_reg": 0.02805365118317812,
+      "perm_importance_reg": 0.022561567593986996,
+      "ridge_coef": 0.2536828064568846,
+      "logreg_coef": -0.2602905397907051
+    },
+    {
+      "feature": "is_spin",
+      "rf_mdi_reg": 0.018261727999650597,
+      "perm_importance_reg": 0.021624286548127057,
+      "ridge_coef": -0.3764605374044018,
+      "logreg_coef": 0.23568702179468629
+    },
+    {
+      "feature": "legal_balls_normal",
+      "rf_mdi_reg": 0.02220301743744124,
+      "perm_importance_reg": 0.012034284202590007,
+      "ridge_coef": -0.2560846053822106,
+      "logreg_coef": 0.23930302692960143
+    },
+    {
+      "feature": "legal_balls_overall",
+      "rf_mdi_reg": 0.019984314205783123,
+      "perm_importance_reg": 0.011681656887876002,
+      "ridge_coef": 0.07062815623229549,
+      "logreg_coef": 0.13467485674643367
+    },
+    {
+      "feature": "bowling_strike_rate_normal_clean",
+      "rf_mdi_reg": 0.01610964428571442,
+      "perm_importance_reg": 0.011428030916609067,
+      "ridge_coef": -0.0902304446054844,
+      "logreg_coef": 0.09846876993311829
+    },
+    {
+      "feature": "wickets_per_over_normal",
+      "rf_mdi_reg": 0.013069492395545224,
+      "perm_importance_reg": 0.009869982523014065,
+      "ridge_coef": -0.08837028506552888,
+      "logreg_coef": 0.19715505384782103
+    },
+    {
+      "feature": "bowling_arm_left",
+      "rf_mdi_reg": 0.0038880284860193545,
+      "perm_importance_reg": 0.0041301633599387325,
+      "ridge_coef": 0.023703454513865324,
+      "logreg_coef": -0.09561163398641384
+    },
+    {
+      "feature": "zero_wickets_normal_flag",
+      "rf_mdi_reg": 0.0,
+      "perm_importance_reg": 0.0,
+      "ridge_coef": -0.10658619969837799,
+      "logreg_coef": 0.04562819151131332
+    }
+  ]
+}

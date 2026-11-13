@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" style="background-color: #ffffff; font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;">
+<rect width="800" height="450" fill="#ffffff"/>
+<text x="400" y="35" text-anchor="middle" font-size="18" font-weight="bold" fill="#1e293b">Figure 2: Batting vs Bowling Defensive Pressure Distribution</text>
+<g transform="translate(70, 60)">
+<line x1="0" y1="330.0" x2="690" y2="330.0" stroke="#e2e8f0" stroke-width="1"/>
+<text x="-10" y="334.0" text-anchor="end" font-size="11" fill="#64748b">0.0%</text>
+<line x1="0" y1="247.5" x2="690" y2="247.5" stroke="#e2e8f0" stroke-width="1"/>
+<text x="-10" y="251.5" text-anchor="end" font-size="11" fill="#64748b">4.5%</text>
+<line x1="0" y1="165.0" x2="690" y2="165.0" stroke="#e2e8f0" stroke-width="1"/>
+<text x="-10" y="169.0" text-anchor="end" font-size="11" fill="#64748b">9.0%</text>
+<line x1="0" y1="82.5" x2="690" y2="82.5" stroke="#e2e8f0" stroke-width="1"/>
+<text x="-10" y="86.5" text-anchor="end" font-size="11" fill="#64748b">13.4%</text>
+<line x1="0" y1="0.0" x2="690" y2="0.0" stroke="#e2e8f0" stroke-width="1"/>
+<text x="-10" y="4.0" text-anchor="end" font-size="11" fill="#64748b">17.9%</text>
+<rect x="2.0" y="329.1" width="11.6" height="0.9" fill="#3b82f6" opacity="0.85" rx="1"/>
+<rect x="14.6" y="329.9" width="11.6" height="0.1" fill="#f97316" opacity="0.85" rx="1"/>
+<rect x="29.6" y="321.3" width="11.6" height="8.7" fill="#3b82f6" opacity="0.85" rx="1"/>
+<rect x="42.2" y="330.0" width="11.6" height="0.0" fill="#f97316" opacity="0.85" rx="1"/>
+<rect x="57.2" y="309.9" width="11.6" height="20.1" fill="#3b82f6" opacity="0.85" rx="1"/>
+<rect x="69.8" y="324.1" width="11.6" height="5.9" fill="#f97316" opacity="0.85" rx="1"/>
+<rect x="84.8" y="296.2" width="11.6" height="33.8" fill="#3b82f6" opacity="0.85" rx="1"/>
+<rect x="97.4" y="317.8" width="11.6" height="12.2" fill="#f97316" opacity="0.85" rx="1"/>
+<rect x="112.4" y="281.3" width="11.6" height="48.7" fill="#3b82f6" opacity="0.85" rx="1"/>
+<rect x="125.0" y="317.8" width="11.6" height="12.2" fill="#f97316" opacity="0.85" rx="1"/>
+<rect x="140.0" y="264.9" width="11.6" height="65.1" fill="#3b82f6" opacity="0.85" rx="1"/>
+<rect x="152.6" y="314.9" width="11.6" height="15.1" fill="#f97316" opacity="0.85" rx="1"/>
+<rect x="167.6" y="251.5" width="11.6" height="78.5" fill="#3b82f6" opacity="0.85" rx="1"/>
+<rect x="180.2" y="306.2" width="11.6" height="23.8" fill="#f97316" opacity="0.85" rx="1"/>
+<rect x="195.2" y="241.2" width="11.6" height="88.8" fill="#3b82f6" opacity="0.85" rx="1"/>
+<rect x="207.8" y="288.0" width="11.6" height="42.0" fill="#f97316" opacity="0.85" rx="1"/>
+<rect x="222.8" y="213.6" width="11.6" height="116.4" fill="#3b82f6" opacity="0.85" rx="1"/>
+<rect x="235.4" y="253.0" width="11.6" height="77.0" fill="#f97316" opacity="0.85" rx="1"/>
+<rect x="250.4" y="183.9" width="11.6" height="146.1" fill="#3b82f6" opacity="0.85" rx="1"/>
+<rect x="263.0" y="196.4" width="11.6" height="133.6" fill="#f97316" opacity="0.85" rx="1"/>
+<rect x="278.0" y="139.7" width="11.6" height="190.3" fill="#3b82f6" opacity="0.85" rx="1"/>
+<rect x="290.6" y="115.1" width="11.6" height="214.9" fill="#f97316" opacity="0.85" rx="1"/>
+<rect x="305.6" y="108.5" width="11.6" height="221.5" fill="#3b82f6" opacity="0.85" rx="1"/>
+<rect x="318.2" y="45.1" width="11.6" height="284.9" fill="#f97316" opacity="0.85" rx="1"/>
+<rect x="333.2" y="126.1" width="11.6" height="203.9" fill="#3b82f6" opacity="0.85" rx="1"/>
+<rect x="345.8" y="43.0" width="11.6" height="287.0" fill="#f97316" opacity="0.85" rx="1"/>
+<rect x="360.8" y="166.8" width="11.6" height="163.2" fill="#3b82f6" opacity="0.85" rx="1"/>
+<rect x="373.4" y="67.0" width="11.6" height="263.0" fill="#f97316" opacity="0.85" rx="1"/>
+<rect x="388.4" y="216.2" width="11.6" height="113.8" fill="#3b82f6" opacity="0.85" rx="1"/>
+<rect x="401.0" y="135.7" width="11.6" height="194.3" fill="#f97316" opacity="0.85" rx="1"/>
+<rect x="416.0" y="245.4" width="11.6" height="84.6" fill="#3b82f6" opacity="0.85" rx="1"/>
+<rect x="428.6" y="215.5" width="11.6" height="114.5" fill="#f97316" opacity="0.85" rx="1"/>
+<rect x="443.6" y="271.4" width="11.6" height="58.6" fill="#3b82f6" opacity="0.85" rx="1"/>
+<rect x="456.2" y="262.9" width="11.6" height="67.1" fill="#f97316" opacity="0.85" rx="1"/>
+<rect x="471.2" y="288.9" width="11.6" height="41.1" fill="#3b82f6" opacity="0.85" rx="1"/>
+<rect x="483.8" y="294.5" width="11.6" height="35.5" fill="#f97316" opacity="0.85" rx="1"/>
+<rect x="498.8" y="303.4" width="11.6" height="26.6" fill="#3b82f6" opacity="0.85" rx="1"/>
+<rect x="511.4" y="309.8" width="11.6" height="20.2" fill="#f97316" opacity="0.85" rx="1"/>
+<rect x="526.4" y="309.8" width="11.6" height="20.2" fill="#3b82f6" opacity="0.85" rx="1"/>
+<rect x="539.0" y="317.7" width="11.6" height="12.3" fill="#f97316" opacity="0.85" rx="1"/>
+<rect x="554.0" y="315.3" width="11.6" height="14.7" fill="#3b82f6" opacity="0.85" rx="1"/>
+<rect x="566.6" y="323.0" width="11.6" height="7.0" fill="#f97316" opacity="0.85" rx="1"/>
+<rect x="581.6" y="317.2" width="11.6" height="12.8" fill="#3b82f6" opacity="0.85" rx="1"/>
+<rect x="594.2" y="323.5" width="11.6" height="6.5" fill="#f97316" opacity="0.85" rx="1"/>
+<rect x="609.2" y="318.6" width="11.6" height="11.4" fill="#3b82f6" opacity="0.85" rx="1"/>
+<rect x="621.8" y="324.5" width="11.6" height="5.5" fill="#f97316" opacity="0.85" rx="1"/>
+<rect x="636.8" y="318.4" width="11.6" height="11.6" fill="#3b82f6" opacity="0.85" rx="1"/>
+<rect x="649.4" y="325.7" width="11.6" height="4.3" fill="#f97316" opacity="0.85" rx="1"/>
+<rect x="664.4" y="271.2" width="11.6" height="58.8" fill="#3b82f6" opacity="0.85" rx="1"/>
+<rect x="677.0" y="328.6" width="11.6" height="1.4" fill="#f97316" opacity="0.85" rx="1"/>
+<line x1="0.0" y1="330" x2="0.0" y2="336" stroke="#94a3b8" stroke-width="1"/>
+<text x="0.0" y="350" text-anchor="middle" font-size="11" fill="#64748b">0</text>
+<line x1="138.0" y1="330" x2="138.0" y2="336" stroke="#94a3b8" stroke-width="1"/>
+<text x="138.0" y="350" text-anchor="middle" font-size="11" fill="#64748b">20</text>
+<line x1="276.0" y1="330" x2="276.0" y2="336" stroke="#94a3b8" stroke-width="1"/>
+<text x="276.0" y="350" text-anchor="middle" font-size="11" fill="#64748b">40</text>
+<line x1="414.0" y1="330" x2="414.0" y2="336" stroke="#94a3b8" stroke-width="1"/>
+<text x="414.0" y="350" text-anchor="middle" font-size="11" fill="#64748b">60</text>
+<line x1="552.0" y1="330" x2="552.0" y2="336" stroke="#94a3b8" stroke-width="1"/>
+<text x="552.0" y="350" text-anchor="middle" font-size="11" fill="#64748b">80</text>
+<line x1="690.0" y1="330" x2="690.0" y2="336" stroke="#94a3b8" stroke-width="1"/>
+<text x="690.0" y="350" text-anchor="middle" font-size="11" fill="#64748b">100</text>
+<line x1="0" y1="330" x2="690" y2="330" stroke="#475569" stroke-width="1.5"/>
+<line x1="0" y1="0" x2="0" y2="330" stroke="#475569" stroke-width="1.5"/>
+<rect x="470" y="10" width="14" height="14" fill="#3b82f6" rx="2"/>
+<text x="490" y="22" font-size="12" fill="#334155">Batting Pressure</text>
+<rect x="580" y="10" width="14" height="14" fill="#f97316" rx="2"/>
+<text x="600" y="22" font-size="12" fill="#334155">Bowling Pressure</text>
+<text x="345" y="375" text-anchor="middle" font-size="13" font-weight="600" fill="#334155">Pressure Score [0 - 100]</text>
+<text transform="rotate(-90)" x="-165" y="-48" text-anchor="middle" font-size="13" font-weight="600" fill="#334155">Relative Frequency (%)</text>
+</g></svg>

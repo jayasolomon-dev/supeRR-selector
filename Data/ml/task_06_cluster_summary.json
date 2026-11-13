@@ -1,0 +1,144 @@
+{
+  "batting_clustering": {
+    "entity": "batter",
+    "k_selected": 3,
+    "grid_evaluation": {
+      "k_2": {
+        "silhouette": 0.21,
+        "davies_bouldin": 1.615,
+        "inertia": 412.335
+      },
+      "k_3": {
+        "silhouette": 0.173,
+        "davies_bouldin": 1.571,
+        "inertia": 352.619
+      },
+      "k_4": {
+        "silhouette": 0.185,
+        "davies_bouldin": 1.458,
+        "inertia": 304.872
+      },
+      "k_5": {
+        "silhouette": 0.168,
+        "davies_bouldin": 1.515,
+        "inertia": 277.02
+      },
+      "k_6": {
+        "silhouette": 0.166,
+        "davies_bouldin": 1.38,
+        "inertia": 255.213
+      }
+    },
+    "silhouette_score": 0.173,
+    "davies_bouldin_index": 1.571,
+    "archetype_mapping": {
+      "0": "Pressure Vulnerable",
+      "1": "Top/Middle Order Accelerator",
+      "2": "Death Phase Finisher"
+    },
+    "qualified_distribution": {
+      "Pressure Vulnerable": 46,
+      "Top/Middle Order Accelerator": 34,
+      "Death Phase Finisher": 29
+    },
+    "provisional_distribution": {
+      "Death Phase Finisher (Provisional)": 26,
+      "Pressure Vulnerable (Provisional)": 19,
+      "Top/Middle Order Accelerator (Provisional)": 13
+    },
+    "centroids_raw": {
+      "0": {
+        "shrunk_diff_strike_rate": -1.2256521739130442,
+        "shrunk_diff_dot_pct": 2.457826086956522,
+        "shrunk_diff_dismissal_rate": 3.55108695652174,
+        "high_pressure_ratio": 0.137124013208042,
+        "high_balls_death_share": 0.42712683915829586
+      },
+      "1": {
+        "shrunk_diff_strike_rate": 32.96352941176471,
+        "shrunk_diff_dot_pct": -7.001470588235295,
+        "shrunk_diff_dismissal_rate": 0.9508823529411763,
+        "high_pressure_ratio": 0.10041097760387122,
+        "high_balls_death_share": 0.3321086786112899
+      },
+      "2": {
+        "shrunk_diff_strike_rate": 34.31965517241379,
+        "shrunk_diff_dot_pct": -8.299310344827585,
+        "shrunk_diff_dismissal_rate": 0.9486206896551725,
+        "high_pressure_ratio": 0.24333619809824908,
+        "high_balls_death_share": 0.5819243310290014
+      }
+    }
+  },
+  "bowling_clustering": {
+    "entity": "bowler",
+    "k_selected": 3,
+    "grid_evaluation": {
+      "k_2": {
+        "silhouette": 0.204,
+        "davies_bouldin": 1.696,
+        "inertia": 522.2
+      },
+      "k_3": {
+        "silhouette": 0.23,
+        "davies_bouldin": 1.375,
+        "inertia": 422.443
+      },
+      "k_4": {
+        "silhouette": 0.223,
+        "davies_bouldin": 1.468,
+        "inertia": 376.121
+      },
+      "k_5": {
+        "silhouette": 0.19,
+        "davies_bouldin": 1.419,
+        "inertia": 341.936
+      },
+      "k_6": {
+        "silhouette": 0.192,
+        "davies_bouldin": 1.455,
+        "inertia": 323.017
+      }
+    },
+    "silhouette_score": 0.23,
+    "davies_bouldin_index": 1.375,
+    "archetype_mapping": {
+      "0": "High-Pressure Conceder",
+      "1": "Death Wicket Enforcer",
+      "2": "Middle & Powerplay Restrictor"
+    },
+    "qualified_distribution": {
+      "High-Pressure Conceder": 58,
+      "Death Wicket Enforcer": 46,
+      "Middle & Powerplay Restrictor": 32
+    },
+    "provisional_distribution": {
+      "High-Pressure Conceder (Provisional)": 22,
+      "Death Wicket Enforcer (Provisional)": 19,
+      "Middle & Powerplay Restrictor (Provisional)": 16
+    },
+    "centroids_raw": {
+      "0": {
+        "shrunk_diff_economy_rate": 3.966206896551724,
+        "shrunk_diff_wickets_per_over": -0.08329310344827591,
+        "shrunk_diff_dot_pct": -17.34655172413793,
+        "high_pressure_ratio": 0.08755673813079493,
+        "high_balls_death_share": 0.7369426531023543
+      },
+      "1": {
+        "shrunk_diff_economy_rate": 2.019565217391304,
+        "shrunk_diff_wickets_per_over": 0.10499999999999997,
+        "shrunk_diff_dot_pct": -8.29,
+        "high_pressure_ratio": 0.11395882765820237,
+        "high_balls_death_share": 0.8004178011671474
+      },
+      "2": {
+        "shrunk_diff_economy_rate": 2.3528125,
+        "shrunk_diff_wickets_per_over": 0.01371875000000001,
+        "shrunk_diff_dot_pct": -10.0303125,
+        "high_pressure_ratio": 0.060996320912361485,
+        "high_balls_death_share": 0.337907792748084
+      }
+    }
+  }
+}

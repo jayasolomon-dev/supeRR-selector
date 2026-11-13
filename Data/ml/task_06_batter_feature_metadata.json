@@ -1,0 +1,71 @@
+{
+  "entity": "batter",
+  "total_records": 824,
+  "qualified_records": 109,
+  "provisional_records": 58,
+  "ineligible_records": 657,
+  "feature_groups": {
+    "identifiers": [
+      "striker_id",
+      "striker_name",
+      "batting_type",
+      "eligibility_tier",
+      "reliability_grade"
+    ],
+    "supervised_predictors": [
+      "strike_rate_normal",
+      "dot_pct_normal",
+      "boundary_ball_pct_normal",
+      "dismissal_rate_per_100_normal",
+      "balls_faced_normal",
+      "six_ratio_normal",
+      "running_strike_rate_normal",
+      "strike_rate_overall",
+      "dot_pct_overall",
+      "boundary_ball_pct_overall",
+      "dismissal_rate_per_100_overall",
+      "balls_faced_overall",
+      "ipl_ball_share",
+      "batting_hand_LHB"
+    ],
+    "supervised_targets": {
+      "regression_primary": "strike_rate_high",
+      "regression_secondary": [
+        "dot_pct_high",
+        "boundary_ball_pct_high",
+        "dismissal_rate_per_100_high"
+      ],
+      "classification_primary": "target_above_median_sr_high",
+      "classification_secondary": "target_high_pressure_outperformer",
+      "median_threshold_qualified": 155.83
+    },
+    "unsupervised_archetype_features": [
+      "shrunk_diff_strike_rate",
+      "shrunk_diff_dot_pct",
+      "shrunk_diff_dismissal_rate",
+      "high_pressure_ratio",
+      "high_balls_death_share"
+    ],
+    "quarantined_from_supervised_predictors": [
+      "diff_strike_rate",
+      "diff_dot_pct",
+      "diff_dismissal_rate_per_100",
+      "rel_diff_strike_rate",
+      "shrinkage_weight",
+      "shrunk_diff_strike_rate",
+      "shrunk_diff_dot_pct",
+      "shrunk_diff_dismissal_rate",
+      "raw_composite_z",
+      "batter_reliability_index",
+      "ci_lower_95",
+      "ci_upper_95",
+      "ci_std_error",
+      "ci_width_95",
+      "balls_faced_high",
+      "strike_rate_high",
+      "dot_pct_high",
+      "boundary_ball_pct_high",
+      "dismissal_rate_per_100_high"
+    ]
+  }
+}

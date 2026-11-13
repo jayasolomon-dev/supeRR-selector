@@ -1,0 +1,15 @@
+metric,count,notes
+Global Distinct Players Across All Datasets,1217,Full deduplicated roster across all 6 files
+Distinct Players in competition_team_player_mapping.csv,1217,100% of all global players are present in mapping
+Distinct Players in playing_eleven.csv,1082,Match day squad appearances
+Distinct Players in ball_by_ball.csv (All Roles),959,"Strikers, Non-Strikers, Bowlers, Dismissed"
+Distinct Strikers in ball_by_ball.csv,888,Batters who faced at least 1 ball
+Distinct Non-Strikers in ball_by_ball.csv,867,Batters at runner end
+Distinct Bowlers in ball_by_ball.csv,647,Bowlers who bowled at least 1 delivery
+Distinct Dismissed Players in ball_by_ball.csv,814,Players dismissed on wicket balls
+Distinct Captains in matches.csv,113,Captains listed in match records
+Distinct Player of the Match Recipients in matches.csv,292,Excluding 0 (draw/abandoned/missing)
+Players in ball_by_ball NOT in mapping.csv,0,0 unmapped players (100% resolution)
+Players in playing_eleven NOT in mapping.csv,0,0 unmapped players (100% resolution)
+Players in ball_by_ball NOT in playing_eleven,2,"2 players (UAE squad in Emerging Asia Cup 2024: IDs 39444, 36153)"
+Players in mapping.csv who never batted or bowled in BBB,258,258 squad members who did not take the field in these matches

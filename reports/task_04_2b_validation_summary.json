@@ -1,0 +1,510 @@
+{
+  "audit_timestamp": "2026-11-12T23:13:22.246311",
+  "verdict": "FULL_PASS",
+  "counts": {
+    "pass": 17,
+    "conditional_pass": 0,
+    "fail": 0,
+    "blocked": 0,
+    "total": 17
+  },
+  "modules": {
+    "MODULE_A": [
+      {
+        "test_id": "TEST_A1_FILES_EXIST",
+        "description": "Verify all expected production and derived files exist",
+        "status": "PASS",
+        "details": {
+          "checked_files": [
+            "data\\processed\\ipl_deliveries.csv",
+            "data\\processed\\t20i_deliveries.csv",
+            "data\\derived\\pressure_scored_ipl.csv",
+            "data\\derived\\pressure_scored_t20i.csv",
+            "src\\features\\pressure_engine.py",
+            "src\\test_pressure_engine.py",
+            "src\\validate_pipeline.py"
+          ],
+          "missing_files": []
+        }
+      },
+      {
+        "test_id": "TEST_A2_SCHEMA_CONFORMANCE",
+        "description": "Verify 65 input columns and 87 identical output columns",
+        "status": "PASS",
+        "details": {
+          "input_cols": 65,
+          "output_cols": 87,
+          "both_outputs_identical": true
+        }
+      },
+      {
+        "test_id": "TEST_A3_ROW_MATCH_RECONCILIATION",
+        "description": "Reconcile delivery counts (194,014) and match counts (837)",
+        "status": "PASS",
+        "details": {
+          "ipl_rows": 87687,
+          "t20i_rows": 106327,
+          "total_rows": 194014,
+          "ipl_matches": 367,
+          "t20i_matches": 470
+        }
+      },
+      {
+        "test_id": "TEST_A4_REFERENTIAL_MATCH_INTEGRITY",
+        "description": "Verify zero orphan match IDs between processed and derived",
+        "status": "PASS",
+        "details": {
+          "orphan_ipl_matches": [],
+          "orphan_t20i_matches": []
+        }
+      },
+      {
+        "test_id": "TEST_A5_DELIVERY_DUPLICATES",
+        "description": "Verify zero duplicate delivery records across composite key",
+        "status": "PASS",
+        "details": {
+          "ipl_duplicates": 0,
+          "t20i_duplicates": 0
+        }
+      },
+      {
+        "test_id": "TEST_A6_CRITICAL_NULLS",
+        "description": "Verify zero missing values in critical scoring and baseline features",
+        "status": "PASS",
+        "details": {
+          "ipl_nulls": {
+            "batting_pressure_score": 0,
+            "bowling_pressure_score": 0,
+            "batting_pressure_cat": 0,
+            "bowling_pressure_cat": 0,
+            "par_run_rate_comp": 0,
+            "crr_shrinkage_before": 0,
+            "resource_percentage_depleted": 0
+          },
+          "t20i_nulls": {
+            "batting_pressure_score": 0,
+            "bowling_pressure_score": 0,
+            "batting_pressure_cat": 0,
+            "bowling_pressure_cat": 0,
+            "par_run_rate_comp": 0,
+            "crr_shrinkage_before": 0,
+            "resource_percentage_depleted": 0
+          }
+        }
+      },
+      {
+        "test_id": "TEST_A7_SCORE_BOUNDS",
+        "description": "Verify all master scores are finite and strictly bounded in [0.0, 100.0]",
+        "status": "PASS",
+        "details": {
+          "ipl_bat_min": 2.29,
+          "ipl_bat_max": 100.0,
+          "t20i_bat_min": 0.0,
+          "t20i_bat_max": 100.0
+        }
+      },
+      {
+        "test_id": "TEST_A8_CATEGORY_ALIGNMENT",
+        "description": "Verify 100% agreement between continuous scores and categorical bins",
+        "status": "PASS",
+        "details": {
+          "violations": {
+            "ipl_bat": 0,
+            "ipl_bowl": 0,
+            "t20i_bat": 0,
+            "t20i_bowl": 0
+          }
+        }
+      },
+      {
+        "test_id": "TEST_A9_INNINGS_DOMAINS",
+        "description": "Verify all delivery rows fall strictly within allowed innings [1, 2, 3, 4]",
+        "status": "PASS",
+        "details": {
+          "ipl_innings": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "t20i_innings": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      },
+      {
+        "test_id": "TEST_A10_SUPER_OVER_COUNT",
+        "description": "Recalculate exact Super Over delivery counts (14 IPL, 12 T20I, 26 Combined)",
+        "status": "PASS",
+        "details": {
+          "ipl_super_overs": 14,
+          "t20i_super_overs": 12,
+          "total": 26
+        }
+      },
+      {
+        "test_id": "TEST_A11_STANDARD_COHORT_COUNT",
+        "description": "Recalculate standard 20-over cohort counts (87,673 IPL, 106,315 T20I, 193,988 Combined)",
+        "status": "PASS",
+        "details": {
+          "ipl_standard": 87673,
+          "t20i_standard": 106315,
+          "total_standard": 193988
+        }
+      }
+    ],
+    "MODULE_B": [
+      {
+        "test_id": "TEST_B_MULTI_MATCH_ANTI_LEAKAGE",
+        "description": "Audit prefix invariance & future/current perturbation across 6 matches",
+        "status": "PASS",
+        "details": {
+          "matches_audited": [
+            {
+              "match_id": 14094,
+              "format": "IPL",
+              "type": "Standard 2-Innings Match",
+              "deliveries_tested": 5,
+              "max_diff": 0.0,
+              "status": "PASS"
+            },
+            {
+              "match_id": 21586,
+              "format": "IPL",
+              "type": "High-Pressure DLS Final (15 ov)",
+              "deliveries_tested": 5,
+              "max_diff": 0.0,
+              "status": "PASS"
+            },
+            {
+              "match_id": 40725,
+              "format": "IPL",
+              "type": "Super Over Tie-Breaker Match",
+              "deliveries_tested": 5,
+              "max_diff": 0.0,
+              "status": "PASS"
+            },
+            {
+              "match_id": 37354,
+              "format": "T20I",
+              "type": "DLS Shortened 7-Over Chase",
+              "deliveries_tested": 5,
+              "max_diff": 0.0,
+              "status": "PASS"
+            },
+            {
+              "match_id": 48610,
+              "format": "T20I",
+              "type": "Match with Post-Conclusion Target-Met Rows",
+              "deliveries_tested": 5,
+              "max_diff": 0.0,
+              "status": "PASS"
+            },
+            {
+              "match_id": 13511,
+              "format": "T20I",
+              "type": "Standard International Match",
+              "deliveries_tested": 5,
+              "max_diff": 0.0,
+              "status": "PASS"
+            }
+          ],
+          "max_global_diff": 0.0
+        }
+      }
+    ],
+    "MODULE_C": [
+      {
+        "test_id": "TEST_C_DLS_MATCH_STATE_AUDIT",
+        "description": "Audit 34 shortened/DLS matches, legal ball units, non-negativity, and Match 37354",
+        "status": "PASS",
+        "details": {
+          "shortened_matches": 34,
+          "shortened_deliveries": 3404,
+          "capacities_observed": [
+            30,
+            42,
+            48,
+            54,
+            60,
+            66,
+            72,
+            78,
+            84,
+            90,
+            102,
+            108,
+            114
+          ],
+          "negative_balls_count": 0,
+          "match_37354": {
+            "found": true,
+            "inn2_balls": 42,
+            "inn2_target": 94.0
+          }
+        }
+      }
+    ],
+    "MODULE_D": [
+      {
+        "test_id": "TEST_D_SUPER_OVER_OPTION_A_ISOLATION",
+        "description": "Verify Super Over filtering (innings <= 2), isolation of legacy 100 scores, and cohort preservation",
+        "status": "PASS",
+        "details": {
+          "super_over_deliveries": 26,
+          "standard_cohort_deliveries": 193988,
+          "physical_col_absent_as_required": true,
+          "legacy_scores_quarantined": true
+        }
+      }
+    ],
+    "MODULE_E": [
+      {
+        "test_id": "TEST_E_TERMINAL_STATE_SEMANTICS",
+        "description": "Verify target-met collapse (Match 48610), winning ball pre-delivery state retention, and impossible chase flags",
+        "status": "PASS",
+        "details": {
+          "ipl_target_met_rows": 0,
+          "t20i_target_met_rows": 12,
+          "match_48610_post_balls": 12,
+          "post_balls_assigned_zero": true,
+          "winning_ball_pre_pressure_retained": true,
+          "historical_impossible_chase_rows": 0
+        }
+      }
+    ],
+    "MODULE_F": [
+      {
+        "test_id": "TEST_F_SCORE_AND_COMPONENT_DISTRIBUTION",
+        "description": "Compute standard-cohort statistics, verify component isolation, and render 5 charts",
+        "status": "PASS",
+        "details": {
+          "stats": {
+            "IPL": {
+              "batting": {
+                "mean": 46.58,
+                "std": 18.19,
+                "min": 2.29,
+                "p25": 35.41,
+                "median": 45.7,
+                "p75": 55.1,
+                "p90": 67.87,
+                "max": 100.0
+              },
+              "bowling": {
+                "mean": 49.33,
+                "std": 11.66,
+                "min": 10.15,
+                "p25": 42.64,
+                "median": 49.11,
+                "p75": 55.97,
+                "p90": 62.83,
+                "max": 100.0
+              },
+              "bat_categories": {
+                "Moderate": 52.99,
+                "Low": 34.99,
+                "High": 7.34,
+                "Extreme": 4.69
+              },
+              "bowl_categories": {
+                "Moderate": 75.05,
+                "Low": 17.45,
+                "High": 6.72,
+                "Extreme": 0.78
+              }
+            },
+            "T20I": {
+              "batting": {
+                "mean": 47.71,
+                "std": 18.71,
+                "min": 0.0,
+                "p25": 36.6,
+                "median": 46.83,
+                "p75": 56.46,
+                "p90": 70.13,
+                "max": 100.0
+              },
+              "bowling": {
+                "mean": 49.49,
+                "std": 11.91,
+                "min": 0.0,
+                "p25": 42.82,
+                "median": 49.49,
+                "p75": 56.3,
+                "p90": 62.99,
+                "max": 100.0
+              },
+              "bat_categories": {
+                "Moderate": 54.84,
+                "Low": 31.34,
+                "High": 8.64,
+                "Extreme": 5.19
+              },
+              "bowl_categories": {
+                "Moderate": 74.89,
+                "Low": 17.53,
+                "High": 6.63,
+                "Extreme": 0.95
+              }
+            }
+          },
+          "component_isolation_violations": 0,
+          "figures_generated": [
+            "reports\\task_04_2b_figures\\fig1_score_distributions_ipl_vs_t20i.svg",
+            "reports\\task_04_2b_figures\\fig2_batting_vs_bowling_pressure.svg",
+            "reports\\task_04_2b_figures\\fig3_pressure_category_distribution.svg",
+            "reports\\task_04_2b_figures\\fig4_innings_comparison.svg",
+            "reports\\task_04_2b_figures\\fig5_phase_progression.svg"
+          ]
+        }
+      }
+    ],
+    "MODULE_G": [
+      {
+        "test_id": "TEST_G_WEIGHT_SENSITIVITY",
+        "description": "Measure subcomponent correlation, boundary saturation, and \u00b15% weight perturbation rank stability",
+        "status": "PASS",
+        "details": {
+          "component_correlations": {
+            "bat_comp_pace_urgency": {
+              "target_score": "batting_pressure_score",
+              "applicable_innings": [
+                1,
+                2
+              ],
+              "pearson_r": 0.8753,
+              "spearman_rho": 0.8241,
+              "saturation_pct_at_0": 0.02,
+              "saturation_pct_at_100": 0.47,
+              "std": 18.85
+            },
+            "bat_comp_resource_stress": {
+              "target_score": "batting_pressure_score",
+              "applicable_innings": [
+                1,
+                2
+              ],
+              "pearson_r": 0.7064,
+              "spearman_rho": 0.7365,
+              "saturation_pct_at_0": 9.21,
+              "saturation_pct_at_100": 0.04,
+              "std": 21.74
+            },
+            "bat_comp_phase_urgency": {
+              "target_score": "batting_pressure_score",
+              "applicable_innings": [
+                1
+              ],
+              "pearson_r": 0.2731,
+              "spearman_rho": 0.2447,
+              "saturation_pct_at_0": 0.0,
+              "saturation_pct_at_100": 0.0,
+              "std": 14.91
+            },
+            "bat_comp_crunch_mult": {
+              "target_score": "batting_pressure_score",
+              "applicable_innings": [
+                2
+              ],
+              "pearson_r": 0.9391,
+              "spearman_rho": 0.9431,
+              "saturation_pct_at_0": 0.0,
+              "saturation_pct_at_100": 0.0,
+              "std": 0.09
+            },
+            "bowl_comp_containment": {
+              "target_score": "bowling_pressure_score",
+              "applicable_innings": [
+                1
+              ],
+              "pearson_r": 0.755,
+              "spearman_rho": 0.7457,
+              "saturation_pct_at_0": 0.0,
+              "saturation_pct_at_100": 0.04,
+              "std": 11.98
+            },
+            "bowl_comp_death_defense": {
+              "target_score": "bowling_pressure_score",
+              "applicable_innings": [
+                1
+              ],
+              "pearson_r": 0.529,
+              "spearman_rho": 0.523,
+              "saturation_pct_at_0": 0.0,
+              "saturation_pct_at_100": 0.0,
+              "std": 19.81
+            },
+            "bowl_comp_runway": {
+              "target_score": "bowling_pressure_score",
+              "applicable_innings": [
+                2
+              ],
+              "pearson_r": 0.9403,
+              "spearman_rho": 0.9611,
+              "saturation_pct_at_0": 0.0,
+              "saturation_pct_at_100": 2.8,
+              "std": 18.42
+            },
+            "bowl_comp_boundary_threat": {
+              "target_score": "bowling_pressure_score",
+              "applicable_innings": [
+                2
+              ],
+              "pearson_r": 0.5036,
+              "spearman_rho": 0.3069,
+              "saturation_pct_at_0": 90.9,
+              "saturation_pct_at_100": 0.23,
+              "std": 15.99
+            },
+            "bowl_comp_depth_stress": {
+              "target_score": "bowling_pressure_score",
+              "applicable_innings": [
+                1,
+                2
+              ],
+              "pearson_r": 0.4382,
+              "spearman_rho": 0.4229,
+              "saturation_pct_at_0": 0.0,
+              "saturation_pct_at_100": 9.01,
+              "std": 21.06
+            }
+          },
+          "weight_perturbations": [
+            {
+              "case": "Inn 1 Batting: Pace Weight +5%",
+              "spearman_rho": 0.99985,
+              "max_score_delta": 0.629,
+              "mean_score_delta": 0.146,
+              "stability": "HIGH"
+            },
+            {
+              "case": "Inn 2 Batting: RRR Weight +5%",
+              "spearman_rho": 0.99993,
+              "max_score_delta": 8.303,
+              "mean_score_delta": 0.45,
+              "stability": "HIGH"
+            },
+            {
+              "case": "Inn 1 Bowling: Containment Weight +5%",
+              "spearman_rho": 0.99986,
+              "max_score_delta": 0.576,
+              "mean_score_delta": 0.139,
+              "stability": "HIGH"
+            },
+            {
+              "case": "Inn 2 Bowling: Runway Weight +5%",
+              "spearman_rho": 0.99868,
+              "max_score_delta": 96.159,
+              "mean_score_delta": 0.348,
+              "stability": "HIGH"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

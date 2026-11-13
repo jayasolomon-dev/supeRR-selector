@@ -1,0 +1,825 @@
+striker_id,striker_name,batting_type,eligibility_tier,reliability_grade,archetype_id,archetype_name,batter_reliability_index,strike_rate_normal,strike_rate_high,shrunk_diff_strike_rate,shrunk_diff_dot_pct,shrunk_diff_dismissal_rate,high_pressure_ratio,high_balls_death_share
+6726,Romario Shepherd,RHB,Qualified,Moderate,2,Death Phase Finisher,47.01,162.5,145.75,-6.21,2.93,-0.75,0.44541484716157204,0.5424836601307189
+6396,Tim David,RHB,Qualified,Moderate,2,Death Phase Finisher,54.3,172.66,195.62,22.55,-4.37,-1.4,0.24225122349102773,0.67003367003367
+4986,Rovman Powell,RHB,Qualified,Moderate,2,Death Phase Finisher,51.97,138.71,163.45,24.18,-4.13,0.57,0.1860166773572803,0.49310344827586206
+20702,Tristan Stubbs,RHB,Qualified,Moderate,1,Top/Middle Order Accelerator,51.74,134.96,167.49,31.11,-2.88,2.2,0.26179463459759483,0.28975265017667845
+4722,Rashid Khan,RHB,Provisional,Provisional-Mod,2,Death Phase Finisher (Provisional),56.32,94.12,165.58,45.91,-8.61,-1.33,0.5443786982248521,0.5615942028985508
+7897,Namboori Tilak Varma,LHB,Qualified,Moderate,1,Top/Middle Order Accelerator,55.83,136.94,191.01,51.62,-6.61,2.41,0.11042183622828784,0.5280898876404494
+1077,David Miller,LHB,Qualified,Moderate,1,Top/Middle Order Accelerator,54.83,129.6,185.6,52.05,-2.17,1.9,0.20078125,0.311284046692607
+2876,Axar Patel,LHB,Qualified,Moderate,0,Pressure Vulnerable,46.08,132.86,137.7,6.81,1.55,3.49,0.1970289288506646,0.5674603174603174
+4708,Rinku Singh,LHB,Qualified,Moderate,2,Death Phase Finisher,54.6,150.85,188.84,35.83,-2.62,-0.57,0.18847352024922118,0.5867768595041323
+8,Mahendra Singh Dhoni,RHB,Provisional,Provisional-Mod,2,Death Phase Finisher (Provisional),53.34,89.29,150.42,45.22,-2.93,0.89,0.5183585313174947,0.7041666666666667
+4101,Mitchell Santner,LHB,Qualified,Moderate,2,Death Phase Finisher,49.34,117.17,126.73,11.2,-10.59,2.8,0.40185185185185185,0.5161290322580645
+152,Ravindra Jadeja,LHB,Qualified,Moderate,2,Death Phase Finisher,53.57,116.82,151.66,32.01,-4.56,-1.53,0.22025052192066805,0.6350710900473934
+4755,Shivam Dube,LHB,Qualified,Moderate,0,Pressure Vulnerable,49.5,154.48,169.38,15.26,-3.68,3.59,0.13536269430051814,0.3014354066985646
+1318,Andre Russell,RHB,Qualified,Moderate,0,Pressure Vulnerable,46.58,177.57,157.28,-13.45,2.72,-0.6,0.2810368349249659,0.4368932038834951
+4260,Heinrich Klaasen,RHB,Qualified,Moderate,0,Pressure Vulnerable,45.22,177.06,163.3,-10.49,4.72,2.16,0.13267466478475654,0.2127659574468085
+3926,Rahul Tewatia,LHB,Qualified,Moderate,0,Pressure Vulnerable,45.41,155.41,152.69,1.99,5.61,3.17,0.3549618320610687,0.5967741935483871
+3644,Kuldeep Yadav,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,78.45,18.64,-3.45,2.07,0.900497512437811,0.8397790055248618
+3330,Hardik Pandya,RHB,Qualified,Moderate,0,Pressure Vulnerable,47.46,154.75,157.71,4.57,0.55,2.45,0.09095634095634096,0.44571428571428573
+2436,Dasun Shanaka,RHB,Qualified,Moderate,2,Death Phase Finisher,57.35,98.28,166.28,55.32,-13.44,1.02,0.2222222222222222,0.4941860465116279
+2633,Jason Holder,RHB,Qualified,High,2,Death Phase Finisher,66.84,67.31,175.3,83.44,-30.18,-3.08,0.3713646532438479,0.6204819277108434
+3605,Aiden Markram,RHB,Qualified,Moderate,1,Top/Middle Order Accelerator,51.48,144.98,171.95,26.09,-0.57,1.02,0.09808612440191387,0.36585365853658536
+5379,Mark Adair,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,75.0,126.22,25.37,0.79,-2.01,0.592057761732852,0.4329268292682927
+3125,Nicholas Pooran,LHB,Qualified,Moderate,0,Pressure Vulnerable,46.14,169.32,155.83,-10.21,-0.33,2.08,0.08265720081135902,0.4723926380368098
+2756,Shashank Singh,RHB,Qualified,Moderate,2,Death Phase Finisher,53.51,138.0,161.64,22.66,-6.06,-1.98,0.2839285714285714,0.610062893081761
+6460,Ayush Badoni,RHB,Qualified,Moderate,2,Death Phase Finisher,55.55,124.22,162.66,34.97,-9.25,-1.78,0.18899521531100477,0.5443037974683544
+19316,Maheesh Theekshana,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,62.42,18.64,-3.45,2.07,0.7733990147783252,0.6751592356687898
+2639,Marcus Stoinis,RHB,Qualified,Moderate,0,Pressure Vulnerable,49.76,154.17,172.26,18.16,-5.05,4.46,0.12429831595829992,0.4645161290322581
+6725,Sherfane Rutherford,LHB,Qualified,Moderate,2,Death Phase Finisher,53.21,134.47,185.81,46.6,-3.91,4.43,0.18948655256723718,0.5806451612903226
+3297,Shimron Hetmyer,LHB,Qualified,Low,0,Pressure Vulnerable,43.29,164.23,156.49,-4.13,10.28,4.13,0.12369477911646587,0.45454545454545453
+360,Bhuvneshwar Kumar,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,90.54,18.64,-3.45,2.07,0.8757396449704142,0.7027027027027027
+6355,Shaheen Afridi,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,134.25,18.64,-3.45,2.07,0.7978142076502732,0.6917808219178082
+1101,George Dockrell,RHB,Qualified,Moderate,0,Pressure Vulnerable,47.6,123.94,152.86,26.44,2.72,5.38,0.28112449799196787,0.3357142857142857
+1699,Suryakumar Yadav,RHB,Qualified,Moderate,1,Top/Middle Order Accelerator,50.82,176.72,194.2,17.61,-2.46,3.05,0.05001812250815513,0.3188405797101449
+2463,Ryan Burl,LHB,Qualified,Moderate,1,Top/Middle Order Accelerator,51.98,107.07,137.96,28.35,-4.47,-0.32,0.19405099150141644,0.34306569343065696
+4391,Liam Livingstone,RHB,Qualified,Moderate,0,Pressure Vulnerable,46.66,169.95,165.93,-0.42,3.46,2.26,0.1358148893360161,0.4666666666666667
+2417,Akeal Hosein,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,166.67,149.63,8.76,8.58,3.55,0.6053811659192825,0.6444444444444445
+7808,Marco Jansen,RHB,Provisional,Provisional-Mod,2,Death Phase Finisher (Provisional),58.67,66.67,159.4,56.71,-18.16,0.32,0.48014440433212996,0.5639097744360902
+2490,Mohammad Nawaz,LHB,Qualified,Low,0,Pressure Vulnerable,44.96,149.37,133.08,-8.12,-1.61,3.68,0.26156941649899396,0.6538461538461539
+7446,Abdul Samad,RHB,Qualified,Low,0,Pressure Vulnerable,39.64,194.74,130.77,-41.29,9.85,1.77,0.30660377358490565,0.45384615384615384
+8101,Ashutosh Sharma,RHB,Provisional,Provisional-Mod,2,Death Phase Finisher (Provisional),54.1,155.0,201.55,33.59,-0.46,-1.49,0.38622754491017963,0.7286821705426356
+1758,Patrick Cummins,RHB,Provisional,Provisional-Low,0,Pressure Vulnerable (Provisional),34.38,353.33,148.84,-86.8,5.94,5.12,0.5222672064777328,0.7054263565891473
+4639,Wellington Masakadza,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,114.73,18.64,-3.45,2.07,0.8543046357615894,0.627906976744186
+6651,Towhid Hridoy,RHB,Qualified,Moderate,1,Top/Middle Order Accelerator,52.41,119.0,150.39,29.69,-2.52,-0.83,0.13626609442060086,0.4881889763779528
+8380,Mohammad Rishad Hossain,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,125.0,119.2,13.62,-2.99,-0.86,0.7575757575757576,0.384
+2984,Sikandar Raza,RHB,Qualified,Moderate,1,Top/Middle Order Accelerator,55.74,123.23,180.0,50.39,-5.87,0.87,0.11976047904191617,0.4
+7260,Dhruv Jurel,RHB,Qualified,Moderate,2,Death Phase Finisher,52.75,152.4,188.33,33.29,-2.31,2.05,0.15037593984962405,0.625
+4900,Wanindu Hasaranga,RHB,Qualified,Low,0,Pressure Vulnerable,41.19,124.07,96.67,-14.18,2.64,5.41,0.2564102564102564,0.55
+4773,Jaker Ali Anik,RHB,Qualified,Moderate,2,Death Phase Finisher,54.76,128.0,167.23,34.17,-10.21,0.18,0.232421875,0.5294117647058824
+143,Dinesh Karthik,RHB,Qualified,Moderate,0,Pressure Vulnerable,48.31,185.48,177.12,-1.08,-3.38,2.6,0.18466353677621283,0.5677966101694916
+4823,Washington Sundar,LHB,Qualified,Low,0,Pressure Vulnerable,44.57,150.78,150.0,2.52,8.86,3.24,0.18524332810047095,0.8305084745762712
+6676,Azmatullah Omarzai,RHB,Qualified,Moderate,0,Pressure Vulnerable,45.02,114.29,116.24,5.73,4.04,2.84,0.17593984962406015,0.3504273504273504
+7905,Tanzim Sakib,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,0.0,115.38,34.42,-12.23,-2.31,0.7177914110429447,0.5555555555555556
+21781,Clive Madande,RHB,Qualified,Moderate,2,Death Phase Finisher,50.89,98.0,110.71,14.5,-10.84,0.03,0.37583892617449666,0.375
+479,Adil Rashid,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,50.0,106.25,22.99,-4.29,2.87,0.9411764705882353,0.7678571428571429
+4409,Sam Curran,LHB,Qualified,Moderate,0,Pressure Vulnerable,48.19,125.81,155.96,28.09,3.11,4.68,0.12718786464410736,0.46788990825688076
+796,Matthew Wade,LHB,Qualified,Moderate,2,Death Phase Finisher,57.02,111.27,162.96,45.2,-14.01,-0.37,0.2529274004683841,0.8703703703703703
+5837,Mahedi Hasan,RHB,Provisional,Provisional-Mod,2,Death Phase Finisher (Provisional),50.58,113.79,121.3,11.92,-9.83,0.57,0.4268774703557312,0.5092592592592593
+7741,Gareth Delany,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,90.0,161.68,38.73,-2.43,-4.52,0.3614864864864865,0.6728971962616822
+7364,Haris Rauf,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,119.23,18.64,-3.45,2.07,1.0,0.8653846153846154
+1596,Moeen Ali,LHB,Qualified,Moderate,1,Top/Middle Order Accelerator,55.17,120.0,176.7,47.84,-5.42,0.85,0.13642384105960265,0.4077669902912621
+5441,Barry McCarthy,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,120.39,18.64,-3.45,2.07,0.9196428571428571,0.6796116504854369
+3323,Jimmy Neesham,LHB,Qualified,Moderate,0,Pressure Vulnerable,47.2,144.23,131.0,-3.52,-4.1,1.54,0.2375296912114014,0.26
+3275,Alzarri Joseph,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,100.0,92.0,16.99,-0.39,2.31,0.7692307692307693,0.87
+5189,Faheem Ashraf,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,260.0,124.24,-18.55,7.84,3.28,0.4852941176470588,0.5959595959595959
+37052,Naman Dhir,RHB,Qualified,Moderate,2,Death Phase Finisher,56.27,160.91,196.94,32.13,-9.81,-1.13,0.19029126213592232,0.4489795918367347
+6160,Chamika Karunaratne,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,200.0,106.12,0.35,5.4,2.56,0.6447368421052632,0.7755102040816326
+2382,Jamie Overton,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,109.09,146.94,26.27,2.86,4.09,0.6712328767123288,0.6122448979591837
+3628,Kagiso Rabada,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,0.0,123.47,25.13,-6.77,2.7,0.6950354609929078,0.7755102040816326
+1107,Mohammad Nabi,RHB,Qualified,Moderate,0,Pressure Vulnerable,49.78,95.4,141.24,39.14,-1.56,4.99,0.14630467571644043,0.4536082474226804
+7967,Noor Ahmad,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,0.0,76.29,22.2,-5.85,-3.54,0.8508771929824561,0.7216494845360825
+3298,Jofra Archer,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,142.86,115.79,4.79,0.74,4.95,0.6551724137931034,0.5894736842105263
+3629,Corbin Bosch,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,126.32,18.64,-3.45,2.07,0.6785714285714286,0.7368421052631579
+786,Chris Jordan,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,107.45,18.64,-3.45,2.07,0.7286821705426356,0.6276595744680851
+2526,Ish Sodhi,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,112.9,18.64,-3.45,2.07,0.6992481203007519,0.8279569892473119
+2847,Shardul Thakur,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,57.14,113.33,35.41,-6.87,5.61,0.4166666666666667,0.6555555555555556
+7472,Shahbaz Ahmed,LHB,Qualified,Moderate,2,Death Phase Finisher,48.48,102.35,121.35,18.91,0.28,1.17,0.2045977011494253,0.5056179775280899
+2261,Harshal Patel,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,225.0,93.26,-11.94,7.99,4.39,0.6137931034482759,0.6067415730337079
+6464,Arshdeep Singh,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,200.0,86.52,-2.78,0.81,-1.66,0.6742424242424242,0.9101123595505618
+4219,Krunal Pandya,LHB,Qualified,Moderate,0,Pressure Vulnerable,47.61,127.17,130.68,6.6,-6.22,3.53,0.13414634146341464,0.36363636363636365
+4111,Khushdil Shah,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,475.0,101.14,-61.13,6.03,2.8,0.42718446601941745,0.10227272727272728
+29888,Harshit Rana,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,50.0,108.24,29.41,-6.25,-0.47,0.5782312925170068,0.6
+2399,Dushmantha Chameera,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,98.8,18.64,-3.45,2.07,0.83,0.927710843373494
+403,Umesh Yadav,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,113.41,18.64,-3.45,2.07,0.9111111111111111,0.8658536585365854
+3374,Mark Chapman,LHB,Qualified,Moderate,1,Top/Middle Order Accelerator,52.4,123.87,154.32,27.85,-3.03,-0.68,0.09278350515463918,0.24691358024691357
+3648,Deepak Hooda,RHB,Qualified,Low,0,Pressure Vulnerable,41.87,130.77,118.52,-5.93,8.48,4.46,0.10163111668757842,0.4074074074074074
+4106,Daryl Mitchell,RHB,Qualified,Moderate,0,Pressure Vulnerable,46.73,139.48,153.75,15.15,5.38,3.6,0.06956521739130435,0.225
+20006,Ramandeep Singh,RHB,Provisional,Provisional-Low,2,Death Phase Finisher (Provisional),49.12,108.7,133.75,22.12,2.27,0.97,0.3791469194312796,0.3875
+21784,Brad Evans,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,127.5,18.64,-3.45,2.07,0.6611570247933884,0.575
+1944,Keshav Maharaj,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,88.75,18.64,-3.45,2.07,0.8888888888888888,0.6
+2681,Taskin Ahmed,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,200.0,115.19,-2.31,-3.39,-1.36,0.8586956521739131,0.7721518987341772
+4853,Glenn Phillips,RHB,Qualified,Moderate,1,Top/Middle Order Accelerator,52.61,165.84,200.0,31.02,-5.64,3.93,0.07136322049405307,0.358974358974359
+7094,Curtis Campher,RHB,Qualified,Moderate,1,Top/Middle Order Accelerator,59.2,105.26,160.26,44.8,-17.45,-3.25,0.1482889733840304,0.20512820512820512
+6161,Rahul Chahar,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,105.13,18.64,-3.45,2.07,0.8478260869565217,0.8076923076923077
+3916,Jitesh Sharma,RHB,Qualified,Moderate,0,Pressure Vulnerable,48.71,139.1,156.58,17.74,3.05,1.65,0.09167671893848009,0.5657894736842105
+507,Mohammad Mahmudullah,RHB,Provisional,Provisional-Low,0,Pressure Vulnerable (Provisional),44.26,129.63,117.11,0.86,5.97,3.14,0.2900763358778626,0.18421052631578946
+3782,M Shahrukh Khan,RHB,Qualified,Moderate,2,Death Phase Finisher,52.28,148.84,182.67,28.45,-7.81,3.34,0.18292682926829268,0.56
+8182,Donovan Ferreira,RHB,Qualified,Low,0,Pressure Vulnerable,43.78,196.97,151.35,-20.14,-2.1,4.9,0.21574344023323616,0.08108108108108109
+494,Kieron Pollard,RHB,Provisional,Provisional-Mod,2,Death Phase Finisher (Provisional),54.94,55.0,114.86,39.75,-10.96,-1.34,0.3490566037735849,0.9054054054054054
+20005,Arshad Khan,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,100.0,149.32,23.58,-1.86,2.18,0.7373737373737373,0.6438356164383562
+4904,Kamindu Mendis,LHB,Qualified,Low,0,Pressure Vulnerable,44.54,141.03,144.44,7.24,12.16,2.52,0.12141652613827993,0.5833333333333334
+7903,Shamim Hossain,LHB,Qualified,Low,0,Pressure Vulnerable,44.8,132.08,127.78,1.64,0.99,4.57,0.18227848101265823,0.5138888888888888
+20894,Aman Khan,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,20.0,122.22,38.5,-11.41,-1.85,0.6923076923076923,0.3611111111111111
+7699,Abbas Afridi,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,127.78,18.64,-3.45,2.07,0.7346938775510204,0.4444444444444444
+7344,Shoriful Islam,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,300.0,102.78,-16.13,5.16,4.2,0.9113924050632911,0.7361111111111112
+5944,Mohammed Siraj,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,78.87,18.64,-3.45,2.07,0.9861111111111112,0.8591549295774648
+220,David Warner,LHB,Qualified,Moderate,0,Pressure Vulnerable,48.17,148.12,147.14,2.89,-7.95,3.62,0.06266786034019696,0.35714285714285715
+8221,Nitish Reddy,RHB,Qualified,Moderate,1,Top/Middle Order Accelerator,50.73,165.88,175.71,11.88,-2.02,0.16,0.10416666666666667,0.45714285714285713
+2680,Nurul Hasan,RHB,Qualified,Moderate,2,Death Phase Finisher,51.45,100.0,142.03,34.17,-4.55,2.31,0.28991596638655465,0.43478260869565216
+22134,Luke Jongwe,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,100.0,121.74,19.56,-3.1,-0.21,0.5564516129032258,0.43478260869565216
+4703,Rishabh Pant,LHB,Qualified,Moderate,1,Top/Middle Order Accelerator,54.0,138.48,192.65,46.99,-3.81,3.33,0.05488297013720742,0.3235294117647059
+7059,Nehal Wadhera,LHB,Qualified,Moderate,1,Top/Middle Order Accelerator,49.01,132.64,151.47,18.78,-2.91,3.5,0.12142857142857143,0.20588235294117646
+19714,Abishek Porel,LHB,Qualified,Low,0,Pressure Vulnerable,42.79,148.87,121.21,-17.11,5.17,2.13,0.12476370510396975,0.4090909090909091
+4229,George Linde,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,187.88,18.64,-3.45,2.07,0.4714285714285714,0.3484848484848485
+6628,Gerald Coetzee,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,0.0,124.24,30.74,-8.96,-2.33,0.6407766990291263,0.5151515151515151
+7270,Anrich Nortje,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,87.88,18.64,-3.45,2.07,0.9850746268656716,0.8939393939393939
+3097,Shan Masood,LHB,Qualified,Moderate,2,Death Phase Finisher,57.63,83.87,156.92,50.37,-11.45,-2.0,0.3693181818181818,0.4307692307692308
+3276,Gudakesh Motie,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,75.0,173.85,34.74,-6.0,3.51,0.4482758620689655,0.676923076923077
+813,Jos Buttler,RHB,Qualified,Moderate,1,Top/Middle Order Accelerator,54.28,165.56,206.25,36.35,-7.39,3.15,0.022622834924001415,0.46875
+6423,Riyan Parag,RHB,Qualified,Moderate,2,Death Phase Finisher,55.54,141.18,184.38,37.68,-11.1,1.04,0.05904059040590406,0.78125
+768,Reeza Hendricks,RHB,Qualified,Moderate,1,Top/Middle Order Accelerator,52.03,140.38,158.73,18.42,-9.26,1.04,0.07544910179640718,0.4444444444444444
+6671,Lalit Yadav,RHB,Qualified,Moderate,2,Death Phase Finisher,49.32,81.82,130.16,39.37,-7.19,7.67,0.2903225806451613,0.5714285714285714
+8301,Asif Khan,RHB,Qualified,Moderate,2,Death Phase Finisher,51.45,140.0,188.89,39.23,0.64,3.94,0.315,0.6190476190476191
+3489,Salman Agha,RHB,Qualified,Moderate,0,Pressure Vulnerable,46.5,149.69,132.26,-8.35,2.1,-0.83,0.08882521489971347,0.27419354838709675
+7325,Harpreet Brar,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,80.0,133.87,26.94,-3.7,-0.85,0.45588235294117646,0.6774193548387096
+8295,Matthew Forde,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,141.94,18.64,-3.45,2.07,0.543859649122807,0.43548387096774194
+7503,Ravi Bishnoi,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,50.0,96.77,26.15,-6.12,0.08,0.5904761904761905,0.8870967741935484
+4658,Nasum Ahmed,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,40.0,95.16,27.25,-5.76,-0.09,0.7948717948717948,0.3064516129032258
+295,Wayne Parnell,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,25.0,80.65,26.05,-8.41,-2.38,0.8157894736842105,0.3225806451612903
+1071,Jaydev Unadkat,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,83.33,137.1,28.02,4.22,-1.64,0.8493150684931506,0.8709677419354839
+5809,Naveen ul Haq,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,72.58,18.64,-3.45,2.07,0.9253731343283582,0.8548387096774194
+4840,Odean Smith,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,111.11,150.82,25.87,-1.76,-3.45,0.45864661654135336,0.7540983606557377
+2320,Trent Boult,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,0.0,119.67,30.19,-10.18,3.15,0.7721518987341772,0.7704918032786885
+838,Glenn Maxwell,RHB,Qualified,Moderate,1,Top/Middle Order Accelerator,55.56,158.8,195.0,32.0,-5.43,-1.9,0.06263048016701461,0.5166666666666667
+1219,David Willey,LHB,Qualified,Moderate,2,Death Phase Finisher,58.77,60.0,128.33,47.03,-21.48,-1.97,0.6122448979591837,0.5666666666666667
+27466,Dhruv Parashar,RHB,Provisional,Provisional-Low,2,Death Phase Finisher (Provisional),45.94,93.75,89.83,8.34,4.74,1.37,0.6413043478260869,0.4745762711864407
+4641,Lungi Ngidi,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,83.05,18.64,-3.45,2.07,0.9516129032258065,0.847457627118644
+4373,Mustafizur Rahman,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,86.44,18.64,-3.45,2.07,1.0,1.0
+499,Shakib Al Hasan,LHB,Qualified,Moderate,2,Death Phase Finisher,53.42,133.82,158.62,22.8,-12.81,0.84,0.17737003058103976,0.5689655172413793
+1813,Deepak Chahar,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,156.9,18.64,-3.45,2.07,0.8923076923076924,0.7068965517241379
+46066,Vipraj Nigam,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,233.33,191.23,2.5,0.96,2.45,0.6404494382022472,0.49122807017543857
+6450,Mujeeb Ur Rahman,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,112.28,18.64,-3.45,2.07,0.8142857142857143,0.7543859649122807
+4867,Wesley Madhevere,RHB,Qualified,Moderate,1,Top/Middle Order Accelerator,55.84,80.61,137.5,45.56,-15.75,0.97,0.13114754098360656,0.25
+3697,Kyle Jamieson,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,101.79,18.64,-3.45,2.07,0.8235294117647058,0.5892857142857143
+25139,Shubham Dubey,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,125.0,188.89,32.99,2.49,3.18,0.3776223776223776,0.7962962962962963
+4926,Shadab Khan,RHB,Qualified,Low,0,Pressure Vulnerable,39.7,140.32,86.79,-28.69,5.42,3.72,0.15963855421686746,0.1509433962264151
+4842,Shamar Springer,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,171.7,18.64,-3.45,2.07,0.7681159420289855,0.6226415094339622
+2101,Quinton de Kock,LHB,Qualified,Moderate,1,Top/Middle Order Accelerator,53.46,150.48,159.62,11.46,-14.57,-0.72,0.04120443740095087,0.3076923076923077
+4686,Joshua Clarkson,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,125.0,18.64,-3.45,2.07,0.45614035087719296,0.75
+5738,Xavier Bartlett,RHB,Provisional,Provisional-Low,2,Death Phase Finisher (Provisional),48.51,94.12,113.46,18.96,-0.46,1.95,0.5777777777777777,0.4423076923076923
+4246,Nitish Rana,LHB,Qualified,Moderate,0,Pressure Vulnerable,47.74,131.25,141.18,12.18,4.19,0.81,0.059233449477351915,0.35294117647058826
+3578,Imad Wasim,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,100.0,117.65,18.57,-1.31,2.19,0.3167701863354037,0.5490196078431373
+6448,Ibrahim Zadran,RHB,Qualified,Moderate,1,Top/Middle Order Accelerator,49.96,107.11,120.0,14.34,-2.64,-1.37,0.04440497335701599,0.44
+4874,Richard Ngarava,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,133.33,82.0,0.22,7.81,6.26,0.8064516129032258,0.78
+2877,Vijay Shankar,RHB,Qualified,Moderate,2,Death Phase Finisher,51.3,128.81,151.02,21.13,-11.4,3.36,0.12694300518134716,0.5714285714285714
+8638,Basil Hameed,RHB,Provisional,Provisional-Low,2,Death Phase Finisher (Provisional),47.7,85.0,104.08,18.85,4.93,0.62,0.35251798561151076,0.4897959183673469
+5553,Phil Salt,RHB,Qualified,Moderate,2,Death Phase Finisher,58.93,174.67,229.17,45.65,-14.47,0.77,0.029304029304029304,0.6666666666666666
+2687,Roston Chase,RHB,Qualified,Moderate,0,Pressure Vulnerable,47.41,117.27,133.33,16.82,-2.82,4.91,0.09393346379647749,0.6041666666666666
+6512,Michael Bracewell,LHB,Qualified,Low,0,Pressure Vulnerable,35.02,163.64,72.92,-43.25,9.65,7.44,0.13714285714285715,0.16666666666666666
+27464,Aayan Afzal Khan,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,135.42,18.64,-3.45,2.07,0.7619047619047619,0.5833333333333334
+6256,Varun Chakravarthy,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,55.32,18.64,-3.45,2.07,0.9591836734693877,0.7872340425531915
+7625,Suryansh Shedge,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,100.0,126.09,21.27,-1.31,2.41,0.4107142857142857,0.32608695652173914
+6643,Hasan Mahmud,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,108.7,18.64,-3.45,2.07,1.0,0.8913043478260869
+1924,Sam Billings,RHB,Qualified,Moderate,0,Pressure Vulnerable,48.13,114.75,135.56,20.01,-3.29,4.68,0.24861878453038674,0.4666666666666667
+45749,Mukul Choudhary,RHB,Provisional,Provisional-Mod,2,Death Phase Finisher (Provisional),54.72,93.75,195.56,55.26,-7.31,4.1,0.375,0.8888888888888888
+22187,Ryan Klein,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,0.0,148.89,26.61,-8.55,-3.91,0.6923076923076923,0.7777777777777778
+7240,FazalHaq Farooqi,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,35.56,18.64,-3.45,2.07,1.0,0.7777777777777778
+3281,Mosaddek Hossain,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,145.45,18.64,-3.45,2.07,0.3893805309734513,0.8409090909090909
+38855,Mohammad Saifuddin,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,100.0,90.91,12.25,-4.96,-1.96,0.5641025641025641,0.36363636363636365
+5039,Rajat Patidar,RHB,Qualified,Moderate,0,Pressure Vulnerable,45.34,155.94,132.56,-10.89,-4.13,3.57,0.046840958605664486,0.27906976744186046
+781,Sunil Narine,LHB,Qualified,Low,0,Pressure Vulnerable,44.87,193.06,179.07,-4.5,-0.76,7.23,0.08414872798434442,0.5813953488372093
+8654,Cooper Connolly,LHB,Qualified,Moderate,1,Top/Middle Order Accelerator,54.88,167.21,195.35,25.28,-6.08,-1.95,0.1184573002754821,0.3953488372093023
+8238,Sameer Rizvi,RHB,Qualified,Moderate,1,Top/Middle Order Accelerator,49.43,155.2,153.49,4.78,-13.04,4.32,0.14675767918088736,0.2558139534883721
+278,Tim Southee,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,90.7,18.64,-3.45,2.07,0.8431372549019608,0.7674418604651163
+3272,Fabian Allen,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,118.6,18.64,-3.45,2.07,0.8958333333333334,0.5581395348837209
+4837,Obed McCoy,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,88.37,18.64,-3.45,2.07,1.0,0.9534883720930233
+6523,Blessing Muzarabani,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,76.74,18.64,-3.45,2.07,1.0,0.8372093023255814
+6922,Abdul Samad,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,121.43,18.64,-3.45,2.07,0.6176470588235294,0.19047619047619047
+29066,Zakary Foulkes,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,142.86,18.64,-3.45,2.07,0.6363636363636364,0.8809523809523809
+27964,Anshul Kamboj,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,200.0,135.71,5.59,2.33,2.49,0.8076923076923077,0.8809523809523809
+23450,Sai Sudharsan,LHB,Qualified,Moderate,1,Top/Middle Order Accelerator,51.19,147.78,173.17,23.52,-2.45,1.64,0.02431791221826809,0.5609756097560976
+3282,Mehidy Hasan Miraz,RHB,Qualified,Moderate,1,Top/Middle Order Accelerator,51.75,117.07,117.07,7.87,-11.32,-1.94,0.15471698113207547,0.34146341463414637
+3653,Avesh Khan,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,163.41,18.64,-3.45,2.07,0.7192982456140351,0.9024390243902439
+7544,Venkatesh Iyer,LHB,Qualified,Low,0,Pressure Vulnerable,41.45,152.7,117.5,-19.13,3.19,5.02,0.042417815482502653,0.8
+142,Shikhar Dhawan,LHB,Qualified,Moderate,0,Pressure Vulnerable,50.39,129.21,162.5,28.94,6.03,-0.08,0.052840158520475564,0.725
+8040,Ripal Patel,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,117.5,18.64,-3.45,2.07,0.8695652173913043,0.825
+33969,Tinotenda Maposa,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,100.0,125.0,19.02,-0.8,2.56,0.8888888888888888,0.4
+22188,Aryan Dutt,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,125.0,18.64,-3.45,2.07,0.9090909090909091,0.5
+3056,Iftikhar Ahmed,RHB,Qualified,Moderate,1,Top/Middle Order Accelerator,56.81,114.29,210.26,65.43,-5.3,2.84,0.08571428571428572,0.4358974358974359
+6664,Dion Myers,RHB,Qualified,Moderate,1,Top/Middle Order Accelerator,57.95,96.94,151.28,41.86,-14.71,-3.26,0.11470588235294117,0.4358974358974359
+5839,Yasir Ali Chowdhury,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,91.67,176.92,43.92,-1.17,0.07,0.3333333333333333,0.6923076923076923
+4662,Cole McConchie,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,107.69,18.64,-3.45,2.07,0.4020618556701031,0.28205128205128205
+830,Josh Hazlewood,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,58.97,18.64,-3.45,2.07,1.0,0.717948717948718
+6995,Saad Zafar,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,92.31,18.64,-3.45,2.07,1.0,0.358974358974359
+8600,Tadiwanashe Marumani,LHB,Qualified,Moderate,1,Top/Middle Order Accelerator,50.31,102.84,113.16,12.96,-12.5,1.7,0.08775981524249422,0.23684210526315788
+2636,Adam Zampa,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,60.53,18.64,-3.45,2.07,0.7307692307692307,0.868421052631579
+35506,Quentin Sampson,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,134.21,18.64,-3.45,2.07,0.76,0.07894736842105263
+8009,Junaid Siddique,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,81.58,18.64,-3.45,2.07,1.0,0.9210526315789473
+198,Manish Pandey,RHB,Qualified,Moderate,1,Top/Middle Order Accelerator,54.03,107.69,175.68,50.48,-1.75,1.63,0.09973045822102426,0.1891891891891892
+1487,Adam Milne,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,0.0,105.41,23.92,-6.21,2.93,0.6607142857142857,0.6756756756756757
+1566,Mohammed Shami,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,137.84,18.64,-3.45,2.07,0.8043478260869565,1.0
+28756,Haider Ali,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,105.41,18.64,-3.45,2.07,0.9487179487179487,0.9459459459459459
+2258,Sanju Samson,RHB,Qualified,High,1,Top/Middle Order Accelerator,60.46,158.02,238.89,62.1,-9.13,-0.74,0.016129032258064516,0.027777777777777776
+2485,Babar Azam,RHB,Qualified,Moderate,1,Top/Middle Order Accelerator,56.8,123.31,200.0,58.75,-14.84,5.35,0.03048264182895851,0.3611111111111111
+4812,Harry Tector,RHB,Qualified,Moderate,0,Pressure Vulnerable,46.26,111.3,147.22,30.15,3.3,8.06,0.043478260869565216,0.25
+3024,Mohammad Rizwan,RHB,Qualified,Moderate,2,Death Phase Finisher,53.92,115.74,185.71,53.72,-6.62,5.25,0.030381944444444444,0.8285714285714286
+5939,Cameron Green,RHB,Qualified,Low,0,Pressure Vulnerable,32.62,161.54,68.57,-57.3,13.7,6.19,0.03264925373134328,0.45714285714285713
+26646,Rahul Chopra,RHB,Qualified,Moderate,2,Death Phase Finisher,49.88,95.65,142.86,34.92,0.64,3.3,0.22727272727272727,0.6285714285714286
+7978,Johnathan Campbell,LHB,Provisional,Provisional-Low,0,Pressure Vulnerable (Provisional),47.44,95.65,131.43,26.87,2.03,5.19,0.3465346534653465,0.0
+56817,Shivang Kumar,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,102.86,18.64,-3.45,2.07,0.7608695652173914,0.5142857142857142
+39657,Eshan Malinga,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,71.43,18.64,-3.45,2.07,0.9210526315789473,0.8857142857142857
+8805,Ottneil Baartman,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,40.0,18.64,-3.45,2.07,1.0,0.6285714285714286
+4854,Rachin Ravindra,LHB,Qualified,Low,0,Pressure Vulnerable,42.3,145.49,132.35,-2.51,0.78,8.89,0.058419243986254296,0.5588235294117647
+21790,Tashinga Musekiwa,RHB,Provisional,Provisional-Mod,1,Top/Middle Order Accelerator (Provisional),50.9,100.0,141.18,30.15,-10.08,5.0,0.16346153846153846,0.38235294117647056
+8085,Suyash Prabhudessai,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,20.0,120.59,37.09,-8.77,3.59,0.32075471698113206,0.4117647058823529
+19902,Tim Pringle,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,173.53,18.64,-3.45,2.07,0.918918918918919,0.8823529411764706
+1187,Jason Roy,RHB,Qualified,Moderate,1,Top/Middle Order Accelerator,55.47,137.5,190.91,40.39,-10.79,1.56,0.08549222797927461,0.0
+535,Ambati Rayudu,RHB,Qualified,Moderate,1,Top/Middle Order Accelerator,52.39,100.0,157.58,42.6,-1.09,1.73,0.09792284866468842,0.21212121212121213
+4636,Bjorn Fortuin,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,130.3,18.64,-3.45,2.07,0.5892857142857143,0.5454545454545454
+19147,Faraz Akram,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,187.88,18.64,-3.45,2.07,0.6,0.8181818181818182
+3613,Shakeel Ahmed,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,72.73,18.64,-3.45,2.07,1.0,0.5757575757575758
+4499,Saqib Mahmood,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,75.76,18.64,-3.45,2.07,1.0,1.0
+4895,Charith Asalanka,LHB,Qualified,Low,0,Pressure Vulnerable,43.71,105.88,78.12,-10.98,-5.36,4.14,0.04330175913396482,0.21875
+8049,Naseem Shah,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,100.0,84.38,16.56,0.93,3.27,0.6530612244897959,0.78125
+58246,Prince Yadav,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,96.88,18.64,-3.45,2.07,0.8205128205128205,0.5625
+7709,Ainsley Ndlovu,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,87.5,18.64,-3.45,2.07,1.0,1.0
+29558,Muhammad Arfan,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,128.12,18.64,-3.45,2.07,1.0,1.0
+6059,Ruturaj Gaikwad,RHB,Qualified,Low,0,Pressure Vulnerable,44.45,134.43,132.26,4.81,15.73,0.03,0.017014270032930844,0.25806451612903225
+3727,Matthew Short,RHB,Qualified,Moderate,1,Top/Middle Order Accelerator,51.97,142.36,148.39,10.54,-12.18,0.14,0.07380952380952381,0.16129032258064516
+47370,Aniket Verma,RHB,Qualified,Low,0,Pressure Vulnerable,39.94,150.0,70.97,-35.32,8.91,0.27,0.15816326530612246,0.3548387096774194
+22137,Fionn Hand,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,151.61,18.64,-3.45,2.07,0.8378378378378378,0.45161290322580644
+8661,Matheesha Pathirana,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,61.29,18.64,-3.45,2.07,0.96875,0.6129032258064516
+2933,Jasprit Bumrah,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,74.19,18.64,-3.45,2.07,1.0,0.9354838709677419
+3647,Shreyas Iyer,RHB,Qualified,Moderate,0,Pressure Vulnerable,46.08,150.37,143.33,1.73,-2.94,5.0,0.0160857908847185,0.3
+47724,Jahandad Khan,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,93.33,18.64,-3.45,2.07,0.8823529411764706,0.6
+3720,Craig Young,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,56.67,18.64,-3.45,2.07,1.0,0.9666666666666667
+4369,Shai Hope,RHB,Provisional,Provisional-Low,0,Pressure Vulnerable (Provisional),49.0,141.2,182.76,33.45,-0.78,7.45,0.026244343891402715,0.13793103448275862
+4821,Mahipal Lomror,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,220.69,18.64,-3.45,2.07,0.13063063063063063,0.4827586206896552
+45966,Prashant Veer,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,168.97,18.64,-3.45,2.07,0.43283582089552236,0.06896551724137931
+7920,Nathan Ellis,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,55.17,18.64,-3.45,2.07,0.5087719298245614,0.7586206896551724
+722,Liam Dawson,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,150.0,79.31,-3.6,-3.02,-1.73,0.6041666666666666,0.27586206896551724
+25507,Edson Silva,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,114.29,189.66,34.14,-8.7,-1.46,0.6170212765957447,0.4827586206896552
+478,Eoin Morgan,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,58.62,18.64,-3.45,2.07,0.7073170731707317,0.0
+23,Piyush Chawla,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,50.0,124.14,24.79,-4.02,3.75,0.7837837837837838,0.8275862068965517
+4692,Lockie Ferguson,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,86.21,18.64,-3.45,2.07,0.9666666666666667,0.6551724137931034
+4838,Keemo Paul,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,100.0,18.64,-3.45,2.07,1.0,0.8275862068965517
+47050,Shamar Joseph,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,148.28,18.64,-3.45,2.07,1.0,1.0
+4117,Ishan Kishan,LHB,Provisional,Provisional-Low,0,Pressure Vulnerable (Provisional),42.09,149.27,92.86,-29.85,-1.65,2.48,0.011613438407299876,0.21428571428571427
+1205,Jonny Bairstow,RHB,Provisional,Provisional-Low,1,Top/Middle Order Accelerator (Provisional),48.23,151.59,142.86,1.41,-5.74,2.15,0.041604754829123326,0.14285714285714285
+26906,Angkrish Raghuvanshi,RHB,Provisional,Provisional-Low,1,Top/Middle Order Accelerator (Provisional),49.7,141.63,142.86,7.72,-5.38,0.57,0.046052631578947366,0.4642857142857143
+305,Ravichandran Ashwin,RHB,Provisional,Provisional-Mod,2,Death Phase Finisher (Provisional),53.01,103.92,160.71,39.49,-13.43,5.34,0.08832807570977919,0.6071428571428571
+49027,Bevon Jacobs,RHB,Provisional,Provisional-Low,0,Pressure Vulnerable (Provisional),44.06,174.42,153.57,-2.32,8.78,3.52,0.14814814814814814,0.10714285714285714
+6280,Harry Brook,RHB,Provisional,Provisional-Low,0,Pressure Vulnerable (Provisional),42.51,172.1,144.44,-10.46,-0.49,8.15,0.030577576443941108,0.4074074074074074
+2334,Dwaine Pretorius,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,33.33,162.96,58.2,-23.02,-0.65,0.32926829268292684,1.0
+8408,Shreyas Movva,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,50.0,122.22,24.55,-5.32,2.66,0.32926829268292684,0.18518518518518517
+1171,Chris Woakes,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,92.59,18.64,-3.45,2.07,0.5625,0.9259259259259259
+46378,Kyle Klein,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,85.19,18.64,-3.45,2.07,0.6923076923076923,0.48148148148148145
+4856,Benjamin Sears,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,55.56,18.64,-3.45,2.07,0.8181818181818182,1.0
+22920,Jacob Duffy,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,118.52,18.64,-3.45,2.07,0.8709677419354839,0.9629629629629629
+6288,Shubman Gill,RHB,Provisional,Provisional-Mod,1,Top/Middle Order Accelerator (Provisional),54.7,148.63,219.23,51.4,-8.88,6.02,0.009590556990040576,0.3076923076923077
+2214,Gulbadin Naib,RHB,Provisional,Provisional-Mod,2,Death Phase Finisher (Provisional),61.22,96.43,215.38,73.01,-7.46,-2.92,0.12871287128712872,0.8076923076923077
+2972,Yasim Murtaza,LHB,Provisional,Provisional-Low,0,Pressure Vulnerable (Provisional),40.4,132.94,61.54,-32.71,4.89,1.07,0.15384615384615385,0.38461538461538464
+3627,Andile Phehlukwayo,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,250.0,88.46,-15.19,6.58,4.57,0.6341463414634146,0.5
+7702,Chamindu Wickramasinghe,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,126.92,18.64,-3.45,2.07,0.7428571428571429,0.6153846153846154
+4814,Lorcan Tucker,RHB,Provisional,Provisional-Mod,1,Top/Middle Order Accelerator (Provisional),51.96,126.97,168.0,31.93,-2.75,1.59,0.03753753753753754,0.28
+7406,Rizwan CP,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,83.33,160.0,32.79,-14.97,-1.52,0.24509803921568626,0.68
+3664,Binura Fernando,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,60.0,18.64,-3.45,2.07,1.0,0.72
+953,Lokesh Rahul,RHB,Provisional,Provisional-Low,0,Pressure Vulnerable (Provisional),45.07,134.29,145.83,14.32,4.95,6.27,0.011910669975186104,0.75
+8741,Mohammad Haris,RHB,Provisional,Provisional-Low,0,Pressure Vulnerable (Provisional),48.73,173.74,170.83,6.51,0.7,0.98,0.07058823529411765,0.5833333333333334
+4494,Abhinav Manohar,RHB,Provisional,Provisional-Low,0,Pressure Vulnerable (Provisional),42.97,94.44,66.67,-4.09,11.17,0.38,0.10212765957446808,0.041666666666666664
+3641,Ben Dwarshuis,LHB,Provisional,Provisional-Low,2,Death Phase Finisher (Provisional),49.64,62.5,104.17,28.87,-3.77,3.0,0.34285714285714286,0.8333333333333334
+6284,Anukul Roy,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,88.89,108.33,18.88,-12.53,1.86,0.375,0.6666666666666666
+7327,Rasikh Salam,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,79.17,18.64,-3.45,2.07,0.631578947368421,0.7916666666666666
+7312,Nandre Burger,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,54.17,18.64,-3.45,2.07,0.8,0.6666666666666666
+6669,Mohsin Khan,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,91.67,18.64,-3.45,2.07,0.8571428571428571,1.0
+26663,Kwena Maphaka,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,108.33,18.64,-3.45,2.07,0.96,1.0
+1159,Tendai Chatara,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,50.0,18.64,-3.45,2.07,1.0,1.0
+6806,Tushar Deshpande,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,137.5,18.64,-3.45,2.07,1.0,0.9583333333333334
+21777,Tafadzwa Tsiga,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,129.17,18.64,-3.45,2.07,1.0,0.4583333333333333
+126,Rohit Sharma,RHB,Provisional,Provisional-Mod,1,Top/Middle Order Accelerator (Provisional),53.65,138.52,160.87,20.86,-6.73,-2.49,0.014206300185299567,0.6086956521739131
+3373,Aizaz Khan,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,86.96,18.64,-3.45,2.07,0.4791666666666667,0.17391304347826086
+28915,Trevor Gwandu,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,52.17,18.64,-3.45,2.07,0.8846153846153846,0.782608695652174
+34485,Sufiyan Muqeem,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,104.35,18.64,-3.45,2.07,1.0,1.0
+6281,Abhishek Sharma,LHB,Provisional,Provisional-Low,0,Pressure Vulnerable (Provisional),39.08,201.05,140.91,-27.87,5.87,8.06,0.009773434029320302,0.45454545454545453
+2671,Liton Das,RHB,Provisional,Provisional-Low,1,Top/Middle Order Accelerator (Provisional),49.9,133.96,136.36,9.13,-6.44,0.64,0.019315188762071993,0.0
+2533,Najibullah Zadran,LHB,Provisional,Provisional-Low,0,Pressure Vulnerable (Provisional),44.1,141.86,127.27,2.27,3.4,5.53,0.0718954248366013,0.3181818181818182
+19012,Zeeshan Ali,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,85.71,131.82,28.61,-10.45,-2.22,0.23404255319148937,0.7272727272727273
+5866,Patrick Kruger,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,100.0,18.64,-3.45,2.07,0.36666666666666664,0.36363636363636365
+4489,Prasidh Krishna,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,63.64,18.64,-3.45,2.07,1.0,1.0
+19145,Aamer Jamal,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,150.0,18.64,-3.45,2.07,1.0,0.45454545454545453
+6985,Bas de Leede,RHB,Provisional,Provisional-Mod,2,Death Phase Finisher (Provisional),54.92,107.69,171.43,41.82,-13.24,2.66,0.12883435582822086,0.7142857142857143
+8739,Muhammad Irfan,RHB,Provisional,Provisional-Low,0,Pressure Vulnerable (Provisional),45.01,100.0,114.29,16.93,2.89,6.87,0.15,0.7142857142857143
+7052,Dunith Wellalage,LHB,Provisional,Provisional-Mod,2,Death Phase Finisher (Provisional),55.53,68.97,157.14,49.8,-7.79,0.18,0.23595505617977527,0.47619047619047616
+7927,Janak Prakash,RHB,Provisional,Provisional-Low,2,Death Phase Finisher (Provisional),47.88,94.87,95.24,9.93,-4.42,2.13,0.25925925925925924,0.6190476190476191
+25216,Andile Simelane,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,123.81,18.64,-3.45,2.07,0.6,0.42857142857142855
+6286,Shivam Mavi,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,138.1,18.64,-3.45,2.07,0.84,0.9047619047619048
+4460,Jeffrey Vandersay,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,95.24,18.64,-3.45,2.07,0.9130434782608695,0.38095238095238093
+5041,Mukesh Kumar,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,71.43,18.64,-3.45,2.07,0.9130434782608695,1.0
+47403,Newman Nyamhuri,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,76.19,18.64,-3.45,2.07,1.0,0.2857142857142857
+50062,Nqobani Mokoena,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,123.81,18.64,-3.45,2.07,1.0,0.9047619047619048
+6467,Anuj Rawat,LHB,Provisional,Provisional-Low,0,Pressure Vulnerable (Provisional),47.25,117.95,130.0,15.24,-2.27,4.84,0.07518796992481203,0.55
+3383,Kinchit Shah,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,100.0,125.0,20.13,-0.68,5.11,0.22988505747126436,0.3
+914,Krishnappa Gowtham,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,164.29,150.0,6.97,0.05,-0.18,0.5263157894736842,0.9
+17424,Graham Hume,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,125.0,18.64,-3.45,2.07,0.6896551724137931,0.6
+8746,Vaibhav Arora,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,0.0,50.0,26.69,-14.12,1.72,0.7407407407407407,1.0
+4201,Fareed Malik,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,35.0,18.64,-3.45,2.07,1.0,0.55
+19312,Nuwan Thushara,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,20.0,18.64,-3.45,2.07,1.0,1.0
+3954,Andrew Balbirnie,RHB,Provisional,Provisional-Mod,1,Top/Middle Order Accelerator (Provisional),59.57,108.47,210.53,63.97,-15.74,1.59,0.033391915641476276,0.15789473684210525
+1568,Kane Williamson,RHB,Provisional,Provisional-Mod,1,Top/Middle Order Accelerator (Provisional),52.67,99.61,142.11,31.55,-9.36,1.71,0.03551401869158879,0.47368421052631576
+8647,Sediqullah Atal,LHB,Provisional,Provisional-Low,1,Top/Middle Order Accelerator (Provisional),49.52,105.97,94.74,2.93,-4.61,-2.55,0.035916824196597356,0.0
+5882,Afif Hossain,LHB,Provisional,Provisional-Mod,2,Death Phase Finisher (Provisional),54.03,101.37,126.32,21.8,-15.09,-1.03,0.05263157894736842,0.6842105263157895
+2930,Rassie van der Dussen,RHB,Provisional,Provisional-Mod,1,Top/Middle Order Accelerator (Provisional),54.93,120.93,205.26,49.36,-11.85,4.94,0.06109324758842444,0.47368421052631576
+26519,Janith Liyanage,RHB,Provisional,Provisional-Mod,2,Death Phase Finisher (Provisional),51.09,89.29,110.53,19.76,-2.29,-1.89,0.13970588235294118,0.7894736842105263
+1040,Harpreet Bhatia,LHB,Provisional,Provisional-Low,2,Death Phase Finisher (Provisional),45.99,112.9,73.68,-6.81,-5.59,2.05,0.20430107526881722,0.7368421052631579
+4876,Milton Shumba,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,100.0,47.37,14.39,0.52,2.58,0.30158730158730157,0.05263157894736842
+2483,Lizaad Williams,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,42.11,18.64,-3.45,2.07,0.9047619047619048,0.7894736842105263
+3839,Amjad Mahboob,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,110.53,18.64,-3.45,2.07,1.0,1.0
+4807,Joshua Little,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,89.47,18.64,-3.45,2.07,1.0,0.8947368421052632
+25231,Samay Shrivastava,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,57.89,18.64,-3.45,2.07,1.0,0.47368421052631576
+4007,Ryan Rickelton,LHB,Provisional,Provisional-Mod,2,Death Phase Finisher (Provisional),52.89,160.4,200.0,29.86,-5.42,2.02,0.02102803738317757,0.8888888888888888
+3377,Babar Hayat,RHB,Provisional,Provisional-Low,0,Pressure Vulnerable (Provisional),47.0,145.31,144.44,9.2,0.07,3.76,0.10909090909090909,0.0
+332,Angelo Mathews,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,33.33,161.11,49.82,-13.58,4.65,0.12,0.8888888888888888
+19781,Mitchell Owen,RHB,Provisional,Provisional-Low,0,Pressure Vulnerable (Provisional),40.24,160.0,77.78,-30.62,5.29,3.0,0.14634146341463414,0.0
+27380,Harshit Kaushik,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,88.89,18.64,-3.45,2.07,0.3829787234042553,0.5555555555555556
+7696,Mohammad Wasim,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,87.5,72.22,9.49,-6.27,3.01,0.6,1.0
+2750,Alex Carey,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,80.0,144.44,32.38,-10.75,-2.88,0.6428571428571429,0.16666666666666666
+2315,Reece Topley,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,0.0,88.89,26.16,-10.22,2.45,0.8571428571428571,1.0
+2985,Mark Wood,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,50.0,144.44,26.76,-5.46,-2.91,0.9,0.9444444444444444
+25048,Umran Malik,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,155.56,18.64,-3.45,2.07,1.0,1.0
+6931,Pathum Nissanka,RHB,Provisional,Provisional-Mod,2,Death Phase Finisher (Provisional),53.32,135.83,200.0,42.61,-8.9,5.29,0.010423053341508276,0.8235294117647058
+2573,Evin Lewis,LHB,Provisional,Provisional-Mod,2,Death Phase Finisher (Provisional),53.28,170.34,194.12,21.2,-4.01,-1.49,0.06181818181818182,0.9411764705882353
+5808,Karim Janat,RHB,Provisional,Provisional-Mod,1,Top/Middle Order Accelerator (Provisional),55.61,43.75,129.41,42.4,-16.18,1.21,0.07142857142857142,0.11764705882352941
+8726,Alishan Sharafu,RHB,Provisional,Provisional-Low,0,Pressure Vulnerable (Provisional),48.44,108.33,147.06,28.58,-5.36,7.49,0.07589285714285714,0.4117647058823529
+42810,Noah Croes,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,54.55,164.71,46.83,-14.74,5.06,0.32075471698113206,0.7058823529411765
+1617,Rishi Dhawan,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,129.41,18.64,-3.45,2.07,0.3269230769230769,1.0
+6395,Josh Philippe,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,109.09,88.24,6.47,-12.11,-0.54,0.3695652173913043,0.058823529411764705
+60609,Navin Bidaisee,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,105.88,18.64,-3.45,2.07,0.5666666666666667,0.5294117647058824
+161,Dwayne Bravo,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,76.47,18.64,-3.45,2.07,0.7083333333333334,0.058823529411764705
+2878,Mohit Sharma,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,11.76,18.64,-3.45,2.07,0.8947368421052632,0.17647058823529413
+2997,Paul van Meekeren,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,70.59,18.64,-3.45,2.07,0.9444444444444444,0.5882352941176471
+5750,Ehsan Khan,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,58.82,18.64,-3.45,2.07,1.0,0.9411764705882353
+2892,Asif Ali,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,100.0,137.5,23.58,-0.91,-1.75,0.20512820512820512,0.4375
+1100,Dinesh Chandimal,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,156.25,18.64,-3.45,2.07,0.21333333333333335,0.8125
+6783,Azam Khan,RHB,Provisional,Provisional-Low,0,Pressure Vulnerable (Provisional),39.81,300.0,125.0,-48.72,-2.25,5.7,0.27586206896551724,0.0625
+158,Amit Mishra,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,81.25,18.64,-3.45,2.07,0.5333333333333333,1.0
+829,Mitchell Starc,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,200.0,37.5,7.94,0.81,3.79,0.5333333333333333,1.0
+43917,Krish Bhagat,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,43.75,18.64,-3.45,2.07,0.7619047619047619,0.5
+7001,Dilon Heyliger,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,200.0,18.64,-3.45,2.07,0.8,1.0
+7574,Kumar Kartikeya Singh,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,68.75,18.64,-3.45,2.07,0.9411764705882353,0.75
+8530,Kartik Tyagi,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,112.5,18.64,-3.45,2.07,1.0,0.875
+24017,Brian Bennett,RHB,Provisional,Provisional-Mod,1,Top/Middle Order Accelerator (Provisional),55.96,112.32,160.0,32.78,-13.98,-1.34,0.018915510718789406,0.26666666666666666
+4779,Pieter Willem Mulder,RHB,Provisional,Provisional-Low,2,Death Phase Finisher (Provisional),49.59,84.21,113.33,22.39,-12.4,6.11,0.13392857142857142,0.8
+27959,Hrithik Shokeen,RHB,Provisional,Provisional-Mod,2,Death Phase Finisher (Provisional),55.94,78.26,153.33,39.91,-13.4,-0.35,0.23076923076923078,1.0
+24475,Rehan Ahmed,RHB,Provisional,Provisional-Low,2,Death Phase Finisher (Provisional),47.85,110.0,140.0,22.77,1.44,4.35,0.3333333333333333,1.0
+25011,Liam Mccarthy,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,106.67,18.64,-3.45,2.07,0.625,1.0
+4487,Vyshak Kumar,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,106.67,18.64,-3.45,2.07,0.9375,1.0
+5577,Sai Kishore,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,113.33,18.64,-3.45,2.07,0.9375,1.0
+8580,Yudhvir Singh,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,140.0,18.64,-3.45,2.07,0.9375,0.7333333333333333
+3622,Hayden Walsh,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,66.67,18.64,-3.45,2.07,1.0,0.7333333333333333
+3091,Sahibzada Farhan,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,143.78,121.43,-0.8,-1.43,5.62,0.0171990171990172,0.6428571428571429
+3700,Tim Seifert,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,162.77,85.71,-26.78,-2.2,5.94,0.018421052631578946,0.0
+6272,William Jacks,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,146.58,235.71,52.01,-11.39,1.62,0.020086083213773313,0.7857142857142857
+6466,Atharwa Taide,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,134.21,142.86,14.59,-13.33,-0.14,0.07909604519774012,0.0
+3689,Mark Watt,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,71.43,18.64,-3.45,2.07,0.2413793103448276,0.14285714285714285
+34466,Arafat Minhas,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,100.0,18.64,-3.45,2.07,0.30434782608695654,1.0
+1389,Sean Abbott,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,160.0,64.29,-18.59,16.59,10.7,0.3783783783783784,0.7857142857142857
+3174,Matt Henry,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,57.14,18.64,-3.45,2.07,0.5,0.42857142857142855
+3550,Sharafuddin Ashraf,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,157.14,18.64,-3.45,2.07,0.6666666666666666,0.9285714285714286
+7929,Aryaman Sunil Uchil,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,121.43,18.64,-3.45,2.07,0.8235294117647058,0.42857142857142855
+5977,Khary Pierre,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,100.0,18.64,-3.45,2.07,0.9333333333333333,1.0
+4790,Lutho Sipamla,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,64.29,18.64,-3.45,2.07,1.0,0.6428571428571429
+4815,Benjamin White,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,64.29,18.64,-3.45,2.07,1.0,1.0
+5034,Murugan Ashwin,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,85.71,18.64,-3.45,2.07,1.0,0.8571428571428571
+8177,Akash Madhwal,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,57.14,18.64,-3.45,2.07,1.0,0.6428571428571429
+26988,Jitenkumar Ramanandi,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,178.57,18.64,-3.45,2.07,1.0,0.35714285714285715
+6314,Devdutt Padikkal,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,142.5,153.85,15.31,-1.02,5.35,0.013026052104208416,0.9230769230769231
+1440,Rahul Tripathi,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,145.48,146.15,10.47,-5.45,5.43,0.0182328190743338,0.5384615384615384
+6273,Tom Banton,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,172.17,200.0,22.66,2.33,6.37,0.04744525547445255,0.0
+6518,Daniel Sams,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,88.89,107.69,18.68,-9.93,2.65,0.17333333333333334,1.0
+7755,Harsh Thaker,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,100.0,18.64,-3.45,2.07,0.22807017543859648,0.6923076923076923
+15269,Mohammed Aslam,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,0.0,69.23,21.58,-6.84,1.95,0.3333333333333333,0.07692307692307693
+48616,Abdul Saqlain,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,146.15,18.64,-3.45,2.07,0.6190476190476191,0.8461538461538461
+25128,Nqabayomzi Peter,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,146.15,18.64,-3.45,2.07,0.65,1.0
+2304,Tymal Mills,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,61.54,18.64,-3.45,2.07,1.0,0.6153846153846154
+6354,Spencer Johnson,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,61.54,18.64,-3.45,2.07,1.0,0.7692307692307693
+6677,Mohammad Hasnain,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,146.15,18.64,-3.45,2.07,1.0,1.0
+6683,Mayank Markande,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,161.54,18.64,-3.45,2.07,1.0,1.0
+3639,Brandon King,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,132.67,216.67,47.34,-2.13,2.59,0.010572687224669603,0.08333333333333333
+25213,Dewald Brevis,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,129.09,166.67,26.73,4.04,9.28,0.01904761904761905,0.0
+6433,Darwish Rasooli,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,86.96,158.33,39.11,-9.28,1.12,0.03908794788273615,0.9166666666666666
+24887,Innocent Kaia,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,94.44,175.0,43.82,-18.43,4.05,0.07272727272727272,0.75
+15629,Shayan Jahangir,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,30.0,108.33,34.55,-12.31,1.07,0.2553191489361702,0.0
+7008,Gus Atkinson,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,66.67,18.64,-3.45,2.07,0.5217391304347826,1.0
+395,Karn Sharma,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,200.0,18.64,-3.45,2.07,0.5714285714285714,0.75
+3623,Hasan Ali,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,66.67,18.64,-3.45,2.07,0.631578947368421,1.0
+7201,Haroon Arshad,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,175.0,18.64,-3.45,2.07,0.6666666666666666,0.6666666666666666
+6389,Tanvir Islam,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,91.67,18.64,-3.45,2.07,0.75,1.0
+7533,Simarjeet Singh,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,58.33,18.64,-3.45,2.07,0.8,0.75
+7473,Akash Deep,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,158.33,18.64,-3.45,2.07,0.8571428571428571,0.8333333333333334
+5561,Brad Wheal,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,108.33,18.64,-3.45,2.07,1.0,0.8333333333333334
+6350,Matthew Kuhnemann,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,58.33,18.64,-3.45,2.07,1.0,0.6666666666666666
+6797,Dominic Drakes,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,83.33,18.64,-3.45,2.07,1.0,0.8333333333333334
+7689,Dilshan Madushanka,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,16.67,18.64,-3.45,2.07,1.0,1.0
+32401,Akhil Kumar,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,133.33,18.64,-3.45,2.07,1.0,1.0
+818,Mitchell Marsh,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,163.92,145.45,3.03,1.7,-0.57,0.0063805104408352666,0.9090909090909091
+2921,Fakhar Zaman,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,112.71,145.45,24.4,-6.15,1.33,0.012746234067207415,0.36363636363636365
+3280,Nazmul Hossain Shanto,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,112.64,163.64,32.02,-4.63,3.63,0.021568627450980392,0.36363636363636365
+25679,Salil Arora,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,287.5,118.18,-38.3,9.47,4.2,0.11224489795918367,0.0
+46929,Dian Forrester,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,64.0,127.27,33.7,-4.5,4.44,0.14285714285714285,0.0
+3772,Logan van Beek,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,81.82,18.64,-3.45,2.07,0.34375,0.5454545454545454
+8014,Avi Dixit,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,127.27,18.64,-3.45,2.07,0.34375,0.36363636363636365
+8266,Sumit Kumar 1,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,100.0,72.73,7.25,-1.09,6.07,0.4583333333333333,0.5454545454545454
+2054,Jason Behrendorff,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,72.73,18.64,-3.45,2.07,1.0,1.0
+2411,Sandeep Sharma,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,72.73,18.64,-3.45,2.07,1.0,0.9090909090909091
+5979,Abrar Ahmed,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,36.36,18.64,-3.45,2.07,1.0,0.7272727272727273
+20310,Ahmed Daniyal,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,154.55,18.64,-3.45,2.07,1.0,1.0
+32862,Allah Ghazanfar,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,81.82,18.64,-3.45,2.07,1.0,0.5454545454545454
+1941,Devon Conway,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,132.23,170.0,26.22,-11.93,4.13,0.006729475100942127,0.7
+4780,Mohammad Saif Hassan,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,125.75,120.0,9.07,-4.77,3.35,0.02207505518763797,0.7
+2003,Bhanuka Rajapaksa,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,117.6,130.0,16.26,1.68,1.43,0.023752969121140142,0.2
+24779,Ijaz Ahmadzai,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,120.0,18.64,-3.45,2.07,0.12345679012345678,0.0
+3635,Jason Smith,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,94.12,260.0,62.17,-10.43,2.68,0.14492753623188406,0.0
+6526,Himmat Singh,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,190.0,18.64,-3.45,2.07,0.14492753623188406,1.0
+4211,Vishnu Vinod,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,140.0,18.64,-3.45,2.07,0.2564102564102564,0.6
+27504,Dushan Hemantha,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,114.29,70.0,5.08,-5.48,1.63,0.5263157894736842,0.6
+27960,Mayank Yadav,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,80.0,18.64,-3.45,2.07,0.8333333333333334,1.0
+29080,Muhammad Khan,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,170.0,18.64,-3.45,2.07,0.8333333333333334,1.0
+1612,Yuzvendra Chahal,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,60.0,18.64,-3.45,2.07,1.0,1.0
+8241,Lokesh Bam,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,90.0,18.64,-3.45,2.07,1.0,1.0
+42548,Muhammad Jawadullah,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,110.0,18.64,-3.45,2.07,1.0,1.0
+1116,Craig Ervine,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,89.55,166.67,38.87,-7.76,6.98,0.036734693877551024,0.6666666666666666
+46137,Kartik Sharma,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,126.37,77.78,-5.11,1.05,4.88,0.041666666666666664,0.0
+17419,Tim Tector,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,122.22,77.78,-0.94,-9.28,2.58,0.1111111111111111,0.1111111111111111
+27137,Hammad Mirza,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,112.5,133.33,19.3,-1.98,4.82,0.14285714285714285,0.8888888888888888
+24812,Chris Greaves,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,88.89,18.64,-3.45,2.07,0.32142857142857145,0.6666666666666666
+6705,Scott McKechnie,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,177.78,18.64,-3.45,2.07,0.34615384615384615,0.8888888888888888
+2373,Ashton Turner,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,63.64,177.78,42.33,-3.35,2.06,0.45,0.0
+8639,Kartik Meiyappan,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,133.33,18.64,-3.45,2.07,0.6,0.8888888888888888
+7060,Arjun Tendulkar,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,144.44,18.64,-3.45,2.07,0.6428571428571429,1.0
+6919,Tyrone Kane,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,88.89,18.64,-3.45,2.07,0.8181818181818182,0.0
+4947,Kasun Rajitha,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,166.67,18.64,-3.45,2.07,1.0,1.0
+7928,Vinoth Baskaran,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,55.56,18.64,-3.45,2.07,1.0,0.6666666666666666
+25030,Zaman Khan,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,88.89,18.64,-3.45,2.07,1.0,1.0
+27364,Simranjeet Kang,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,22.22,18.64,-3.45,2.07,1.0,0.4444444444444444
+30925,Bradley Currie,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,77.78,18.64,-3.45,2.07,1.0,1.0
+56685,Abdullah Ahmadzai,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,66.67,18.64,-3.45,2.07,1.0,0.0
+23311,Jacob Bethell,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,156.38,237.5,39.91,-6.09,3.24,0.017660044150110375,0.375
+2379,Ben Duckett,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,153.46,87.5,-9.85,-3.19,3.89,0.02373887240356083,1.0
+3871,Aamir Kaleem,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,110.71,237.5,50.35,-7.15,3.04,0.13559322033898305,0.875
+26839,Haseebullah Khan,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,0.0,150.0,25.98,-6.05,2.65,0.26666666666666666,0.0
+778,Darren Bravo,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,37.5,18.64,-3.45,2.07,0.2857142857142857,1.0
+20023,Karan Sharma,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,100.0,62.5,10.16,-8.59,-0.13,0.32,0.0
+4438,Jasdeep Singh,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,44.44,75.0,21.26,-6.67,1.92,0.4,0.0
+3775,Sompal Kami,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,112.5,18.64,-3.45,2.07,0.8888888888888888,1.0
+7322,Yash Dayal,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,37.5,18.64,-3.45,2.07,0.8888888888888888,0.875
+25132,Praful Hinge,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,37.5,18.64,-3.45,2.07,0.8888888888888888,0.0
+28,Ishant Sharma,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,25.0,18.64,-3.45,2.07,1.0,1.0
+3595,Andy McBrine,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,150.0,18.64,-3.45,2.07,1.0,0.5
+3660,Luke Wood,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,162.5,18.64,-3.45,2.07,1.0,0.625
+7250,Mukesh Choudhary,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,100.0,18.64,-3.45,2.07,1.0,0.25
+8723,Mohammed Faraazuddin,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,37.5,18.64,-3.45,2.07,1.0,1.0
+27516,Ihsanullah Ihsanullah,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,75.0,18.64,-3.45,2.07,1.0,1.0
+39991,Parveen Kumar,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,50.0,18.64,-3.45,2.07,1.0,0.0
+58134,Digvesh Rathi,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,37.5,18.64,-3.45,2.07,1.0,1.0
+2351,Danushka Gunathilaka,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,86.49,14.29,-6.96,6.44,-3.84,0.05982905982905983,0.0
+4902,Avishka Fernando,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,80.0,71.43,11.17,-7.47,3.59,0.11290322580645161,1.0
+2887,Harmeet Singh,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,100.0,100.0,15.33,1.8,1.28,0.25,0.0
+27071,Vinayak Shukla,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,114.29,18.64,-3.45,2.07,0.30434782608695654,0.5714285714285714
+7304,Sanvir Singh,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,150.0,114.29,10.75,-6.58,1.77,0.3333333333333333,1.0
+4871,Brandon Mavuta,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,57.14,18.64,-3.45,2.07,0.4666666666666667,1.0
+2852,Jagadeesha Suchith,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,28.57,18.64,-3.45,2.07,0.875,0.0
+3033,Usman Qadir,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,42.86,18.64,-3.45,2.07,1.0,1.0
+3077,Usama Mir,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,100.0,18.64,-3.45,2.07,1.0,1.0
+3469,Shreyas Gopal,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,128.57,18.64,-3.45,2.07,1.0,1.0
+4237,Tabraiz Shamsi,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,71.43,18.64,-3.45,2.07,1.0,0.8571428571428571
+19125,Ayush Shukla,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,28.57,18.64,-3.45,2.07,1.0,0.2857142857142857
+19315,Vijayakanth Viyaskanth,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,100.0,18.64,-3.45,2.07,1.0,1.0
+35318,Sakib Hussain,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,71.43,18.64,-3.45,2.07,1.0,1.0
+2523,Will Young,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,72.97,50.0,7.98,-0.03,2.35,0.03409090909090909,0.0
+1541,Sean Williams,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,102.33,133.33,21.85,3.89,-0.88,0.03821656050955414,0.0
+6739,Amir Jangoo,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,138.95,116.67,7.45,-6.06,5.2,0.044444444444444446,0.0
+3415,Matthew Cross,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,200.0,18.64,-3.45,2.07,0.05454545454545454,0.6666666666666666
+1649,Regis Chakabva,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,0.0,133.33,24.83,-6.87,-2.54,0.11538461538461539,1.0
+15280,Sayed Monib,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,250.0,266.67,18.21,-3.74,1.62,0.25,1.0
+66103,Noor Rahman,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,0.0,83.33,24.52,-6.17,-1.15,0.35294117647058826,0.0
+36553,Jediah Blades,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,33.33,18.64,-3.45,2.07,0.46153846153846156,1.0
+56830,Madhav Tiwari,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,100.0,133.33,19.43,-1.46,2.86,0.5,0.6666666666666666
+26916,Yasir Mohammad,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,0.0,83.33,22.13,-5.97,2.86,0.6666666666666666,0.0
+41110,Mayank Kumar,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,50.0,18.64,-3.45,2.07,0.8571428571428571,0.3333333333333333
+2296,Safyaan Sharif,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,66.67,18.64,-3.45,2.07,1.0,1.0
+5562,Richard Gleeson,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,66.67,18.64,-3.45,2.07,1.0,1.0
+6515,Benjamin Lister,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,16.67,18.64,-3.45,2.07,1.0,0.5
+6772,Chetan Sakariya,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,66.67,18.64,-3.45,2.07,1.0,1.0
+8326,Jayden Seales,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,116.67,18.64,-3.45,2.07,1.0,1.0
+8634,Ashwani Kumar,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,16.67,18.64,-3.45,2.07,1.0,1.0
+19530,Shahnawaz Dhani,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,266.67,18.64,-3.45,2.07,1.0,1.0
+21780,Ernest Masuku,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,100.0,18.64,-3.45,2.07,1.0,0.16666666666666666
+27743,DT Doram,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,66.67,18.64,-3.45,2.07,1.0,0.6666666666666666
+33440,Adwitya Bhargava,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,116.67,18.64,-3.45,2.07,1.0,1.0
+2407,Dhananjaya de Silva,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,100.0,140.0,23.56,-1.4,4.63,0.02512562814070352,0.0
+7002,Nicholas Kirton,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,142.86,160.0,18.39,-3.35,-0.59,0.045871559633027525,0.0
+8005,Zawar Farid,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,160.0,18.64,-3.45,2.07,0.1,1.0
+31836,Aman Desai,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,80.0,18.64,-3.45,2.07,0.18518518518518517,0.2
+3686,CB Sole,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,100.0,18.64,-3.45,2.07,0.22727272727272727,0.8
+15279,Shiraz Khan,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,20.0,18.64,-3.45,2.07,0.35714285714285715,0.0
+35102,Zikria Islam,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,0.0,18.64,-3.45,2.07,0.5,0.4
+24346,Mohamed Shafeeq,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,400.0,120.0,2.92,-2.22,3.02,0.8333333333333334,1.0
+4816,Khaleel Ahmed,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,20.0,18.64,-3.45,2.07,1.0,1.0
+5892,Blair Tickner,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,20.0,18.64,-3.45,2.07,1.0,0.0
+6297,Matthew Parkinson,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,0.0,18.64,-3.45,2.07,1.0,1.0
+7227,Nijat Masood,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,80.0,18.64,-3.45,2.07,1.0,1.0
+27004,Hassnain Shah,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,20.0,18.64,-3.45,2.07,1.0,0.4
+29833,Bashir Ahmad,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,40.0,18.64,-3.45,2.07,1.0,1.0
+31835,Akshay Roopak Puri,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,20.0,18.64,-3.45,2.07,1.0,1.0
+37939,Nahid Rana,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,0.0,18.64,-3.45,2.07,1.0,1.0
+88,Faf du Plessis,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,148.48,250.0,35.97,0.65,11.08,0.003134796238244514,0.25
+4736,Josh Inglis,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,164.24,25.0,-14.36,5.8,10.99,0.004424778761061947,0.25
+992,Mayank Agarwal,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,131.0,75.0,3.14,-5.61,5.65,0.008146639511201629,0.0
+3645,Sarfaraz Khan,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,110.64,125.0,17.79,-0.88,5.75,0.017857142857142856,1.0
+6881,Scott Edwards,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,133.8,50.0,-2.01,-0.06,5.56,0.022727272727272728,1.0
+2661,Shamarh Brooks,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,103.03,150.0,24.42,2.46,6.54,0.02666666666666667,0.0
+6097,Brydon Carse,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,100.0,75.0,12.62,-6.42,2.93,0.10810810810810811,0.0
+1701,Swapnil Singh,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,166.67,50.0,-2.45,-3.78,1.75,0.16,1.0
+26909,Yash Dhull,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,25.0,75.0,22.33,-8.93,1.83,0.17391304347826086,0.0
+19307,Tharindu Rathnayake,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,75.0,18.64,-3.45,2.07,0.26666666666666666,1.0
+17911,Nangeyalia Kharote,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,50.0,18.64,-3.45,2.07,0.36363636363636365,1.0
+22471,Matthew Humphreys,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,75.0,18.64,-3.45,2.07,0.36363636363636365,1.0
+147,Pradeep Sangwan,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,50.0,18.64,-3.45,2.07,0.8,1.0
+27390,Matiullah Khan,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,0.0,18.64,-3.45,2.07,0.8,1.0
+470,Mohammad Amir,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,150.0,18.64,-3.45,2.07,1.0,1.0
+988,Graeme Cremer,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,75.0,18.64,-3.45,2.07,1.0,1.0
+3135,Yannic Cariah,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,75.0,18.64,-3.45,2.07,1.0,1.0
+4826,George Garton,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,50.0,18.64,-3.45,2.07,1.0,1.0
+6494,Manoj Bhandage,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,25.0,18.64,-3.45,2.07,1.0,0.0
+7756,Kaleem Sana,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,225.0,18.64,-3.45,2.07,1.0,1.0
+7935,Mohammad Ghazanfar,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,75.0,18.64,-3.45,2.07,1.0,0.25
+8424,Tanveer Sangha,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,50.0,18.64,-3.45,2.07,1.0,1.0
+28018,Ashok Sharma,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,25.0,18.64,-3.45,2.07,1.0,0.25
+28908,Vincent Masekesa,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,0.0,18.64,-3.45,2.07,1.0,0.0
+34527,Jasper John Davidson,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,75.0,18.64,-3.45,2.07,1.0,1.0
+36551,Zishan Motara,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,75.0,18.64,-3.45,2.07,1.0,1.0
+67036,Brijesh Sharma,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,50.0,18.64,-3.45,2.07,1.0,1.0
+19894,Mitchell Hay,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,131.25,133.33,16.25,-5.66,1.77,0.04411764705882353,0.0
+28185,Kamil Pooran,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,33.33,433.33,63.5,-10.89,1.83,0.075,0.0
+24381,Shariz Ahmad,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,166.67,18.64,-3.45,2.07,0.08823529411764706,1.0
+344,Sheldon Jackson,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,100.0,100.0,16.94,-0.11,4.91,0.11538461538461539,1.0
+3673,Ramesh Mendis,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,50.0,200.0,34.09,-3.04,3.79,0.1875,1.0
+5547,Nosthush Kenjige,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,62.5,66.67,16.8,-5.13,6.04,0.23076923076923078,0.6666666666666666
+64604,Kalhan Challu,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,133.33,18.64,-3.45,2.07,0.2727272727272727,1.0
+1556,David Payne,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,133.33,18.64,-3.45,2.07,0.6,1.0
+4901,Asitha Fernando,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,200.0,166.67,16.16,-1.7,1.97,0.6,1.0
+20704,Salman Mirza,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,133.33,18.64,-3.45,2.07,0.6,1.0
+4221,Chris Green,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,66.67,18.64,-3.45,2.07,1.0,1.0
+4983,Sikander Zulfiqar,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,66.67,18.64,-3.45,2.07,1.0,0.0
+5940,Riley Meredith,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,0.0,18.64,-3.45,2.07,1.0,1.0
+6795,Terrance Hinds,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,166.67,18.64,-3.45,2.07,1.0,1.0
+7545,Kuldeep Sen,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,0.0,18.64,-3.45,2.07,1.0,1.0
+8664,Victor Nyauchi,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,33.33,18.64,-3.45,2.07,1.0,1.0
+19020,Ateeq Iqbal,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,33.33,18.64,-3.45,2.07,1.0,1.0
+28655,Muhammad Rohid,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,133.33,18.64,-3.45,2.07,1.0,0.3333333333333333
+37731,Musheer Khan,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,0.0,18.64,-3.45,2.07,1.0,0.0
+167,Ajinkya Rahane,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,132.46,150.0,18.51,-7.38,7.13,0.001951219512195122,0.0
+772,Rilee Rossouw,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,176.92,50.0,1.66,-0.93,7.3,0.004796163069544364,0.0
+49003,Hasan Nawaz,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,173.96,100.0,7.94,-1.25,7.01,0.006172839506172839,0.0
+20327,Usman Khan,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,93.42,50.0,11.5,-1.09,6.98,0.006230529595015576,0.0
+17432,Ross Adair,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,147.32,0.0,-0.59,3.98,7.0,0.006968641114982578,0.0
+27469,Aryansh Sharma,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,123.01,350.0,42.77,-8.38,1.52,0.015503875968992248,1.0
+7355,Tayyab Tahir,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,0.0,18.64,-3.45,2.07,0.019230769230769232,0.0
+1210,James Vince,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,155.56,400.0,43.57,-6.75,1.84,0.023255813953488372,0.0
+3543,Shahidullah Kamal,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,125.0,0.0,4.79,2.91,10.31,0.03076923076923077,0.5
+6487,Priyam Garg,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,120.0,0.0,6.58,2.07,8.85,0.03571428571428571,0.5
+7761,Ravinderpal Singh,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,0.0,18.64,-3.45,2.07,0.08333333333333333,0.0
+4505,Jhye Richardson,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,45.0,100.0,22.57,-3.62,7.25,0.09090909090909091,1.0
+8251,Kumar Kushagra,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,117.65,0.0,4.11,2.56,11.26,0.09523809523809523,0.5
+2790,Praveen Dubey,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,50.0,18.64,-3.45,2.07,0.1,1.0
+35122,Shah Faisal,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,0.0,50.0,21.2,-7.25,5.98,0.13333333333333333,0.0
+1045,David Wiese,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,50.0,18.64,-3.45,2.07,0.18181818181818182,1.0
+8727,Sanchit Sharma,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,100.0,18.64,-3.45,2.07,0.4,1.0
+8141,Auqib Nabi,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,500.0,200.0,-1.28,-0.11,5.07,0.5,0.5
+16498,Sultan Ahmad,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,50.0,18.64,-3.45,2.07,0.5,1.0
+57747,Charlie Cassell,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,50.0,18.64,-3.45,2.07,0.6666666666666666,1.0
+4265,T Natarajan,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,50.0,18.64,-3.45,2.07,1.0,1.0
+4417,Karan KC,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,0.0,18.64,-3.45,2.07,1.0,1.0
+6025,Henry Shipley,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,100.0,18.64,-3.45,2.07,1.0,1.0
+6503,Zahoor Khan,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,0.0,18.64,-3.45,2.07,1.0,1.0
+6591,KM Asif,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,0.0,18.64,-3.45,2.07,1.0,0.0
+8298,Ramon Simmonds,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,50.0,18.64,-3.45,2.07,1.0,1.0
+20175,Nandan Yadav,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,350.0,18.64,-3.45,2.07,1.0,1.0
+25809,Juanoy Drysdale,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,50.0,18.64,-3.45,2.07,1.0,1.0
+28021,Saurabh Dubey,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,200.0,18.64,-3.45,2.07,1.0,1.0
+34969,Manav Suthar,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,50.0,18.64,-3.45,2.07,1.0,1.0
+36983,Mohit Rathee,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,50.0,18.64,-3.45,2.07,1.0,1.0
+47371,Zuhaid Zubair,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,0.0,18.64,-3.45,2.07,1.0,1.0
+3672,Kusal Mendis,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,129.02,0.0,9.42,0.8,7.96,0.0007541478129713424,0.0
+6674,Rahmanullah Gurbaz,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,130.24,400.0,34.3,-5.83,1.6,0.0008904719501335708,1.0
+4847,Finn Allen,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,179.32,0.0,6.29,0.55,7.74,0.001199040767386091,0.0
+6342,Matthew Breetzke,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,123.53,0.0,9.91,0.49,7.84,0.006756756756756757,1.0
+6398,Aaron Hardie,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,111.67,200.0,22.92,-5.6,1.64,0.007042253521126761,1.0
+3544,Usman Ghani,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,72.73,0.0,13.37,-0.63,6.66,0.008,0.0
+4830,Keacy Carty,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,127.27,0.0,9.89,0.03,7.67,0.013888888888888888,1.0
+6645,Mohammad Sheikh,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,60.0,0.0,14.5,-0.11,7.23,0.01639344262295082,0.0
+3361,Michael Leask,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,0.0,18.64,-3.45,2.07,0.01694915254237288,0.0
+34546,Aryan Bisht,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,0.0,18.64,-3.45,2.07,0.03125,0.0
+27962,Saurav Chauhan,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,0.0,18.64,-3.45,2.07,0.06666666666666667,0.0
+58135,Tejasvi Dahiya,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,91.67,0.0,12.24,-0.84,7.27,0.06666666666666667,0.0
+6489,Darshan Nalkande,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,0.0,18.64,-3.45,2.07,0.08333333333333333,1.0
+1791,Wesley Barresi,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,0.0,0.0,18.03,-3.34,5.23,0.1111111111111111,1.0
+7140,Senuran Muthusamy,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,0.0,18.64,-3.45,2.07,0.1111111111111111,1.0
+54404,Benjamin Ito,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,116.67,100.0,16.73,-4.17,1.96,0.125,0.0
+3995,Donald Tiripano,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,100.0,18.64,-3.45,2.07,0.3333333333333333,1.0
+6932,Pramod Madushan,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,0.0,18.64,-3.45,2.07,0.3333333333333333,1.0
+16559,Alexander Patmore,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,100.0,18.64,-3.45,2.07,0.3333333333333333,0.0
+286,Kane Richardson,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,0.0,18.64,-3.45,2.07,1.0,1.0
+2439,Akila Dananjaya,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,400.0,18.64,-3.45,2.07,1.0,1.0
+3683,Gavin Main,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,0.0,18.64,-3.45,2.07,1.0,1.0
+3771,Vivian Kingma,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,0.0,18.64,-3.45,2.07,1.0,0.0
+4604,Mitchell Swepson,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,200.0,18.64,-3.45,2.07,1.0,1.0
+4716,Mayank Dagar,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,0.0,18.64,-3.45,2.07,1.0,1.0
+6697,Shams Mulani,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,100.0,18.64,-3.45,2.07,1.0,1.0
+7710,Brandon Glover,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,400.0,18.64,-3.45,2.07,1.0,1.0
+7914,Clayton Floyd,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,100.0,18.64,-3.45,2.07,1.0,1.0
+8623,Kristian Clarke,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,0.0,18.64,-3.45,2.07,1.0,1.0
+20229,Mohammad Ali,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,100.0,18.64,-3.45,2.07,1.0,1.0
+20316,Shahab Alam,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,0.0,18.64,-3.45,2.07,1.0,1.0
+20802,Abdul Basith,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,100.0,18.64,-3.45,2.07,1.0,1.0
+24767,Ripon Mondol,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,0.0,18.64,-3.45,2.07,1.0,0.0
+45381,PV Satyanarayan Raju,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,100.0,18.64,-3.45,2.07,1.0,1.0
+47,Virat Kohli,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,148.02,,18.64,-3.45,2.07,0.0,0.0
+6819,Yashasvi Jaiswal,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,156.07,,18.64,-3.45,2.07,0.0,0.0
+7216,Prabhsimran Singh,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,152.36,,18.64,-3.45,2.07,0.0,0.0
+2367,Travis Head,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,194.79,,18.64,-3.45,2.07,0.0,0.0
+7900,Tanzid Hasan,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,129.97,,18.64,-3.45,2.07,0.0,0.0
+7690,Saim Ayub,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,127.39,,18.64,-3.45,2.07,0.0,0.0
+2416,Kyle Mayers,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,133.43,,18.64,-3.45,2.07,0.0,0.0
+109,Wriddhiman Saha,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,130.08,,18.64,-3.45,2.07,0.0,0.0
+50284,Vaibhav Sooryavanshi,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,222.56,,18.64,-3.45,2.07,0.0,0.0
+1481,Kusal Perera,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,128.57,,18.64,-3.45,2.07,0.0,0.0
+443,Paul Stirling,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,128.57,,18.64,-3.45,2.07,0.0,0.0
+7901,Parvez Emon,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,127.78,,18.64,-3.45,2.07,0.0,0.0
+25669,Priyansh Arya,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,183.62,,18.64,-3.45,2.07,0.0,0.0
+22565,Muhammad Waseem,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,139.07,,18.64,-3.45,2.07,0.0,0.0
+728,Dawid Malan,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,116.39,,18.64,-3.45,2.07,0.0,0.0
+28967,Tim Robinson,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,136.02,,18.64,-3.45,2.07,0.0,0.0
+1327,Johnson Charles,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,157.64,,18.64,-3.45,2.07,0.0,0.0
+7049,Kamil Mishara,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,124.84,,18.64,-3.45,2.07,0.0,0.0
+5928,Prithvi Shaw,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,143.41,,18.64,-3.45,2.07,0.0,0.0
+250,Aaron Finch,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,119.19,,18.64,-3.45,2.07,0.0,0.0
+7341,Jake McGurk,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,165.22,,18.64,-3.45,2.07,0.0,0.0
+6574,Alick Athanaze,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,115.13,,18.64,-3.45,2.07,0.0,0.0
+7152,Hazratullah Zazai,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,136.89,,18.64,-3.45,2.07,0.0,0.0
+2246,Tom Latham,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,102.26,,18.64,-3.45,2.07,0.0,0.0
+48504,Ayush Mhatre,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,185.71,,18.64,-3.45,2.07,0.0,0.0
+42811,Michael Levitt,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,119.38,,18.64,-3.45,2.07,0.0,0.0
+2213,Soumya Sarkar,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,136.36,,18.64,-3.45,2.07,0.0,0.0
+4412,Max ODowd,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,125.64,,18.64,-3.45,2.07,0.0,0.0
+3382,Nizakat Khan,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,101.0,,18.64,-3.45,2.07,0.0,0.0
+223,Steven Smith,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,132.26,,18.64,-3.45,2.07,0.0,0.0
+169,Robin Uthappa,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,105.0,,18.64,-3.45,2.07,0.0,0.0
+3669,Sadeera Samarawickrama,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,111.11,,18.64,-3.45,2.07,0.0,0.0
+274,Martin Guptill,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,131.11,,18.64,-3.45,2.07,0.0,0.0
+25534,Chad Bowes,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,116.67,,18.64,-3.45,2.07,0.0,0.0
+1183,Alex Hales,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,147.79,,18.64,-3.45,2.07,0.0,0.0
+930,Karun Nair,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,177.33,,18.64,-3.45,2.07,0.0,0.0
+4684,Dane Cleaver,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,135.19,,18.64,-3.45,2.07,0.0,0.0
+39374,Muhammad Zohaib,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,98.13,,18.64,-3.45,2.07,0.0,0.0
+4372,Rony Talukder,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,151.65,,18.64,-3.45,2.07,0.0,0.0
+7894,Tony Munyonga,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,92.59,,18.64,-3.45,2.07,0.0,0.0
+3539,Ben McDermott,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,97.73,,18.64,-3.45,2.07,0.0,0.0
+7912,Vikramjit Singh,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,140.28,,18.64,-3.45,2.07,0.0,0.0
+28970,Connor Esterhuizen,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,88.33,,18.64,-3.45,2.07,0.0,0.0
+15551,Ackeem Auguste,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,151.95,,18.64,-3.45,2.07,0.0,0.0
+5608,Narayan Jagadeesan,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,80.0,,18.64,-3.45,2.07,0.0,0.0
+3986,Matthew Renshaw,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,86.67,,18.64,-3.45,2.07,0.0,0.0
+6035,Chirag Suri,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,140.98,,18.64,-3.45,2.07,0.0,0.0
+8637,Vriitya Aravind,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,120.0,,18.64,-3.45,2.07,0.0,0.0
+4793,Dean Foxcroft,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,100.0,,18.64,-3.45,2.07,0.0,0.0
+4817,Anmolpreet Singh,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,83.33,,18.64,-3.45,2.07,0.0,0.0
+2361,Temba Bavuma,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,107.55,,18.64,-3.45,2.07,0.0,0.0
+4102,George Munsey,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,211.11,,18.64,-3.45,2.07,0.0,0.0
+6457,Urvil Patel,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,238.36,,18.64,-3.45,2.07,0.0,0.0
+34522,Brandon McMullen,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,0.0,,18.64,-3.45,2.07,0.0,0.0
+37201,Jewel Andrew,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,97.5,,18.64,-3.45,2.07,0.0,0.0
+19309,Lahiru Udara,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,55.56,,18.64,-3.45,2.07,0.0,0.0
+2218,Anamul Haque,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,97.06,,18.64,-3.45,2.07,0.0,0.0
+4784,Tony de Zorzi,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,124.0,,18.64,-3.45,2.07,0.0,0.0
+4695,Nick Kelly,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,77.27,,18.64,-3.45,2.07,0.0,0.0
+26843,Maaz Sadaqat,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,188.73,,18.64,-3.45,2.07,0.0,0.0
+8771,Rubin Hermann,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,116.67,,18.64,-3.45,2.07,0.0,0.0
+55747,Benjamin Calitz,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,,18.64,-3.45,2.07,0.0,0.0
+418,Richard Berrington,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,100.0,,18.64,-3.45,2.07,0.0,0.0
+43798,Lhuan Pretorius,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,147.73,,18.64,-3.45,2.07,0.0,0.0
+7046,Tinashe Kamunhukamwe,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,92.86,,18.64,-3.45,2.07,0.0,0.0
+7338,Haider Ali,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,147.06,,18.64,-3.45,2.07,0.0,0.0
+7744,Jordan Cox,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,150.0,,18.64,-3.45,2.07,0.0,0.0
+5029,Prerak Mankad,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,95.83,,18.64,-3.45,2.07,0.0,0.0
+8652,Mohammad Ishaq,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,145.45,,18.64,-3.45,2.07,0.0,0.0
+7044,Jamie Smith,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,209.38,,18.64,-3.45,2.07,0.0,0.0
+7120,Rohit Paudel,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,,18.64,-3.45,2.07,0.0,0.0
+26913,Shaik Rasheed,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,120.0,,18.64,-3.45,2.07,0.0,0.0
+7931,Aritra Dutta,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,166.67,,18.64,-3.45,2.07,0.0,0.0
+7409,Sundeep Jora,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,,18.64,-3.45,2.07,0.0,0.0
+7704,Pavan Rathnayake,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,135.0,,18.64,-3.45,2.07,0.0,0.0
+985,Brendan Taylor,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,62.5,,18.64,-3.45,2.07,0.0,0.0
+17413,Neil Rock,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,,18.64,-3.45,2.07,0.0,0.0
+5877,Andries Gous,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,154.84,,18.64,-3.45,2.07,0.0,0.0
+3038,Hussain Talat,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,106.67,,18.64,-3.45,2.07,0.0,0.0
+3260,Hashmatullah Shahidi,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,,18.64,-3.45,2.07,0.0,0.0
+3967,Tom Kohler,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,96.77,,18.64,-3.45,2.07,0.0,0.0
+43250,Dilpreet Singh Bajwa,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,143.75,,18.64,-3.45,2.07,0.0,0.0
+3802,Anshuman Rath,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,60.0,,18.64,-3.45,2.07,0.0,0.0
+21791,J Gumbie,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,112.5,,18.64,-3.45,2.07,0.0,0.0
+7924,Kushal Malla,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,,18.64,-3.45,2.07,0.0,0.0
+20163,Aasif Sheikh,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,,18.64,-3.45,2.07,0.0,0.0
+1810,Devon Thomas,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,77.78,,18.64,-3.45,2.07,0.0,0.0
+7911,Oliver Hairs,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,36.36,,18.64,-3.45,2.07,0.0,0.0
+26830,Nishant Kumar Sindhu,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,136.36,,18.64,-3.45,2.07,0.0,0.0
+32399,Aaron Johnson,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,27.27,,18.64,-3.45,2.07,0.0,0.0
+6565,Katene Clarke,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,126.92,,18.64,-3.45,2.07,0.0,0.0
+45457,Zach Lion Cachet,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,82.76,,18.64,-3.45,2.07,0.0,0.0
+2364,Ashton Agar,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,86.67,,18.64,-3.45,2.07,0.0,0.0
+20989,Vivrant Sharma,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,182.61,,18.64,-3.45,2.07,0.0,0.0
+39640,Sineth Jayawardena,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,146.15,,18.64,-3.45,2.07,0.0,0.0
+3858,Jatinder Singh,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,112.12,,18.64,-3.45,2.07,0.0,0.0
+15274,Ravija Sandaruwan,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,147.37,,18.64,-3.45,2.07,0.0,0.0
+1195,Ben Stokes,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,108.33,,18.64,-3.45,2.07,0.0,0.0
+4882,Kushal Bhurtel,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,,18.64,-3.45,2.07,0.0,0.0
+6514,Anil Nidamanuru,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,,18.64,-3.45,2.07,0.0,0.0
+8719,Aryan Lakra,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,104.76,,18.64,-3.45,2.07,0.0,0.0
+30927,Saiteja Mukkamalla,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,162.96,,18.64,-3.45,2.07,0.0,0.0
+2650,Raymon Reifer,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,,18.64,-3.45,2.07,0.0,0.0
+3832,Rezza Gaznavi,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,93.94,,18.64,-3.45,2.07,0.0,0.0
+6440,Omair Yousuf,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,146.67,,18.64,-3.45,2.07,0.0,0.0
+7566,Ben Curran,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,100.0,,18.64,-3.45,2.07,0.0,0.0
+7634,Aaron Jones,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,92.86,,18.64,-3.45,2.07,0.0,0.0
+492,Andre Fletcher,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,25.0,,18.64,-3.45,2.07,0.0,0.0
+1039,Mandeep Singh,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,90.91,,18.64,-3.45,2.07,0.0,0.0
+37879,Khawaja Nafay,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,172.73,,18.64,-3.45,2.07,0.0,0.0
+15271,Usmangani Ibrahim Patel,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,123.08,,18.64,-3.45,2.07,0.0,0.0
+25501,Meet Bhavsar,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,141.94,,18.64,-3.45,2.07,0.0,0.0
+7915,Monank Patel,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,84.21,,18.64,-3.45,2.07,0.0,0.0
+2210,Sabbir Rahman,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,78.95,,18.64,-3.45,2.07,0.0,0.0
+24803,Gulshan Jha,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,,18.64,-3.45,2.07,0.0,0.0
+42845,Arshin Kulkarni,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,56.25,,18.64,-3.45,2.07,0.0,0.0
+48575,Sahil Parakh,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,112.5,,18.64,-3.45,2.07,0.0,0.0
+26834,Raj Bawa,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,,18.64,-3.45,2.07,0.0,0.0
+6486,Tanush Kotian,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,77.42,,18.64,-3.45,2.07,0.0,0.0
+3451,Baba Indrajith,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,68.18,,18.64,-3.45,2.07,0.0,0.0
+1233,Gary Ballance,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,103.45,,18.64,-3.45,2.07,0.0,0.0
+31513,Ethan Dsouza,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,93.33,,18.64,-3.45,2.07,0.0,0.0
+2996,Stephanus Myburgh,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,83.33,,18.64,-3.45,2.07,0.0,0.0
+6203,Surendran Chandramohan,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,0.0,,18.64,-3.45,2.07,0.0,0.0
+24982,Charlie Tear,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,75.0,,18.64,-3.45,2.07,0.0,0.0
+31518,Akshat Raghuwanshi,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,183.33,,18.64,-3.45,2.07,0.0,0.0
+33067,Ravichandran Smaran,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,82.35,,18.64,-3.45,2.07,0.0,0.0
+3306,Afsar Zazai,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,,18.64,-3.45,2.07,0.0,0.0
+4458,Aneurin Donald,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,170.0,,18.64,-3.45,2.07,0.0,0.0
+232,Tom Cooper,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,40.0,,18.64,-3.45,2.07,0.0,0.0
+2884,Manan Vohra,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,40.0,,18.64,-3.45,2.07,0.0,0.0
+15303,Bilal Tahir,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,175.0,,18.64,-3.45,2.07,0.0,0.0
+4802,Stephen Doheny,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,50.0,,18.64,-3.45,2.07,0.0,0.0
+1801,Nitish Kumar,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,0.0,,18.64,-3.45,2.07,0.0,0.0
+2418,Justin Greaves,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,120.0,,18.64,-3.45,2.07,0.0,0.0
+3304,Munim Shahriar,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,72.73,,18.64,-3.45,2.07,0.0,0.0
+4665,Tom Blundell,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,176.47,,18.64,-3.45,2.07,0.0,0.0
+4881,Dipendra Airee,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,,18.64,-3.45,2.07,0.0,0.0
+6900,Michael Jones,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,28.57,,18.64,-3.45,2.07,0.0,0.0
+8093,Nikhil Chaudhary,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,138.46,,18.64,-3.45,2.07,0.0,0.0
+31529,Robin Minz,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,,18.64,-3.45,2.07,0.0,0.0
+47314,Wafiullah Tarakhil,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,,18.64,-3.45,2.07,0.0,0.0
+6441,Abdullah Shafique,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,,18.64,-3.45,2.07,0.0,0.0
+7003,Rayyan Pathan,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,150.0,,18.64,-3.45,2.07,0.0,0.0
+2531,Joe Root,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,69.23,,18.64,-3.45,2.07,0.0,0.0
+7692,Qasim Akram,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,,18.64,-3.45,2.07,0.0,0.0
+7926,Manpreet Singh,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,81.82,,18.64,-3.45,2.07,0.0,0.0
+773,Shadley Van Schalkwyk,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,83.33,,18.64,-3.45,2.07,0.0,0.0
+3545,Ihsanullah Janat,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,,18.64,-3.45,2.07,0.0,0.0
+26795,Joel Davies,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,116.67,,18.64,-3.45,2.07,0.0,0.0
+27460,Ali Naseer,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,,18.64,-3.45,2.07,0.0,0.0
+8217,Ansh Tandon,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,100.0,,18.64,-3.45,2.07,0.0,0.0
+6473,Nuwanidu Fernando,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,,18.64,-3.45,2.07,0.0,0.0
+6506,Mohammad Imran Randhawa,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,0.0,,18.64,-3.45,2.07,0.0,0.0
+34928,Kendel Fleming,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,100.0,,18.64,-3.45,2.07,0.0,0.0
+7925,Rohan Rangarajan,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,72.73,,18.64,-3.45,2.07,0.0,0.0
+24978,Jack Jarvis,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,,18.64,-3.45,2.07,0.0,0.0
+393,Kedar Jadhav,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,,18.64,-3.45,2.07,0.0,0.0
+757,Sybrand Engelbrecht,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,100.0,,18.64,-3.45,2.07,0.0,0.0
+29075,Aadil Ansari,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,,18.64,-3.45,2.07,0.0,0.0
+505,Mushfiqur Rahim,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,,18.64,-3.45,2.07,0.0,0.0
+3651,Ricky Bhui,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,0.0,,18.64,-3.45,2.07,0.0,0.0
+17910,Mohammad Akram,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,280.0,,18.64,-3.45,2.07,0.0,0.0
+25138,Harsh Dubey,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,,18.64,-3.45,2.07,0.0,0.0
+7498,Abhijeet Tomar,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,0.0,,18.64,-3.45,2.07,0.0,0.0
+8405,Kanwarpal Tathgur,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,37.5,,18.64,-3.45,2.07,0.0,0.0
+2860,KS Bharat,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,114.29,,18.64,-3.45,2.07,0.0,0.0
+4857,Nathan Smith,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,,18.64,-3.45,2.07,0.0,0.0
+4974,Mohammad Nadeem,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,42.86,,18.64,-3.45,2.07,0.0,0.0
+17937,Zubaid Akbari,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,40.0,,18.64,-3.45,2.07,0.0,0.0
+31107,Yasin Patel,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,50.0,,18.64,-3.45,2.07,0.0,0.0
+49268,Sohaib Khan,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,0.0,,18.64,-3.45,2.07,0.0,0.0
+2534,Rahmat Shah,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,,18.64,-3.45,2.07,0.0,0.0
+6166,Jack Edwards,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,,18.64,-3.45,2.07,0.0,0.0
+8311,Dan Mousley,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,133.33,,18.64,-3.45,2.07,0.0,0.0
+25502,Adnan Idrees,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,0.0,,18.64,-3.45,2.07,0.0,0.0
+3876,Sufyan Mehmood,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,0.0,,18.64,-3.45,2.07,0.0,0.0
+4235,Sisanda Magala,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,,18.64,-3.45,2.07,0.0,0.0
+4486,BR Sharath,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,40.0,,18.64,-3.45,2.07,0.0,0.0
+35071,Kunal Rathore,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,0.0,,18.64,-3.45,2.07,0.0,0.0
+48953,Danish Malewar,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,0.0,,18.64,-3.45,2.07,0.0,0.0
+6436,Qais Ahmad,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,,18.64,-3.45,2.07,0.0,0.0
+34929,Lachlan Lake,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,25.0,,18.64,-3.45,2.07,0.0,0.0
+4880,Aarif Sheikh,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,,18.64,-3.45,2.07,0.0,0.0
+7155,Sahan Arachchige,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,,18.64,-3.45,2.07,0.0,0.0
+7269,Sushant Mishra,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,,18.64,-3.45,2.07,0.0,0.0
+29699,Ibrahim Takahashi,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,133.33,,18.64,-3.45,2.07,0.0,0.0
+43774,Shivam Singh,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,,18.64,-3.45,2.07,0.0,0.0
+59045,Jai Moondra,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,,18.64,-3.45,2.07,0.0,0.0
+820,Nathan Coulter Nile,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,,18.64,-3.45,2.07,0.0,0.0
+3040,Kashif Daud,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,,18.64,-3.45,2.07,0.0,0.0
+4288,Navdeep Saini,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,,18.64,-3.45,2.07,0.0,0.0
+5665,Sanjay Yadav,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,,18.64,-3.45,2.07,0.0,0.0
+7937,Wasim Ali,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,50.0,,18.64,-3.45,2.07,0.0,0.0
+60700,Ravi Singh,LHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,,18.64,-3.45,2.07,0.0,0.0
+2321,Olly Stone,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,0.0,,18.64,-3.45,2.07,0.0,0.0
+6172,Lasith Croospulle,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,,18.64,-3.45,2.07,0.0,0.0
+71727,Razaullah Razaullah,RHB,Ineligible,Unrated,-1,Ineligible / Unassigned,50.0,,,18.64,-3.45,2.07,0.0,0.0

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 520" width="850" height="520">
+  <rect width="100%" height="100%" fill="#ffffff" />
+  <text x="30" y="38" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700" fill="#1e293b">Batting: High-Pressure Feature Importance</text>
+  <text x="30" y="62" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="400" fill="#64748b">Permutation Feature Importance predicting High-Pressure Strike Rate (Qualified N=109)</text>
+  <line x1="240.0" y1="80" x2="240.0" y2="460" stroke="#f1f5f9" stroke-width="1.5" />
+  <text x="240.0" y="482" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">0.00</text>
+  <line x1="372.5" y1="80" x2="372.5" y2="460" stroke="#f1f5f9" stroke-width="1.5" />
+  <text x="372.5" y="482" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">0.05</text>
+  <line x1="505.0" y1="80" x2="505.0" y2="460" stroke="#f1f5f9" stroke-width="1.5" />
+  <text x="505.0" y="482" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">0.10</text>
+  <line x1="637.5" y1="80" x2="637.5" y2="460" stroke="#f1f5f9" stroke-width="1.5" />
+  <text x="637.5" y="482" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">0.16</text>
+  <line x1="770.0" y1="80" x2="770.0" y2="460" stroke="#f1f5f9" stroke-width="1.5" />
+  <text x="770.0" y="482" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">0.21</text>
+  <line x1="240" y1="80" x2="240" y2="460" stroke="#cbd5e1" stroke-width="1.5" />
+  <text x="228" y="103.0" font-family="system-ui, sans-serif" font-size="12" font-weight="500" fill="#334155" text-anchor="end">Strike Rate Normal</text>
+  <rect x="240" y="86.65" width="53.3575723238064" height="24.7" fill="#2563eb" rx="3" />
+  <text x="301.3575723238064" y="103.0" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#1e293b">0.021</text>
+  <text x="228" y="141.0" font-family="system-ui, sans-serif" font-size="12" font-weight="500" fill="#334155" text-anchor="end">Dismissal Rate Per 100 Normal</text>
+  <rect x="240" y="124.65" width="56.4661372083569" height="24.7" fill="#2563eb" rx="3" />
+  <text x="304.4661372083569" y="141.0" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#1e293b">0.022</text>
+  <text x="228" y="179.0" font-family="system-ui, sans-serif" font-size="12" font-weight="500" fill="#334155" text-anchor="end">Boundary Ball Pct Normal</text>
+  <rect x="240" y="162.65" width="68.00817800196955" height="24.7" fill="#2563eb" rx="3" />
+  <text x="316.00817800196955" y="179.0" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#1e293b">0.027</text>
+  <text x="228" y="217.0" font-family="system-ui, sans-serif" font-size="12" font-weight="500" fill="#334155" text-anchor="end">Dot Pct Overall</text>
+  <rect x="240" y="200.65" width="90.44969306099968" height="24.7" fill="#2563eb" rx="3" />
+  <text x="338.44969306099966" y="217.0" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#1e293b">0.036</text>
+  <text x="228" y="255.0" font-family="system-ui, sans-serif" font-size="12" font-weight="500" fill="#334155" text-anchor="end">Six Ratio Normal</text>
+  <rect x="240" y="238.65" width="152.79966558087483" height="24.7" fill="#2563eb" rx="3" />
+  <text x="400.79966558087483" y="255.0" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#1e293b">0.060</text>
+  <text x="228" y="293.0" font-family="system-ui, sans-serif" font-size="12" font-weight="500" fill="#334155" text-anchor="end">Balls Faced Normal</text>
+  <rect x="240" y="276.65" width="169.7647661083993" height="24.7" fill="#2563eb" rx="3" />
+  <text x="417.7647661083993" y="293.0" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#1e293b">0.067</text>
+  <text x="228" y="331.0" font-family="system-ui, sans-serif" font-size="12" font-weight="500" fill="#334155" text-anchor="end">Balls Faced Overall</text>
+  <rect x="240" y="314.65" width="228.3324172586815" height="24.7" fill="#2563eb" rx="3" />
+  <text x="476.3324172586815" y="331.0" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#1e293b">0.090</text>
+  <text x="228" y="369.0" font-family="system-ui, sans-serif" font-size="12" font-weight="500" fill="#334155" text-anchor="end">Strike Rate Overall</text>
+  <rect x="240" y="352.65" width="251.35739901648105" height="24.7" fill="#2563eb" rx="3" />
+  <text x="499.35739901648105" y="369.0" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#1e293b">0.099</text>
+  <text x="228" y="407.0" font-family="system-ui, sans-serif" font-size="12" font-weight="500" fill="#334155" text-anchor="end">Dismissal Rate Per 100 Overall</text>
+  <rect x="240" y="390.65" width="357.5020787506318" height="24.7" fill="#2563eb" rx="3" />
+  <text x="605.5020787506319" y="407.0" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#1e293b">0.141</text>
+  <text x="228" y="445.0" font-family="system-ui, sans-serif" font-size="12" font-weight="500" fill="#334155" text-anchor="end">Boundary Ball Pct Overall</text>
+  <rect x="240" y="428.65" width="460.8695652173913" height="24.7" fill="#2563eb" rx="3" />
+  <text x="708.8695652173913" y="445.0" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#1e293b">0.181</text>
+</svg>

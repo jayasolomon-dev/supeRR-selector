@@ -1,0 +1,32 @@
+# ==============================================================================
+# SUPERR SELECTOR - Dependencies
+# Advanced Cricket Pressure-Performance Analytics Platform
+# Compatible with Windows 11 & Python 3.10+ / 3.14
+# ==============================================================================
+
+# 1. Core Data Engineering & Vectorized Mathematics
+pandas>=2.1.0
+numpy>=1.26.0
+scipy>=1.11.0
+
+# 2. Machine Learning & Statistical Modeling
+scikit-learn>=1.4.0
+
+# 3. Interactive Data Visualizations & Plotting
+plotly>=5.20.0
+
+# 4. Web Application & Dashboard Interface
+streamlit>=1.35.0
+
+# 5. Image Processing (Player Headshots & Team Logos)
+Pillow>=10.0.0
+
+# 6. Windows 11 Performance Optimizer for Streamlit
+watchdog>=4.0.0
+
+# ------------------------------------------------------------------------------
+# Optional Advanced ML & Interpretability (Compatible with Python on Windows 11)
+# Uncomment when training gradient boosting models or computing SHAP explanations
+# ------------------------------------------------------------------------------
+# xgboost>=2.0.0
+# shap>=0.45.0

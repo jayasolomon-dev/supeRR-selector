@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" style="background-color: #ffffff; font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;">
+<rect width="800" height="450" fill="#ffffff"/>
+<text x="400" y="35" text-anchor="middle" font-size="18" font-weight="bold" fill="#1e293b">Figure 1: Batting Pressure Distribution (IPL vs T20I)</text>
+<g transform="translate(70, 60)">
+<line x1="0" y1="330.0" x2="690" y2="330.0" stroke="#e2e8f0" stroke-width="1"/>
+<text x="-10" y="334.0" text-anchor="end" font-size="11" fill="#64748b">0.0%</text>
+<line x1="0" y1="247.5" x2="690" y2="247.5" stroke="#e2e8f0" stroke-width="1"/>
+<text x="-10" y="251.5" text-anchor="end" font-size="11" fill="#64748b">3.5%</text>
+<line x1="0" y1="165.0" x2="690" y2="165.0" stroke="#e2e8f0" stroke-width="1"/>
+<text x="-10" y="169.0" text-anchor="end" font-size="11" fill="#64748b">6.9%</text>
+<line x1="0" y1="82.5" x2="690" y2="82.5" stroke="#e2e8f0" stroke-width="1"/>
+<text x="-10" y="86.5" text-anchor="end" font-size="11" fill="#64748b">10.4%</text>
+<line x1="0" y1="0.0" x2="690" y2="0.0" stroke="#e2e8f0" stroke-width="1"/>
+<text x="-10" y="4.0" text-anchor="end" font-size="11" fill="#64748b">13.8%</text>
+<rect x="2.0" y="328.5" width="11.6" height="1.5" fill="#3b82f6" opacity="0.85" rx="1"/>
+<rect x="14.6" y="329.0" width="11.6" height="1.0" fill="#f97316" opacity="0.85" rx="1"/>
+<rect x="29.6" y="319.0" width="11.6" height="11.0" fill="#3b82f6" opacity="0.85" rx="1"/>
+<rect x="42.2" y="318.5" width="11.6" height="11.5" fill="#f97316" opacity="0.85" rx="1"/>
+<rect x="57.2" y="307.7" width="11.6" height="22.3" fill="#3b82f6" opacity="0.85" rx="1"/>
+<rect x="69.8" y="301.0" width="11.6" height="29.0" fill="#f97316" opacity="0.85" rx="1"/>
+<rect x="84.8" y="291.3" width="11.6" height="38.7" fill="#3b82f6" opacity="0.85" rx="1"/>
+<rect x="97.4" y="282.1" width="11.6" height="47.9" fill="#f97316" opacity="0.85" rx="1"/>
+<rect x="112.4" y="260.2" width="11.6" height="69.8" fill="#3b82f6" opacity="0.85" rx="1"/>
+<rect x="125.0" y="272.5" width="11.6" height="57.5" fill="#f97316" opacity="0.85" rx="1"/>
+<rect x="140.0" y="241.2" width="11.6" height="88.8" fill="#3b82f6" opacity="0.85" rx="1"/>
+<rect x="152.6" y="249.5" width="11.6" height="80.5" fill="#f97316" opacity="0.85" rx="1"/>
+<rect x="167.6" y="223.9" width="11.6" height="106.1" fill="#3b82f6" opacity="0.85" rx="1"/>
+<rect x="180.2" y="231.9" width="11.6" height="98.1" fill="#f97316" opacity="0.85" rx="1"/>
+<rect x="195.2" y="211.9" width="11.6" height="118.1" fill="#3b82f6" opacity="0.85" rx="1"/>
+<rect x="207.8" y="217.6" width="11.6" height="112.4" fill="#f97316" opacity="0.85" rx="1"/>
+<rect x="222.8" y="161.0" width="11.6" height="169.0" fill="#3b82f6" opacity="0.85" rx="1"/>
+<rect x="235.4" y="194.3" width="11.6" height="135.7" fill="#f97316" opacity="0.85" rx="1"/>
+<rect x="250.4" y="121.6" width="11.6" height="208.4" fill="#3b82f6" opacity="0.85" rx="1"/>
+<rect x="263.0" y="156.7" width="11.6" height="173.3" fill="#f97316" opacity="0.85" rx="1"/>
+<rect x="278.0" y="89.3" width="11.6" height="240.7" fill="#3b82f6" opacity="0.85" rx="1"/>
+<rect x="290.6" y="78.8" width="11.6" height="251.2" fill="#f97316" opacity="0.85" rx="1"/>
+<rect x="305.6" y="43.0" width="11.6" height="287.0" fill="#3b82f6" opacity="0.85" rx="1"/>
+<rect x="318.2" y="43.2" width="11.6" height="286.8" fill="#f97316" opacity="0.85" rx="1"/>
+<rect x="333.2" y="71.4" width="11.6" height="258.6" fill="#3b82f6" opacity="0.85" rx="1"/>
+<rect x="345.8" y="61.4" width="11.6" height="268.6" fill="#f97316" opacity="0.85" rx="1"/>
+<rect x="360.8" y="119.6" width="11.6" height="210.4" fill="#3b82f6" opacity="0.85" rx="1"/>
+<rect x="373.4" y="117.8" width="11.6" height="212.2" fill="#f97316" opacity="0.85" rx="1"/>
+<rect x="388.4" y="183.9" width="11.6" height="146.1" fill="#3b82f6" opacity="0.85" rx="1"/>
+<rect x="401.0" y="181.6" width="11.6" height="148.4" fill="#f97316" opacity="0.85" rx="1"/>
+<rect x="416.0" y="227.7" width="11.6" height="102.3" fill="#3b82f6" opacity="0.85" rx="1"/>
+<rect x="428.6" y="214.3" width="11.6" height="115.7" fill="#f97316" opacity="0.85" rx="1"/>
+<rect x="443.6" y="262.2" width="11.6" height="67.8" fill="#3b82f6" opacity="0.85" rx="1"/>
+<rect x="456.2" y="247.4" width="11.6" height="82.6" fill="#f97316" opacity="0.85" rx="1"/>
+<rect x="471.2" y="282.0" width="11.6" height="48.0" fill="#3b82f6" opacity="0.85" rx="1"/>
+<rect x="483.8" y="272.3" width="11.6" height="57.7" fill="#f97316" opacity="0.85" rx="1"/>
+<rect x="498.8" y="301.8" width="11.6" height="28.2" fill="#3b82f6" opacity="0.85" rx="1"/>
+<rect x="511.4" y="290.3" width="11.6" height="39.7" fill="#f97316" opacity="0.85" rx="1"/>
+<rect x="526.4" y="305.7" width="11.6" height="24.3" fill="#3b82f6" opacity="0.85" rx="1"/>
+<rect x="539.0" y="302.3" width="11.6" height="27.7" fill="#f97316" opacity="0.85" rx="1"/>
+<rect x="554.0" y="309.8" width="11.6" height="20.2" fill="#3b82f6" opacity="0.85" rx="1"/>
+<rect x="566.6" y="311.9" width="11.6" height="18.1" fill="#f97316" opacity="0.85" rx="1"/>
+<rect x="581.6" y="313.6" width="11.6" height="16.4" fill="#3b82f6" opacity="0.85" rx="1"/>
+<rect x="594.2" y="313.3" width="11.6" height="16.7" fill="#f97316" opacity="0.85" rx="1"/>
+<rect x="609.2" y="314.9" width="11.6" height="15.1" fill="#3b82f6" opacity="0.85" rx="1"/>
+<rect x="621.8" y="315.6" width="11.6" height="14.4" fill="#f97316" opacity="0.85" rx="1"/>
+<rect x="636.8" y="315.3" width="11.6" height="14.7" fill="#3b82f6" opacity="0.85" rx="1"/>
+<rect x="649.4" y="314.8" width="11.6" height="15.2" fill="#f97316" opacity="0.85" rx="1"/>
+<rect x="664.4" y="260.2" width="11.6" height="69.8" fill="#3b82f6" opacity="0.85" rx="1"/>
+<rect x="677.0" y="248.5" width="11.6" height="81.5" fill="#f97316" opacity="0.85" rx="1"/>
+<line x1="0.0" y1="330" x2="0.0" y2="336" stroke="#94a3b8" stroke-width="1"/>
+<text x="0.0" y="350" text-anchor="middle" font-size="11" fill="#64748b">0</text>
+<line x1="138.0" y1="330" x2="138.0" y2="336" stroke="#94a3b8" stroke-width="1"/>
+<text x="138.0" y="350" text-anchor="middle" font-size="11" fill="#64748b">20</text>
+<line x1="276.0" y1="330" x2="276.0" y2="336" stroke="#94a3b8" stroke-width="1"/>
+<text x="276.0" y="350" text-anchor="middle" font-size="11" fill="#64748b">40</text>
+<line x1="414.0" y1="330" x2="414.0" y2="336" stroke="#94a3b8" stroke-width="1"/>
+<text x="414.0" y="350" text-anchor="middle" font-size="11" fill="#64748b">60</text>
+<line x1="552.0" y1="330" x2="552.0" y2="336" stroke="#94a3b8" stroke-width="1"/>
+<text x="552.0" y="350" text-anchor="middle" font-size="11" fill="#64748b">80</text>
+<line x1="690.0" y1="330" x2="690.0" y2="336" stroke="#94a3b8" stroke-width="1"/>
+<text x="690.0" y="350" text-anchor="middle" font-size="11" fill="#64748b">100</text>
+<line x1="0" y1="330" x2="690" y2="330" stroke="#475569" stroke-width="1.5"/>
+<line x1="0" y1="0" x2="0" y2="330" stroke="#475569" stroke-width="1.5"/>
+<rect x="470" y="10" width="14" height="14" fill="#3b82f6" rx="2"/>
+<text x="490" y="22" font-size="12" fill="#334155">IPL Batting</text>
+<rect x="580" y="10" width="14" height="14" fill="#f97316" rx="2"/>
+<text x="600" y="22" font-size="12" fill="#334155">T20I Batting</text>
+<text x="345" y="375" text-anchor="middle" font-size="13" font-weight="600" fill="#334155">Pressure Score [0 - 100]</text>
+<text transform="rotate(-90)" x="-165" y="-48" text-anchor="middle" font-size="13" font-weight="600" fill="#334155">Relative Frequency (%)</text>
+</g></svg>

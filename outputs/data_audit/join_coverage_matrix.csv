@@ -1,0 +1,9 @@
+source_table,target_table,join_keys,source_rows,matched_rows,match_rate_pct,unmatched_rows,audit_notes
+matches.csv,competitions.csv,comp_id,883,883,100.0,0,100% coverage. Zero orphan matches. 3 competitions in competitions.csv have 0 matches.
+ball_by_ball.csv,matches.csv,match_id,200999,200999,100.0,0,100% coverage. Zero orphan deliveries. Exactly 16 matches in matches.csv have 0 deliveries (Match Abandoned).
+playing_eleven.csv,matches.csv,match_id,28381,28381,100.0,0,100% coverage. Exactly 3 matches in matches.csv have no playing_eleven (Match Abandoned before toss).
+matches.csv,teams.csv (home_team_id),home_team_id -> team_id,883,883,100.0,0,100% coverage. All 38 teams present.
+matches.csv,teams.csv (away_team_id),away_team_id -> team_id,883,883,100.0,0,100% coverage. All 38 teams present.
+ball_by_ball.csv,teams.csv (batting_team_id),batting_team_id -> team_id,200999,200999,100.0,0,100% coverage. Zero unmapped batting teams.
+ball_by_ball.csv,teams.csv (bowling_team_id),bowling_team_id -> team_id,200999,200999,100.0,0,100% coverage. Zero unmapped bowling teams.
+playing_eleven.csv,competition_team_player_mapping.csv,player_id,28381,28381,100.0,0,"100% coverage. All 28,381 player appearance records map to player mapping."

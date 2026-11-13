@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 520" width="850" height="520">
+  <rect width="100%" height="100%" fill="#ffffff" />
+  <text x="30" y="38" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700" fill="#1e293b">Bowling: High-Pressure Feature Importance</text>
+  <text x="30" y="62" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="400" fill="#64748b">Permutation Feature Importance predicting High-Pressure Economy Rate (Qualified N=136)</text>
+  <line x1="240.0" y1="80" x2="240.0" y2="460" stroke="#f1f5f9" stroke-width="1.5" />
+  <text x="240.0" y="482" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">0.00</text>
+  <line x1="372.5" y1="80" x2="372.5" y2="460" stroke="#f1f5f9" stroke-width="1.5" />
+  <text x="372.5" y="482" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">0.15</text>
+  <line x1="505.0" y1="80" x2="505.0" y2="460" stroke="#f1f5f9" stroke-width="1.5" />
+  <text x="505.0" y="482" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">0.30</text>
+  <line x1="637.5" y1="80" x2="637.5" y2="460" stroke="#f1f5f9" stroke-width="1.5" />
+  <text x="637.5" y="482" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">0.45</text>
+  <line x1="770.0" y1="80" x2="770.0" y2="460" stroke="#f1f5f9" stroke-width="1.5" />
+  <text x="770.0" y="482" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">0.60</text>
+  <line x1="240" y1="80" x2="240" y2="460" stroke="#cbd5e1" stroke-width="1.5" />
+  <text x="228" y="103.0" font-family="system-ui, sans-serif" font-size="12" font-weight="500" fill="#334155" text-anchor="end">Ipl Ball Share</text>
+  <rect x="240" y="86.65" width="19.89935325314091" height="24.7" fill="#dc2626" rx="3" />
+  <text x="267.89935325314093" y="103.0" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#1e293b">0.023</text>
+  <text x="228" y="141.0" font-family="system-ui, sans-serif" font-size="12" font-weight="500" fill="#334155" text-anchor="end">Six Conceded Ratio Normal</text>
+  <rect x="240" y="124.65" width="23.907009364038" height="24.7" fill="#dc2626" rx="3" />
+  <text x="271.907009364038" y="141.0" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#1e293b">0.027</text>
+  <text x="228" y="179.0" font-family="system-ui, sans-serif" font-size="12" font-weight="500" fill="#334155" text-anchor="end">Economy Rate Normal</text>
+  <rect x="240" y="162.65" width="27.56582844408828" height="24.7" fill="#dc2626" rx="3" />
+  <text x="275.56582844408825" y="179.0" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#1e293b">0.031</text>
+  <text x="228" y="217.0" font-family="system-ui, sans-serif" font-size="12" font-weight="500" fill="#334155" text-anchor="end">Dot Pct Overall</text>
+  <rect x="240" y="200.65" width="29.14453004662942" height="24.7" fill="#dc2626" rx="3" />
+  <text x="277.1445300466294" y="217.0" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#1e293b">0.033</text>
+  <text x="228" y="255.0" font-family="system-ui, sans-serif" font-size="12" font-weight="500" fill="#334155" text-anchor="end">Dot Pct Normal</text>
+  <rect x="240" y="238.65" width="29.6916910848115" height="24.7" fill="#dc2626" rx="3" />
+  <text x="277.6916910848115" y="255.0" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#1e293b">0.034</text>
+  <text x="228" y="293.0" font-family="system-ui, sans-serif" font-size="12" font-weight="500" fill="#334155" text-anchor="end">Extras Per Legal Ball Normal</text>
+  <rect x="240" y="276.65" width="34.727468733009474" height="24.7" fill="#dc2626" rx="3" />
+  <text x="282.72746873300946" y="293.0" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#1e293b">0.039</text>
+  <text x="228" y="331.0" font-family="system-ui, sans-serif" font-size="12" font-weight="500" fill="#334155" text-anchor="end">Wickets Per Over Overall</text>
+  <rect x="240" y="314.65" width="40.52744298357485" height="24.7" fill="#dc2626" rx="3" />
+  <text x="288.5274429835749" y="331.0" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#1e293b">0.046</text>
+  <text x="228" y="369.0" font-family="system-ui, sans-serif" font-size="12" font-weight="500" fill="#334155" text-anchor="end">Economy Rate Overall</text>
+  <rect x="240" y="352.65" width="109.2054592951301" height="24.7" fill="#dc2626" rx="3" />
+  <text x="357.2054592951301" y="369.0" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#1e293b">0.124</text>
+  <text x="228" y="407.0" font-family="system-ui, sans-serif" font-size="12" font-weight="500" fill="#334155" text-anchor="end">Boundary Conceded Pct Normal</text>
+  <rect x="240" y="390.65" width="117.91220818357259" height="24.7" fill="#dc2626" rx="3" />
+  <text x="365.9122081835726" y="407.0" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#1e293b">0.134</text>
+  <text x="228" y="445.0" font-family="system-ui, sans-serif" font-size="12" font-weight="500" fill="#334155" text-anchor="end">Boundary Conceded Pct Overall</text>
+  <rect x="240" y="428.65" width="460.86956521739137" height="24.7" fill="#dc2626" rx="3" />
+  <text x="708.8695652173914" y="445.0" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#1e293b">0.523</text>
+</svg>

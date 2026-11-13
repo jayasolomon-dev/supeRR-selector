@@ -1,0 +1,45 @@
+<svg width="950" height="460" viewBox="0 0 950 460" xmlns="http://www.w3.org/2000/svg" style="background:#ffffff; font-family:system-ui, -apple-system, sans-serif;">
+<text x="475.0" y="32" text-anchor="middle" font-size="18" font-weight="bold" fill="#1e293b">Figure 2: Player Sample Size Distribution and Eligibility Threshold Gates</text>
+<text x="475.0" y="52" text-anchor="middle" font-size="12" fill="#64748b">Distribution of High-Pressure Exposure showing Qualified (>=30 balls), Provisional (15-29), and Ineligible (&lt;15)</text>
+<rect x="70" y="80" width="380" height="310" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+<text x="260.0" y="70" text-anchor="middle" font-size="13" font-weight="600" fill="#0f172a">Batter High-Pressure Exposure (N = 824)</text>
+<rect x="75.0" y="149.23333333333335" width="53.333333333333336" height="240.76666666666665" fill="#cbd5e1" stroke="#64748b" stroke-width="1"/>
+<text x="101.66666666666667" y="143.23333333333335" text-anchor="middle" font-size="11" font-weight="600" fill="#334155">466</text>
+<text x="101.66666666666667" y="408" text-anchor="middle" font-size="9" fill="#475569"><15 (Inelig)</text>
+<rect x="138.33333333333334" y="326.45" width="53.333333333333336" height="63.55" fill="#fdba74" stroke="#64748b" stroke-width="1"/>
+<text x="165.0" y="320.45" text-anchor="middle" font-size="11" font-weight="600" fill="#334155">123</text>
+<text x="165.0" y="408" text-anchor="middle" font-size="9" fill="#475569">15-29 (Prov)</text>
+<rect x="201.66666666666669" y="337.81666666666666" width="53.333333333333336" height="52.18333333333334" fill="#38bdf8" stroke="#64748b" stroke-width="1"/>
+<text x="228.33333333333334" y="331.81666666666666" text-anchor="middle" font-size="11" font-weight="600" fill="#334155">101</text>
+<text x="228.33333333333334" y="408" text-anchor="middle" font-size="9" fill="#475569">30-59</text>
+<rect x="265.0" y="353.31666666666666" width="53.333333333333336" height="36.68333333333333" fill="#0284c7" stroke="#64748b" stroke-width="1"/>
+<text x="291.6666666666667" y="347.31666666666666" text-anchor="middle" font-size="11" font-weight="600" fill="#334155">71</text>
+<text x="291.6666666666667" y="408" text-anchor="middle" font-size="9" fill="#475569">60-99</text>
+<rect x="328.33333333333337" y="372.43333333333334" width="53.333333333333336" height="17.566666666666666" fill="#0369a1" stroke="#64748b" stroke-width="1"/>
+<text x="355.00000000000006" y="366.43333333333334" text-anchor="middle" font-size="11" font-weight="600" fill="#334155">34</text>
+<text x="355.00000000000006" y="408" text-anchor="middle" font-size="9" fill="#475569">100-149</text>
+<rect x="391.6666666666667" y="375.01666666666665" width="53.333333333333336" height="14.983333333333333" fill="#075985" stroke="#64748b" stroke-width="1"/>
+<text x="418.33333333333337" y="369.01666666666665" text-anchor="middle" font-size="11" font-weight="600" fill="#334155">29</text>
+<text x="418.33333333333337" y="408" text-anchor="middle" font-size="9" fill="#475569">150+</text>
+<rect x="510" y="80" width="380" height="310" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+<text x="700.0" y="70" text-anchor="middle" font-size="13" font-weight="600" fill="#0f172a">Bowler High-Pressure Exposure (N = 596)</text>
+<rect x="515.0" y="100.14999999999998" width="53.333333333333336" height="289.85" fill="#cbd5e1" stroke="#64748b" stroke-width="1"/>
+<text x="541.6666666666666" y="94.14999999999998" text-anchor="middle" font-size="11" font-weight="600" fill="#334155">374</text>
+<text x="541.6666666666666" y="408" text-anchor="middle" font-size="9" fill="#475569"><15 (Inelig)</text>
+<rect x="578.3333333333334" y="334.2" width="53.333333333333336" height="55.8" fill="#fdba74" stroke="#64748b" stroke-width="1"/>
+<text x="605.0" y="328.2" text-anchor="middle" font-size="11" font-weight="600" fill="#334155">72</text>
+<text x="605.0" y="408" text-anchor="middle" font-size="9" fill="#475569">15-29 (Prov)</text>
+<rect x="641.6666666666666" y="327.225" width="53.333333333333336" height="62.775000000000006" fill="#fb923c" stroke="#64748b" stroke-width="1"/>
+<text x="668.3333333333333" y="321.225" text-anchor="middle" font-size="11" font-weight="600" fill="#334155">81</text>
+<text x="668.3333333333333" y="408" text-anchor="middle" font-size="9" fill="#475569">30-59</text>
+<rect x="705.0" y="363.65" width="53.333333333333336" height="26.35" fill="#f97316" stroke="#64748b" stroke-width="1"/>
+<text x="731.6666666666666" y="357.65" text-anchor="middle" font-size="11" font-weight="600" fill="#334155">34</text>
+<text x="731.6666666666666" y="408" text-anchor="middle" font-size="9" fill="#475569">60-99</text>
+<rect x="768.3333333333334" y="369.075" width="53.333333333333336" height="20.925" fill="#ea580c" stroke="#64748b" stroke-width="1"/>
+<text x="795.0" y="363.075" text-anchor="middle" font-size="11" font-weight="600" fill="#334155">27</text>
+<text x="795.0" y="408" text-anchor="middle" font-size="9" fill="#475569">100-149</text>
+<rect x="831.6666666666667" y="383.8" width="53.333333333333336" height="6.2" fill="#c2410c" stroke="#64748b" stroke-width="1"/>
+<text x="858.3333333333334" y="377.8" text-anchor="middle" font-size="11" font-weight="600" fill="#334155">8</text>
+<text x="858.3333333333334" y="408" text-anchor="middle" font-size="9" fill="#475569">150+</text>
+<text x="475.0" y="450" text-anchor="middle" font-size="10" fill="#94a3b8">Threshold Gates: Qualified &ge; 30 balls; Provisional &ge; 15 balls. Low-sample outliers prevented from contaminating rankings.</text>
+</svg>

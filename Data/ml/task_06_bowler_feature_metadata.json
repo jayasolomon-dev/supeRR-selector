@@ -1,0 +1,77 @@
+{
+  "entity": "bowler",
+  "total_records": 596,
+  "qualified_records": 136,
+  "provisional_records": 57,
+  "ineligible_records": 403,
+  "feature_groups": {
+    "identifiers": [
+      "bowler_id",
+      "bowler_name",
+      "bowling_type",
+      "pace_or_spin",
+      "eligibility_tier",
+      "reliability_grade"
+    ],
+    "supervised_predictors": [
+      "economy_rate_normal",
+      "wickets_per_over_normal",
+      "dot_pct_normal",
+      "boundary_conceded_pct_normal",
+      "legal_balls_normal",
+      "extras_per_legal_ball_normal",
+      "six_conceded_ratio_normal",
+      "bowling_strike_rate_normal_clean",
+      "zero_wickets_normal_flag",
+      "economy_rate_overall",
+      "wickets_per_over_overall",
+      "dot_pct_overall",
+      "boundary_conceded_pct_overall",
+      "legal_balls_overall",
+      "ipl_ball_share",
+      "is_spin",
+      "bowling_arm_left"
+    ],
+    "supervised_targets": {
+      "regression_primary": "economy_rate_high",
+      "regression_secondary": [
+        "wickets_per_over_high",
+        "dot_pct_high",
+        "boundary_conceded_pct_high"
+      ],
+      "classification_primary": "target_below_median_econ_high",
+      "classification_secondary": "target_high_pressure_outperformer",
+      "median_threshold_qualified": 11.19
+    },
+    "unsupervised_archetype_features": [
+      "shrunk_diff_economy_rate",
+      "shrunk_diff_wickets_per_over",
+      "shrunk_diff_dot_pct",
+      "high_pressure_ratio",
+      "high_balls_death_share"
+    ],
+    "quarantined_from_supervised_predictors": [
+      "diff_economy_rate",
+      "diff_wickets_per_over",
+      "diff_dot_pct",
+      "diff_boundary_conceded_pct",
+      "rel_diff_economy_rate",
+      "shrinkage_weight",
+      "shrunk_diff_economy_rate",
+      "shrunk_diff_wickets_per_over",
+      "shrunk_diff_dot_pct",
+      "raw_composite_z",
+      "bowler_reliability_index",
+      "ci_lower_95",
+      "ci_upper_95",
+      "ci_std_error",
+      "ci_width_95",
+      "legal_balls_high",
+      "economy_rate_high",
+      "wickets_per_over_high",
+      "dot_pct_high",
+      "boundary_conceded_pct_high",
+      "bowling_strike_rate_high_clean"
+    ]
+  }
+}
