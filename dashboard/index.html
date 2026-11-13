@@ -765,14 +765,27 @@
       align-items: center;
       justify-content: space-around;
       height: 100%;
-      gap: 12px;
+      width: 100%;
+      gap: 16px;
+      padding: 6px 2px;
     }
 
     .donut-chart-box {
-      width: 130px;
-      height: 130px;
+      width: 155px;
+      height: 155px;
+      min-width: 155px;
+      min-height: 155px;
       position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       flex-shrink: 0;
+    }
+
+    .donut-chart-box canvas {
+      width: 100% !important;
+      height: 100% !important;
+      display: block;
     }
 
     .donut-center-badge {
@@ -782,41 +795,97 @@
       transform: translate(-50%, -50%);
       text-align: center;
       pointer-events: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+      width: 100%;
     }
 
     .donut-center-num {
-      font-size: 22px;
+      font-size: 24px;
       font-weight: 900;
       color: #FFFFFF;
       line-height: 1;
+      letter-spacing: -0.5px;
     }
 
     .donut-center-text {
       font-size: 10px;
-      font-weight: 600;
+      font-weight: 700;
       color: var(--text-muted);
       text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-top: 3px;
     }
 
     .donut-legend {
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 9px;
+      flex-grow: 1;
+      min-width: 0;
+    }
+
+    .donut-legend-pressure {
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+      flex-grow: 1;
+      min-width: 0;
+    }
+
+    .legend-row-pressure {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      font-size: 12px;
+      color: #FFFFFF;
+    }
+
+    .legend-color-label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      min-width: 0;
+    }
+
+    .legend-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 3px;
+      flex-shrink: 0;
+    }
+
+    .legend-label-text {
+      font-size: 11.5px;
+      font-weight: 600;
+      color: #E2E8F0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .legend-pct-pill {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 7px;
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      white-space: nowrap;
+      flex-shrink: 0;
     }
 
     .legend-item {
       display: flex;
       align-items: center;
       gap: 8px;
-      font-size: 12.5px;
+      font-size: 12px;
       font-weight: 600;
       color: var(--text-light);
-    }
-
-    .legend-dot {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
     }
 
     .overview-dual-tables {
@@ -993,16 +1062,36 @@
       color: var(--text-dim);
       text-transform: uppercase;
       letter-spacing: 0.5px;
-      padding: 9px 12px;
+      padding: 10px 12px;
       border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      white-space: nowrap;
+    }
+
+    .clean-table th:first-child, .clean-table td:first-child {
+      text-align: center;
+      width: 36px;
+    }
+
+    .clean-table th:nth-child(3), .clean-table td:nth-child(3) {
+      text-align: center;
+      width: 75px;
+      color: var(--text-dim);
+    }
+
+    .clean-table th:nth-child(4), .clean-table td:nth-child(4) {
+      text-align: center;
+      width: 115px;
     }
 
     .clean-table td {
-      padding: 9px 12px;
+      padding: 10px 12px;
       font-size: 12.5px;
       font-weight: 600;
       color: var(--text-light);
       border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+      vertical-align: middle;
+      line-height: 1.35;
+      white-space: nowrap;
     }
 
     .clean-table tr:hover td {
@@ -1049,9 +1138,9 @@
     }
 
     .gauge-track-wrap {
-      width: 100%;
+      width: 90%;
       position: relative;
-      margin-bottom: 10px;
+      margin: 0 auto 12px auto;
     }
 
     .gauge-track {
@@ -1207,14 +1296,26 @@
 
     .pressure-mid-3col {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: 1.18fr 1fr 1fr;
       gap: 16px;
       margin-bottom: 20px;
     }
 
     .pressure-bottom-3col {
       display: grid;
-      grid-template-columns: minmax(280px, 1.1fr) minmax(260px, 1fr) minmax(280px, 1.1fr);
+      grid-template-columns: 1.1fr 1fr 1.1fr;
+      gap: 16px;
+    }
+
+    .batting-bottom-4col {
+      display: grid;
+      grid-template-columns: 1.15fr 1.05fr 1fr 1.2fr;
+      gap: 16px;
+    }
+
+    .bowling-bottom-5col {
+      display: grid;
+      grid-template-columns: 1.15fr 1.15fr 1.05fr 1.05fr 1.25fr;
       gap: 16px;
     }
 
@@ -1896,9 +1997,27 @@
       }
     }
 
+    @media (max-width: 1200px) {
+      .batting-bottom-4col {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .bowling-bottom-5col {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .pressure-mid-3col {
+        grid-template-columns: 1fr;
+      }
+    }
+
     @media (max-width: 960px) {
       :root {
         --sidebar-width: 0px;
+      }
+      .bowling-bottom-5col {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .comparison-cards-3col, .comp-charts-3col, .comp-summary-3col {
+        grid-template-columns: 1fr;
       }
       .sidebar {
         transform: translateX(-100%);
@@ -2481,7 +2600,7 @@
       </div>
 
       <!-- Bottom Row: 4 Cards -->
-      <div class="intel-bottom-grid">
+      <div class="batting-bottom-4col">
         <div class="rr-card">
           <div class="card-header-clean">
             <span class="card-title">Strike Rate Comparison</span>
@@ -2495,8 +2614,31 @@
           <div class="card-header-clean">
             <span class="card-title">Dot Ball & Dismissal Analysis</span>
           </div>
-          <div class="chart-container-fluid" style="height: 180px;">
-            <canvas id="batterDotChart"></canvas>
+          <div class="donut-card-container">
+            <div class="donut-chart-box" style="width: 140px; height: 140px; min-width: 140px; min-height: 140px;">
+              <canvas id="batterDotChart"></canvas>
+              <div class="donut-center-badge">
+                <div class="donut-center-num" style="font-size: 20px;">28.8%</div>
+                <div class="donut-center-text" style="font-size: 9px;">Dot Balls</div>
+                <div style="font-size: 8.5px; color: #64748B;">(Top 10 Avg)</div>
+              </div>
+            </div>
+            <div class="donut-legend">
+              <div class="legend-row-pressure">
+                <div class="legend-color-label">
+                  <span class="legend-dot" style="background: var(--rr-pink);"></span>
+                  <span class="legend-label-text">Dot Balls</span>
+                </div>
+                <span class="legend-pct-pill" style="border-color: var(--rr-pink); color: var(--rr-pink);">28.8%</span>
+              </div>
+              <div class="legend-row-pressure">
+                <div class="legend-color-label">
+                  <span class="legend-dot" style="background: #8B5CF6;"></span>
+                  <span class="legend-label-text">Dismissal</span>
+                </div>
+                <span class="legend-pct-pill" style="border-color: #8B5CF6; color: #8B5CF6;">71.2%</span>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -2708,25 +2850,73 @@
       </div>
 
       <!-- Bottom Row: 5 Cards Grid -->
-      <div class="intel-bottom-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+      <div class="bowling-bottom-5col">
         <div class="rr-card">
-          <div class="card-header-clean"><span class="card-title" style="font-size: 13.5px;">Economy Analysis</span></div>
+          <div class="card-header-clean"><span class="card-title" style="font-size: 13px;">Economy Analysis</span></div>
           <div class="chart-container-fluid" style="height: 170px;"><canvas id="bowlerEconChart"></canvas></div>
         </div>
 
         <div class="rr-card">
-          <div class="card-header-clean"><span class="card-title" style="font-size: 13.5px;">Wickets per Over</span></div>
+          <div class="card-header-clean"><span class="card-title" style="font-size: 13px;">Wickets per Over</span></div>
           <div class="chart-container-fluid" style="height: 170px;"><canvas id="bowlerWPOChart"></canvas></div>
         </div>
 
         <div class="rr-card">
-          <div class="card-header-clean"><span class="card-title" style="font-size: 13.5px;">Dot Ball & Boundary %</span></div>
-          <div class="chart-container-fluid" style="height: 170px;"><canvas id="bowlerDotBoundaryChart"></canvas></div>
+          <div class="card-header-clean"><span class="card-title" style="font-size: 13px;">Dot Ball & Boundary %</span></div>
+          <div class="donut-card-container">
+            <div class="donut-chart-box" style="width: 125px; height: 125px; min-width: 125px; min-height: 125px;">
+              <canvas id="bowlerDotBoundaryChart"></canvas>
+              <div class="donut-center-badge">
+                <div class="donut-center-num" style="font-size: 18px;">62.5%</div>
+                <div class="donut-center-text" style="font-size: 8.5px;">Dot Balls</div>
+              </div>
+            </div>
+            <div class="donut-legend">
+              <div class="legend-row-pressure">
+                <div class="legend-color-label">
+                  <span class="legend-dot" style="background: #38BDF8;"></span>
+                  <span class="legend-label-text">Dot</span>
+                </div>
+                <span class="legend-pct-pill" style="border-color: #38BDF8; color: #38BDF8;">62.5%</span>
+              </div>
+              <div class="legend-row-pressure">
+                <div class="legend-color-label">
+                  <span class="legend-dot" style="background: var(--rr-pink);"></span>
+                  <span class="legend-label-text">Bndry</span>
+                </div>
+                <span class="legend-pct-pill" style="border-color: var(--rr-pink); color: var(--rr-pink);">37.5%</span>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="rr-card">
-          <div class="card-header-clean"><span class="card-title" style="font-size: 13.5px;">Boundary Conceded %</span></div>
-          <div class="chart-container-fluid" style="height: 170px;"><canvas id="bowlerBoundaryConcededChart"></canvas></div>
+          <div class="card-header-clean"><span class="card-title" style="font-size: 13px;">Boundary Conceded %</span></div>
+          <div class="donut-card-container">
+            <div class="donut-chart-box" style="width: 125px; height: 125px; min-width: 125px; min-height: 125px;">
+              <canvas id="bowlerBoundaryConcededChart"></canvas>
+              <div class="donut-center-badge">
+                <div class="donut-center-num" style="font-size: 20px;">36.8%</div>
+                <div class="donut-center-text" style="font-size: 8.5px;">Boundary</div>
+              </div>
+            </div>
+            <div class="donut-legend">
+              <div class="legend-row-pressure">
+                <div class="legend-color-label">
+                  <span class="legend-dot" style="background: #6366F1;"></span>
+                  <span class="legend-label-text">Others</span>
+                </div>
+                <span class="legend-pct-pill" style="border-color: #6366F1; color: #6366F1;">63.2%</span>
+              </div>
+              <div class="legend-row-pressure">
+                <div class="legend-color-label">
+                  <span class="legend-dot" style="background: #FF2A85;"></span>
+                  <span class="legend-label-text">Bndry</span>
+                </div>
+                <span class="legend-pct-pill" style="border-color: #FF2A85; color: #FF2A85;">36.8%</span>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="rr-card">
@@ -2802,11 +2992,43 @@
           <div class="card-header-clean">
             <span class="card-title">Pressure Category Distribution</span>
           </div>
-          <div class="chart-container-fluid" style="height: 250px;">
-            <canvas id="pressureCategoryChart"></canvas>
-            <div class="donut-center-badge">
-              <div class="donut-center-num">837</div>
-              <div class="donut-center-text">Matches</div>
+          <div class="donut-card-container">
+            <div class="donut-chart-box" style="width: 165px; height: 165px; min-width: 165px; min-height: 165px;">
+              <canvas id="pressureCategoryChart"></canvas>
+              <div class="donut-center-badge">
+                <div class="donut-center-num">837</div>
+                <div class="donut-center-text">Matches</div>
+              </div>
+            </div>
+            <div class="donut-legend-pressure">
+              <div class="legend-row-pressure">
+                <div class="legend-color-label">
+                  <span class="legend-dot" style="background: #10B981;"></span>
+                  <span class="legend-label-text">Low Pressure (0–40)</span>
+                </div>
+                <span class="legend-pct-pill" style="border-color: #10B981; color: #10B981;">22.1%</span>
+              </div>
+              <div class="legend-row-pressure">
+                <div class="legend-color-label">
+                  <span class="legend-dot" style="background: #00D2FF;"></span>
+                  <span class="legend-label-text">Moderate Pressure (40–65)</span>
+                </div>
+                <span class="legend-pct-pill" style="border-color: #00D2FF; color: #00D2FF;">37.5%</span>
+              </div>
+              <div class="legend-row-pressure">
+                <div class="legend-color-label">
+                  <span class="legend-dot" style="background: #E5097F;"></span>
+                  <span class="legend-label-text">High Pressure (65–85)</span>
+                </div>
+                <span class="legend-pct-pill" style="border-color: #E5097F; color: #E5097F;">28.4%</span>
+              </div>
+              <div class="legend-row-pressure">
+                <div class="legend-color-label">
+                  <span class="legend-dot" style="background: #8B5CF6;"></span>
+                  <span class="legend-label-text">Extreme Pressure (85–100)</span>
+                </div>
+                <span class="legend-pct-pill" style="border-color: #8B5CF6; color: #8B5CF6;">11.0%</span>
+              </div>
             </div>
           </div>
         </div>
@@ -2951,8 +3173,13 @@
           <div class="card-header-clean">
             <span class="card-title">Dot Ball Percentage</span>
           </div>
-          <div class="chart-container-fluid" style="height: 220px;">
-            <canvas id="compChart2"></canvas>
+          <div class="donut-card-container" id="comp-chart2-container" style="min-height: 200px;">
+            <div class="donut-chart-box" style="width: 140px; height: 140px; min-width: 140px; min-height: 140px;">
+              <canvas id="compChart2"></canvas>
+            </div>
+            <div class="donut-legend" id="comp-chart2-legend">
+              <!-- Dynamically populated via updateComparison() -->
+            </div>
           </div>
         </div>
 
@@ -3682,7 +3909,7 @@
       chartRegistry.batting.push(batterSRChart);
     }
 
-    // 4. Dot Ball & Dismissal Donut -> Clockwise Sweep
+    // 4. Dot Ball & Dismissal Donut -> Centered Ring with pure HTML Legend
     const ctxBatterDot = document.getElementById('batterDotChart');
     if (ctxBatterDot) {
       const batterDotChart = new Chart(ctxBatterDot, {
@@ -3696,7 +3923,7 @@
           }]
         },
         options: {
-          cutout: '72%',
+          cutout: '74%',
           responsive: true,
           maintainAspectRatio: false,
           animation: {
@@ -3706,7 +3933,12 @@
             easing: 'easeOutCirc'
           },
           plugins: {
-            legend: { position: 'right', labels: { color: '#FFFFFF', boxWidth: 12 } }
+            legend: { display: false },
+            tooltip: {
+              callbacks: {
+                label: (ctx) => ` ${ctx.label}: ${ctx.raw}%`
+              }
+            }
           }
         }
       });
@@ -3918,7 +4150,12 @@
             easing: 'easeOutCirc'
           },
           plugins: {
-            legend: { position: 'right', labels: { color: '#FFFFFF', boxWidth: 10, font: { size: 10.5 } } }
+            legend: { display: false },
+            tooltip: {
+              callbacks: {
+                label: (ctx) => ` ${ctx.label}: ${ctx.raw}%`
+              }
+            }
           }
         }
       });
@@ -4214,18 +4451,35 @@
 
       // Chart 2: Pie / Donut (Dot Ball %)
       const ctx2 = document.getElementById('compChart2');
+      const compLegendEl = document.getElementById('comp-chart2-legend');
+      const compColors = ['#E5097F', '#38BDF8', '#8B5CF6'];
+      const dotVals = compDiscipline === 'Batter' ? [28.1, 30.2, 32.5] : [64.7, 58.2, 61.4];
+
+      if (compLegendEl) {
+        compLegendEl.innerHTML = selected.map((p, i) => `
+          <div class="legend-row-pressure">
+            <div class="legend-color-label">
+              <span class="legend-dot" style="background: ${compColors[i]};"></span>
+              <span class="legend-label-text" style="max-width: 105px; overflow: hidden; text-overflow: ellipsis;">${p.name}</span>
+            </div>
+            <span class="legend-pct-pill" style="border-color: ${compColors[i]}; color: ${compColors[i]};">${dotVals[i]}%</span>
+          </div>
+        `).join('');
+      }
+
       if (compChart2Instance) compChart2Instance.destroy();
       compChart2Instance = new Chart(ctx2, {
-        type: 'pie',
+        type: 'doughnut',
         data: {
           labels: selected.map(p => p.name),
           datasets: [{
-            data: [28.1, 30.2, 32.5],
-            backgroundColor: ['#E5097F', '#38BDF8', '#8B5CF6'],
+            data: dotVals,
+            backgroundColor: compColors,
             borderWidth: 0
           }]
         },
         options: {
+          cutout: '72%',
           responsive: true,
           maintainAspectRatio: false,
           animation: {
@@ -4235,7 +4489,12 @@
             easing: 'easeOutCirc'
           },
           plugins: {
-            legend: { position: 'right', labels: { color: '#FFFFFF', boxWidth: 12 } }
+            legend: { display: false },
+            tooltip: {
+              callbacks: {
+                label: (ctx) => ` ${ctx.label}: ${ctx.raw}% Dot Balls`
+              }
+            }
           }
         }
       });
