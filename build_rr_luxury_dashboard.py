@@ -2144,6 +2144,110 @@ def generate_dashboard():
     ::-webkit-scrollbar-thumb:hover {
       background: var(--rr-pink);
     }
+      /* ==========================================================================
+       COMPACT DONUT CARD CONTAINERS (FOR 5-COLUMN GRIDS & NARROW CARDS)
+       ========================================================================== */
+    .donut-card-container-compact {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      width: 100%;
+      height: 100%;
+      padding: 6px 0;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+
+    .donut-chart-box-compact {
+      width: 96px;
+      height: 96px;
+      min-width: 96px;
+      min-height: 96px;
+      max-width: 96px;
+      max-height: 96px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .donut-chart-box-compact canvas {
+      width: 96px !important;
+      height: 96px !important;
+      display: block;
+    }
+
+    .donut-center-badge-compact {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      pointer-events: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      line-height: 1.1;
+      z-index: 2;
+    }
+
+    .donut-center-num-compact {
+      font-size: 16px;
+      font-weight: 900;
+      color: #FFFFFF;
+      line-height: 1;
+      letter-spacing: -0.5px;
+    }
+
+    .donut-center-text-compact {
+      font-size: 8px;
+      font-weight: 700;
+      color: #94A3B8;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      margin-top: 2px;
+    }
+
+    .donut-legend-compact {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      flex-shrink: 0;
+      min-width: 0;
+    }
+
+    .compact-legend-row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11px;
+      color: #E2E8F0;
+      white-space: nowrap;
+    }
+
+    .compact-legend-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 2px;
+      flex-shrink: 0;
+    }
+
+    .compact-legend-label {
+      font-size: 11px;
+      font-weight: 600;
+      color: #CBD5E1;
+    }
+
+    .compact-legend-val {
+      font-size: 11.5px;
+      font-weight: 800;
+      margin-left: 2px;
+    }
+
   </style>
 </head>
 <body>
@@ -2687,33 +2791,29 @@ def generate_dashboard():
           </div>
         </div>
 
-        <div class="rr-card">
+        <div class="rr-card" style="padding: 14px 12px;">
           <div class="card-header-clean">
-            <span class="card-title">Dot Ball & Dismissal Analysis</span>
+            <span class="card-title" style="font-size: 13px;">Dot Ball & Dismissal Analysis</span>
           </div>
-          <div class="donut-card-container">
-            <div class="donut-chart-box" style="width: 140px; height: 140px; min-width: 140px; min-height: 140px;">
+          <div class="donut-card-container-compact">
+            <div class="donut-chart-box-compact" style="width: 104px; height: 104px; min-width: 104px; min-height: 104px; max-width: 104px; max-height: 104px;">
               <canvas id="batterDotChart"></canvas>
-              <div class="donut-center-badge">
-                <div class="donut-center-num" style="font-size: 20px;">28.8%</div>
-                <div class="donut-center-text" style="font-size: 9px;">Dot Balls</div>
-                <div style="font-size: 8.5px; color: #64748B;">(Top 10 Avg)</div>
+              <div class="donut-center-badge-compact">
+                <div class="donut-center-num-compact" style="font-size: 17px;">28.8%</div>
+                <div class="donut-center-text-compact">Dot Balls</div>
+                <div style="font-size: 7.5px; color: #64748B;">(Top 10 Avg)</div>
               </div>
             </div>
-            <div class="donut-legend">
-              <div class="legend-row-pressure">
-                <div class="legend-color-label">
-                  <span class="legend-dot" style="background: var(--rr-pink);"></span>
-                  <span class="legend-label-text">Dot Balls</span>
-                </div>
-                <span class="legend-pct-pill" style="border-color: var(--rr-pink); color: var(--rr-pink);">28.8%</span>
+            <div class="donut-legend-compact" style="gap: 10px;">
+              <div class="compact-legend-row">
+                <span class="compact-legend-dot" style="background: var(--rr-pink);"></span>
+                <span class="compact-legend-label">Dot Balls:</span>
+                <span class="compact-legend-val" style="color: var(--rr-pink);">28.8%</span>
               </div>
-              <div class="legend-row-pressure">
-                <div class="legend-color-label">
-                  <span class="legend-dot" style="background: #8B5CF6;"></span>
-                  <span class="legend-label-text">Dismissal</span>
-                </div>
-                <span class="legend-pct-pill" style="border-color: #8B5CF6; color: #8B5CF6;">71.2%</span>
+              <div class="compact-legend-row">
+                <span class="compact-legend-dot" style="background: #8B5CF6;"></span>
+                <span class="compact-legend-label">Dismissal:</span>
+                <span class="compact-legend-val" style="color: #8B5CF6;">71.2%</span>
               </div>
             </div>
           </div>
@@ -2938,59 +3038,51 @@ def generate_dashboard():
           <div class="chart-container-fluid" style="height: 170px;"><canvas id="bowlerWPOChart"></canvas></div>
         </div>
 
-        <div class="rr-card">
-          <div class="card-header-clean"><span class="card-title" style="font-size: 13px;">Dot Ball & Boundary %</span></div>
-          <div class="donut-card-container">
-            <div class="donut-chart-box" style="width: 125px; height: 125px; min-width: 125px; min-height: 125px;">
+        <div class="rr-card" style="padding: 14px 10px;">
+          <div class="card-header-clean"><span class="card-title" style="font-size: 12.5px;">Dot Ball & Boundary %</span></div>
+          <div class="donut-card-container-compact">
+            <div class="donut-chart-box-compact">
               <canvas id="bowlerDotBoundaryChart"></canvas>
-              <div class="donut-center-badge">
-                <div class="donut-center-num" style="font-size: 18px;">62.5%</div>
-                <div class="donut-center-text" style="font-size: 8.5px;">Dot Balls</div>
+              <div class="donut-center-badge-compact">
+                <div class="donut-center-num-compact">62.5%</div>
+                <div class="donut-center-text-compact">Dot Balls</div>
               </div>
             </div>
-            <div class="donut-legend">
-              <div class="legend-row-pressure">
-                <div class="legend-color-label">
-                  <span class="legend-dot" style="background: #38BDF8;"></span>
-                  <span class="legend-label-text">Dot</span>
-                </div>
-                <span class="legend-pct-pill" style="border-color: #38BDF8; color: #38BDF8;">62.5%</span>
+            <div class="donut-legend-compact">
+              <div class="compact-legend-row">
+                <span class="compact-legend-dot" style="background: #38BDF8;"></span>
+                <span class="compact-legend-label">Dot Balls:</span>
+                <span class="compact-legend-val" style="color: #38BDF8;">62.5%</span>
               </div>
-              <div class="legend-row-pressure">
-                <div class="legend-color-label">
-                  <span class="legend-dot" style="background: var(--rr-pink);"></span>
-                  <span class="legend-label-text">Bndry</span>
-                </div>
-                <span class="legend-pct-pill" style="border-color: var(--rr-pink); color: var(--rr-pink);">37.5%</span>
+              <div class="compact-legend-row">
+                <span class="compact-legend-dot" style="background: var(--rr-pink);"></span>
+                <span class="compact-legend-label">Boundary:</span>
+                <span class="compact-legend-val" style="color: var(--rr-pink);">37.5%</span>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="rr-card">
-          <div class="card-header-clean"><span class="card-title" style="font-size: 13px;">Boundary Conceded %</span></div>
-          <div class="donut-card-container">
-            <div class="donut-chart-box" style="width: 125px; height: 125px; min-width: 125px; min-height: 125px;">
+        <div class="rr-card" style="padding: 14px 10px;">
+          <div class="card-header-clean"><span class="card-title" style="font-size: 12.5px;">Boundary Conceded %</span></div>
+          <div class="donut-card-container-compact">
+            <div class="donut-chart-box-compact">
               <canvas id="bowlerBoundaryConcededChart"></canvas>
-              <div class="donut-center-badge">
-                <div class="donut-center-num" style="font-size: 20px;">36.8%</div>
-                <div class="donut-center-text" style="font-size: 8.5px;">Boundary</div>
+              <div class="donut-center-badge-compact">
+                <div class="donut-center-num-compact">36.8%</div>
+                <div class="donut-center-text-compact">Boundary</div>
               </div>
             </div>
-            <div class="donut-legend">
-              <div class="legend-row-pressure">
-                <div class="legend-color-label">
-                  <span class="legend-dot" style="background: #6366F1;"></span>
-                  <span class="legend-label-text">Others</span>
-                </div>
-                <span class="legend-pct-pill" style="border-color: #6366F1; color: #6366F1;">63.2%</span>
+            <div class="donut-legend-compact">
+              <div class="compact-legend-row">
+                <span class="compact-legend-dot" style="background: #6366F1;"></span>
+                <span class="compact-legend-label">Others:</span>
+                <span class="compact-legend-val" style="color: #6366F1;">63.2%</span>
               </div>
-              <div class="legend-row-pressure">
-                <div class="legend-color-label">
-                  <span class="legend-dot" style="background: #FF2A85;"></span>
-                  <span class="legend-label-text">Bndry</span>
-                </div>
-                <span class="legend-pct-pill" style="border-color: #FF2A85; color: #FF2A85;">36.8%</span>
+              <div class="compact-legend-row">
+                <span class="compact-legend-dot" style="background: #FF2A85;"></span>
+                <span class="compact-legend-label">Boundary:</span>
+                <span class="compact-legend-val" style="color: #FF2A85;">36.8%</span>
               </div>
             </div>
           </div>
@@ -3509,10 +3601,14 @@ def generate_dashboard():
         </div>
 
         <div class="intel-top-card">
-          <div class="intel-top-icon icon-gold"><i class="fa-solid fa-shield-check"></i></div>
+          <div class="intel-top-icon" style="background: rgba(16, 185, 129, 0.15); border: 1.5px solid rgba(16, 185, 129, 0.45); display: flex; align-items: center; justify-content: center; box-shadow: 0 0 14px rgba(16, 185, 129, 0.25);">
+            <img src="__RR_LOGO__" alt="Rajasthan Royals Verified" style="width: 28px; height: 32px; object-fit: contain; filter: drop-shadow(0 0 6px #10B981);">
+          </div>
           <div class="intel-top-data">
             <span class="intel-top-label">Validation Status</span>
-            <span class="intel-top-val" style="color: #10B981;">✔ Verified</span>
+            <span class="intel-top-val" style="color: #10B981; display: flex; align-items: center; gap: 5px;">
+              <i class="fa-solid fa-circle-check" style="color: #10B981; font-size: 13.5px;"></i> Verified
+            </span>
             <span class="intel-top-sub">(Production Ready)</span>
           </div>
         </div>
