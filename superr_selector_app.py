@@ -50,20 +50,20 @@ st.markdown("""
 
     /* Backgrounds */
     .stApp {
-        background: #F8FAFC;
-        color: #0F172A;
+        background: #09061A;
+        color: #FFFFFF;
     }
 
     /* Sidebar Styling */
     section[data-testid="stSidebar"] {
-        background-color: #FFFFFF;
-        border-right: 1px solid rgba(15, 23, 42, 0.08);
+        background-color: #0C0824;
+        border-right: 1px solid rgba(255, 255, 255, 0.08);
     }
 
     /* Header Banner */
     .rr-header-banner {
-        background: #FFFFFF;
-        border: 1px solid #E2E8F0;
+        background: rgba(19, 15, 48, 0.88);
+        border: 1px solid rgba(139, 92, 246, 0.25);
         border-left: 6px solid #E5097F;
         border-radius: 16px;
         padding: 24px 28px;
@@ -107,8 +107,8 @@ st.markdown("""
 
     /* Metric KPI Cards */
     .kpi-card {
-        background: #FFFFFF;
-        border: 1px solid rgba(15, 23, 42, 0.08);
+        background: rgba(19, 15, 48, 0.88);
+        border: 1px solid rgba(139, 92, 246, 0.22);
         border-radius: 12px;
         padding: 16px 18px;
         transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
@@ -122,7 +122,7 @@ st.markdown("""
     .kpi-title {
         font-size: 0.78rem;
         font-weight: 600;
-        color: #475569;
+        color: #94A3B8;
         text-transform: uppercase;
         letter-spacing: 0.8px;
         margin-bottom: 4px;
@@ -132,7 +132,7 @@ st.markdown("""
         font-size: 2.1rem;
         font-weight: 700;
         line-height: 1.1;
-        color: #0F172A;
+        color: #FFFFFF;
     }
     .kpi-subtitle {
         font-size: 0.74rem;
@@ -142,8 +142,8 @@ st.markdown("""
 
     /* Player Roster Cards (Visual Grid) */
     .player-roster-card {
-        background: #FFFFFF;
-        border: 1px solid rgba(15, 23, 42, 0.09);
+        background: rgba(19, 15, 48, 0.88);
+        border: 1px solid rgba(139, 92, 246, 0.22);
         border-radius: 14px;
         padding: 14px 12px;
         text-align: center;
@@ -202,7 +202,7 @@ st.markdown("""
         font-family: 'Rajdhani', sans-serif;
         font-size: 1.15rem;
         font-weight: 700;
-        color: #0F172A;
+        color: #FFFFFF;
         margin-bottom: 2px;
         white-space: nowrap;
         overflow: hidden;
@@ -210,12 +210,12 @@ st.markdown("""
     }
     .card-player-id {
         font-size: 0.72rem;
-        color: #475569;
+        color: #94A3B8;
         margin-bottom: 8px;
     }
     .card-score-pill {
-        background: #F8FAFC;
-        border: 1px solid rgba(15, 23, 42, 0.08);
+        background: #09061A;
+        border: 1px solid rgba(139, 92, 246, 0.22);
         border-radius: 8px;
         padding: 5px 10px;
         display: flex;
@@ -225,7 +225,7 @@ st.markdown("""
     }
     .score-label {
         font-size: 0.65rem;
-        color: #475569;
+        color: #94A3B8;
         font-weight: 600;
         letter-spacing: 0.5px;
     }
@@ -262,8 +262,8 @@ st.markdown("""
 
     /* Hero Spotlight Cards */
     .hero-spotlight {
-        background: #FFFFFF;
-        border: 1px solid rgba(15, 23, 42, 0.09);
+        background: rgba(19, 15, 48, 0.88);
+        border: 1px solid rgba(139, 92, 246, 0.22);
         border-radius: 16px;
         padding: 20px;
         display: flex;
@@ -285,7 +285,7 @@ st.markdown("""
         font-family: 'Rajdhani', sans-serif;
         font-size: 1.55rem;
         font-weight: 700;
-        color: #0F172A;
+        color: #FFFFFF;
         letter-spacing: 0.5px;
         margin-top: 18px;
         margin-bottom: 12px;
@@ -296,8 +296,8 @@ st.markdown("""
 
     /* Glass Container */
     .glass-box {
-        background: #FFFFFF;
-        border: 1px solid rgba(15, 23, 42, 0.08);
+        background: rgba(19, 15, 48, 0.88);
+        border: 1px solid rgba(139, 92, 246, 0.22);
         border-radius: 14px;
         padding: 20px;
         margin-bottom: 20px;
@@ -403,7 +403,7 @@ def apply_rr_theme(fig, title: str = "", height: int = 400, x_title: str = "", y
     fig.update_layout(
         title=dict(
             text=f"<b>{title}</b>",
-            font=dict(size=14, color="#0F172A", family="Rajdhani, Plus Jakarta Sans, Inter, sans-serif"),
+            font=dict(size=14, color="#FFFFFF", family="Rajdhani, Plus Jakarta Sans, Inter, sans-serif"),
             x=0.01,
             y=0.96
         ),
@@ -419,22 +419,22 @@ def apply_rr_theme(fig, title: str = "", height: int = 400, x_title: str = "", y
             y=1.02,
             xanchor="right",
             x=1,
-            font=dict(size=11, color="#0F172A"),
+            font=dict(size=11, color="#FFFFFF"),
             bgcolor="rgba(255,255,255,0.95)"
         ),
         xaxis=dict(
             showgrid=True,
             gridcolor="#F1F5F9",
             linecolor="#CBD5E1",
-            tickfont=dict(color="#334155", size=11),
-            title=dict(text=x_title, font=dict(color="#0F172A", size=12, family="Inter"))
+            tickfont=dict(color="#CBD5E1", size=11),
+            title=dict(text=x_title, font=dict(color="#FFFFFF", size=12, family="Inter"))
         ),
         yaxis=dict(
             showgrid=True,
             gridcolor="#F1F5F9",
             linecolor="#CBD5E1",
-            tickfont=dict(color="#334155", size=11),
-            title=dict(text=y_title, font=dict(color="#0F172A", size=12, family="Inter"))
+            tickfont=dict(color="#CBD5E1", size=11),
+            title=dict(text=y_title, font=dict(color="#FFFFFF", size=12, family="Inter"))
         )
     )
     return fig
@@ -470,10 +470,10 @@ with st.sidebar:
     st.markdown("""
     <div style="padding: 10px 0 16px 0;">
         <span class="badge-pill badge-pink">RAJASTHAN ROYALS</span>
-        <h2 style="font-family: 'Rajdhani', sans-serif; font-size: 1.8rem; margin: 4px 0 2px 0; color: #0F172A;">
+        <h2 style="font-family: 'Rajdhani', sans-serif; font-size: 1.8rem; margin: 4px 0 2px 0; color: #FFFFFF;">
             ⚡ SUPERR SELECTOR
         </h2>
-        <p style="font-size: 0.8rem; color: #475569; margin: 0;">
+        <p style="font-size: 0.8rem; color: #94A3B8; margin: 0;">
             Cricket Performance Intelligence & Squad Strategy
         </p>
     </div>
@@ -499,7 +499,7 @@ with st.sidebar:
     st.markdown("---")
     st.markdown("""
     <div style="font-size: 0.75rem; color: #64748B; line-height: 1.6;">
-        <b style="color: #475569;">PLATFORM SPECIFICATIONS</b><br>
+        <b style="color: #94A3B8;">PLATFORM SPECIFICATIONS</b><br>
         • Season: IPL 2027 Strategy<br>
         • Matches: 837 Indexed<br>
         • Deliveries: 193,976 Analysed<br>
@@ -517,10 +517,10 @@ if nav_selection == "👑 Certified Live Showcase (Interactive)":
     <div class="rr-header-banner">
         <span class="badge-pill badge-pink">CERTIFIED PRODUCTION DASHBOARD</span>
         <span class="badge-pill badge-blue">100% AUTHENTIC REAL PLAYERS</span>
-        <h1 style="font-family: 'Rajdhani', sans-serif; font-size: 2.3rem; margin: 6px 0 8px 0; color: #0F172A;">
+        <h1 style="font-family: 'Rajdhani', sans-serif; font-size: 2.3rem; margin: 6px 0 8px 0; color: #FFFFFF;">
             Rajasthan Royals SupeRR Selector — Certified Live Showcase
         </h1>
-        <p style="font-size: 0.95rem; color: #334155; margin: 0; max-width: 950px; line-height: 1.5;">
+        <p style="font-size: 0.95rem; color: #CBD5E1; margin: 0; max-width: 950px; line-height: 1.5;">
             Fully integrated certified interactive dashboard featuring real-time Chart.js telemetry,
             Rajasthan Royals design system, dynamic player spotlights, and instant cohort filters.
         </p>
@@ -534,7 +534,7 @@ if nav_selection == "👑 Certified Live Showcase (Interactive)":
     if html_file.exists():
         html_code = html_file.read_text(encoding="utf-8")
         import streamlit.components.v1 as components
-        components.html(html_code, height=1380, scrolling=True)
+        components.html(html_code, height=1400, scrolling=True)
     else:
         st.error("Certified Dashboard HTML file not found.")
 
@@ -545,10 +545,10 @@ elif nav_selection == "1. Overview":
     st.markdown("""
     <div class="rr-header-banner">
         <span class="badge-pill badge-pink">EXECUTIVE INTELLIGENCE BRIEF</span>
-        <h1 style="font-family: 'Rajdhani', sans-serif; font-size: 2.3rem; margin: 6px 0 8px 0; color: #0F172A;">
+        <h1 style="font-family: 'Rajdhani', sans-serif; font-size: 2.3rem; margin: 6px 0 8px 0; color: #FFFFFF;">
             SUPERR SELECTOR — RAJASTHAN ROYALS SEASON 2
         </h1>
-        <p style="font-size: 0.95rem; color: #334155; margin: 0; max-width: 950px; line-height: 1.5;">
+        <p style="font-size: 0.95rem; color: #CBD5E1; margin: 0; max-width: 950px; line-height: 1.5;">
             Official player scouting and performance intelligence platform for Rajasthan Royals. 
             Evaluating pressure-tested reliability across 193,976 deliveries using empirical situational leverage, 
             multidimensional stress indices, and Bayesian shrinkage.
@@ -578,7 +578,7 @@ elif nav_selection == "1. Overview":
         st.markdown("""
         <div class="kpi-card">
             <div class="kpi-title">Unique Players</div>
-            <div class="kpi-value" style="color: #0F172A;">891</div>
+            <div class="kpi-value" style="color: #FFFFFF;">891</div>
             <div class="kpi-subtitle">Global T20 Talent Pool</div>
         </div>
         """, unsafe_allow_html=True)
@@ -614,25 +614,25 @@ elif nav_selection == "1. Overview":
             </div>
             <div style="flex: 1;">
                 <span class="badge-pill badge-pink">#1 RANKED BATTER • ELITE</span>
-                <div style="font-family: 'Rajdhani', sans-serif; font-size: 1.6rem; font-weight: 700; color: #0F172A;">
+                <div style="font-family: 'Rajdhani', sans-serif; font-size: 1.6rem; font-weight: 700; color: #FFFFFF;">
                     Jason Holder
                 </div>
-                <div style="font-size: 0.78rem; color: #475569; margin-bottom: 6px;">
+                <div style="font-size: 0.78rem; color: #94A3B8; margin-bottom: 6px;">
                     Player ID: 2633 | RHB All-Rounder | 59 Matches
                 </div>
                 <div style="display: flex; gap: 18px; align-items: baseline; border-top: 1px solid #E2E8F0; padding-top: 8px;">
                     <div>
-                        <span style="font-size: 0.68rem; color: #475569; text-transform: uppercase;">Reliability Index</span><br>
+                        <span style="font-size: 0.68rem; color: #94A3B8; text-transform: uppercase;">Reliability Index</span><br>
                         <b style="font-family: 'Rajdhani', sans-serif; font-size: 1.6rem; color: #E5097F;">66.84</b>
                     </div>
                     <div>
-                        <span style="font-size: 0.68rem; color: #475569; text-transform: uppercase;">HP Strike Rate</span><br>
+                        <span style="font-size: 0.68rem; color: #94A3B8; text-transform: uppercase;">HP Strike Rate</span><br>
                         <b style="font-family: 'Rajdhani', sans-serif; font-size: 1.3rem; color: #1D4ED8;">175.30</b>
                         <span style="font-size: 0.75rem; color: #10B981;"> (+108.0)</span>
                     </div>
                     <div>
-                        <span style="font-size: 0.68rem; color: #475569; text-transform: uppercase;">95% Confidence</span><br>
-                        <span style="font-size: 0.85rem; color: #334155;">[58.05 - 73.99]</span>
+                        <span style="font-size: 0.68rem; color: #94A3B8; text-transform: uppercase;">95% Confidence</span><br>
+                        <span style="font-size: 0.85rem; color: #CBD5E1;">[58.05 - 73.99]</span>
                     </div>
                 </div>
             </div>
@@ -647,25 +647,25 @@ elif nav_selection == "1. Overview":
             </div>
             <div style="flex: 1;">
                 <span class="badge-pill badge-blue">#1 RANKED BOWLER • STRONG</span>
-                <div style="font-family: 'Rajdhani', sans-serif; font-size: 1.6rem; font-weight: 700; color: #0F172A;">
+                <div style="font-family: 'Rajdhani', sans-serif; font-size: 1.6rem; font-weight: 700; color: #FFFFFF;">
                     Mitchell Marsh
                 </div>
-                <div style="font-size: 0.78rem; color: #475569; margin-bottom: 6px;">
+                <div style="font-size: 0.78rem; color: #94A3B8; margin-bottom: 6px;">
                     Player ID: 818 | Right-arm Medium-Fast | 19 Matches
                 </div>
                 <div style="display: flex; gap: 18px; align-items: baseline; border-top: 1px solid #E2E8F0; padding-top: 8px;">
                     <div>
-                        <span style="font-size: 0.68rem; color: #475569; text-transform: uppercase;">Reliability Index</span><br>
+                        <span style="font-size: 0.68rem; color: #94A3B8; text-transform: uppercase;">Reliability Index</span><br>
                         <b style="font-family: 'Rajdhani', sans-serif; font-size: 1.6rem; color: #1D4ED8;">61.86</b>
                     </div>
                     <div>
-                        <span style="font-size: 0.68rem; color: #475569; text-transform: uppercase;">HP Economy</span><br>
+                        <span style="font-size: 0.68rem; color: #94A3B8; text-transform: uppercase;">HP Economy</span><br>
                         <b style="font-family: 'Rajdhani', sans-serif; font-size: 1.3rem; color: #E5097F;">10.50</b>
                         <span style="font-size: 0.75rem; color: #10B981;"> (-1.96)</span>
                     </div>
                     <div>
-                        <span style="font-size: 0.68rem; color: #475569; text-transform: uppercase;">95% Confidence</span><br>
-                        <span style="font-size: 0.85rem; color: #334155;">[50.00 - 69.66]</span>
+                        <span style="font-size: 0.68rem; color: #94A3B8; text-transform: uppercase;">95% Confidence</span><br>
+                        <span style="font-size: 0.85rem; color: #CBD5E1;">[50.00 - 69.66]</span>
                     </div>
                 </div>
             </div>
@@ -750,7 +750,7 @@ elif nav_selection == "1. Overview":
             hole=0.55,
             marker=dict(colors=["#E5097F", "#00D2FF", "#334155"]),
             textinfo='label+value+percent',
-            textfont=dict(color="#0F172A", size=11, family="Inter")
+            textfont=dict(color="#FFFFFF", size=11, family="Inter")
         )])
         apply_rr_theme(fig_pie, title="TALENT POOL QUALIFICATION DISTRIBUTION (891 PLAYERS)", height=340)
         st.plotly_chart(fig_pie, use_container_width=True)
@@ -785,10 +785,10 @@ elif nav_selection == "2. Batting Intelligence":
     st.markdown("""
     <div class="rr-header-banner">
         <span class="badge-pill badge-pink">BATTING RELIABILITY INTELLIGENCE</span>
-        <h1 style="font-family: 'Rajdhani', sans-serif; font-size: 2.2rem; margin: 4px 0 6px 0; color: #0F172A;">
+        <h1 style="font-family: 'Rajdhani', sans-serif; font-size: 2.2rem; margin: 4px 0 6px 0; color: #FFFFFF;">
             Top 10 Certified Batters Under Pressure
         </h1>
-        <p style="font-size: 0.9rem; color: #334155; margin: 0;">
+        <p style="font-size: 0.9rem; color: #CBD5E1; margin: 0;">
             Evaluated using empirical pressure differential (HP Strike Rate, Dot-Ball Reduction, Dismissal Rate Suppression)
             with Bayesian sample shrinkage and 1,000-sample bootstrap confidence intervals.
         </p>
@@ -907,7 +907,7 @@ elif nav_selection == "2. Batting Intelligence":
         ),
         text=[f"{val:.2f}" for val in top10_batters["batter_reliability_index"]],
         textposition='outside',
-        textfont=dict(color="#0F172A", size=11, family="Inter")
+        textfont=dict(color="#FFFFFF", size=11, family="Inter")
     ))
     apply_rr_theme(fig_ci_b, title="BATTING RELIABILITY INDEX (POINT ESTIMATE ± 95% CONFIDENCE INTERVAL)", height=380, x_title="Batter Name", y_title="Reliability Index (0-100)", show_legend=False)
     st.plotly_chart(fig_ci_b, use_container_width=True)
@@ -921,7 +921,7 @@ elif nav_selection == "2. Batting Intelligence":
             name="Normal Strike Rate",
             x=m_bat["striker_name"],
             y=m_bat["strike_rate_normal"],
-            marker_color="#475569"
+            marker_color="#94A3B8"
         ))
         fig_sr.add_trace(go.Bar(
             name="High-Pressure Strike Rate",
@@ -939,7 +939,7 @@ elif nav_selection == "2. Batting Intelligence":
             name="Normal Dot %",
             x=m_bat["striker_name"],
             y=m_bat["dot_pct_normal"],
-            marker_color="#475569"
+            marker_color="#94A3B8"
         ))
         fig_dot.add_trace(go.Bar(
             name="High-Pressure Dot %",
@@ -960,7 +960,7 @@ elif nav_selection == "2. Batting Intelligence":
             name="Normal Dismissals / 100",
             x=m_bat["striker_name"],
             y=m_bat["dismissal_rate_per_100_normal"],
-            marker_color="#475569"
+            marker_color="#94A3B8"
         ))
         fig_dism.add_trace(go.Bar(
             name="HP Dismissals / 100",
@@ -1001,28 +1001,28 @@ elif nav_selection == "2. Batting Intelligence":
         </div>
         <div style="flex: 1;">
             <div style="display: flex; justify-content: space-between; align-items: center;">
-                <h3 style="font-family: 'Rajdhani', sans-serif; font-size: 1.8rem; color: #0F172A; margin: 0;">{selected_batter_name}</h3>
+                <h3 style="font-family: 'Rajdhani', sans-serif; font-size: 1.8rem; color: #FFFFFF; margin: 0;">{selected_batter_name}</h3>
                 <span class="badge-pill badge-pink">Rank #{b_profile['rank']} • {b_profile['reliability_grade']}</span>
             </div>
-            <div style="font-size: 0.85rem; color: #475569; margin-top: 4px;">
+            <div style="font-size: 0.85rem; color: #94A3B8; margin-top: 4px;">
                 Player ID: {b_profile['striker_id']} | Batting Style: {b_profile['batting_type']} | Archetype: {b_profile['archetype_name']}
             </div>
-            <hr style="border-color: #0F172A; margin: 12px 0;">
+            <hr style="border-color: #FFFFFF; margin: 12px 0;">
             <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px;">
                 <div>
-                    <span style="font-size: 0.7rem; color: #475569; text-transform: uppercase;">Reliability Index</span><br>
+                    <span style="font-size: 0.7rem; color: #94A3B8; text-transform: uppercase;">Reliability Index</span><br>
                     <b style="font-size: 1.4rem; color: #E5097F;">{b_profile['batter_reliability_index']:.2f}</b>
                 </div>
                 <div>
-                    <span style="font-size: 0.7rem; color: #475569; text-transform: uppercase;">HP Strike Rate</span><br>
+                    <span style="font-size: 0.7rem; color: #94A3B8; text-transform: uppercase;">HP Strike Rate</span><br>
                     <b style="font-size: 1.4rem; color: #1D4ED8;">{b_profile['strike_rate_high']:.2f}</b>
                 </div>
                 <div>
-                    <span style="font-size: 0.7rem; color: #475569; text-transform: uppercase;">Delta Strike Rate</span><br>
+                    <span style="font-size: 0.7rem; color: #94A3B8; text-transform: uppercase;">Delta Strike Rate</span><br>
                     <b style="font-size: 1.4rem; color: #10B981;">{b_profile['diff_strike_rate']:+.2f}</b>
                 </div>
                 <div>
-                    <span style="font-size: 0.7rem; color: #475569; text-transform: uppercase;">Delta Dot %</span><br>
+                    <span style="font-size: 0.7rem; color: #94A3B8; text-transform: uppercase;">Delta Dot %</span><br>
                     <b style="font-size: 1.4rem; color: #10B981;">{b_profile['diff_dot_pct']:+.2f}%</b>
                 </div>
             </div>
@@ -1041,10 +1041,10 @@ elif nav_selection == "3. Bowling Intelligence":
     st.markdown("""
     <div class="rr-header-banner">
         <span class="badge-pill badge-blue">BOWLING RELIABILITY INTELLIGENCE</span>
-        <h1 style="font-family: 'Rajdhani', sans-serif; font-size: 2.2rem; margin: 4px 0 6px 0; color: #0F172A;">
+        <h1 style="font-family: 'Rajdhani', sans-serif; font-size: 2.2rem; margin: 4px 0 6px 0; color: #FFFFFF;">
             Top 10 Certified Bowlers Under Pressure
         </h1>
-        <p style="font-size: 0.9rem; color: #334155; margin: 0;">
+        <p style="font-size: 0.9rem; color: #CBD5E1; margin: 0;">
             Evaluated using empirical pressure differential (HP Economy Control, Wicket-Taking Surge, Dot-Ball Escalation)
             with Bayesian sample shrinkage and 1,000-sample bootstrap confidence intervals.
         </p>
@@ -1163,7 +1163,7 @@ elif nav_selection == "3. Bowling Intelligence":
         ),
         text=[f"{val:.2f}" for val in top10_bowlers["bowler_reliability_index"]],
         textposition='outside',
-        textfont=dict(color="#0F172A", size=11, family="Inter")
+        textfont=dict(color="#FFFFFF", size=11, family="Inter")
     ))
     apply_rr_theme(fig_ci_bowl, title="BOWLING RELIABILITY INDEX (POINT ESTIMATE ± 95% CONFIDENCE INTERVAL)", height=380, x_title="Bowler Name", y_title="Reliability Index (0-100)", show_legend=False)
     st.plotly_chart(fig_ci_bowl, use_container_width=True)
@@ -1177,7 +1177,7 @@ elif nav_selection == "3. Bowling Intelligence":
             name="Normal Economy",
             x=m_bowl["bowler_name"],
             y=m_bowl["economy_rate_normal"],
-            marker_color="#475569"
+            marker_color="#94A3B8"
         ))
         fig_econ.add_trace(go.Bar(
             name="High-Pressure Economy",
@@ -1195,7 +1195,7 @@ elif nav_selection == "3. Bowling Intelligence":
             name="Normal Wickets/Over",
             x=m_bowl["bowler_name"],
             y=m_bowl["wickets_per_over_normal"],
-            marker_color="#475569"
+            marker_color="#94A3B8"
         ))
         fig_wpo.add_trace(go.Bar(
             name="HP Wickets/Over",
@@ -1216,7 +1216,7 @@ elif nav_selection == "3. Bowling Intelligence":
             name="Normal Dot %",
             x=m_bowl["bowler_name"],
             y=m_bowl["dot_pct_normal"],
-            marker_color="#475569"
+            marker_color="#94A3B8"
         ))
         fig_bdot.add_trace(go.Bar(
             name="HP Dot %",
@@ -1234,7 +1234,7 @@ elif nav_selection == "3. Bowling Intelligence":
             name="Normal Boundary Conceded %",
             x=m_bowl["bowler_name"],
             y=m_bowl["boundary_conceded_pct_normal"],
-            marker_color="#475569"
+            marker_color="#94A3B8"
         ))
         fig_bound.add_trace(go.Bar(
             name="HP Boundary Conceded %",
@@ -1262,29 +1262,29 @@ elif nav_selection == "3. Bowling Intelligence":
         </div>
         <div style="flex: 1;">
             <div style="display: flex; justify-content: space-between; align-items: center;">
-                <h3 style="font-family: 'Rajdhani', sans-serif; font-size: 1.8rem; color: #0F172A; margin: 0;">{selected_bowler_name}</h3>
+                <h3 style="font-family: 'Rajdhani', sans-serif; font-size: 1.8rem; color: #FFFFFF; margin: 0;">{selected_bowler_name}</h3>
                 <span class="badge-pill badge-blue">Rank #{bowl_profile['rank']} • {bowl_profile['reliability_grade']}</span>
             </div>
-            <div style="font-size: 0.85rem; color: #475569; margin-top: 4px;">
+            <div style="font-size: 0.85rem; color: #94A3B8; margin-top: 4px;">
                 Player ID: {bowl_profile['bowler_id']} | Type: {bowl_profile['bowling_type']} ({bowl_profile['pace_or_spin']}) | Archetype: {bowl_profile['archetype_name']}
             </div>
-            <hr style="border-color: #0F172A; margin: 12px 0;">
+            <hr style="border-color: #FFFFFF; margin: 12px 0;">
             <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px;">
                 <div>
-                    <span style="font-size: 0.7rem; color: #475569; text-transform: uppercase;">Reliability Index</span><br>
+                    <span style="font-size: 0.7rem; color: #94A3B8; text-transform: uppercase;">Reliability Index</span><br>
                     <b style="font-size: 1.4rem; color: #1D4ED8;">{bowl_profile['bowler_reliability_index']:.2f}</b>
                 </div>
                 <div>
-                    <span style="font-size: 0.7rem; color: #475569; text-transform: uppercase;">HP Economy</span><br>
+                    <span style="font-size: 0.7rem; color: #94A3B8; text-transform: uppercase;">HP Economy</span><br>
                     <b style="font-size: 1.4rem; color: #E5097F;">{bowl_profile['economy_rate_high']:.2f}</b>
                 </div>
                 <div>
-                    <span style="font-size: 0.7rem; color: #475569; text-transform: uppercase;">Delta Economy</span><br>
+                    <span style="font-size: 0.7rem; color: #94A3B8; text-transform: uppercase;">Delta Economy</span><br>
                     <b style="font-size: 1.4rem; color: #10B981;">{bowl_profile['diff_economy_rate']:+.2f}</b>
                 </div>
                 <div>
-                    <span style="font-size: 0.7rem; color: #475569; text-transform: uppercase;">HP Wickets/Over</span><br>
-                    <b style="font-size: 1.4rem; color: #334155;">{bowl_profile['wickets_per_over_high']:.3f}</b>
+                    <span style="font-size: 0.7rem; color: #94A3B8; text-transform: uppercase;">HP Wickets/Over</span><br>
+                    <b style="font-size: 1.4rem; color: #CBD5E1;">{bowl_profile['wickets_per_over_high']:.3f}</b>
                 </div>
             </div>
             <div style="font-size: 0.8rem; color: #64748B; margin-top: 14px; border-top: 1px solid #E2E8F0; padding-top: 8px;">
@@ -1302,10 +1302,10 @@ elif nav_selection == "4. Pressure Analysis":
     st.markdown("""
     <div class="rr-header-banner">
         <span class="badge-pill badge-gold">QUANTITATIVE PRESSURE FRAMEWORK</span>
-        <h1 style="font-family: 'Rajdhani', sans-serif; font-size: 2.2rem; margin: 4px 0 6px 0; color: #0F172A;">
+        <h1 style="font-family: 'Rajdhani', sans-serif; font-size: 2.2rem; margin: 4px 0 6px 0; color: #FFFFFF;">
             Delivery-Level Pressure Mechanics & Distribution
         </h1>
-        <p style="font-size: 0.9rem; color: #334155; margin: 0;">
+        <p style="font-size: 0.9rem; color: #CBD5E1; margin: 0;">
             A continuous 0–100 scale evaluating physical match tension across required run rate, resource depletion,
             match phase multiplier, and tactical crunch conditions.
         </p>
@@ -1318,7 +1318,7 @@ elif nav_selection == "4. Pressure Analysis":
         st.markdown("""
         <div class="kpi-card" style="border-top: 3px solid #10B981;">
             <div class="kpi-title" style="color: #10B981;">LOW PRESSURE (0–40)</div>
-            <div style="font-size: 0.85rem; color: #334155; margin-top: 6px;">
+            <div style="font-size: 0.85rem; color: #CBD5E1; margin-top: 6px;">
                 Early overs, full wickets in hand, manageable run rates (RRR &lt; 7.5). Batters enjoy baseline conditions.
             </div>
             <div style="font-size: 0.75rem; color: #64748B; margin-top: 8px;">
@@ -1331,7 +1331,7 @@ elif nav_selection == "4. Pressure Analysis":
         st.markdown("""
         <div class="kpi-card" style="border-top: 3px solid #38BDF8;">
             <div class="kpi-title" style="color: #1D4ED8; font-weight: 800;">MODERATE (40–65)</div>
-            <div style="font-size: 0.85rem; color: #334155; margin-top: 6px;">
+            <div style="font-size: 0.85rem; color: #CBD5E1; margin-top: 6px;">
                 Middle overs consolidation, standard competitive T20 tempo (RRR 7.5–9.5). Typical match conditions.
             </div>
             <div style="font-size: 0.75rem; color: #64748B; margin-top: 8px;">
@@ -1344,7 +1344,7 @@ elif nav_selection == "4. Pressure Analysis":
         st.markdown("""
         <div class="kpi-card" style="border-top: 3px solid #FFB703;">
             <div class="kpi-title" style="color: #B45309; font-weight: 800;">HIGH PRESSURE (65–85)</div>
-            <div style="font-size: 0.85rem; color: #334155; margin-top: 6px;">
+            <div style="font-size: 0.85rem; color: #CBD5E1; margin-top: 6px;">
                 Elevated RRR (9.5–12.5), 3–5 wickets down, death overs initiation. Demands aggressive execution.
             </div>
             <div style="font-size: 0.75rem; color: #64748B; margin-top: 8px;">
@@ -1357,7 +1357,7 @@ elif nav_selection == "4. Pressure Analysis":
         st.markdown("""
         <div class="kpi-card" style="border-top: 3px solid #E5097F;">
             <div class="kpi-title" style="color: #E5097F;">EXTREME PRESSURE (85–100)</div>
-            <div style="font-size: 0.85rem; color: #334155; margin-top: 6px;">
+            <div style="font-size: 0.85rem; color: #CBD5E1; margin-top: 6px;">
                 Steep chase (RRR &gt; 12.5), 6+ wickets lost, final 3 overs. Margin for error is effectively zero.
             </div>
             <div style="font-size: 0.75rem; color: #64748B; margin-top: 8px;">
@@ -1415,8 +1415,8 @@ elif nav_selection == "4. Pressure Analysis":
     with p_c4:
         st.markdown("""
         <div class="glass-box" style="height: 380px; overflow-y: auto;">
-            <h4 style="font-family: 'Rajdhani', sans-serif; color: #0F172A; margin-top: 0;">🔬 Key Situational Pressure Indicators</h4>
-            <div style="font-size: 0.85rem; color: #334155; line-height: 1.6;">
+            <h4 style="font-family: 'Rajdhani', sans-serif; color: #FFFFFF; margin-top: 0;">🔬 Key Situational Pressure Indicators</h4>
+            <div style="font-size: 0.85rem; color: #CBD5E1; line-height: 1.6;">
                 <b style="color: #B45309; font-weight: 800;">1. Required Run Rate (RRR) Gradient:</b><br>
                 In second innings chases, pressure grows non-linearly with RRR escalation above the tournament par of 8.54 runs/over.<br><br>
                 <b style="color: #0C2356; font-weight: 800;">2. Resource Depletion Ratio:</b><br>
@@ -1437,10 +1437,10 @@ elif nav_selection == "5. Player Comparison":
     st.markdown("""
     <div class="rr-header-banner">
         <span class="badge-pill badge-pink">HEAD-TO-HEAD TACTICAL COMPARISON</span>
-        <h1 style="font-family: 'Rajdhani', sans-serif; font-size: 2.2rem; margin: 4px 0 6px 0; color: #0F172A;">
+        <h1 style="font-family: 'Rajdhani', sans-serif; font-size: 2.2rem; margin: 4px 0 6px 0; color: #FFFFFF;">
             Multi-Player Scouting Benchmark Tool
         </h1>
-        <p style="font-size: 0.9rem; color: #334155; margin: 0;">
+        <p style="font-size: 0.9rem; color: #CBD5E1; margin: 0;">
             Compare 2 to 3 qualified batters or 2 to 3 qualified bowlers across pressure-performance metrics.
             Notice: Batting and bowling indices are calibrated on distinct domain scales and must not be compared directly.
         </p>
@@ -1484,7 +1484,7 @@ elif nav_selection == "5. Player Comparison":
                             <span class="score-label">RELIABILITY INDEX</span>
                             <span class="score-value">{row['batter_reliability_index']:.2f}</span>
                         </div>
-                        <div style="font-size: 0.8rem; line-height: 1.8; color: #334155; text-align: left; padding: 0 8px;">
+                        <div style="font-size: 0.8rem; line-height: 1.8; color: #CBD5E1; text-align: left; padding: 0 8px;">
                             <b>HP Strike Rate:</b> <span style="color: #0C2356; font-weight: 800;">{row['strike_rate_high']:.2f}</span><br>
                             <b>Normal Strike Rate:</b> {row['strike_rate_normal']:.2f}<br>
                             <b>Delta Strike Rate:</b> <span style="color: #10B981;">{row['diff_strike_rate']:+.2f}</span><br>
@@ -1544,7 +1544,7 @@ elif nav_selection == "5. Player Comparison":
                             <span class="score-label">RELIABILITY INDEX</span>
                             <span class="score-value">{row['bowler_reliability_index']:.2f}</span>
                         </div>
-                        <div style="font-size: 0.8rem; line-height: 1.8; color: #334155; text-align: left; padding: 0 8px;">
+                        <div style="font-size: 0.8rem; line-height: 1.8; color: #CBD5E1; text-align: left; padding: 0 8px;">
                             <b>HP Economy:</b> <span style="color: #E5097F;">{row['economy_rate_high']:.2f}</span><br>
                             <b>Normal Economy:</b> {row['economy_rate_normal']:.2f}<br>
                             <b>Delta Economy:</b> <span style="color: #10B981;">{row['diff_economy_rate']:+.2f}</span><br>
@@ -1577,10 +1577,10 @@ elif nav_selection == "6. Player Rankings":
     st.markdown("""
     <div class="rr-header-banner">
         <span class="badge-pill badge-pink">CERTIFIED OFFICIAL RANKINGS</span>
-        <h1 style="font-family: 'Rajdhani', sans-serif; font-size: 2.2rem; margin: 4px 0 6px 0; color: #0F172A;">
+        <h1 style="font-family: 'Rajdhani', sans-serif; font-size: 2.2rem; margin: 4px 0 6px 0; color: #FFFFFF;">
             Full Squad Player Rankings & Data Export
         </h1>
-        <p style="font-size: 0.9rem; color: #334155; margin: 0;">
+        <p style="font-size: 0.9rem; color: #CBD5E1; margin: 0;">
             Browse certified Top 10 lists and all qualified cohorts with search, filters, and direct CSV download.
             Rankings strictly preserve certified Task 07 empirical ordering.
         </p>
@@ -1792,10 +1792,10 @@ elif nav_selection == "7. Methodology & Validation":
     st.markdown("""
     <div class="rr-header-banner">
         <span class="badge-pill badge-pink">SCIENTIFIC RIGOR & TRANSPARENCY</span>
-        <h1 style="font-family: 'Rajdhani', sans-serif; font-size: 2.2rem; margin: 4px 0 6px 0; color: #0F172A;">
+        <h1 style="font-family: 'Rajdhani', sans-serif; font-size: 2.2rem; margin: 4px 0 6px 0; color: #FFFFFF;">
             Methodology, Validation & Governance Disclosures
         </h1>
-        <p style="font-size: 0.9rem; color: #334155; margin: 0;">
+        <p style="font-size: 0.9rem; color: #CBD5E1; margin: 0;">
             Complete audit trail detailing dataset coverage, exclusion criteria, statistical shrinkage,
             confidence interval interpretation, and machine learning governance.
         </p>
@@ -1806,7 +1806,7 @@ elif nav_selection == "7. Methodology & Validation":
     st.markdown("<div class='section-title'>1. Empirical Dataset Coverage & Exclusions</div>", unsafe_allow_html=True)
     st.markdown("""
     <div class="glass-box">
-        <div style="font-size: 0.85rem; color: #334155; line-height: 1.6;">
+        <div style="font-size: 0.85rem; color: #CBD5E1; line-height: 1.6;">
             <b>• Total Indexed Scope:</b> 194,014 raw delivery records across 837 professional T20 encounters (340 IPL + 497 T20I matches).<br>
             <b>• Cleaned Production Cohort:</b> Exactly <b>193,976 deliveries</b> across 837 matches.<br>
             <b>• Excluded Deliveries:</b><br>
@@ -1821,7 +1821,7 @@ elif nav_selection == "7. Methodology & Validation":
     st.markdown("<div class='section-title'>2. Statistical Qualification Rules</div>", unsafe_allow_html=True)
     st.markdown("""
     <div class="glass-box">
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.85rem; color: #334155;">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.85rem; color: #CBD5E1;">
             <div>
                 <b style="color: #E5097F; font-size: 1rem;">🏏 Batting Qualification:</b><br>
                 1. <b>High-Pressure Exposure:</b> ≥ 30 balls faced in High/Extreme pressure situations (Score ≥ 65).<br>
@@ -1844,9 +1844,9 @@ elif nav_selection == "7. Methodology & Validation":
     st.markdown("<div class='section-title'>3. Empirical Bayes Shrinkage & Bootstrap Estimation</div>", unsafe_allow_html=True)
     st.markdown("""
     <div class="glass-box">
-        <div style="font-size: 0.85rem; color: #334155; line-height: 1.6;">
+        <div style="font-size: 0.85rem; color: #CBD5E1; line-height: 1.6;">
             <b>• Empirical Bayes Shrinkage:</b> Small-sample volatility is controlled by shrinking raw performance differentials toward the qualified cohort mean based on effective sample weight:
-            <div style="background: #F1F5F9; border: 1px solid #CBD5E1; padding: 10px 14px; border-radius: 8px; font-family: monospace; color: #0F172A; font-weight: 600; margin: 8px 0;">
+            <div style="background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.1); padding: 10px 14px; border-radius: 8px; font-family: monospace; color: #FFFFFF; font-weight: 600; margin: 8px 0;">
                 Shrunk_Metric = w_i × Raw_Metric_i + (1 - w_i) × Cohort_Mean, where w_i = Effective_Balls_i / (Effective_Balls_i + K)
             </div>
             <b>• Bootstrap Confidence Intervals:</b> 1,000 resamples per player establish 95% confidence intervals (<code>ci_lower_95</code>, <code>ci_upper_95</code>).<br>
@@ -1860,7 +1860,7 @@ elif nav_selection == "7. Methodology & Validation":
     st.markdown("""
     <div class="glass-box" style="border-left: 4px solid #E5097F;">
         <h4 style="color: #E5097F; margin-top: 0;">⚠️ Mandatory Model Integrity Statement</h4>
-        <div style="font-size: 0.85rem; color: #334155; line-height: 1.6;">
+        <div style="font-size: 0.85rem; color: #CBD5E1; line-height: 1.6;">
             <b>1. Task06 Supervised ML Predictions Discarded:</b><br>
             An internal audit identified target leakage in Task06 supervised regression models (features accidentally encapsulated constituent components of the reliability index). In accordance with strict sports analytics ethics, <b>Task06 ML predictions are 100% EXCLUDED from generating or adjusting player rankings</b>. The official rankings are derived solely from audited Task 05 and Task 07 empirical formulations.<br><br>
             <b>2. Task06 K-Means Archetypes Status:</b><br>
@@ -1873,8 +1873,8 @@ elif nav_selection == "7. Methodology & Validation":
     st.markdown("<div class='section-title'>5. System Verification & Validation Status</div>", unsafe_allow_html=True)
     st.markdown("""
     <div class="glass-box">
-        <table style="width: 100%; font-size: 0.85rem; border-collapse: collapse; color: #334155;">
-            <tr style="border-bottom: 1px solid #CBD5E1; text-align: left; color: #475569;">
+        <table style="width: 100%; font-size: 0.85rem; border-collapse: collapse; color: #CBD5E1;">
+            <tr style="border-bottom: 1px solid #CBD5E1; text-align: left; color: #94A3B8;">
                 <th style="padding: 8px;">Audit Dimension</th>
                 <th style="padding: 8px;">Check Description</th>
                 <th style="padding: 8px;">Audited Value</th>
@@ -1915,7 +1915,7 @@ elif nav_selection == "7. Methodology & Validation":
 st.markdown("""
 <div class="rr-footer">
     SUPERR SELECTOR | Cricket Performance Intelligence | Season 2<br>
-    <span style="font-size: 0.75rem; color: #475569;">
+    <span style="font-size: 0.75rem; color: #94A3B8;">
         Built for Rajasthan Royals IPL 2027 Auction Strategy • Empirical Cricket Data Science Platform
     </span>
 </div>
