@@ -1,0 +1,90 @@
+{
+  "total_deliveries": 193976,
+  "total_matches": 837,
+  "unique_players": 891,
+  "batting_pressure_cat_dist": {
+    "Moderate": 104755,
+    "Low": 63979,
+    "High": 15617,
+    "Extreme": 9625
+  },
+  "bowling_pressure_cat_dist": {
+    "Moderate": 145419,
+    "Low": 33917,
+    "High": 12945,
+    "Extreme": 1695
+  },
+  "phase_dist": {
+    "Middle": 89277,
+    "Powerplay": 61772,
+    "Death": 42927
+  },
+  "phase_batting_pressure_mean": {
+    "Death": 59.11113285344888,
+    "Middle": 46.38766109972334,
+    "Powerplay": 40.09889480670854
+  },
+  "phase_bowling_pressure_mean": {
+    "Death": 51.830644815617205,
+    "Middle": 48.97045868476763,
+    "Powerplay": 48.38585103283041
+  },
+  "innings_batting_pressure_mean": {
+    "1": 49.498346855586256,
+    "2": 44.64980592241248
+  },
+  "innings_bowling_pressure_mean": {
+    "1": 51.01658141768084,
+    "2": 47.64163442918997
+  },
+  "batting_pressure_histogram": {
+    "bins": [
+      0,
+      40,
+      65,
+      85,
+      100
+    ],
+    "labels": [
+      "Low (0-40)",
+      "Moderate (40-65)",
+      "High (65-85)",
+      "Extreme (85-100)"
+    ],
+    "counts": [
+      63979,
+      104755,
+      15617,
+      9625
+    ]
+  },
+  "bowling_pressure_histogram": {
+    "bins": [
+      0,
+      40,
+      65,
+      85,
+      100
+    ],
+    "labels": [
+      "Low (0-40)",
+      "Moderate (40-65)",
+      "High (65-85)",
+      "Extreme (85-100)"
+    ],
+    "counts": [
+      33917,
+      145419,
+      12945,
+      1695
+    ]
+  },
+  "innings_breakdown": {
+    "innings_1_deliveries": 102054,
+    "innings_2_deliveries": 91922,
+    "innings_1_bat_pressure_mean": 49.498346855586256,
+    "innings_2_bat_pressure_mean": 44.64980592241248,
+    "innings_1_bowl_pressure_mean": 51.016581417680825,
+    "innings_2_bowl_pressure_mean": 47.64163442918997
+  }
+}
