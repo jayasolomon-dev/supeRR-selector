@@ -23,6 +23,33 @@ def generate_dashboard():
         
     batters = data["batters"]
     bowlers = data["bowlers"]
+
+    # Ensure empirical high-pressure metrics are attached
+    b_csv = base_dir / "Data" / "analytics" / "task_05_batter_metrics.csv"
+    bw_csv = base_dir / "Data" / "analytics" / "task_05_bowler_metrics.csv"
+    if b_csv.exists() and bw_csv.exists():
+        import pandas as pd
+        b_df = pd.read_csv(b_csv).set_index("striker_id")
+        bw_df = pd.read_csv(bw_csv).set_index("bowler_id")
+        for b in batters:
+            pid = b["id"]
+            if pid in b_df.index:
+                row = b_df.loc[pid]
+                b["dot_pct_high"] = round(float(row["dot_pct_high"]), 1)
+                b["boundary_ball_pct_high"] = round(float(row["boundary_ball_pct_high"]), 1)
+                b["dismissal_rate_high"] = round(float(row["dismissal_rate_per_100_high"]), 1)
+                b["sr_high"] = round(float(row["strike_rate_high"]), 1)
+                b["sr_norm"] = round(float(row["strike_rate_normal"]), 1)
+        for bw in bowlers:
+            pid = bw["id"]
+            if pid in bw_df.index:
+                row = bw_df.loc[pid]
+                bw["dot_pct_high"] = round(float(row["dot_pct_high"]), 1)
+                bw["boundary_conceded_pct_high"] = round(float(row["boundary_conceded_pct_high"]), 1)
+                bw["wpo_high"] = round(float(row["wickets_per_over_high"]), 2)
+                bw["wpo_norm"] = round(float(row["wickets_per_over_normal"]), 2)
+                bw["econ_high"] = round(float(row["economy_rate_high"]), 2)
+                bw["econ_norm"] = round(float(row["economy_rate_normal"]), 2)
     
     print(f"Loaded {len(batters)} batters and {len(bowlers)} bowlers.")
     
@@ -277,48 +304,7 @@ def generate_dashboard():
       filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.5));
     }
 
-    .sidebar-footer {
-      padding: 20px 16px;
-      position: relative;
-      background: linear-gradient(180deg, transparent 0%, rgba(10, 6, 26, 0.95) 100%);
-      border-top: 1px solid rgba(255, 255, 255, 0.06);
-      text-align: center;
-      overflow: hidden;
-      flex-shrink: 0;
-    }
 
-    .sidebar-footer::before {
-      content: "";
-      position: absolute;
-      bottom: 0; left: 0; right: 0; height: 90px;
-      background: url('https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=400&q=40') bottom center / cover no-repeat;
-      opacity: 0.15;
-      mix-blend-mode: luminosity;
-      pointer-events: none;
-    }
-
-    .slogan-script {
-      font-family: var(--font-script);
-      font-size: 18px;
-      color: #FF5EA6;
-      line-height: 1.2;
-      margin-bottom: 12px;
-      position: relative;
-      text-shadow: 0 0 10px rgba(229, 9, 127, 0.5);
-    }
-
-    .superr-badge-mini {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 7px;
-      font-size: 11.5px;
-      font-weight: 800;
-      color: var(--rr-gold-light);
-      letter-spacing: 0.8px;
-      text-transform: uppercase;
-      position: relative;
-    }
 
     /* ==========================================================================
        MAIN CONTENT AUTO-LAYOUT WRAPPER
@@ -457,23 +443,6 @@ def generate_dashboard():
       flex-shrink: 0;
     }
 
-    .header-stadium-graphic {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      background: rgba(255, 255, 255, 0.04);
-      padding: 6px 14px;
-      border-radius: 30px;
-      border: 1px solid rgba(255, 255, 255, 0.08);
-    }
-
-    .stadium-tagline {
-      font-size: 12.5px;
-      font-weight: 700;
-      color: #FF75B5;
-      letter-spacing: 0.5px;
-    }
-
     /* ==========================================================================
        STAGGERED VIEW TRANSITION ANIMATIONS
        ========================================================================== */
@@ -562,6 +531,38 @@ def generate_dashboard():
       justify-content: space-between;
       margin-bottom: 14px;
       flex-shrink: 0;
+    }
+
+    .card-header-stacked {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 3px;
+      margin-bottom: 12px;
+      min-height: 40px;
+      justify-content: center;
+    }
+
+    .card-header-stacked .card-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: #FFFFFF;
+      line-height: 1.2;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 100%;
+    }
+
+    .card-header-stacked .card-player-sub {
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: 0.2px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 100%;
     }
 
     .card-title-group {
@@ -1083,6 +1084,7 @@ def generate_dashboard():
     .icon-gold { background: rgba(245, 158, 11, 0.12); border-color: rgba(245, 158, 11, 0.3); color: var(--rr-gold-light); }
     .icon-blue { background: rgba(0, 210, 255, 0.12); border-color: rgba(0, 210, 255, 0.3); color: var(--rr-cyan); }
     .icon-purple { background: rgba(139, 92, 246, 0.12); border-color: rgba(139, 92, 246, 0.3); color: var(--rr-purple); }
+    .icon-green { background: rgba(16, 185, 129, 0.12); border-color: rgba(16, 185, 129, 0.35); color: #10B981; box-shadow: 0 0 12px rgba(16, 185, 129, 0.15); }
 
     .intel-top-data {
       display: flex;
@@ -1385,14 +1387,14 @@ def generate_dashboard():
 
     .batting-bottom-4col {
       display: grid;
-      grid-template-columns: 1.15fr 1.05fr 1fr 1.2fr;
-      gap: 16px;
+      grid-template-columns: minmax(0, 1.15fr) minmax(0, 1.05fr) minmax(0, 1fr) minmax(0, 1.2fr);
+      gap: 14px;
     }
 
     .bowling-bottom-5col {
       display: grid;
-      grid-template-columns: 1.15fr 1.15fr 1.05fr 1.05fr 1.25fr;
-      gap: 16px;
+      grid-template-columns: minmax(0, 1.15fr) minmax(0, 1.15fr) minmax(0, 1.05fr) minmax(0, 1.05fr) minmax(0, 1.25fr);
+      gap: 14px;
     }
 
     .kpi-indicator-table {
@@ -1796,6 +1798,9 @@ def generate_dashboard():
       border: 1.5px solid var(--rr-pink);
       flex-shrink: 0;
     }
+    .table-player-thumb.bowler-thumb {
+      border-color: #38BDF8 !important;
+    }
 
     .core-pill-badge {
       background: rgba(139, 92, 246, 0.25);
@@ -1862,6 +1867,21 @@ def generate_dashboard():
       color: var(--rr-gold-light);
       margin-bottom: 6px;
       filter: drop-shadow(0 0 10px rgba(245, 158, 11, 0.5));
+    }
+
+    .rr-official-crest-banner {
+      width: 54px;
+      height: 54px;
+      max-width: 54px;
+      max-height: 54px;
+      object-fit: contain;
+      margin-bottom: 8px;
+      filter: drop-shadow(0 4px 14px rgba(229, 9, 127, 0.5));
+      transition: transform 0.25s ease;
+      display: block;
+    }
+    .rr-ready-banner:hover .rr-official-crest-banner {
+      transform: scale(1.08);
     }
 
     .rr-ready-banner h4 {
@@ -2073,12 +2093,25 @@ def generate_dashboard():
       }
     }
 
+    @media (max-width: 1420px) {
+      .bowling-bottom-5col {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+      .bowling-bottom-5col > div:nth-child(4),
+      .bowling-bottom-5col > div:nth-child(5) {
+        grid-column: span 1;
+      }
+      .batting-bottom-4col {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
     @media (max-width: 1200px) {
       .batting-bottom-4col {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
       .bowling-bottom-5col {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, minmax(0, 1fr));
       }
       .pressure-mid-3col {
         grid-template-columns: 1fr;
@@ -2151,31 +2184,32 @@ def generate_dashboard():
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 12px;
+      gap: 8px;
       width: 100%;
       height: 100%;
-      padding: 6px 0;
+      padding: 4px 0;
       box-sizing: border-box;
-      overflow: hidden;
+      overflow: visible;
     }
 
     .donut-chart-box-compact {
-      width: 96px;
-      height: 96px;
-      min-width: 96px;
-      min-height: 96px;
-      max-width: 96px;
-      max-height: 96px;
+      width: 86px;
+      height: 86px;
+      min-width: 86px;
+      min-height: 86px;
+      max-width: 86px;
+      max-height: 86px;
       position: relative;
       display: flex;
       align-items: center;
       justify-content: center;
       flex-shrink: 0;
+      overflow: visible;
     }
 
     .donut-chart-box-compact canvas {
-      width: 96px !important;
-      height: 96px !important;
+      width: 86px !important;
+      height: 86px !important;
       display: block;
     }
 
@@ -2190,32 +2224,45 @@ def generate_dashboard():
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      width: 100%;
-      line-height: 1.1;
+      width: 52px;
+      max-width: 52px;
+      height: 52px;
+      max-height: 52px;
+      overflow: hidden;
+      line-height: 1;
       z-index: 2;
+      box-sizing: border-box;
     }
 
     .donut-center-num-compact {
-      font-size: 16px;
-      font-weight: 900;
+      font-size: 13.5px;
+      font-weight: 800;
       color: #FFFFFF;
       line-height: 1;
-      letter-spacing: -0.5px;
+      letter-spacing: -0.3px;
+      white-space: nowrap;
+      text-align: center;
     }
 
     .donut-center-text-compact {
-      font-size: 8px;
+      font-size: 7.5px;
       font-weight: 700;
       color: #94A3B8;
       text-transform: uppercase;
       letter-spacing: 0.3px;
-      margin-top: 2px;
+      margin-top: 1.5px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 48px;
+      line-height: 1;
+      text-align: center;
     }
 
     .donut-legend-compact {
       display: flex;
       flex-direction: column;
-      gap: 8px;
+      gap: 5px;
       flex-shrink: 0;
       min-width: 0;
     }
@@ -2223,29 +2270,118 @@ def generate_dashboard():
     .compact-legend-row {
       display: flex;
       align-items: center;
-      gap: 6px;
-      font-size: 11px;
+      gap: 5px;
+      font-size: 10.5px;
       color: #E2E8F0;
       white-space: nowrap;
     }
 
     .compact-legend-dot {
-      width: 8px;
-      height: 8px;
+      width: 7px;
+      height: 7px;
       border-radius: 2px;
       flex-shrink: 0;
     }
 
     .compact-legend-label {
-      font-size: 11px;
+      font-size: 10px;
       font-weight: 600;
       color: #CBD5E1;
     }
 
     .compact-legend-val {
-      font-size: 11.5px;
+      font-size: 11px;
       font-weight: 800;
       margin-left: 2px;
+    }
+
+    /* Clickable Player Rows & Active Selection */
+    .clickable-player-row {
+      cursor: pointer;
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      user-select: none;
+      position: relative;
+    }
+    .clickable-player-row:hover {
+      background: rgba(229, 9, 127, 0.09) !important;
+      transform: translateX(3px);
+    }
+    .clickable-player-row.active-player-row {
+      background: rgba(229, 9, 127, 0.18) !important;
+      border-left: 3px solid #E5097F !important;
+    }
+    .clickable-player-row.active-player-row td {
+      color: #FFFFFF !important;
+      font-weight: 600;
+    }
+    .clickable-player-row.active-player-row strong {
+      color: #FF5EA6 !important;
+    }
+
+    .bowler-table .clickable-player-row:hover,
+    #bowlersRankingTable .clickable-player-row:hover {
+      background: rgba(56, 189, 248, 0.09) !important;
+      transform: translateX(3px);
+    }
+    .clickable-player-row.active-bowler-row {
+      background: rgba(56, 189, 248, 0.18) !important;
+      border-left: 3px solid #38BDF8 !important;
+    }
+    .clickable-player-row.active-bowler-row td {
+      color: #FFFFFF !important;
+      font-weight: 600;
+    }
+    .clickable-player-row.active-bowler-row strong {
+      color: #38BDF8 !important;
+    }
+
+    /* Floating high-contrast tooltip for donut charts */
+    .rr-custom-tooltip {
+      position: fixed;
+      left: 0;
+      top: 0;
+      background: rgba(12, 8, 36, 0.96);
+      border: 1px solid rgba(229, 9, 127, 0.5);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-radius: 8px;
+      padding: 7px 12px;
+      color: #FFFFFF;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 11px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7), 0 0 15px rgba(229, 9, 127, 0.2);
+      pointer-events: none;
+      transition: opacity 0.12s ease;
+      white-space: nowrap;
+      z-index: 999999;
+      opacity: 0;
+      visibility: hidden;
+      will-change: left, top;
+    }
+    .rr-custom-tooltip .tooltip-title {
+      font-size: 9px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #94A3B8;
+      letter-spacing: 0.5px;
+      margin-bottom: 3px;
+    }
+    .rr-custom-tooltip .tooltip-body-row {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+    .rr-custom-tooltip .tooltip-color-swatch {
+      width: 9px;
+      height: 9px;
+      border-radius: 2px;
+      flex-shrink: 0;
+      box-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
+    }
+    .rr-custom-tooltip .tooltip-body-text {
+      font-size: 12px;
+      font-weight: 700;
+      color: #FFFFFF;
     }
 
   </style>
@@ -2294,13 +2430,7 @@ def generate_dashboard():
       </div>
     </nav>
 
-    <div class="sidebar-footer">
-      <div class="slogan-script">Build a Winning Squad.<br>Own the Auction.</div>
-      <div class="superr-badge-mini">
-        <i class="fa-solid fa-crown"></i>
-        <span>SUPERR SELECTOR Season 2</span>
-      </div>
-    </div>
+
   </aside>
 
   <!-- ==========================================================================
@@ -2333,12 +2463,7 @@ def generate_dashboard():
         </div>
       </div>
 
-      <div class="header-right">
-        <div class="header-stadium-graphic">
-          <i class="fa-solid fa-bolt" style="color: #FF5EA6;"></i>
-          <span class="stadium-tagline">Data-Driven • Pressure-Tested</span>
-        </div>
-      </div>
+      <div class="header-right"></div>
     </header>
 
     <!-- ==========================================================================
@@ -2470,7 +2595,7 @@ def generate_dashboard():
             <a class="card-action-link" onclick="switchTab('batting')">View All →</a>
           </div>
 
-          <table class="mini-rank-table">
+          <table class="mini-rank-table" id="overviewBattersTable">
             <thead>
               <tr>
                 <th>#</th>
@@ -2480,7 +2605,7 @@ def generate_dashboard():
               </tr>
             </thead>
             <tbody>
-              <tr>
+              <tr class="clickable-player-row" onclick="selectBatterFromOverview(2633)" title="Click to view Jason Holder's analysis">
                 <td>1</td>
                 <td><strong>Jason Holder</strong></td>
                 <td>
@@ -2491,7 +2616,7 @@ def generate_dashboard():
                 </td>
                 <td><span class="role-badge-table">Death Phase Finisher</span></td>
               </tr>
-              <tr>
+              <tr class="clickable-player-row" onclick="selectBatterFromOverview(2258)" title="Click to view Sanju Samson's analysis">
                 <td>2</td>
                 <td><strong>Sanju Samson</strong></td>
                 <td>
@@ -2502,7 +2627,7 @@ def generate_dashboard():
                 </td>
                 <td><span class="role-badge-table">Top/Middle Accelerator</span></td>
               </tr>
-              <tr>
+              <tr class="clickable-player-row" onclick="selectBatterFromOverview(7094)" title="Click to view Curtis Campher's analysis">
                 <td>3</td>
                 <td><strong>Curtis Campher</strong></td>
                 <td>
@@ -2513,7 +2638,7 @@ def generate_dashboard():
                 </td>
                 <td><span class="role-badge-table">Top/Middle Accelerator</span></td>
               </tr>
-              <tr>
+              <tr class="clickable-player-row" onclick="selectBatterFromOverview(5553)" title="Click to view Phil Salt's analysis">
                 <td>4</td>
                 <td><strong>Phil Salt</strong></td>
                 <td>
@@ -2524,7 +2649,7 @@ def generate_dashboard():
                 </td>
                 <td><span class="role-badge-table">Death Phase Finisher</span></td>
               </tr>
-              <tr>
+              <tr class="clickable-player-row" onclick="selectBatterFromOverview(1219)" title="Click to view David Willey's analysis">
                 <td>5</td>
                 <td><strong>David Willey</strong></td>
                 <td>
@@ -2549,7 +2674,7 @@ def generate_dashboard():
             <a class="card-action-link" onclick="switchTab('bowling')">View All →</a>
           </div>
 
-          <table class="mini-rank-table">
+          <table class="mini-rank-table" id="overviewBowlersTable">
             <thead>
               <tr>
                 <th>#</th>
@@ -2558,8 +2683,8 @@ def generate_dashboard():
                 <th>Role</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
+            <tbody class="bowler-table">
+              <tr class="clickable-player-row" onclick="selectBowlerFromOverview(818)" title="Click to view Mitchell Marsh's analysis">
                 <td>1</td>
                 <td><strong>Mitchell Marsh</strong></td>
                 <td>
@@ -2570,7 +2695,7 @@ def generate_dashboard():
                 </td>
                 <td><span class="role-badge-table">Death Wicket Enforcer</span></td>
               </tr>
-              <tr>
+              <tr class="clickable-player-row" onclick="selectBowlerFromOverview(7364)" title="Click to view Haris Rauf's analysis">
                 <td>2</td>
                 <td><strong>Haris Rauf</strong></td>
                 <td>
@@ -2581,7 +2706,7 @@ def generate_dashboard():
                 </td>
                 <td><span class="role-badge-table">Death Wicket Enforcer</span></td>
               </tr>
-              <tr>
+              <tr class="clickable-player-row" onclick="selectBowlerFromOverview(8530)" title="Click to view Kartik Tyagi's analysis">
                 <td>3</td>
                 <td><strong>Kartik Tyagi</strong></td>
                 <td>
@@ -2592,7 +2717,7 @@ def generate_dashboard():
                 </td>
                 <td><span class="role-badge-table">Death Wicket Enforcer</span></td>
               </tr>
-              <tr>
+              <tr class="clickable-player-row" onclick="selectBowlerFromOverview(8746)" title="Click to view Vaibhav Arora's analysis">
                 <td>4</td>
                 <td><strong>Vaibhav Arora</strong></td>
                 <td>
@@ -2603,7 +2728,7 @@ def generate_dashboard():
                 </td>
                 <td><span class="role-badge-table">Death Wicket Enforcer</span></td>
               </tr>
-              <tr>
+              <tr class="clickable-player-row" onclick="selectBowlerFromOverview(7503)" title="Click to view Ravi Bishnoi's analysis">
                 <td>5</td>
                 <td><strong>Ravi Bishnoi</strong></td>
                 <td>
@@ -2681,7 +2806,7 @@ def generate_dashboard():
           </div>
 
           <div class="clean-table-wrap">
-            <table class="clean-table">
+            <table class="clean-table" id="battersRankingTable">
               <thead>
                 <tr>
                   <th>#</th>
@@ -2692,70 +2817,70 @@ def generate_dashboard():
                 </tr>
               </thead>
               <tbody>
-                <tr>
+                <tr id="batter-row-2633" class="clickable-player-row active-player-row" onclick="selectBatter(2633)" title="Click to view Jason Holder's analysis">
                   <td>1</td>
                   <td><strong>Jason Holder</strong></td>
                   <td>2633</td>
                   <td><strong style="color: #FF5EA6;">66.84</strong></td>
                   <td><span class="role-badge-table">Death Phase Finisher</span></td>
                 </tr>
-                <tr>
+                <tr id="batter-row-2258" class="clickable-player-row" onclick="selectBatter(2258)" title="Click to view Sanju Samson's analysis">
                   <td>2</td>
                   <td><strong>Sanju Samson</strong></td>
                   <td>2258</td>
                   <td><strong style="color: #FF5EA6;">60.46</strong></td>
                   <td><span class="role-badge-table">Top/Middle Order Accelerator</span></td>
                 </tr>
-                <tr>
+                <tr id="batter-row-7094" class="clickable-player-row" onclick="selectBatter(7094)" title="Click to view Curtis Campher's analysis">
                   <td>3</td>
                   <td><strong>Curtis Campher</strong></td>
                   <td>7094</td>
                   <td><strong style="color: #FF5EA6;">59.20</strong></td>
                   <td><span class="role-badge-table">Top/Middle Order Accelerator</span></td>
                 </tr>
-                <tr>
+                <tr id="batter-row-5553" class="clickable-player-row" onclick="selectBatter(5553)" title="Click to view Phil Salt's analysis">
                   <td>4</td>
                   <td><strong>Phil Salt</strong></td>
                   <td>5553</td>
                   <td><strong style="color: #FF5EA6;">58.93</strong></td>
                   <td><span class="role-badge-table">Death Phase Finisher</span></td>
                 </tr>
-                <tr>
+                <tr id="batter-row-1219" class="clickable-player-row" onclick="selectBatter(1219)" title="Click to view David Willey's analysis">
                   <td>5</td>
                   <td><strong>David Willey</strong></td>
                   <td>1219</td>
                   <td><strong style="color: #FF5EA6;">58.77</strong></td>
                   <td><span class="role-badge-table">Death Phase Finisher</span></td>
                 </tr>
-                <tr>
+                <tr id="batter-row-6664" class="clickable-player-row" onclick="selectBatter(6664)" title="Click to view Dion Myers's analysis">
                   <td>6</td>
                   <td><strong>Dion Myers</strong></td>
                   <td>6664</td>
                   <td><strong style="color: #FF5EA6;">57.95</strong></td>
                   <td><span class="role-badge-table">Top/Middle Order Accelerator</span></td>
                 </tr>
-                <tr>
+                <tr id="batter-row-3097" class="clickable-player-row" onclick="selectBatter(3097)" title="Click to view Shan Masood's analysis">
                   <td>7</td>
                   <td><strong>Shan Masood</strong></td>
                   <td>3097</td>
                   <td><strong style="color: #FF5EA6;">57.63</strong></td>
                   <td><span class="role-badge-table">Death Phase Finisher</span></td>
                 </tr>
-                <tr>
+                <tr id="batter-row-2436" class="clickable-player-row" onclick="selectBatter(2436)" title="Click to view Dasun Shanaka's analysis">
                   <td>8</td>
                   <td><strong>Dasun Shanaka</strong></td>
                   <td>2436</td>
                   <td><strong style="color: #FF5EA6;">57.35</strong></td>
                   <td><span class="role-badge-table">Death Phase Finisher</span></td>
                 </tr>
-                <tr>
+                <tr id="batter-row-796" class="clickable-player-row" onclick="selectBatter(796)" title="Click to view Matthew Wade's analysis">
                   <td>9</td>
                   <td><strong>Matthew Wade</strong></td>
                   <td>796</td>
                   <td><strong style="color: #FF5EA6;">57.02</strong></td>
                   <td><span class="role-badge-table">Death Phase Finisher</span></td>
                 </tr>
-                <tr>
+                <tr id="batter-row-3056" class="clickable-player-row" onclick="selectBatter(3056)" title="Click to view Iftikhar Ahmed's analysis">
                   <td>10</td>
                   <td><strong>Iftikhar Ahmed</strong></td>
                   <td>3056</td>
@@ -2783,52 +2908,51 @@ def generate_dashboard():
       <!-- Bottom Row: 4 Cards -->
       <div class="batting-bottom-4col">
         <div class="rr-card">
-          <div class="card-header-clean">
+          <div class="card-header-stacked">
             <span class="card-title">Strike Rate Comparison</span>
+            <span class="card-player-sub" id="batterSRPlayer" style="color: var(--rr-pink);">Jason Holder</span>
           </div>
           <div class="chart-container-fluid" style="height: 180px;">
             <canvas id="batterSRChart"></canvas>
           </div>
         </div>
 
-        <div class="rr-card" style="padding: 14px 12px;">
-          <div class="card-header-clean">
-            <span class="card-title" style="font-size: 13px;">Dot Ball & Dismissal Analysis</span>
+        <div class="rr-card" style="padding: 14px 10px;">
+          <div class="card-header-stacked">
+            <span class="card-title">Dot Ball & Non-Dot %</span>
+            <span class="card-player-sub" id="batterDotPlayer" style="color: var(--rr-pink);">Jason Holder</span>
           </div>
           <div class="donut-card-container-compact">
-            <div class="donut-chart-box-compact" style="width: 104px; height: 104px; min-width: 104px; min-height: 104px; max-width: 104px; max-height: 104px;">
+            <div class="donut-chart-box-compact">
               <canvas id="batterDotChart"></canvas>
-              <div class="donut-center-badge-compact">
-                <div class="donut-center-num-compact" style="font-size: 17px;">28.8%</div>
-                <div class="donut-center-text-compact">Dot Balls</div>
-                <div style="font-size: 7.5px; color: #64748B;">(Top 10 Avg)</div>
+              <div class="donut-center-badge-compact" id="batterDotCenter">
+                <div class="donut-center-num-compact" id="batterDotCenterNum">28.9%</div>
+                <div class="donut-center-text-compact" id="batterDotCenterLabel">Dots</div>
               </div>
             </div>
-            <div class="donut-legend-compact" style="gap: 10px;">
+            <div class="donut-legend-compact">
               <div class="compact-legend-row">
                 <span class="compact-legend-dot" style="background: var(--rr-pink);"></span>
                 <span class="compact-legend-label">Dot Balls:</span>
-                <span class="compact-legend-val" style="color: var(--rr-pink);">28.8%</span>
+                <span class="compact-legend-val" id="batterDotLegendVal" style="color: var(--rr-pink);">28.9%</span>
               </div>
               <div class="compact-legend-row">
                 <span class="compact-legend-dot" style="background: #8B5CF6;"></span>
-                <span class="compact-legend-label">Dismissal:</span>
-                <span class="compact-legend-val" style="color: #8B5CF6;">71.2%</span>
+                <span class="compact-legend-label">Scoring:</span>
+                <span class="compact-legend-val" id="batterOtherLegendVal" style="color: #8B5CF6;">71.1%</span>
               </div>
             </div>
           </div>
         </div>
 
         <div class="rr-card">
-          <div class="card-header-clean">
-            <div class="card-title-group">
-              <i class="fa-solid fa-shield-halved" style="color: var(--rr-gold-light);"></i>
-              <span class="card-title">High-Pressure Exposure</span>
-            </div>
+          <div class="card-header-stacked">
+            <span class="card-title">High-Pressure Exposure</span>
+            <span class="card-player-sub" id="batterPressPlayer" style="color: var(--rr-pink);">Jason Holder</span>
           </div>
           <div class="gauge-slider-container">
-            <div class="gauge-big-num">65.4</div>
-            <div class="gauge-subtext">Avg. Pressure Score</div>
+            <div class="gauge-big-num" id="batterPressureNum">166</div>
+            <div class="gauge-subtext" id="batterPressureSub">Pressure Balls Faced (59 Matches)</div>
             <div class="gauge-track-wrap">
               <div class="gauge-track"></div>
               <div class="gauge-thumb" id="pressureGaugeThumb"></div>
@@ -2845,19 +2969,19 @@ def generate_dashboard():
         <div class="rr-card">
           <div class="player-spotlight-box">
             <div class="player-spotlight-header">
-              <img class="spotlight-avatar-lg" src="__HOLDER_IMG__" alt="Jason Holder">
+              <img class="spotlight-avatar-lg" id="batterSpotlightImg" src="__HOLDER_IMG__" alt="Jason Holder">
               <div class="spotlight-info-lg">
-                <span class="spotlight-rank-badge">👑 #1 Batter</span>
-                <h4>Jason Holder</h4>
-                <div class="spotlight-ri-text">66.84 Reliability Index</div>
+                <span class="spotlight-rank-badge" id="batterSpotlightRank">👑 #1 Batter</span>
+                <h4 id="batterSpotlightName">Jason Holder</h4>
+                <div class="spotlight-ri-text" id="batterSpotlightRI">66.84 Reliability Index</div>
               </div>
             </div>
-            <div class="spotlight-bullet-list">
+            <div class="spotlight-bullet-list" id="batterSpotlightBullets">
               <div class="spotlight-bullet"><i class="fa-solid fa-circle-check"></i> +83.44 SR (Δ SR surge)</div>
               <div class="spotlight-bullet"><i class="fa-solid fa-circle-check"></i> -30.18% Dot Balls (Δ Dot drop)</div>
               <div class="spotlight-bullet"><i class="fa-solid fa-circle-check"></i> 166 High Pressure Balls Faced</div>
             </div>
-            <button class="view-profile-btn" onclick="openComparisonWith('Jason Holder')">
+            <button class="view-profile-btn" id="batterSpotlightBtn" onclick="openComparisonWith('Jason Holder')">
               <span>View Full Profile</span>
               <i class="fa-solid fa-arrow-right"></i>
             </button>
@@ -2927,7 +3051,7 @@ def generate_dashboard():
           </div>
 
           <div class="clean-table-wrap">
-            <table class="clean-table">
+            <table class="clean-table" id="bowlersRankingTable">
               <thead>
                 <tr>
                   <th>#</th>
@@ -2937,71 +3061,71 @@ def generate_dashboard():
                   <th>Role</th>
                 </tr>
               </thead>
-              <tbody>
-                <tr>
+              <tbody class="bowler-table">
+                <tr id="bowler-row-818" class="clickable-player-row active-bowler-row" onclick="selectBowler(818)" title="Click to view Mitchell Marsh's analysis">
                   <td>1</td>
                   <td><strong>Mitchell Marsh</strong></td>
                   <td>818</td>
                   <td><strong style="color: #38BDF8;">61.86</strong></td>
                   <td><span class="role-badge-table">Death Wicket Enforcer</span></td>
                 </tr>
-                <tr>
+                <tr id="bowler-row-7364" class="clickable-player-row" onclick="selectBowler(7364)" title="Click to view Haris Rauf's analysis">
                   <td>2</td>
                   <td><strong>Haris Rauf</strong></td>
                   <td>7364</td>
                   <td><strong style="color: #38BDF8;">61.50</strong></td>
                   <td><span class="role-badge-table">Death Wicket Enforcer</span></td>
                 </tr>
-                <tr>
+                <tr id="bowler-row-8530" class="clickable-player-row" onclick="selectBowler(8530)" title="Click to view Kartik Tyagi's analysis">
                   <td>3</td>
                   <td><strong>Kartik Tyagi</strong></td>
                   <td>8530</td>
                   <td><strong style="color: #38BDF8;">61.28</strong></td>
                   <td><span class="role-badge-table">Death Wicket Enforcer</span></td>
                 </tr>
-                <tr>
+                <tr id="bowler-row-8746" class="clickable-player-row" onclick="selectBowler(8746)" title="Click to view Vaibhav Arora's analysis">
                   <td>4</td>
                   <td><strong>Vaibhav Arora</strong></td>
                   <td>8746</td>
                   <td><strong style="color: #38BDF8;">60.47</strong></td>
                   <td><span class="role-badge-table">Death Wicket Enforcer</span></td>
                 </tr>
-                <tr>
+                <tr id="bowler-row-7503" class="clickable-player-row" onclick="selectBowler(7503)" title="Click to view Ravi Bishnoi's analysis">
                   <td>5</td>
                   <td><strong>Ravi Bishnoi</strong></td>
                   <td>7503</td>
                   <td><strong style="color: #38BDF8;">59.66</strong></td>
                   <td><span class="role-badge-table">Middle & Powerplay Restrictor</span></td>
                 </tr>
-                <tr>
+                <tr id="bowler-row-6676" class="clickable-player-row" onclick="selectBowler(6676)" title="Click to view Azmatullah Omarzai's analysis">
                   <td>6</td>
                   <td><strong>Azmatullah Omarzai</strong></td>
                   <td>6676</td>
                   <td><strong style="color: #38BDF8;">59.18</strong></td>
                   <td><span class="role-badge-table">Death Wicket Enforcer</span></td>
                 </tr>
-                <tr>
+                <tr id="bowler-row-1944" class="clickable-player-row" onclick="selectBowler(1944)" title="Click to view Keshav Maharaj's analysis">
                   <td>7</td>
                   <td><strong>Keshav Maharaj</strong></td>
                   <td>1944</td>
                   <td><strong style="color: #38BDF8;">58.96</strong></td>
                   <td><span class="role-badge-table">Middle & Powerplay Restrictor</span></td>
                 </tr>
-                <tr>
+                <tr id="bowler-row-3629" class="clickable-player-row" onclick="selectBowler(3629)" title="Click to view Corbin Bosch's analysis">
                   <td>8</td>
                   <td><strong>Corbin Bosch</strong></td>
                   <td>3629</td>
                   <td><strong style="color: #38BDF8;">58.90</strong></td>
                   <td><span class="role-badge-table">Death Wicket Enforcer</span></td>
                 </tr>
-                <tr>
+                <tr id="bowler-row-4900" class="clickable-player-row" onclick="selectBowler(4900)" title="Click to view Wanindu Hasaranga's analysis">
                   <td>9</td>
                   <td><strong>Wanindu Hasaranga</strong></td>
                   <td>4900</td>
                   <td><strong style="color: #38BDF8;">58.81</strong></td>
                   <td><span class="role-badge-table">Middle & Powerplay Restrictor</span></td>
                 </tr>
-                <tr>
+                <tr id="bowler-row-4409" class="clickable-player-row" onclick="selectBowler(4409)" title="Click to view Sam Curran's analysis">
                   <td>10</td>
                   <td><strong>Sam Curran</strong></td>
                   <td>4409</td>
@@ -3029,60 +3153,72 @@ def generate_dashboard():
       <!-- Bottom Row: 5 Cards Grid -->
       <div class="bowling-bottom-5col">
         <div class="rr-card">
-          <div class="card-header-clean"><span class="card-title" style="font-size: 13px;">Economy Analysis</span></div>
+          <div class="card-header-stacked">
+            <span class="card-title">Economy Analysis</span>
+            <span class="card-player-sub" id="bowlerEconPlayer" style="color: #38BDF8;">Mitchell Marsh</span>
+          </div>
           <div class="chart-container-fluid" style="height: 170px;"><canvas id="bowlerEconChart"></canvas></div>
         </div>
 
         <div class="rr-card">
-          <div class="card-header-clean"><span class="card-title" style="font-size: 13px;">Wickets per Over</span></div>
+          <div class="card-header-stacked">
+            <span class="card-title">Wickets per Over</span>
+            <span class="card-player-sub" id="bowlerWPOPlayer" style="color: #38BDF8;">Mitchell Marsh</span>
+          </div>
           <div class="chart-container-fluid" style="height: 170px;"><canvas id="bowlerWPOChart"></canvas></div>
         </div>
 
         <div class="rr-card" style="padding: 14px 10px;">
-          <div class="card-header-clean"><span class="card-title" style="font-size: 12.5px;">Dot Ball & Boundary %</span></div>
+          <div class="card-header-stacked">
+            <span class="card-title">Dot Ball & Non-Dot %</span>
+            <span class="card-player-sub" id="bowlerDotPlayer" style="color: #38BDF8;">Mitchell Marsh</span>
+          </div>
           <div class="donut-card-container-compact">
             <div class="donut-chart-box-compact">
               <canvas id="bowlerDotBoundaryChart"></canvas>
-              <div class="donut-center-badge-compact">
-                <div class="donut-center-num-compact">62.5%</div>
-                <div class="donut-center-text-compact">Dot Balls</div>
+              <div class="donut-center-badge-compact" id="bowlerDotCenter">
+                <div class="donut-center-num-compact" id="bowlerDotCenterNum">34.4%</div>
+                <div class="donut-center-text-compact" id="bowlerDotCenterLabel">Dots</div>
               </div>
             </div>
             <div class="donut-legend-compact">
               <div class="compact-legend-row">
                 <span class="compact-legend-dot" style="background: #38BDF8;"></span>
                 <span class="compact-legend-label">Dot Balls:</span>
-                <span class="compact-legend-val" style="color: #38BDF8;">62.5%</span>
+                <span class="compact-legend-val" id="bowlerDotLegendVal" style="color: #38BDF8;">34.4%</span>
               </div>
               <div class="compact-legend-row">
                 <span class="compact-legend-dot" style="background: var(--rr-pink);"></span>
-                <span class="compact-legend-label">Boundary:</span>
-                <span class="compact-legend-val" style="color: var(--rr-pink);">37.5%</span>
+                <span class="compact-legend-label">Scoring:</span>
+                <span class="compact-legend-val" id="bowlerNonDotLegendVal" style="color: var(--rr-pink);">65.6%</span>
               </div>
             </div>
           </div>
         </div>
 
         <div class="rr-card" style="padding: 14px 10px;">
-          <div class="card-header-clean"><span class="card-title" style="font-size: 12.5px;">Boundary Conceded %</span></div>
+          <div class="card-header-stacked">
+            <span class="card-title">Boundary Conceded %</span>
+            <span class="card-player-sub" id="bowlerBoundPlayer" style="color: #38BDF8;">Mitchell Marsh</span>
+          </div>
           <div class="donut-card-container-compact">
             <div class="donut-chart-box-compact">
               <canvas id="bowlerBoundaryConcededChart"></canvas>
-              <div class="donut-center-badge-compact">
-                <div class="donut-center-num-compact">36.8%</div>
-                <div class="donut-center-text-compact">Boundary</div>
+              <div class="donut-center-badge-compact" id="bowlerBoundCenter">
+                <div class="donut-center-num-compact" id="bowlerBoundCenterNum">21.9%</div>
+                <div class="donut-center-text-compact" id="bowlerBoundCenterLabel">Boundary</div>
               </div>
             </div>
             <div class="donut-legend-compact">
               <div class="compact-legend-row">
                 <span class="compact-legend-dot" style="background: #6366F1;"></span>
-                <span class="compact-legend-label">Others:</span>
-                <span class="compact-legend-val" style="color: #6366F1;">63.2%</span>
+                <span class="compact-legend-label">Non-Bound:</span>
+                <span class="compact-legend-val" id="bowlerNonBoundLegendVal" style="color: #6366F1;">78.1%</span>
               </div>
               <div class="compact-legend-row">
                 <span class="compact-legend-dot" style="background: #FF2A85;"></span>
                 <span class="compact-legend-label">Boundary:</span>
-                <span class="compact-legend-val" style="color: #FF2A85;">36.8%</span>
+                <span class="compact-legend-val" id="bowlerBoundLegendVal" style="color: #FF2A85;">21.9%</span>
               </div>
             </div>
           </div>
@@ -3091,19 +3227,19 @@ def generate_dashboard():
         <div class="rr-card">
           <div class="player-spotlight-box">
             <div class="player-spotlight-header">
-              <img class="spotlight-avatar-lg" style="border-color: #38BDF8;" src="__MARSH_IMG__" alt="Mitchell Marsh">
+              <img class="spotlight-avatar-lg" id="bowlerSpotlightImg" style="border-color: #38BDF8;" src="__MARSH_IMG__" alt="Mitchell Marsh">
               <div class="spotlight-info-lg">
-                <span class="spotlight-rank-badge" style="color: #38BDF8;">👑 #1 Bowler</span>
-                <h4>Mitchell Marsh</h4>
-                <div class="spotlight-ri-text">61.86 Reliability Index</div>
+                <span class="spotlight-rank-badge" id="bowlerSpotlightRank" style="color: #38BDF8;">👑 #1 Bowler</span>
+                <h4 id="bowlerSpotlightName">Mitchell Marsh</h4>
+                <div class="spotlight-ri-text" id="bowlerSpotlightRI">61.86 Reliability Index</div>
               </div>
             </div>
-            <div class="spotlight-bullet-list">
-              <div class="spotlight-bullet"><i class="fa-solid fa-circle-check"></i> 8.12 Econ (High Pressure)</div>
-              <div class="spotlight-bullet"><i class="fa-solid fa-circle-check"></i> 1.62 Wkts/Over in Death Overs</div>
-              <div class="spotlight-bullet"><i class="fa-solid fa-circle-check"></i> 64.7% Dot Balls Delivered</div>
+            <div class="spotlight-bullet-list" id="bowlerSpotlightBullets">
+              <div class="spotlight-bullet"><i class="fa-solid fa-circle-check"></i> 10.50 Econ (High Pressure)</div>
+              <div class="spotlight-bullet"><i class="fa-solid fa-circle-check"></i> 0.56 Wkts/Over in Pressure</div>
+              <div class="spotlight-bullet"><i class="fa-solid fa-circle-check"></i> 34.4% Dot Balls Delivered</div>
             </div>
-            <button class="view-profile-btn" style="background: linear-gradient(90deg, #38BDF8 0%, #6366F1 100%);" onclick="openComparisonWith('Mitchell Marsh')">
+            <button class="view-profile-btn" id="bowlerSpotlightBtn" style="background: linear-gradient(90deg, #38BDF8 0%, #6366F1 100%);" onclick="openComparisonWith('Mitchell Marsh')">
               <span>View Full Profile</span>
               <i class="fa-solid fa-arrow-right"></i>
             </button>
@@ -3343,8 +3479,12 @@ def generate_dashboard():
             <span class="card-title">Dot Ball Percentage</span>
           </div>
           <div class="donut-card-container" id="comp-chart2-container" style="min-height: 200px;">
-            <div class="donut-chart-box" style="width: 140px; height: 140px; min-width: 140px; min-height: 140px;">
+            <div class="donut-chart-box" style="width: 140px; height: 140px; min-width: 140px; min-height: 140px; position: relative;">
               <canvas id="compChart2"></canvas>
+              <div class="donut-center-badge" id="compChart2Center">
+                <div class="donut-center-num" style="font-size: 20px;">30.3%</div>
+                <div class="donut-center-text" style="font-size: 9.5px;">Avg Dot %</div>
+              </div>
             </div>
             <div class="donut-legend" id="comp-chart2-legend">
               <!-- Dynamically populated via updateComparison() -->
@@ -3562,7 +3702,7 @@ def generate_dashboard():
         </div>
 
         <div class="rr-ready-banner">
-          <i class="fa-solid fa-crown crown-lg"></i>
+          <img src="__RR_LOGO__" alt="Rajasthan Royals" class="rr-official-crest-banner">
           <h4>Rajasthan Royals</h4>
           <p>Stronger • Smarter • Ready</p>
         </div>
@@ -3601,8 +3741,10 @@ def generate_dashboard():
         </div>
 
         <div class="intel-top-card">
-          <div class="intel-top-icon" style="background: rgba(16, 185, 129, 0.15); border: 1.5px solid rgba(16, 185, 129, 0.45); display: flex; align-items: center; justify-content: center; box-shadow: 0 0 14px rgba(16, 185, 129, 0.25);">
-            <img src="__RR_LOGO__" alt="Rajasthan Royals Verified" style="width: 28px; height: 32px; object-fit: contain; filter: drop-shadow(0 0 6px #10B981);">
+          <div class="intel-top-icon icon-green" title="Dataset Validated & Production Ready">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="#10B981" style="display: block;">
+              <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/>
+            </svg>
           </div>
           <div class="intel-top-data">
             <span class="intel-top-label">Validation Status</span>
@@ -3802,7 +3944,7 @@ def generate_dashboard():
         </div>
 
         <div class="rr-ready-banner" style="border-color: var(--rr-pink);">
-          <i class="fa-solid fa-crown crown-lg" style="color: var(--rr-pink);"></i>
+          <img src="__RR_LOGO__" alt="Rajasthan Royals" class="rr-official-crest-banner">
           <h4 style="font-size: 15px;">SUPERR SELECTOR</h4>
           <p style="color: #CBD5E1; font-weight: 600; letter-spacing: 0.5px;">Smarter Insights. Stronger Team.</p>
         </div>
@@ -3934,6 +4076,241 @@ def generate_dashboard():
     Chart.defaults.color = '#94A3B8';
     Chart.defaults.font.family = "'Plus Jakarta Sans', 'Inter', sans-serif";
 
+    // Dynamic Cursor-Following Tooltip System
+    let currentMouseX = 0;
+    let currentMouseY = 0;
+    let isTooltipActive = false;
+
+    function positionTooltipAtCursor(x, y) {
+      const tooltipEl = document.getElementById('rr-chart-tooltip');
+      if (!tooltipEl || tooltipEl.style.opacity === '0') return;
+
+      const tipWidth = tooltipEl.offsetWidth || 180;
+      const tipHeight = tooltipEl.offsetHeight || 60;
+
+      // Ergonomic offset: follows cursor smoothly
+      let left = x + 15;
+      let top = y - tipHeight - 12;
+
+      // If close to top edge of viewport, flip to beneath cursor
+      if (top < 10) {
+        top = y + 18;
+      }
+      // If close to right edge of viewport, flip to left of cursor
+      if (left + tipWidth > window.innerWidth - 14) {
+        left = x - tipWidth - 15;
+      }
+      if (left < 10) left = 10;
+      if (top < 10) top = 10;
+
+      tooltipEl.style.left = left + 'px';
+      tooltipEl.style.top = top + 'px';
+      tooltipEl.style.transform = 'none';
+    }
+
+    // Continuous mouse listener so the tooltip tracks cursor movement in real time
+    window.addEventListener('mousemove', (e) => {
+      currentMouseX = e.clientX;
+      currentMouseY = e.clientY;
+      if (isTooltipActive) {
+        positionTooltipAtCursor(currentMouseX, currentMouseY);
+      }
+    }, { passive: true });
+
+    // Ensure tooltip hides immediately and donut center resets when cursor exits any chart canvas
+    document.addEventListener('mouseout', (e) => {
+      if (e.target && e.target.tagName === 'CANVAS') {
+        const tooltipEl = document.getElementById('rr-chart-tooltip');
+        if (tooltipEl) {
+          isTooltipActive = false;
+          tooltipEl.style.opacity = '0';
+          tooltipEl.style.visibility = 'hidden';
+        }
+        // Restore donut center badge if applicable
+        const badge = e.target.parentElement ? e.target.parentElement.querySelector('.donut-center-badge, .donut-center-badge-compact') : null;
+        if (badge && badge.dataset.defaultHtml) {
+          badge.innerHTML = badge.dataset.defaultHtml;
+        }
+      }
+    });
+
+    // High-Contrast Glassmorphic External Floating Tooltip & Universal Donut Center Engine
+    function customExternalTooltip(context) {
+      const { chart, tooltip } = context;
+
+      // =========================================================================
+      // DOUGHNUT CHARTS: Dynamic Center-of-Circle Data Display on Hover
+      // =========================================================================
+      if (chart && chart.config && chart.config.type === 'doughnut') {
+        const centerBadge = (chart.canvas && chart.canvas.parentElement)
+          ? chart.canvas.parentElement.querySelector('.donut-center-badge, .donut-center-badge-compact')
+          : null;
+
+        if (centerBadge) {
+          // Initialize and save default HTML if not already cached
+          if (!centerBadge.dataset.defaultHtml) {
+            centerBadge.dataset.defaultHtml = centerBadge.innerHTML;
+          }
+
+          if (tooltip.opacity === 0) {
+            // Restore default center state on mouseout
+            centerBadge.innerHTML = centerBadge.dataset.defaultHtml;
+          } else if (tooltip.dataPoints && tooltip.dataPoints.length > 0) {
+            const dp = tooltip.dataPoints[0];
+            const dataIndex = dp.dataIndex;
+            const datasetIndex = dp.datasetIndex || 0;
+            const dataset = chart.data.datasets[datasetIndex];
+            const rawLabel = chart.data.labels ? chart.data.labels[dataIndex] : '';
+            const rawVal = dataset.data[dataIndex];
+
+            // Determine slice theme color
+            let color = '#E5097F';
+            if (dataset && dataset.backgroundColor) {
+              if (Array.isArray(dataset.backgroundColor)) {
+                color = dataset.backgroundColor[dataIndex] || color;
+              } else if (typeof dataset.backgroundColor === 'string') {
+                color = dataset.backgroundColor;
+              }
+            }
+
+            // Cleanly format metric value (percentages vs absolute numbers)
+            let displayVal = `${rawVal}`;
+            const canvasId = (chart.canvas && chart.canvas.id) ? chart.canvas.id.toLowerCase() : '';
+            const isPercent = String(rawVal).includes('%') || 
+                              canvasId.includes('dot') || 
+                              canvasId.includes('bound') || 
+                              canvasId.includes('comp') || 
+                              canvasId.includes('pressure') || 
+                              canvasId.includes('overview') ||
+                              rawLabel.includes('%');
+
+            if (isPercent && !displayVal.endsWith('%')) {
+              displayVal = `${rawVal}%`;
+            }
+
+            // Smart compact label formatting to prevent any text overflow beyond the inner donut hole
+            let cleanLabel = rawLabel.split('(')[0].trim();
+            if (/scoring/i.test(cleanLabel)) {
+              cleanLabel = 'Scoring';
+            } else if (/non-bound/i.test(cleanLabel) || cleanLabel.toLowerCase() === 'non-boundary') {
+              cleanLabel = 'Regular';
+            } else if (/boundary/i.test(cleanLabel)) {
+              cleanLabel = 'Boundary';
+            } else if (/dot/i.test(cleanLabel)) {
+              cleanLabel = 'Dots';
+            } else if (/wicket|dismissal/i.test(cleanLabel)) {
+              cleanLabel = 'Wickets';
+            } else if (cleanLabel.length > 9) {
+              const parts = cleanLabel.split(' ');
+              cleanLabel = parts[parts.length - 1]; // e.g. "Campher" instead of "Curtis Campher"
+            }
+
+            const isCompact = centerBadge.classList.contains('donut-center-badge-compact');
+            if (isCompact) {
+              centerBadge.innerHTML = `
+                <div class="donut-center-num-compact" style="color: ${color}; font-size: 13.5px; font-weight: 800; filter: drop-shadow(0 0 5px ${color});">${displayVal}</div>
+                <div class="donut-center-text-compact" style="color: #FFFFFF; font-weight: 700; max-width: 48px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${cleanLabel}</div>
+              `;
+            } else {
+              centerBadge.innerHTML = `
+                <div class="donut-center-num" style="color: ${color}; font-size: 20px; font-weight: 900; filter: drop-shadow(0 0 8px ${color}); line-height: 1;">${displayVal}</div>
+                <div class="donut-center-text" style="color: #FFFFFF; font-weight: 700; font-size: 10px; max-width: 95px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin-top: 3px;">${cleanLabel}</div>
+              `;
+            }
+          }
+        }
+
+        // Hide external floating box for doughnut charts so the center display is the elegant focal point
+        let tooltipEl = document.getElementById('rr-chart-tooltip');
+        if (tooltipEl) {
+          isTooltipActive = false;
+          tooltipEl.style.opacity = '0';
+          tooltipEl.style.visibility = 'hidden';
+        }
+        return;
+      }
+
+      // =========================================================================
+      // BAR & OTHER CHARTS: Dynamic Cursor-Following High-Contrast Tooltip
+      // =========================================================================
+      let tooltipEl = document.getElementById('rr-chart-tooltip');
+      if (!tooltipEl) {
+        tooltipEl = document.createElement('div');
+        tooltipEl.id = 'rr-chart-tooltip';
+        tooltipEl.className = 'rr-custom-tooltip';
+        document.body.appendChild(tooltipEl);
+      }
+
+      if (tooltip.opacity === 0) {
+        isTooltipActive = false;
+        tooltipEl.style.opacity = '0';
+        tooltipEl.style.visibility = 'hidden';
+        return;
+      }
+
+      isTooltipActive = true;
+
+      if (tooltip.body) {
+        const titleLines = tooltip.title || [];
+        const bodyLines = tooltip.body.map(b => b.lines);
+        const dataPoint = (tooltip.dataPoints && tooltip.dataPoints[0]) ? tooltip.dataPoints[0] : null;
+        const dataIndex = dataPoint ? dataPoint.dataIndex : 0;
+        const datasetIndex = dataPoint ? (dataPoint.datasetIndex || 0) : 0;
+        const dataset = (chart.data.datasets && chart.data.datasets[datasetIndex])
+          ? chart.data.datasets[datasetIndex]
+          : chart.data.datasets[0];
+
+        let color = '#E5097F';
+        if (dataset && dataset.backgroundColor) {
+          if (Array.isArray(dataset.backgroundColor)) {
+            color = dataset.backgroundColor[dataIndex] || dataset.backgroundColor[0] || '#E5097F';
+          } else if (typeof dataset.backgroundColor === 'string') {
+            color = dataset.backgroundColor;
+          }
+        }
+
+        let innerHtml = '';
+        if (titleLines && titleLines.length && titleLines[0].trim().length) {
+          innerHtml += `<div class="tooltip-title">${titleLines.join(' ')}</div>`;
+        }
+        bodyLines.forEach((body, idx) => {
+          const line = Array.isArray(body) ? body[0] : body;
+          let rowColor = color;
+          if (tooltip.dataPoints && tooltip.dataPoints[idx]) {
+            const dp = tooltip.dataPoints[idx];
+            const ds = chart.data.datasets[dp.datasetIndex];
+            if (ds && ds.backgroundColor) {
+              rowColor = Array.isArray(ds.backgroundColor) ? (ds.backgroundColor[dp.dataIndex] || color) : ds.backgroundColor;
+            }
+          }
+          innerHtml += `
+            <div class="tooltip-body-row">
+              <span class="tooltip-color-swatch" style="background: ${rowColor}; box-shadow: 0 0 6px ${rowColor};"></span>
+              <span class="tooltip-body-text">${line.trim()}</span>
+            </div>
+          `;
+        });
+        tooltipEl.innerHTML = innerHtml;
+      }
+
+      tooltipEl.style.position = 'fixed';
+      tooltipEl.style.pointerEvents = 'none';
+      tooltipEl.style.zIndex = '999999';
+      tooltipEl.style.visibility = 'visible';
+      tooltipEl.style.opacity = '1';
+
+      if (currentMouseX > 0 && currentMouseY > 0) {
+        positionTooltipAtCursor(currentMouseX, currentMouseY);
+      } else {
+        const canvasRect = chart.canvas.getBoundingClientRect();
+        positionTooltipAtCursor(canvasRect.left + tooltip.caretX, canvasRect.top + tooltip.caretY);
+      }
+    }
+
+    // Set globally as default tooltip for all charts
+    Chart.defaults.plugins.tooltip.enabled = false;
+    Chart.defaults.plugins.tooltip.external = customExternalTooltip;
+
     // ==========================================================================
     // CHART INITIALIZATION WITH BESPOKE SUITABLE ANIMATIONS
     // ==========================================================================
@@ -3963,6 +4340,8 @@ def generate_dashboard():
           plugins: {
             legend: { display: false },
             tooltip: {
+              enabled: false,
+              external: customExternalTooltip,
               callbacks: {
                 label: (ctx) => ` ${ctx.label}: ${ctx.raw} Players (50%)`
               }
@@ -4012,6 +4391,13 @@ def generate_dashboard():
               delay: (ctx) => ctx.dataIndex * 70
             }
           },
+          onClick: (e, elements) => {
+            if (elements && elements.length > 0) {
+              const idx = elements[0].index;
+              const p = RR_DATA.batters[idx];
+              if (p) selectBatter(p.id);
+            }
+          },
           scales: {
             x: {
               min: 0,
@@ -4040,20 +4426,21 @@ def generate_dashboard():
     // 3. Batters Strike Rate Comparison -> Staggered Bouncing Vertical Growth
     const ctxBatterSR = document.getElementById('batterSRChart');
     if (ctxBatterSR) {
+      const b0 = RR_DATA.batters[0] || {};
       const batterSRChart = new Chart(ctxBatterSR, {
         type: 'bar',
         data: {
-          labels: ['Top 10 Avg', 'Tournament Avg'],
+          labels: [b0.name || 'Jason Holder', 'Tournament Avg'],
           datasets: [
             {
               label: 'Normal SR',
-              data: [135.2, 128.7],
+              data: [b0.sr_norm || 67.31, 128.7],
               backgroundColor: '#38BDF8',
               borderRadius: 6
             },
             {
               label: 'High-Pressure SR',
-              data: [162.3, 141.5],
+              data: [b0.sr_high || 175.30, 141.5],
               backgroundColor: '#E5097F',
               borderRadius: 6
             }
@@ -4085,18 +4472,20 @@ def generate_dashboard():
     // 4. Dot Ball & Dismissal Donut -> Centered Ring with pure HTML Legend
     const ctxBatterDot = document.getElementById('batterDotChart');
     if (ctxBatterDot) {
+      const b0 = RR_DATA.batters[0] || {};
+      const dot0 = b0.dot_pct_high !== undefined ? b0.dot_pct_high : 28.9;
       const batterDotChart = new Chart(ctxBatterDot, {
         type: 'doughnut',
         data: {
-          labels: ['Dot Balls', 'Dismissal'],
+          labels: ['Dot Balls', 'Scoring / Other'],
           datasets: [{
-            data: [28.8, 71.2],
+            data: [dot0, +(100 - dot0).toFixed(1)],
             backgroundColor: ['#E5097F', '#8B5CF6'],
             borderWidth: 0
           }]
         },
         options: {
-          cutout: '74%',
+          cutout: '70%',
           responsive: true,
           maintainAspectRatio: false,
           animation: {
@@ -4108,6 +4497,8 @@ def generate_dashboard():
           plugins: {
             legend: { display: false },
             tooltip: {
+              enabled: false,
+              external: customExternalTooltip,
               callbacks: {
                 label: (ctx) => ` ${ctx.label}: ${ctx.raw}%`
               }
@@ -4155,6 +4546,13 @@ def generate_dashboard():
               delay: (ctx) => ctx.dataIndex * 70
             }
           },
+          onClick: (e, elements) => {
+            if (elements && elements.length > 0) {
+              const idx = elements[0].index;
+              const p = RR_DATA.bowlers[idx];
+              if (p) selectBowler(p.id);
+            }
+          },
           scales: {
             x: {
               min: 0,
@@ -4168,7 +4566,12 @@ def generate_dashboard():
             }
           },
           plugins: {
-            legend: { display: false }
+            legend: { display: false },
+            tooltip: {
+              callbacks: {
+                label: (ctx) => ` Reliability Index: ${ctx.raw}`
+              }
+            }
           }
         }
       });
@@ -4178,13 +4581,14 @@ def generate_dashboard():
     // 6. Bowler Econ Chart -> Staggered Bouncing Bars
     const ctxBowlerEcon = document.getElementById('bowlerEconChart');
     if (ctxBowlerEcon) {
+      const bw0 = RR_DATA.bowlers[0] || {};
       const bowlerEconChart = new Chart(ctxBowlerEcon, {
         type: 'bar',
         data: {
-          labels: ['Top 10', 'Tournament'],
+          labels: [bw0.name || 'Mitchell Marsh', 'Tournament Avg'],
           datasets: [
-            { label: 'Normal Econ', data: [7.12, 7.28], backgroundColor: '#38BDF8', borderRadius: 5 },
-            { label: 'HP Econ', data: [8.87, 9.01], backgroundColor: '#E5097F', borderRadius: 5 }
+            { label: 'Normal Econ', data: [bw0.econ_norm || 12.46, 7.28], backgroundColor: '#38BDF8', borderRadius: 5 },
+            { label: 'HP Econ', data: [bw0.econ_high || 10.50, 9.01], backgroundColor: '#E5097F', borderRadius: 5 }
           ]
         },
         options: {
@@ -4211,13 +4615,14 @@ def generate_dashboard():
     // 7. Bowler WPO Chart -> Staggered Bouncing Bars
     const ctxBowlerWPO = document.getElementById('bowlerWPOChart');
     if (ctxBowlerWPO) {
+      const bw0 = RR_DATA.bowlers[0] || {};
       const bowlerWPOChart = new Chart(ctxBowlerWPO, {
         type: 'bar',
         data: {
-          labels: ['Top 10', 'Tournament'],
+          labels: [bw0.name || 'Mitchell Marsh', 'Tournament Avg'],
           datasets: [
-            { label: 'Normal WPO', data: [1.24, 1.18], backgroundColor: '#38BDF8', borderRadius: 5 },
-            { label: 'HP WPO', data: [1.62, 1.50], backgroundColor: '#E5097F', borderRadius: 5 }
+            { label: 'Normal WPO', data: [bw0.wpo_norm !== undefined ? bw0.wpo_norm : 0.0, 1.18], backgroundColor: '#38BDF8', borderRadius: 5 },
+            { label: 'HP WPO', data: [bw0.wpo_high !== undefined ? bw0.wpo_high : 0.56, 1.50], backgroundColor: '#E5097F', borderRadius: 5 }
           ]
         },
         options: {
@@ -4244,12 +4649,14 @@ def generate_dashboard():
     // 8. Bowler Dot & Boundary Donut
     const ctxBowlerDotBound = document.getElementById('bowlerDotBoundaryChart');
     if (ctxBowlerDotBound) {
+      const bw0 = RR_DATA.bowlers[0] || {};
+      const dot0 = bw0.dot_pct_high !== undefined ? bw0.dot_pct_high : 34.4;
       const bowlerDotBoundChart = new Chart(ctxBowlerDotBound, {
         type: 'doughnut',
         data: {
-          labels: ['Dot Balls', 'Boundary'],
+          labels: ['Dot Balls', 'Scoring / Other'],
           datasets: [{
-            data: [62.5, 37.5],
+            data: [dot0, +(100 - dot0).toFixed(1)],
             backgroundColor: ['#38BDF8', '#E5097F'],
             borderWidth: 0
           }]
@@ -4264,7 +4671,16 @@ def generate_dashboard():
             duration: 1200,
             easing: 'easeOutCirc'
           },
-          plugins: { legend: { display: false } }
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              enabled: false,
+              external: customExternalTooltip,
+              callbacks: {
+                label: (ctx) => ` ${ctx.label}: ${ctx.raw}%`
+              }
+            }
+          }
         }
       });
       chartRegistry.bowling.push(bowlerDotBoundChart);
@@ -4273,12 +4689,14 @@ def generate_dashboard():
     // 9. Bowler Boundary Conceded Donut
     const ctxBowlerBoundConc = document.getElementById('bowlerBoundaryConcededChart');
     if (ctxBowlerBoundConc) {
+      const bw0 = RR_DATA.bowlers[0] || {};
+      const bound0 = bw0.boundary_conceded_pct_high !== undefined ? bw0.boundary_conceded_pct_high : 21.9;
       const bowlerBoundConcChart = new Chart(ctxBowlerBoundConc, {
         type: 'doughnut',
         data: {
-          labels: ['Others', 'Boundary'],
+          labels: ['Non-Boundary', 'Boundary Conceded'],
           datasets: [{
-            data: [63.2, 36.8],
+            data: [+(100 - bound0).toFixed(1), bound0],
             backgroundColor: ['#6366F1', '#FF2A85'],
             borderWidth: 0
           }]
@@ -4293,7 +4711,16 @@ def generate_dashboard():
             duration: 1200,
             easing: 'easeOutCirc'
           },
-          plugins: { legend: { display: false } }
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              enabled: false,
+              external: customExternalTooltip,
+              callbacks: {
+                label: (ctx) => ` ${ctx.label}: ${ctx.raw}%`
+              }
+            }
+          }
         }
       });
       chartRegistry.bowling.push(bowlerBoundConcChart);
@@ -4571,11 +4998,11 @@ def generate_dashboard():
             </div>
             <div class="comp-stat-item">
               <span class="comp-stat-lbl">Dot Balls %</span>
-              <span class="comp-stat-val">${p.shrunk_diff_dot ? Math.abs(p.shrunk_diff_dot).toFixed(1)+'%' : (28.1 + idx*2.1).toFixed(1)+'%'}</span>
+              <span class="comp-stat-val">${p.dot_pct_high !== undefined ? p.dot_pct_high.toFixed(1)+'%' : (p.shrunk_diff_dot ? Math.abs(p.shrunk_diff_dot).toFixed(1)+'%' : '30.0%')}</span>
             </div>
             <div class="comp-stat-item">
               <span class="comp-stat-lbl">${compDiscipline === 'Batter' ? 'Dismissal Rate' : 'Wkts/Over'}</span>
-              <span class="comp-stat-val">${compDiscipline === 'Batter' ? (16.8 + idx*1.1).toFixed(1)+'%' : (1.62 - idx*0.15).toFixed(2)}</span>
+              <span class="comp-stat-val">${compDiscipline === 'Batter' ? (p.dismissal_rate_high !== undefined ? p.dismissal_rate_high.toFixed(1)+'%' : '8.4%') : (p.wpo_high !== undefined ? p.wpo_high.toFixed(2) : '0.56')}</span>
             </div>
           </div>
         </div>
@@ -4640,6 +5067,16 @@ def generate_dashboard():
         `).join('');
       }
 
+      const avgDot = ((dotVals.reduce((a, b) => a + b, 0)) / dotVals.length).toFixed(1);
+      const compCenter = document.getElementById('compChart2Center');
+      if (compCenter) {
+        compCenter.innerHTML = `
+          <div class="donut-center-num" style="font-size: 20px;">${avgDot}%</div>
+          <div class="donut-center-text" style="font-size: 9.5px;">Avg Dot %</div>
+        `;
+        compCenter.dataset.defaultHtml = compCenter.innerHTML;
+      }
+
       if (compChart2Instance) compChart2Instance.destroy();
       compChart2Instance = new Chart(ctx2, {
         type: 'doughnut',
@@ -4680,7 +5117,9 @@ def generate_dashboard():
         data: {
           labels: selected.map(p => p.name),
           datasets: [{
-            data: compDiscipline === 'Batter' ? [16.8, 17.6, 18.9] : [1.62, 1.48, 1.35],
+            data: compDiscipline === 'Batter'
+              ? selected.map(p => p.dismissal_rate_high !== undefined ? p.dismissal_rate_high : 8.4)
+              : selected.map(p => p.wpo_high !== undefined ? p.wpo_high : 0.56),
             backgroundColor: ['#E5097F', '#38BDF8', '#8B5CF6'],
             borderRadius: 6
           }]
@@ -4719,15 +5158,23 @@ def generate_dashboard():
         <div class="pressure-bullet-item"><i class="fa-solid fa-circle-check"></i> <strong>${selected[2].name}</strong> delivers high boundary acceleration despite dot-ball variances.</div>
       `;
 
+      const lowestRiskPlayer = [...selected].sort((a,b) => {
+        if (compDiscipline === 'Batter') {
+          return (a.dismissal_rate_high || 8.4) - (b.dismissal_rate_high || 8.4);
+        } else {
+          return (a.econ_high || 8.0) - (b.econ_high || 8.0);
+        }
+      })[0];
+
       document.getElementById('comp-summary-table').innerHTML = `
         <tbody>
           <tr>
             <td>Best Rate</td>
-            <td><strong>${bestPlayer.name}</strong> (${compDiscipline === 'Batter' ? '142.3 SR' : '7.12 Econ'})</td>
+            <td><strong>${bestPlayer.name}</strong> (${compDiscipline === 'Batter' ? (bestPlayer.sr_high || 175.3).toFixed(1) + ' SR' : (bestPlayer.econ_high || 10.5).toFixed(2) + ' Econ'})</td>
           </tr>
           <tr>
             <td>Lowest Risk Profile</td>
-            <td><strong>${selected[0].name}</strong> (${compDiscipline === 'Batter' ? '16.8% Dismissal' : '64.7% Dots'})</td>
+            <td><strong>${lowestRiskPlayer.name}</strong> (${compDiscipline === 'Batter' ? (lowestRiskPlayer.dismissal_rate_high || 8.4).toFixed(1) + '% Dismissal' : (lowestRiskPlayer.econ_high || 7.5).toFixed(2) + ' Econ'})</td>
           </tr>
           <tr>
             <td>Highest Consistency</td>
@@ -4754,6 +5201,91 @@ def generate_dashboard():
     // POPULATE FULL RANKINGS TABLES
     // ==========================================================================
     function populateRankingsTables() {
+      // 1. Overview Top 5 Batters Table with Photos
+      const ovBatTbody = document.querySelector('#overviewBattersTable tbody');
+      if (ovBatTbody) {
+        ovBatTbody.innerHTML = RR_DATA.batters.slice(0, 5).map(b => `
+          <tr class="clickable-player-row" onclick="selectBatterFromOverview(${b.id})" title="Click to view ${b.name}'s analysis">
+            <td>${b.rank}</td>
+            <td>
+              <div class="table-player-cell">
+                <img class="table-player-thumb" src="${b.image_b64 || b.image}" alt="${b.name}">
+                <span><strong>${b.name}</strong></span>
+              </div>
+            </td>
+            <td>
+              <div class="progress-bar-wrap">
+                <div class="progress-track"><div class="progress-fill-pink" style="width: ${Math.min(100, b.reliability_index * 1.25)}%;"></div></div>
+                <span class="progress-val">${b.reliability_index.toFixed(2)}</span>
+              </div>
+            </td>
+            <td><span class="role-badge-table">${b.role || 'Death Phase Finisher'}</span></td>
+          </tr>
+        `).join('');
+      }
+
+      // 2. Overview Top 5 Bowlers Table with Photos (Haris Rauf prominently featured!)
+      const ovBowlTbody = document.querySelector('#overviewBowlersTable tbody');
+      if (ovBowlTbody) {
+        ovBowlTbody.innerHTML = RR_DATA.bowlers.slice(0, 5).map(bw => `
+          <tr class="clickable-player-row" onclick="selectBowlerFromOverview(${bw.id})" title="Click to view ${bw.name}'s analysis">
+            <td>${bw.rank}</td>
+            <td>
+              <div class="table-player-cell">
+                <img class="table-player-thumb bowler-thumb" src="${bw.image_b64 || bw.image}" alt="${bw.name}">
+                <span><strong>${bw.name}</strong></span>
+              </div>
+            </td>
+            <td>
+              <div class="progress-bar-wrap">
+                <div class="progress-track"><div class="progress-fill-purple" style="width: ${Math.min(100, bw.reliability_index * 1.25)}%;"></div></div>
+                <span class="progress-val">${bw.reliability_index.toFixed(2)}</span>
+              </div>
+            </td>
+            <td><span class="role-badge-table">${bw.role || 'Death Wicket Enforcer'}</span></td>
+          </tr>
+        `).join('');
+      }
+
+      // 3. Batting Intelligence Top 10 Batters Table with Photos
+      const bRankTbody = document.querySelector('#battersRankingTable tbody');
+      if (bRankTbody) {
+        bRankTbody.innerHTML = RR_DATA.batters.slice(0, 10).map((b, idx) => `
+          <tr id="batter-row-${b.id}" class="clickable-player-row ${b.id === currentSelectedBatterId ? 'active-player-row' : ''}" onclick="selectBatter(${b.id})" title="Click to view ${b.name}'s analysis">
+            <td>${b.rank}</td>
+            <td>
+              <div class="table-player-cell">
+                <img class="table-player-thumb" src="${b.image_b64 || b.image}" alt="${b.name}">
+                <span><strong>${b.name}</strong></span>
+              </div>
+            </td>
+            <td>${b.id}</td>
+            <td><strong style="color: #FF5EA6;">${b.reliability_index.toFixed(2)}</strong></td>
+            <td><span class="role-badge-table">${b.role || 'Death Phase Finisher'}</span></td>
+          </tr>
+        `).join('');
+      }
+
+      // 4. Bowling Intelligence Top 10 Bowlers Table with Photos (Haris Rauf Row #2 with Photo!)
+      const bwRankTbody = document.querySelector('#bowlersRankingTable tbody');
+      if (bwRankTbody) {
+        bwRankTbody.innerHTML = RR_DATA.bowlers.slice(0, 10).map((bw, idx) => `
+          <tr id="bowler-row-${bw.id}" class="clickable-player-row ${bw.id === currentSelectedBowlerId ? 'active-bowler-row' : ''}" onclick="selectBowler(${bw.id})" title="Click to view ${bw.name}'s analysis">
+            <td>${bw.rank}</td>
+            <td>
+              <div class="table-player-cell">
+                <img class="table-player-thumb bowler-thumb" src="${bw.image_b64 || bw.image}" alt="${bw.name}">
+                <span><strong>${bw.name}</strong></span>
+              </div>
+            </td>
+            <td>${bw.id}</td>
+            <td><strong style="color: #38BDF8;">${bw.reliability_index.toFixed(2)}</strong></td>
+            <td><span class="role-badge-table">${bw.role || 'Death Wicket Enforcer'}</span></td>
+          </tr>
+        `).join('');
+      }
+
+      // 5. Full Batters Rankings Table
       const bTbody = document.querySelector('#full-batters-table tbody');
       if (bTbody) {
         bTbody.innerHTML = RR_DATA.batters.map(b => `
@@ -4773,6 +5305,7 @@ def generate_dashboard():
         `).join('');
       }
 
+      // 6. Full Bowlers Rankings Table
       const bwTbody = document.querySelector('#full-bowlers-table tbody');
       if (bwTbody) {
         bwTbody.innerHTML = RR_DATA.bowlers.map(b => `
@@ -4780,7 +5313,7 @@ def generate_dashboard():
             <td><strong>${b.rank}</strong></td>
             <td>
               <div class="table-player-cell">
-                <img class="table-player-thumb" style="border-color: #38BDF8;" src="${b.image_b64 || b.image}" alt="${b.name}">
+                <img class="table-player-thumb bowler-thumb" src="${b.image_b64 || b.image}" alt="${b.name}">
                 <span><strong>${b.name}</strong></span>
               </div>
             </td>
@@ -4791,6 +5324,199 @@ def generate_dashboard():
           </tr>
         `).join('');
       }
+    }
+
+    // ==========================================================================
+    // INTERACTIVE TOP 10 PLAYER SELECTION & UI SYNCHRONIZATION ENGINE
+    // ==========================================================================
+    let currentSelectedBatterId = 2633;
+    let currentSelectedBowlerId = 818;
+
+    function selectBatter(playerId) {
+      currentSelectedBatterId = playerId;
+      const batter = RR_DATA.batters.find(b => b.id === playerId);
+      if (!batter) return;
+
+      // 1. Highlight active table row
+      document.querySelectorAll('#battersRankingTable tbody tr').forEach(r => r.classList.remove('active-player-row'));
+      const activeRow = document.getElementById(`batter-row-${playerId}`);
+      if (activeRow) activeRow.classList.add('active-player-row');
+
+      // 2. Update Strike Rate Comparison Chart
+      const srChart = chartRegistry.batting.find(c => c && c.canvas && c.canvas.id === 'batterSRChart');
+      if (srChart) {
+        srChart.data.labels = [batter.name, 'Tournament Avg'];
+        srChart.data.datasets[0].data = [batter.sr_norm !== undefined ? batter.sr_norm : 67.31, 128.7];
+        srChart.data.datasets[1].data = [batter.sr_high !== undefined ? batter.sr_high : 175.30, 141.5];
+        srChart.update();
+      }
+      ['batterSRPlayer', 'batterDotPlayer', 'batterPressPlayer'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.innerText = batter.name;
+      });
+
+      // 3. Update Dot Ball Donut Chart
+      const dotChart = chartRegistry.batting.find(c => c && c.canvas && c.canvas.id === 'batterDotChart');
+      const dotPct = batter.dot_pct_high !== undefined ? batter.dot_pct_high : 28.9;
+      const otherPct = +(100 - dotPct).toFixed(1);
+      if (dotChart) {
+        dotChart.data.labels = ['Dot Balls', 'Scoring / Other'];
+        dotChart.data.datasets[0].data = [dotPct, otherPct];
+        dotChart.update();
+      }
+      const dotNum = document.getElementById('batterDotCenterNum');
+      if (dotNum) dotNum.innerText = `${dotPct}%`;
+      const bCenter = document.getElementById('batterDotCenter');
+      if (bCenter) bCenter.dataset.defaultHtml = bCenter.innerHTML;
+      const dotVal = document.getElementById('batterDotLegendVal');
+      if (dotVal) dotVal.innerText = `${dotPct}%`;
+      const otherVal = document.getElementById('batterOtherLegendVal');
+      if (otherVal) otherVal.innerText = `${otherPct}%`;
+
+
+      // 4. Update High-Pressure Exposure
+      const pressNum = document.getElementById('batterPressureNum');
+      if (pressNum) pressNum.innerText = `${Math.round(batter.high_balls)}`;
+      const pressSub = document.getElementById('batterPressureSub');
+      if (pressSub) pressSub.innerText = `Pressure Balls Faced (${batter.matches} Matches)`;
+      const thumb = document.getElementById('pressureGaugeThumb');
+      if (thumb) {
+        const pct = Math.min(94, Math.max(8, ((batter.reliability_index - 52) / 16) * 100));
+        thumb.style.left = `${pct}%`;
+      }
+
+      // 5. Update Player Spotlight Box
+      const img = document.getElementById('batterSpotlightImg');
+      if (img) {
+        img.src = batter.image_b64 || batter.image;
+        img.alt = batter.name;
+      }
+      const rank = document.getElementById('batterSpotlightRank');
+      if (rank) rank.innerText = `👑 #${batter.rank} Batter`;
+      const name = document.getElementById('batterSpotlightName');
+      if (name) name.innerText = batter.name;
+      const ri = document.getElementById('batterSpotlightRI');
+      if (ri) ri.innerText = `${batter.reliability_index.toFixed(2)} Reliability Index`;
+      const bullets = document.getElementById('batterSpotlightBullets');
+      if (bullets) {
+        const srDiff = (batter.shrunk_diff_sr !== undefined ? batter.shrunk_diff_sr : 83.44);
+        const dotDiff = (batter.shrunk_diff_dot !== undefined ? batter.shrunk_diff_dot : -30.18);
+        bullets.innerHTML = `
+          <div class="spotlight-bullet"><i class="fa-solid fa-circle-check"></i> ${srDiff >= 0 ? '+' : ''}${srDiff.toFixed(2)} SR (Δ SR surge)</div>
+          <div class="spotlight-bullet"><i class="fa-solid fa-circle-check"></i> ${dotDiff.toFixed(2)}% Dot Balls (Δ Dot drop)</div>
+          <div class="spotlight-bullet"><i class="fa-solid fa-circle-check"></i> ${Math.round(batter.high_balls)} High Pressure Balls Faced</div>
+        `;
+      }
+      const btn = document.getElementById('batterSpotlightBtn');
+      if (btn) {
+        btn.setAttribute('onclick', `openComparisonWith('${batter.name}')`);
+      }
+    }
+
+    function selectBowler(bowlerId) {
+      currentSelectedBowlerId = bowlerId;
+      const bowler = RR_DATA.bowlers.find(b => b.id === bowlerId);
+      if (!bowler) return;
+
+      // 1. Highlight active table row
+      document.querySelectorAll('#bowlersRankingTable tbody tr').forEach(r => r.classList.remove('active-bowler-row'));
+      const activeRow = document.getElementById(`bowler-row-${bowlerId}`);
+      if (activeRow) activeRow.classList.add('active-bowler-row');
+
+      // 2. Update Economy Chart
+      const econChart = chartRegistry.bowling.find(c => c && c.canvas && c.canvas.id === 'bowlerEconChart');
+      if (econChart) {
+        econChart.data.labels = [bowler.name, 'Tournament Avg'];
+        econChart.data.datasets[0].data = [bowler.econ_norm !== undefined ? bowler.econ_norm : 12.46, 7.28];
+        econChart.data.datasets[1].data = [bowler.econ_high !== undefined ? bowler.econ_high : 10.50, 9.01];
+        econChart.update();
+      }
+      ['bowlerEconPlayer', 'bowlerWPOPlayer', 'bowlerDotPlayer', 'bowlerBoundPlayer'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.innerText = bowler.name;
+      });
+
+      // 3. Update Wickets Per Over Chart
+      const wpoChart = chartRegistry.bowling.find(c => c && c.canvas && c.canvas.id === 'bowlerWPOChart');
+      if (wpoChart) {
+        wpoChart.data.labels = [bowler.name, 'Tournament Avg'];
+        wpoChart.data.datasets[0].data = [bowler.wpo_norm !== undefined ? bowler.wpo_norm : 0.0, 1.18];
+        wpoChart.data.datasets[1].data = [bowler.wpo_high !== undefined ? bowler.wpo_high : 0.56, 1.50];
+        wpoChart.update();
+      }
+
+      // 4. Update Dot Ball Donut Chart
+      const dotChart = chartRegistry.bowling.find(c => c && c.canvas && c.canvas.id === 'bowlerDotBoundaryChart');
+      const dotPct = bowler.dot_pct_high !== undefined ? bowler.dot_pct_high : 34.4;
+      const nonDotPct = +(100 - dotPct).toFixed(1);
+      if (dotChart) {
+        dotChart.data.labels = ['Dot Balls', 'Scoring / Other'];
+        dotChart.data.datasets[0].data = [dotPct, nonDotPct];
+        dotChart.update();
+      }
+      const dotNum = document.getElementById('bowlerDotCenterNum');
+      if (dotNum) dotNum.innerText = `${dotPct}%`;
+      const bwCenter = document.getElementById('bowlerDotCenter');
+      if (bwCenter) bwCenter.dataset.defaultHtml = bwCenter.innerHTML;
+      const dotVal = document.getElementById('bowlerDotLegendVal');
+      if (dotVal) dotVal.innerText = `${dotPct}%`;
+      const nonDotVal = document.getElementById('bowlerNonDotLegendVal');
+      if (nonDotVal) nonDotVal.innerText = `${nonDotPct}%`;
+
+
+      // 5. Update Boundary Conceded Donut Chart
+      const boundChart = chartRegistry.bowling.find(c => c && c.canvas && c.canvas.id === 'bowlerBoundaryConcededChart');
+      const boundPct = bowler.boundary_conceded_pct_high !== undefined ? bowler.boundary_conceded_pct_high : 21.9;
+      const nonBoundPct = +(100 - boundPct).toFixed(1);
+      if (boundChart) {
+        boundChart.data.labels = ['Non-Boundary', 'Boundary Conceded'];
+        boundChart.data.datasets[0].data = [nonBoundPct, boundPct];
+        boundChart.update();
+      }
+      const boundNum = document.getElementById('bowlerBoundCenterNum');
+      if (boundNum) boundNum.innerText = `${boundPct}%`;
+      const bndCenter = document.getElementById('bowlerBoundCenter');
+      if (bndCenter) bndCenter.dataset.defaultHtml = bndCenter.innerHTML;
+      const nonBoundVal = document.getElementById('bowlerNonBoundLegendVal');
+      if (nonBoundVal) nonBoundVal.innerText = `${nonBoundPct}%`;
+      const boundVal = document.getElementById('bowlerBoundLegendVal');
+      if (boundVal) boundVal.innerText = `${boundPct}%`;
+
+
+      // 6. Update Player Spotlight Box
+      const img = document.getElementById('bowlerSpotlightImg');
+      if (img) {
+        img.src = bowler.image_b64 || bowler.image;
+        img.alt = bowler.name;
+      }
+      const rank = document.getElementById('bowlerSpotlightRank');
+      if (rank) rank.innerText = `👑 #${bowler.rank} Bowler`;
+      const name = document.getElementById('bowlerSpotlightName');
+      if (name) name.innerText = bowler.name;
+      const ri = document.getElementById('bowlerSpotlightRI');
+      if (ri) ri.innerText = `${bowler.reliability_index.toFixed(2)} Reliability Index`;
+      const bullets = document.getElementById('bowlerSpotlightBullets');
+      if (bullets) {
+        bullets.innerHTML = `
+          <div class="spotlight-bullet"><i class="fa-solid fa-circle-check"></i> ${bowler.econ_high.toFixed(2)} Econ (High Pressure)</div>
+          <div class="spotlight-bullet"><i class="fa-solid fa-circle-check"></i> ${bowler.wpo_high !== undefined ? bowler.wpo_high.toFixed(2) : '0.56'} Wkts/Over in Pressure</div>
+          <div class="spotlight-bullet"><i class="fa-solid fa-circle-check"></i> ${dotPct.toFixed(1)}% Dot Balls Delivered</div>
+        `;
+      }
+      const btn = document.getElementById('bowlerSpotlightBtn');
+      if (btn) {
+        btn.setAttribute('onclick', `openComparisonWith('${bowler.name}')`);
+      }
+    }
+
+    function selectBatterFromOverview(playerId) {
+      switchTab('batting');
+      setTimeout(() => selectBatter(playerId), 120);
+    }
+
+    function selectBowlerFromOverview(bowlerId) {
+      switchTab('bowling');
+      setTimeout(() => selectBowler(bowlerId), 120);
     }
 
     // Real CSV Downloader
@@ -4818,8 +5544,12 @@ def generate_dashboard():
       updateComparison();
       populateRankingsTables();
       animateOverviewProgressBars();
+      selectBatter(2633);
+      selectBowler(818);
     });
+    // Ensure chart tooltip element exists
   </script>
+  <div id="rr-chart-tooltip" class="rr-custom-tooltip"></div>
 </body>
 </html>
 """

@@ -18,14 +18,17 @@
       "runs_high": 291.0,
       "runs_norm": 35.0,
       "sr_high": 175.3,
-      "sr_norm": 67.31,
+      "sr_norm": 67.3,
       "shrunk_diff_sr": 83.44,
       "shrunk_diff_dot": -30.18,
       "ci_lower": 58.05,
       "ci_upper": 73.99,
       "ci_se": 4.04,
       "image": "../assets/player_images/jason_holder.png",
-      "scouting_summary": "Jason Holder achieved an exceptional +83.44 shrunk SR surge under pressure while slashing dot balls by -30.18%. Ideal Death Phase Finisher target for Rajasthan Royals 2027 auction roster."
+      "scouting_summary": "Jason Holder achieved an exceptional +83.44 shrunk SR surge under pressure while slashing dot balls by -30.18%. Ideal Death Phase Finisher target for Rajasthan Royals 2027 auction roster.",
+      "dot_pct_high": 28.9,
+      "boundary_ball_pct_high": 22.3,
+      "dismissal_rate_high": 8.4
     },
     {
       "rank": 2,
@@ -44,15 +47,18 @@
       "matches": 124,
       "runs_high": 86.0,
       "runs_norm": 1566.0,
-      "sr_high": 238.89,
-      "sr_norm": 158.02,
+      "sr_high": 238.9,
+      "sr_norm": 158.0,
       "shrunk_diff_sr": 62.1,
       "shrunk_diff_dot": -9.13,
       "ci_lower": 49.57,
       "ci_upper": 78.9,
       "ci_se": 8.45,
       "image": "../assets/player_images/sanju_samson.png",
-      "scouting_summary": "Sanju Samson achieved an exceptional +62.10 shrunk SR surge under pressure while slashing dot balls by -9.13%. Ideal Top/Middle Order Accelerator target for Rajasthan Royals 2027 auction roster."
+      "scouting_summary": "Sanju Samson achieved an exceptional +62.10 shrunk SR surge under pressure while slashing dot balls by -9.13%. Ideal Top/Middle Order Accelerator target for Rajasthan Royals 2027 auction roster.",
+      "dot_pct_high": 22.2,
+      "boundary_ball_pct_high": 36.1,
+      "dismissal_rate_high": 2.8
     },
     {
       "rank": 3,
@@ -71,15 +77,18 @@
       "matches": 35,
       "runs_high": 125.0,
       "runs_norm": 80.0,
-      "sr_high": 160.26,
-      "sr_norm": 105.26,
+      "sr_high": 160.3,
+      "sr_norm": 105.3,
       "shrunk_diff_sr": 44.8,
       "shrunk_diff_dot": -17.45,
       "ci_lower": 52.06,
       "ci_upper": 66.36,
       "ci_se": 3.73,
       "image": "../assets/player_images/curtis_campher.png",
-      "scouting_summary": "Curtis Campher achieved an exceptional +44.80 shrunk SR surge under pressure while slashing dot balls by -17.45%. Ideal Top/Middle Order Accelerator target for Rajasthan Royals 2027 auction roster."
+      "scouting_summary": "Curtis Campher achieved an exceptional +44.80 shrunk SR surge under pressure while slashing dot balls by -17.45%. Ideal Top/Middle Order Accelerator target for Rajasthan Royals 2027 auction roster.",
+      "dot_pct_high": 20.5,
+      "boundary_ball_pct_high": 19.2,
+      "dismissal_rate_high": 2.6
     },
     {
       "rank": 4,
@@ -98,15 +107,18 @@
       "matches": 84,
       "runs_high": 110.0,
       "runs_norm": 1738.0,
-      "sr_high": 229.17,
-      "sr_norm": 174.67,
+      "sr_high": 229.2,
+      "sr_norm": 174.7,
       "shrunk_diff_sr": 45.65,
       "shrunk_diff_dot": -14.47,
       "ci_lower": 44.38,
       "ci_upper": 63.16,
       "ci_se": 4.32,
       "image": "../assets/player_images/phil_salt.png",
-      "scouting_summary": "Phil Salt achieved an exceptional +45.65 shrunk SR surge under pressure while slashing dot balls by -14.47%. Ideal Death Phase Finisher target for Rajasthan Royals 2027 auction roster."
+      "scouting_summary": "Phil Salt achieved an exceptional +45.65 shrunk SR surge under pressure while slashing dot balls by -14.47%. Ideal Death Phase Finisher target for Rajasthan Royals 2027 auction roster.",
+      "dot_pct_high": 14.6,
+      "boundary_ball_pct_high": 29.2,
+      "dismissal_rate_high": 4.2
     },
     {
       "rank": 5,
@@ -125,7 +137,7 @@
       "matches": 10,
       "runs_high": 77.0,
       "runs_norm": 18.0,
-      "sr_high": 128.33,
+      "sr_high": 128.3,
       "sr_norm": 60.0,
       "shrunk_diff_sr": 47.03,
       "shrunk_diff_dot": -21.48,
@@ -133,7 +145,10 @@
       "ci_upper": 63.65,
       "ci_se": 4.11,
       "image": "../assets/player_images/david_willey.png",
-      "scouting_summary": "David Willey achieved an exceptional +47.03 shrunk SR surge under pressure while slashing dot balls by -21.48%. Ideal Death Phase Finisher target for Rajasthan Royals 2027 auction roster."
+      "scouting_summary": "David Willey achieved an exceptional +47.03 shrunk SR surge under pressure while slashing dot balls by -21.48%. Ideal Death Phase Finisher target for Rajasthan Royals 2027 auction roster.",
+      "dot_pct_high": 38.3,
+      "boundary_ball_pct_high": 18.3,
+      "dismissal_rate_high": 1.7
     },
     {
       "rank": 6,
@@ -152,15 +167,18 @@
       "matches": 20,
       "runs_high": 59.0,
       "runs_norm": 95.0,
-      "sr_high": 151.28,
-      "sr_norm": 96.94,
+      "sr_high": 151.3,
+      "sr_norm": 96.9,
       "shrunk_diff_sr": 41.86,
       "shrunk_diff_dot": -14.71,
       "ci_lower": 50.0,
       "ci_upper": 62.25,
       "ci_se": 4.46,
       "image": "../assets/player_images/dion_myers.png",
-      "scouting_summary": "Dion Myers achieved an exceptional +41.86 shrunk SR surge under pressure while slashing dot balls by -14.71%. Ideal Top/Middle Order Accelerator target for Rajasthan Royals 2027 auction roster."
+      "scouting_summary": "Dion Myers achieved an exceptional +41.86 shrunk SR surge under pressure while slashing dot balls by -14.71%. Ideal Top/Middle Order Accelerator target for Rajasthan Royals 2027 auction roster.",
+      "dot_pct_high": 28.2,
+      "boundary_ball_pct_high": 20.5,
+      "dismissal_rate_high": 0.0
     },
     {
       "rank": 7,
@@ -179,15 +197,18 @@
       "matches": 10,
       "runs_high": 102.0,
       "runs_norm": 26.0,
-      "sr_high": 156.92,
-      "sr_norm": 83.87,
+      "sr_high": 156.9,
+      "sr_norm": 83.9,
       "shrunk_diff_sr": 50.37,
       "shrunk_diff_dot": -11.45,
       "ci_lower": 50.0,
       "ci_upper": 64.04,
       "ci_se": 4.54,
       "image": "../assets/player_images/shan_masood.png",
-      "scouting_summary": "Shan Masood achieved an exceptional +50.37 shrunk SR surge under pressure while slashing dot balls by -11.45%. Ideal Death Phase Finisher target for Rajasthan Royals 2027 auction roster."
+      "scouting_summary": "Shan Masood achieved an exceptional +50.37 shrunk SR surge under pressure while slashing dot balls by -11.45%. Ideal Death Phase Finisher target for Rajasthan Royals 2027 auction roster.",
+      "dot_pct_high": 21.5,
+      "boundary_ball_pct_high": 16.9,
+      "dismissal_rate_high": 1.5
     },
     {
       "rank": 8,
@@ -206,15 +227,18 @@
       "matches": 61,
       "runs_high": 286.0,
       "runs_norm": 57.0,
-      "sr_high": 166.28,
-      "sr_norm": 98.28,
+      "sr_high": 166.3,
+      "sr_norm": 98.3,
       "shrunk_diff_sr": 55.32,
       "shrunk_diff_dot": -13.44,
       "ci_lower": 50.27,
       "ci_upper": 64.1,
       "ci_se": 3.74,
       "image": "../assets/player_images/dasun_shanaka.png",
-      "scouting_summary": "Dasun Shanaka achieved an exceptional +55.32 shrunk SR surge under pressure while slashing dot balls by -13.44%. Ideal Death Phase Finisher target for Rajasthan Royals 2027 auction roster."
+      "scouting_summary": "Dasun Shanaka achieved an exceptional +55.32 shrunk SR surge under pressure while slashing dot balls by -13.44%. Ideal Death Phase Finisher target for Rajasthan Royals 2027 auction roster.",
+      "dot_pct_high": 29.6,
+      "boundary_ball_pct_high": 23.3,
+      "dismissal_rate_high": 7.6
     },
     {
       "rank": 9,
@@ -233,15 +257,18 @@
       "matches": 30,
       "runs_high": 176.0,
       "runs_norm": 158.0,
-      "sr_high": 162.96,
-      "sr_norm": 111.27,
+      "sr_high": 163.0,
+      "sr_norm": 111.3,
       "shrunk_diff_sr": 45.2,
       "shrunk_diff_dot": -14.01,
       "ci_lower": 51.83,
       "ci_upper": 61.18,
       "ci_se": 2.21,
       "image": "../assets/player_images/matthew_wade.png",
-      "scouting_summary": "Matthew Wade achieved an exceptional +45.20 shrunk SR surge under pressure while slashing dot balls by -14.01%. Ideal Death Phase Finisher target for Rajasthan Royals 2027 auction roster."
+      "scouting_summary": "Matthew Wade achieved an exceptional +45.20 shrunk SR surge under pressure while slashing dot balls by -14.01%. Ideal Death Phase Finisher target for Rajasthan Royals 2027 auction roster.",
+      "dot_pct_high": 27.8,
+      "boundary_ball_pct_high": 20.4,
+      "dismissal_rate_high": 1.9
     },
     {
       "rank": 10,
@@ -260,15 +287,18 @@
       "matches": 30,
       "runs_high": 82.0,
       "runs_norm": 64.0,
-      "sr_high": 210.26,
-      "sr_norm": 114.29,
+      "sr_high": 210.3,
+      "sr_norm": 114.3,
       "shrunk_diff_sr": 65.43,
       "shrunk_diff_dot": -5.3,
       "ci_lower": 37.01,
       "ci_upper": 64.4,
       "ci_se": 7.08,
       "image": "../assets/player_images/iftikhar_ahmed.png",
-      "scouting_summary": "Iftikhar Ahmed achieved an exceptional +65.43 shrunk SR surge under pressure while slashing dot balls by -5.30%. Ideal Top/Middle Order Accelerator target for Rajasthan Royals 2027 auction roster."
+      "scouting_summary": "Iftikhar Ahmed achieved an exceptional +65.43 shrunk SR surge under pressure while slashing dot balls by -5.30%. Ideal Top/Middle Order Accelerator target for Rajasthan Royals 2027 auction roster.",
+      "dot_pct_high": 25.6,
+      "boundary_ball_pct_high": 30.8,
+      "dismissal_rate_high": 5.1
     }
   ],
   "bowlers": [
@@ -299,7 +329,11 @@
       "ci_se": 4.66,
       "death_balls": 20.0,
       "image": "../assets/player_images/mitchell_marsh.png",
-      "scouting_summary": "Mitchell Marsh demonstrated elite clutch reliability with a shrunk economy diff of +0.30 RPO and wicket surge of +0.306 WPO under high pressure. Anchors RR's defensive blueprint."
+      "scouting_summary": "Mitchell Marsh demonstrated elite clutch reliability with a shrunk economy diff of +0.30 RPO and wicket surge of +0.306 WPO under high pressure. Anchors RR's defensive blueprint.",
+      "dot_pct_high": 34.4,
+      "boundary_conceded_pct_high": 21.9,
+      "wpo_high": 0.56,
+      "wpo_norm": 0.0
     },
     {
       "rank": 2,
@@ -328,7 +362,11 @@
       "ci_se": 4.74,
       "death_balls": 90.0,
       "image": "../assets/player_images/haris_rauf.png",
-      "scouting_summary": "Haris Rauf demonstrated elite clutch reliability with a shrunk economy diff of -1.12 RPO and wicket surge of +0.053 WPO under high pressure. Anchors RR's defensive blueprint."
+      "scouting_summary": "Haris Rauf demonstrated elite clutch reliability with a shrunk economy diff of -1.12 RPO and wicket surge of +0.053 WPO under high pressure. Anchors RR's defensive blueprint.",
+      "dot_pct_high": 40.4,
+      "boundary_conceded_pct_high": 16.5,
+      "wpo_high": 0.61,
+      "wpo_norm": 0.54
     },
     {
       "rank": 3,
@@ -357,7 +395,11 @@
       "ci_se": 3.73,
       "death_balls": 35.0,
       "image": "../assets/player_images/kartik_tyagi.png",
-      "scouting_summary": "Kartik Tyagi demonstrated elite clutch reliability with a shrunk economy diff of -0.43 RPO and wicket surge of +0.186 WPO under high pressure. Anchors RR's defensive blueprint."
+      "scouting_summary": "Kartik Tyagi demonstrated elite clutch reliability with a shrunk economy diff of -0.43 RPO and wicket surge of +0.186 WPO under high pressure. Anchors RR's defensive blueprint.",
+      "dot_pct_high": 39.0,
+      "boundary_conceded_pct_high": 29.3,
+      "wpo_high": 0.29,
+      "wpo_norm": 0.0
     },
     {
       "rank": 4,
@@ -386,7 +428,11 @@
       "ci_se": 4.88,
       "death_balls": 73.0,
       "image": "../assets/player_images/vaibhav_arora.png",
-      "scouting_summary": "Vaibhav Arora demonstrated elite clutch reliability with a shrunk economy diff of +0.28 RPO and wicket surge of +0.262 WPO under high pressure. Anchors RR's defensive blueprint."
+      "scouting_summary": "Vaibhav Arora demonstrated elite clutch reliability with a shrunk economy diff of +0.28 RPO and wicket surge of +0.262 WPO under high pressure. Anchors RR's defensive blueprint.",
+      "dot_pct_high": 34.5,
+      "boundary_conceded_pct_high": 23.8,
+      "wpo_high": 0.71,
+      "wpo_norm": 0.37
     },
     {
       "rank": 5,
@@ -415,7 +461,11 @@
       "ci_se": 7.69,
       "death_balls": 22.0,
       "image": "../assets/player_images/ravi_bishnoi.png",
-      "scouting_summary": "Ravi Bishnoi demonstrated elite clutch reliability with a shrunk economy diff of +1.21 RPO and wicket surge of +0.382 WPO under high pressure. Anchors RR's defensive blueprint."
+      "scouting_summary": "Ravi Bishnoi demonstrated elite clutch reliability with a shrunk economy diff of +1.21 RPO and wicket surge of +0.382 WPO under high pressure. Anchors RR's defensive blueprint.",
+      "dot_pct_high": 37.8,
+      "boundary_conceded_pct_high": 20.0,
+      "wpo_high": 0.93,
+      "wpo_norm": 0.42
     },
     {
       "rank": 6,
@@ -444,7 +494,11 @@
       "ci_se": 5.82,
       "death_balls": 44.0,
       "image": "../assets/player_images/azmatullah_omarzai.png",
-      "scouting_summary": "Azmatullah Omarzai demonstrated elite clutch reliability with a shrunk economy diff of +0.12 RPO and wicket surge of +0.053 WPO under high pressure. Anchors RR's defensive blueprint."
+      "scouting_summary": "Azmatullah Omarzai demonstrated elite clutch reliability with a shrunk economy diff of +0.12 RPO and wicket surge of +0.053 WPO under high pressure. Anchors RR's defensive blueprint.",
+      "dot_pct_high": 37.3,
+      "boundary_conceded_pct_high": 20.3,
+      "wpo_high": 0.41,
+      "wpo_norm": 0.34
     },
     {
       "rank": 7,
@@ -473,7 +527,11 @@
       "ci_se": 5.62,
       "death_balls": 0.0,
       "image": "../assets/player_images/keshav_maharaj.png",
-      "scouting_summary": "Keshav Maharaj demonstrated elite clutch reliability with a shrunk economy diff of +2.15 RPO and wicket surge of +0.440 WPO under high pressure. Anchors RR's defensive blueprint."
+      "scouting_summary": "Keshav Maharaj demonstrated elite clutch reliability with a shrunk economy diff of +2.15 RPO and wicket surge of +0.440 WPO under high pressure. Anchors RR's defensive blueprint.",
+      "dot_pct_high": 33.3,
+      "boundary_conceded_pct_high": 20.0,
+      "wpo_high": 1.0,
+      "wpo_norm": 0.29
     },
     {
       "rank": 8,
@@ -502,7 +560,11 @@
       "ci_se": 5.0,
       "death_balls": 29.0,
       "image": "../assets/player_images/corbin_bosch.png",
-      "scouting_summary": "Corbin Bosch demonstrated elite clutch reliability with a shrunk economy diff of +0.81 RPO and wicket surge of +0.153 WPO under high pressure. Anchors RR's defensive blueprint."
+      "scouting_summary": "Corbin Bosch demonstrated elite clutch reliability with a shrunk economy diff of +0.81 RPO and wicket surge of +0.153 WPO under high pressure. Anchors RR's defensive blueprint.",
+      "dot_pct_high": 50.8,
+      "boundary_conceded_pct_high": 19.1,
+      "wpo_high": 0.76,
+      "wpo_norm": 0.55
     },
     {
       "rank": 9,
@@ -531,7 +593,11 @@
       "ci_se": 3.33,
       "death_balls": 20.0,
       "image": "../assets/player_images/wanindu_hasaranga.png",
-      "scouting_summary": "Wanindu Hasaranga demonstrated elite clutch reliability with a shrunk economy diff of -0.64 RPO and wicket surge of -0.164 WPO under high pressure. Anchors RR's defensive blueprint."
+      "scouting_summary": "Wanindu Hasaranga demonstrated elite clutch reliability with a shrunk economy diff of -0.64 RPO and wicket surge of -0.164 WPO under high pressure. Anchors RR's defensive blueprint.",
+      "dot_pct_high": 35.7,
+      "boundary_conceded_pct_high": 9.1,
+      "wpo_high": 0.34,
+      "wpo_norm": 0.53
     },
     {
       "rank": 10,
@@ -560,7 +626,11 @@
       "ci_se": 4.73,
       "death_balls": 121.0,
       "image": "../assets/player_images/sam_curran.png",
-      "scouting_summary": "Sam Curran demonstrated elite clutch reliability with a shrunk economy diff of +0.51 RPO and wicket surge of +0.085 WPO under high pressure. Anchors RR's defensive blueprint."
+      "scouting_summary": "Sam Curran demonstrated elite clutch reliability with a shrunk economy diff of +0.51 RPO and wicket surge of +0.085 WPO under high pressure. Anchors RR's defensive blueprint.",
+      "dot_pct_high": 29.9,
+      "boundary_conceded_pct_high": 25.2,
+      "wpo_high": 0.47,
+      "wpo_norm": 0.37
     }
   ]
 }
