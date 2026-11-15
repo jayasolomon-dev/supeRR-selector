@@ -3957,10 +3957,7 @@ def generate_dashboard():
         <img src="__RR_LOGO__" alt="Rajasthan Royals" class="rr-official-crest-footer">
         <span>Rajasthan Royals | SUPERR SELECTOR | Cricket Performance Intelligence | Season 2</span>
       </div>
-      <div class="footer-right">
-        <span class="status-dot-green"></span>
-        <span>Data Verified • Last Updated: Nov 13, 2026, 14:30 IST</span>
-      </div>
+
     </footer>
   </main>
 
