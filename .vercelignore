@@ -1,0 +1,12 @@
+Data/
+reports/
+outputs/
+src/
+tests/
+.git/
+.streamlit/
+dashboard/
+*.csv
+*.py
+requirements.txt
+README.md
